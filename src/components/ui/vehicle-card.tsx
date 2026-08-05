@@ -1,0 +1,43 @@
+import Image from "next/image";
+import type { Vehicle } from "@/lib/content";
+
+export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
+  return (
+    <article className="group overflow-hidden rounded-sm border border-line transition-colors hover:border-gold">
+      <div className="relative h-[240px] overflow-hidden">
+        <Image
+          src={vehicle.image}
+          alt={vehicle.name}
+          fill
+          className="object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-110"
+          sizes="(min-width: 1024px) 25vw, 50vw"
+        />
+        <div className="absolute left-4 top-4 rounded-full bg-ink/80 px-3 py-1.5 text-[10px] uppercase tracking-[0.16em] text-paper backdrop-blur-sm">
+          {vehicle.category}
+        </div>
+      </div>
+      <div className="p-6">
+        <h3 className="m-0 font-subheading text-2xl font-medium leading-tight">{vehicle.name}</h3>
+        <p className="m-0 mt-1 text-xs uppercase tracking-[0.14em] text-muted">{vehicle.subtitle}</p>
+
+        <div className="my-5 grid grid-cols-4 gap-2 border-y border-line py-4 font-data">
+          {vehicle.specs.map((spec) => (
+            <div key={spec.label}>
+              <div className="text-[9px] uppercase tracking-[0.14em] text-muted">{spec.label}</div>
+              <div className="mt-1 text-sm font-medium">{spec.value}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex items-baseline justify-between">
+          <span className="font-data text-2xl font-medium">
+            ${vehicle.price} <span className="font-sans text-xs text-muted">/ day</span>
+          </span>
+          <a href="#book" className="text-[11px] uppercase tracking-[0.16em] text-gold">
+            Reserve →
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+}
