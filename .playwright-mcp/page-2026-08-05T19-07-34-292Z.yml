@@ -1,0 +1,177 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fblack-luxury-sedan-chauffeur
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: black luxury sedan chauffeur
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Fblack-luxury-sedan-chauffeur
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 12":
+                - /url: /s/photos/black-luxury-sedan-chauffeur
+                - img
+                - text: Photos
+                - generic: "12"
+            - listitem [ref=e74]:
+              - link "Illustrations 0" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/black-luxury-sedan-chauffeur
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "0"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Black luxury sedan chauffeur" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "black car" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/black-car
+              - link "luxury car" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/luxury-car
+              - link "automotive" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/automotive
+              - link "transportation" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/transportation
+              - link "sedan" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/sedan
+              - link "automotive industry" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/automotive-industry
+              - link "chauffeur service" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/chauffeur-service
+              - link "executive transport" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/executive-transport
+              - link "vehicle" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/vehicle
+              - link "luxury lifestyle" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/luxury-lifestyle
+              - link "blue" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/blue
+              - link "executive car" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/executive-car
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - link "Luxury black mercedes-benz sedan parked in an urban setting." [ref=e147]:
+                  - /url: /photos/luxury-black-mercedes-benz-sedan-parked-in-an-urban-setting-pgWzo-bNUeM
+                  - img "Luxury black mercedes-benz sedan parked in an urban setting." [ref=e148]
+              - generic [ref=e149]:
+                - heading "Sponsored images" [level=4] [ref=e150]:
+                  - generic [ref=e151]: Sponsored images
+                  - img [ref=e152]
+                - generic [ref=e159]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e160]:
+                - link "A black luxury sedan parked on the roadside." [ref=e163]:
+                  - /url: /photos/a-black-luxury-sedan-parked-on-the-roadside-vp9A1TJ9KoY
+                  - img "A black luxury sedan parked on the roadside." [ref=e164]
+              - figure [ref=e165]:
+                - link "A black mercedes-benz sedan drives on a road." [ref=e168]:
+                  - /url: /photos/a-black-mercedes-benz-sedan-drives-on-a-road-L5MoSNaOEcU
+                  - img "A black mercedes-benz sedan drives on a road." [ref=e169]
+              - figure [ref=e170]:
+                - link "Luxurious car interior with steering wheel, dashboard, and infotainment system." [ref=e173]:
+                  - /url: /photos/luxurious-car-interior-with-steering-wheel-dashboard-and-infotainment-system-iteRe1HNkfc
+                  - img "Luxurious car interior with steering wheel, dashboard, and infotainment system." [ref=e174]
+            - generic [ref=e175]:
+              - figure [ref=e176]:
+                - link "A black mercedes-benz car parked on asphalt with arrows." [ref=e179]:
+                  - /url: /photos/a-black-mercedes-benz-car-parked-on-asphalt-with-arrows-OinkFJ4Ueg8
+                  - img "A black mercedes-benz car parked on asphalt with arrows." [ref=e180]
+              - figure [ref=e181]:
+                - link "Black luxury sedan parked on a street." [ref=e184]:
+                  - /url: /photos/black-luxury-sedan-parked-on-a-street-fUjKnrWsq5w
+                  - img "Black luxury sedan parked on a street." [ref=e185]
+              - figure [ref=e186]:
+                - link "A black mercedes-benz s-class sedan driving on road" [ref=e189]:
+                  - /url: /photos/a-black-mercedes-benz-s-class-sedan-driving-on-road--J3tzK3FPxQ
+                  - img "A black mercedes-benz s-class sedan driving on road" [ref=e190]
+              - figure [ref=e191]:
+                - link "A black rolls-royce phantom parked on a suburban street." [ref=e194]:
+                  - /url: /photos/a-black-rolls-royce-phantom-parked-on-a-suburban-street-APdvxx6EI30
+                  - img "A black rolls-royce phantom parked on a suburban street." [ref=e195]
+              - figure [ref=e196]:
+                - link "A black luxury sedan parked on a road." [ref=e199]:
+                  - /url: /photos/a-black-luxury-sedan-parked-on-a-road-AxTLJpNPNw4
+                  - img "A black luxury sedan parked on a road." [ref=e200]
+            - generic [ref=e201]:
+              - figure [ref=e202]:
+                - link "A black luxury car drives down a city street." [ref=e205]:
+                  - /url: /photos/a-black-luxury-car-drives-down-a-city-street-a6EO1t8TvCM
+                  - img "A black luxury car drives down a city street." [ref=e206]
+              - figure [ref=e207]:
+                - link "Luxury cars parked on a city street" [ref=e210]:
+                  - /url: /photos/luxury-cars-parked-on-a-city-street-hIITbp--HaE
+                  - img "Luxury cars parked on a city street" [ref=e211]
+              - figure [ref=e212]:
+                - link "Luxury car interior with door controls, speaker, and air vent." [ref=e215]:
+                  - /url: /photos/luxury-car-interior-with-door-controls-speaker-and-air-vent-sbPQrjWuWtA
+                  - img "Luxury car interior with door controls, speaker, and air vent." [ref=e216]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e220]:
+            - text: Browse premium images on iStock
+            - generic [ref=e221]: "| Claim your discount now"
+          - generic [ref=e233]:
+            - link [ref=e234] [cursor=pointer]:
+              - /url: /
+              - img [ref=e235]
+            - paragraph [ref=e237]: Make something awesome
+    - generic:
+      - region "Notifications"

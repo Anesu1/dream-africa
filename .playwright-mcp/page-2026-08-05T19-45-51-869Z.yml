@@ -1,0 +1,121 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explore" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "Collections" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "Download History" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "Bookmarks" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Log in / Sign up" [ref=e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Felephant-herd-hwange-savanna
+        - img [ref=e33]
+      - button "Language" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Find visuals sitewide" [ref=e45]:
+          - button "Search Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Search Unsplash" [ref=e50]: elephant herd hwange savanna
+            - listbox
+          - button "Clear" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "Visual search" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Get Unsplash+" [ref=e60] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e61] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Felephant-herd-hwange-savanna
+        - button "Submit an image" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Photos 0":
+                - /url: /s/photos/elephant-herd-hwange-savanna
+                - img
+                - text: Photos
+                - generic: "0"
+            - listitem [ref=e73]:
+              - link "Illustrations 0" [ref=e74] [cursor=pointer]:
+                - /url: /s/illustrations/elephant-herd-hwange-savanna
+                - img [ref=e75]
+                - text: Illustrations
+                - generic [ref=e77]: "0"
+            - listitem [ref=e78]:
+              - button "More" [ref=e79] [cursor=pointer]
+          - generic [ref=e82]:
+            - button "License" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: License
+              - img [ref=e87]
+            - button "Orientation" [ref=e89] [cursor=pointer]:
+              - img [ref=e90]
+              - generic [ref=e92]: Orientation
+              - img [ref=e93]
+            - button "Sort by Relevance" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Sort by Relevance
+              - img [ref=e99]
+        - heading "Elephant herd hwange savanna" [level=1] [ref=e103]
+        - generic [ref=e105]:
+          - img "No content available" [ref=e107]
+          - generic [ref=e109]:
+            - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e110]:
+              - text: Browse premium images on iStock
+              - generic [ref=e111]: "| Claim your discount now"
+            - generic [ref=e113]:
+              - link "Elephant mother and young in mud bath during golden hour" [ref=e114] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/elephant-mother-and-young-in-mud-bath-during-golden-hour-gm2278804896-690901735?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3A5b6b7e97-49f8-4c56-9535-8210b851179d
+                - img "Elephant mother and young in mud bath during golden hour" [ref=e115]
+              - link "Elephant family mud bath with young during golden hour" [ref=e116] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/elephant-family-mud-bath-with-young-during-golden-hour-gm2278804897-690901737?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3Ab6dfd95b-f5dd-4b51-8788-9353c90e7544
+                - img "Elephant family mud bath with young during golden hour" [ref=e117]
+              - link "A young Elephant dusting" [ref=e118] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/a-young-elephant-dusting-gm2252948075-666370287?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3A1fc02358-9f68-46af-888d-33ad5a914241
+                - img "A young Elephant dusting" [ref=e119]
+              - link "A herd of African elephants in grassland walking towards the forest with their trunks in the air" [ref=e120] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/a-herd-of-african-elephants-in-grassland-walking-towards-the-forest-with-their-gm2252000483-665501956?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3Adf9cb03f-f742-4355-b354-37f8235d2bf5
+                - img "A herd of African elephants in grassland walking towards the forest with their trunks in the air" [ref=e121]
+              - link "African Bush Elephant - Loxodonta africana big herd of elephants with cubs walking in dusty dry savannah" [ref=e122] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/african-bush-elephant-loxodonta-africana-big-herd-of-elephants-with-cubs-walking-in-gm2259765637-672684580?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3A1e78da1d-b5c1-4311-a785-9d07e7056056
+                - img "African Bush Elephant - Loxodonta africana big herd of elephants with cubs walking in dusty dry savannah" [ref=e123]
+              - link "A family ofAfrican elephants walking in grassland" [ref=e124] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/a-family-ofafrican-elephants-walking-in-grassland-gm2251417766-664974611?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3Af12b4938-6523-4e06-ad21-4d8f026b26d1
+                - img "A family ofAfrican elephants walking in grassland" [ref=e125]
+              - link "Two african elephants scratching on a tree in the savannah" [ref=e126] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/two-african-elephants-scratching-on-a-tree-in-the-savannah-gm2257183266-670286676?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3Aa6a73566-b892-4ebe-b3a6-dde539641b3c
+                - img "Two african elephants scratching on a tree in the savannah" [ref=e127]
+              - generic [ref=e128]:
+                - link "Poolside" [ref=e129] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/poolside-gm2211272388-628269609?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3A7bdf694d-cf64-4957-a2b0-7e4425f1994a
+                  - img "Poolside" [ref=e130]
+                - link "View more on iStock ↗" [ref=e131] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_zsr&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Felephant-herd-hwange-savanna&utm_term=elephant+herd+hwange+savanna%3A%3Asearch-affiliate%3Aexperiment%3A9ff1e87b-9f51-4083-bd90-d15c1e007497&phrase=elephant+herd+hwange+savanna&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - generic [ref=e133]:
+            - link [ref=e134] [cursor=pointer]:
+              - /url: /
+              - img [ref=e135]
+            - paragraph [ref=e137]: Make something awesome
+    - generic:
+      - region "Notifications"

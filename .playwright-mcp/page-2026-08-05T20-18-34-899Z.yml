@@ -1,0 +1,232 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fafrica-sunset-safari-silhouette-golden
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: africa sunset safari silhouette golden
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Fafrica-sunset-safari-silhouette-golden
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 545":
+                - /url: /s/photos/africa-sunset-safari-silhouette-golden
+                - img
+                - text: Photos
+                - generic: "545"
+            - listitem [ref=e74]:
+              - link "Illustrations 11" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/africa-sunset-safari-silhouette-golden
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "11"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Africa sunset safari silhouette golden" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "africa" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/africa
+              - link "sunset" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/sunset
+              - link "nature" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "safari" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "silhouette" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/silhouette
+              - link "sun" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/sun
+              - link "outdoor" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/outdoor
+              - link "tree" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/tree
+              - link "savanna" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/savanna
+              - link "wildlife" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "landscape" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/landscape
+              - link "natural beauty" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/natural-beauty
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - generic [ref=e146]:
+                  - link "a large elephant walking across a grass covered field" [ref=e147]:
+                    - /url: /photos/a-large-elephant-walking-across-a-grass-covered-field-RdX3gVUxWcY
+                    - img "a large elephant walking across a grass covered field" [ref=e148]
+                  - link [ref=e149] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-large-elephant-walking-across-a-grass-covered-field-RdX3gVUxWcY
+                    - img [ref=e150]
+              - generic [ref=e152]:
+                - heading "Sponsored images" [level=4] [ref=e153]:
+                  - generic [ref=e154]: Sponsored images
+                  - img [ref=e155]
+                - generic [ref=e162]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e163]:
+                - generic [ref=e165]:
+                  - link "a red sky with some clouds and trees" [ref=e166]:
+                    - /url: /photos/a-red-sky-with-some-clouds-and-trees-OTrci9btkPg
+                    - img "a red sky with some clouds and trees" [ref=e167]
+                  - link [ref=e168] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-red-sky-with-some-clouds-and-trees-OTrci9btkPg
+                    - img [ref=e169]
+              - figure [ref=e171]:
+                - link "a silhouette of a mountain and a sunset" [ref=e174]:
+                  - /url: /photos/a-silhouette-of-a-mountain-and-a-sunset-wEEwhmi4mdc
+                  - img "a silhouette of a mountain and a sunset" [ref=e175]
+              - figure [ref=e176]:
+                - generic [ref=e178]:
+                  - link "a couple of elephants standing on top of a grass covered field" [ref=e179]:
+                    - /url: /photos/a-couple-of-elephants-standing-on-top-of-a-grass-covered-field-cOeboscbyD4
+                    - img "a couple of elephants standing on top of a grass covered field" [ref=e180]
+                  - link [ref=e181] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-couple-of-elephants-standing-on-top-of-a-grass-covered-field-cOeboscbyD4
+                    - img [ref=e182]
+              - figure [ref=e184]:
+                - link "Silhouette of a giraffe against a sunset sky." [ref=e187]:
+                  - /url: /photos/silhouette-of-a-giraffe-against-a-sunset-sky-kQIIwEX1emg
+                  - img "Silhouette of a giraffe against a sunset sky." [ref=e188]
+              - figure [ref=e189]:
+                - link "Silhouetted trees against a warm sunset sky." [ref=e192]:
+                  - /url: /photos/silhouetted-trees-against-a-warm-sunset-sky-6PuPMVQtSm8
+                  - img "Silhouetted trees against a warm sunset sky." [ref=e193]
+            - generic [ref=e194]:
+              - figure [ref=e195]:
+                - link "man riding on gray car during sunset" [ref=e198]:
+                  - /url: /photos/man-riding-on-gray-car-during-sunset-0LwfbRtQ-ac
+                  - img "man riding on gray car during sunset" [ref=e199]
+              - figure [ref=e200]:
+                - link "car passing by in between trees" [ref=e203]:
+                  - /url: /photos/car-passing-by-in-between-trees-wdMWMHXUpsc
+                  - img "car passing by in between trees" [ref=e204]
+              - figure [ref=e205]:
+                - link "a tree with the sun behind it" [ref=e208]:
+                  - /url: /photos/a-tree-with-the-sun-behind-it-QSZ6agzNg5k
+                  - img "a tree with the sun behind it" [ref=e209]
+              - figure [ref=e210]:
+                - link "silhouette of trees during sunset" [ref=e213]:
+                  - /url: /photos/silhouette-of-trees-during-sunset-wEkp5JAAS7E
+                  - img "silhouette of trees during sunset" [ref=e214]
+              - figure [ref=e215]:
+                - link "silhouette photo of trees" [ref=e218]:
+                  - /url: /photos/silhouette-photo-of-trees-Q_nH34cEzWQ
+                  - img "silhouette photo of trees" [ref=e219]
+              - figure [ref=e220]:
+                - link "A sunset with giraffes in the foreground" [ref=e223]:
+                  - /url: /photos/a-sunset-with-giraffes-in-the-foreground-aejQcXWZlDU
+                  - img "A sunset with giraffes in the foreground" [ref=e224]
+              - figure [ref=e225]:
+                - link "A giraffe stands in a golden savanna at sunset." [ref=e228]:
+                  - /url: /photos/a-giraffe-stands-in-a-golden-savanna-at-sunset-YexglvUO9n4
+                  - img "A giraffe stands in a golden savanna at sunset." [ref=e229]
+              - figure [ref=e230]:
+                - link "Sunset over a vast, open landscape with silhouetted figures." [ref=e233]:
+                  - /url: /photos/sunset-over-a-vast-open-landscape-with-silhouetted-figures-9PojjPJdoIo
+                  - img "Sunset over a vast, open landscape with silhouetted figures." [ref=e234]
+            - generic [ref=e235]:
+              - contentinfo [ref=e240]:
+                - generic [ref=e246]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e248]:
+                - generic [ref=e250]:
+                  - link "The African sunset over safari vehicles in the Masai Mara, Nairobi" [ref=e251]:
+                    - /url: /photos/the-african-sunset-over-safari-vehicles-in-the-masai-mara-nairobi-Lv7PRE8e_ew
+                    - img "The African sunset over safari vehicles in the Masai Mara, Nairobi" [ref=e252]
+                  - link [ref=e253] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fthe-african-sunset-over-safari-vehicles-in-the-masai-mara-nairobi-Lv7PRE8e_ew
+                    - img [ref=e254]
+              - figure [ref=e256]:
+                - link "a tree with the sun behind it" [ref=e259]:
+                  - /url: /photos/a-tree-with-the-sun-behind-it-WmgfoHmJ8LA
+                  - img "a tree with the sun behind it" [ref=e260]
+              - figure [ref=e261]:
+                - link "A hyena walking through a field at sunset" [ref=e264]:
+                  - /url: /photos/a-hyena-walking-through-a-field-at-sunset-yy9pfFkKUU8
+                  - img "A hyena walking through a field at sunset" [ref=e265]
+              - figure [ref=e266]:
+                - link "Elephants silhouetted against a vibrant african savanna sunset." [ref=e269]:
+                  - /url: /photos/elephants-silhouetted-against-a-vibrant-african-savanna-sunset-DHx9_Sa8jpU
+                  - img "Elephants silhouetted against a vibrant african savanna sunset." [ref=e270]
+              - figure [ref=e271]:
+                - generic [ref=e273]:
+                  - link "a red sky with clouds and trees in the foreground" [ref=e274]:
+                    - /url: /photos/a-red-sky-with-clouds-and-trees-in-the-foreground-dtxLCVkLkvc
+                    - img "a red sky with clouds and trees in the foreground" [ref=e275]
+                  - link [ref=e276] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-red-sky-with-clouds-and-trees-in-the-foreground-dtxLCVkLkvc
+                    - img [ref=e277]
+              - figure [ref=e279]:
+                - link "Silhouette of trees against a dusky sky" [ref=e282]:
+                  - /url: /photos/silhouette-of-trees-against-a-dusky-sky-6jGBXBpmmhU
+                  - img "Silhouette of trees against a dusky sky" [ref=e283]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e287]:
+            - text: Browse premium images on iStock
+            - generic [ref=e288]: "| Claim your discount now"
+          - button "Load more" [ref=e302] [cursor=pointer]
+          - generic [ref=e303]:
+            - link [ref=e304] [cursor=pointer]:
+              - /url: /
+              - img [ref=e305]
+            - paragraph [ref=e307]: Make something awesome
+    - generic:
+      - region "Notifications"

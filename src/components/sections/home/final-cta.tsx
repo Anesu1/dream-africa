@@ -9,7 +9,7 @@ export default function FinalCta() {
     <section className="relative overflow-hidden px-6 py-32 sm:px-10 sm:py-44">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=2400&q=80&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1489493887464-892be6d1daae?w=2400&q=80&auto=format&fit=crop"
           alt=""
           fill
           className="object-cover"

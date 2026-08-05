@@ -1,0 +1,232 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fluxury-tented-safari-camp
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: luxury tented safari camp
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Fluxury-tented-safari-camp
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 2.1k":
+                - /url: /s/photos/luxury-tented-safari-camp
+                - img
+                - text: Photos
+                - generic: 2.1k
+            - listitem [ref=e74]:
+              - link "Illustrations 1" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/luxury-tented-safari-camp
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "1"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Luxury tented safari camp" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "nature" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "vacation" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/vacation
+              - link "glamping" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/glamping
+              - link "outdoor" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/outdoor
+              - link "elephant" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/elephant
+              - link "travel destination" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+              - link "outdoor living" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/outdoor-living
+              - link "leisure" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/leisure
+              - link "outdoor recreation" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/outdoor-recreation
+              - link "mature woman" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/mature-woman
+              - link "holiday" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/holiday
+              - link "relaxation" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/relaxation
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - generic [ref=e146]:
+                  - link "a group of people standing outside of a tent" [ref=e147]:
+                    - /url: /photos/a-group-of-people-standing-outside-of-a-tent-fbJBWuHWLbU
+                    - img "a group of people standing outside of a tent" [ref=e148]
+                  - link [ref=e149] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-group-of-people-standing-outside-of-a-tent-fbJBWuHWLbU
+                    - img [ref=e150]
+              - generic [ref=e152]:
+                - heading "Sponsored images" [level=4] [ref=e153]:
+                  - generic [ref=e154]: Sponsored images
+                  - img [ref=e155]
+                - generic [ref=e162]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e163]:
+                - link "Guests are selecting food at a safari dining table." [ref=e166]:
+                  - /url: /photos/guests-are-selecting-food-at-a-safari-dining-table-JWoA1TmIEnk
+                  - img "Guests are selecting food at a safari dining table." [ref=e167]
+              - figure [ref=e168]:
+                - link "a tent set up in the middle of a desert" [ref=e171]:
+                  - /url: /photos/a-tent-set-up-in-the-middle-of-a-desert-bc52HVKjde4
+                  - img "a tent set up in the middle of a desert" [ref=e172]
+              - figure [ref=e173]:
+                - generic [ref=e175]:
+                  - link "Cozy tent interior with bed and colorful chair" [ref=e176]:
+                    - /url: /photos/cozy-tent-interior-with-bed-and-colorful-chair-E__C4xqwAek
+                    - img "Cozy tent interior with bed and colorful chair" [ref=e177]
+                  - link [ref=e178] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fcozy-tent-interior-with-bed-and-colorful-chair-E__C4xqwAek
+                    - img [ref=e179]
+              - figure [ref=e181]:
+                - link "A canvas tent structure with people sitting outside." [ref=e184]:
+                  - /url: /photos/a-canvas-tent-structure-with-people-sitting-outside-IH_Rxiytymw
+                  - img "A canvas tent structure with people sitting outside." [ref=e185]
+              - figure [ref=e186]:
+                - link "A covered patio with a table and chairs" [ref=e189]:
+                  - /url: /photos/a-covered-patio-with-a-table-and-chairs-gJ9O3GjCWk4
+                  - img "A covered patio with a table and chairs" [ref=e190]
+            - generic [ref=e191]:
+              - figure [ref=e192]:
+                - link "elephants near trees" [ref=e195]:
+                  - /url: /photos/elephants-near-trees-qHliP9cWqx4
+                  - img "elephants near trees" [ref=e196]
+              - figure [ref=e197]:
+                - link "Safari tent with a porch in nature." [ref=e200]:
+                  - /url: /photos/safari-tent-with-a-porch-in-nature-qpQRsdHIFog
+                  - img "Safari tent with a porch in nature." [ref=e201]
+              - figure [ref=e202]:
+                - link "a small building in the middle of a desert" [ref=e205]:
+                  - /url: /photos/a-small-building-in-the-middle-of-a-desert-d-V6vrckE00
+                  - img "a small building in the middle of a desert" [ref=e206]
+              - figure [ref=e207]:
+                - link "a tent set up in the middle of a field" [ref=e210]:
+                  - /url: /photos/a-tent-set-up-in-the-middle-of-a-field-r8muAZjGNuY
+                  - img "a tent set up in the middle of a field" [ref=e211]
+              - figure [ref=e212]:
+                - link "a bed in a tent with a hat on top of it" [ref=e215]:
+                  - /url: /photos/a-bed-in-a-tent-with-a-hat-on-top-of-it-QES7r23uXx4
+                  - img "a bed in a tent with a hat on top of it" [ref=e216]
+              - figure [ref=e217]:
+                - link "An elegant dining room set up in a safari tent." [ref=e220]:
+                  - /url: /photos/an-elegant-dining-room-set-up-in-a-safari-tent-35g9DsqBd0c
+                  - img "An elegant dining room set up in a safari tent." [ref=e221]
+              - figure [ref=e222]:
+                - link "a covered patio with a table and chairs" [ref=e225]:
+                  - /url: /photos/a-covered-patio-with-a-table-and-chairs-XMlQRccEdys
+                  - img "a covered patio with a table and chairs" [ref=e226]
+              - figure [ref=e227]:
+                - link "a woman standing in a tent looking out at the desert" [ref=e230]:
+                  - /url: /photos/a-woman-standing-in-a-tent-looking-out-at-the-desert-B-H1HQQlZFU
+                  - img "a woman standing in a tent looking out at the desert" [ref=e231]
+              - figure [ref=e232]:
+                - generic [ref=e234]:
+                  - link "a couple of men standing on top of a wooden platform" [ref=e235]:
+                    - /url: /photos/a-couple-of-men-standing-on-top-of-a-wooden-platform-Sf7woUpsuDo
+                    - img "a couple of men standing on top of a wooden platform" [ref=e236]
+                  - link [ref=e237] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-couple-of-men-standing-on-top-of-a-wooden-platform-Sf7woUpsuDo
+                    - img [ref=e238]
+            - generic [ref=e240]:
+              - contentinfo [ref=e245]:
+                - generic [ref=e251]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e253]:
+                - generic [ref=e255]:
+                  - link "a couple of people sitting in a tent" [ref=e256]:
+                    - /url: /photos/a-couple-of-people-sitting-in-a-tent-pAIfTbGPyTM
+                    - img "a couple of people sitting in a tent" [ref=e257]
+                  - link [ref=e258] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-couple-of-people-sitting-in-a-tent-pAIfTbGPyTM
+                    - img [ref=e259]
+              - figure [ref=e261]:
+                - generic [ref=e263]:
+                  - link "a man and two children sitting on a bench in front of a tent" [ref=e264]:
+                    - /url: /photos/a-man-and-two-children-sitting-on-a-bench-in-front-of-a-tent-jR9F5kXMqMI
+                    - img "a man and two children sitting on a bench in front of a tent" [ref=e265]
+                  - link [ref=e266] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-man-and-two-children-sitting-on-a-bench-in-front-of-a-tent-jR9F5kXMqMI
+                    - img [ref=e267]
+              - figure [ref=e269]:
+                - link "a small house sitting on top of a rocky hill" [ref=e272]:
+                  - /url: /photos/a-small-house-sitting-on-top-of-a-rocky-hill-2k3jsGnXUt0
+                  - img "a small house sitting on top of a rocky hill" [ref=e273]
+              - figure [ref=e274]:
+                - link "empty dining table inside open cottage" [ref=e277]:
+                  - /url: /photos/empty-dining-table-inside-open-cottage-eWe61O-v3NM
+                  - img "empty dining table inside open cottage" [ref=e278]
+              - figure [ref=e279]:
+                - link "a bed sitting under a night sky filled with stars" [ref=e282]:
+                  - /url: /photos/a-bed-sitting-under-a-night-sky-filled-with-stars-SiRcHTgicUI
+                  - img "a bed sitting under a night sky filled with stars" [ref=e283]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e287]:
+            - text: Browse premium images on iStock
+            - generic [ref=e288]: "| Claim your discount now"
+          - button "Load more" [ref=e302] [cursor=pointer]
+          - generic [ref=e303]:
+            - link [ref=e304] [cursor=pointer]:
+              - /url: /
+              - img [ref=e305]
+            - paragraph [ref=e307]: Make something awesome
+    - generic:
+      - region "Notifications"

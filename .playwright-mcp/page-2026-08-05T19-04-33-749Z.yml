@@ -1,0 +1,166 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explore" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "Collections" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "Download History" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "Bookmarks" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Log in / Sign up" [ref=e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Ftoyota-land-cruiser-safari
+        - img [ref=e33]
+      - button "Language" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Find visuals sitewide" [ref=e45]:
+          - button "Search Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Search Unsplash" [ref=e50]: toyota land cruiser safari
+            - listbox
+          - button "Clear" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "Visual search" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Get Unsplash+" [ref=e60] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e61] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Ftoyota-land-cruiser-safari
+        - button "Submit an image" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Photos 10":
+                - /url: /s/photos/toyota-land-cruiser-safari
+                - img
+                - text: Photos
+                - generic: "10"
+            - listitem [ref=e73]:
+              - link "Illustrations 0" [ref=e74] [cursor=pointer]:
+                - /url: /s/illustrations/toyota-land-cruiser-safari
+                - img [ref=e75]
+                - text: Illustrations
+                - generic [ref=e77]: "0"
+            - listitem [ref=e78]:
+              - button "More" [ref=e79] [cursor=pointer]
+          - generic [ref=e82]:
+            - button "License" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: License
+              - img [ref=e87]
+            - button "Orientation" [ref=e89] [cursor=pointer]:
+              - img [ref=e90]
+              - generic [ref=e92]: Orientation
+              - img [ref=e93]
+            - button "Sort by Relevance" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Sort by Relevance
+              - img [ref=e99]
+        - generic [ref=e101]:
+          - heading "Toyota land cruiser safari" [level=1] [ref=e103]
+          - generic [ref=e107]:
+            - link "land cruiser" [ref=e109] [cursor=pointer]:
+              - /url: /s/photos/land-cruiser
+            - link "vehicle" [ref=e111] [cursor=pointer]:
+              - /url: /s/photos/vehicle
+            - link "car" [ref=e113] [cursor=pointer]:
+              - /url: /s/photos/car
+            - link "safari" [ref=e115] [cursor=pointer]:
+              - /url: /s/photos/safari
+            - link "toyota land cruiser" [ref=e117] [cursor=pointer]:
+              - /url: /s/photos/toyota-land-cruiser
+            - link "transportation" [ref=e119] [cursor=pointer]:
+              - /url: /s/photos/transportation
+            - link "desert" [ref=e121] [cursor=pointer]:
+              - /url: /s/photos/desert
+            - link "toyotum" [ref=e123] [cursor=pointer]:
+              - /url: /s/photos/toyotum
+            - link "automobile" [ref=e125] [cursor=pointer]:
+              - /url: /s/photos/automobile
+            - link "nature" [ref=e127] [cursor=pointer]:
+              - /url: /s/photos/nature
+            - link "outdoor" [ref=e129] [cursor=pointer]:
+              - /url: /s/photos/outdoor
+            - link "sand" [ref=e131] [cursor=pointer]:
+              - /url: /s/photos/sand
+        - generic [ref=e133]:
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - figure [ref=e139]:
+                - link "person standing beside silver SUV during daytime" [ref=e142]:
+                  - /url: /photos/person-standing-beside-silver-suv-during-daytime-dlbafD-mHnM
+                  - img "person standing beside silver SUV during daytime" [ref=e143]
+              - generic [ref=e144]:
+                - heading "Sponsored images" [level=4] [ref=e145]:
+                  - generic [ref=e146]: Sponsored images
+                  - img [ref=e147]
+                - generic [ref=e154]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e155]:
+                - link "Cars explore the desert dunes under the sun." [ref=e158]:
+                  - /url: /photos/cars-explore-the-desert-dunes-under-the-sun-xUL5ceZc248
+                  - img "Cars explore the desert dunes under the sun." [ref=e159]
+              - figure [ref=e160]:
+                - link "A black suv navigating golden desert sand dunes." [ref=e163]:
+                  - /url: /photos/a-black-suv-navigating-golden-desert-sand-dunes-1KsjEee5OeY
+                  - img "A black suv navigating golden desert sand dunes." [ref=e164]
+            - generic [ref=e165]:
+              - figure [ref=e166]:
+                - link "a car parked on a dirt road" [ref=e169]:
+                  - /url: /photos/a-car-parked-on-a-dirt-road-FgvWg2UL66A
+                  - img "a car parked on a dirt road" [ref=e170]
+              - figure [ref=e171]:
+                - link "a car parked in a wooded area" [ref=e174]:
+                  - /url: /photos/a-car-parked-in-a-wooded-area-FeIEtIwO-DM
+                  - img "a car parked in a wooded area" [ref=e175]
+              - figure [ref=e176]:
+                - link "White suv on a dirt road surrounded by green foliage." [ref=e179]:
+                  - /url: /photos/white-suv-on-a-dirt-road-surrounded-by-green-foliage-E7RHm3saWY8
+                  - img "White suv on a dirt road surrounded by green foliage." [ref=e180]
+            - generic [ref=e181]:
+              - figure [ref=e182]:
+                - link "a safari vehicle is parked in a field" [ref=e185]:
+                  - /url: /photos/a-safari-vehicle-is-parked-in-a-field-AGl10Fy4pek
+                  - img "a safari vehicle is parked in a field" [ref=e186]
+              - figure [ref=e187]:
+                - link "car on vast desert" [ref=e190]:
+                  - /url: /photos/car-on-vast-desert-GNTli-9g-Os
+                  - img "car on vast desert" [ref=e191]
+              - figure [ref=e192]:
+                - link "a blue truck driving through a sandy area" [ref=e195]:
+                  - /url: /photos/a-blue-truck-driving-through-a-sandy-area-BahaPao_YjQ
+                  - img "a blue truck driving through a sandy area" [ref=e196]
+              - figure [ref=e197]:
+                - link "Old van parked in a desert landscape" [ref=e200]:
+                  - /url: /photos/old-van-parked-in-a-desert-landscape-p5RF4X9RjVg
+                  - img "Old van parked in a desert landscape" [ref=e201]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e205]:
+            - text: Browse premium images on iStock
+            - generic [ref=e206]: "| Claim your discount now"
+          - generic [ref=e218]:
+            - link [ref=e219] [cursor=pointer]:
+              - /url: /
+              - img [ref=e220]
+            - paragraph [ref=e222]: Make something awesome
+    - generic:
+      - region "Notifications"

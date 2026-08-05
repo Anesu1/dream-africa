@@ -1,0 +1,282 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explore" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "Collections" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "Download History" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "Bookmarks" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Log in / Sign up" [ref=e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks
+        - img [ref=e33]
+      - button "Language" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Find visuals sitewide" [ref=e45]:
+          - button "Search Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Search Unsplash" [ref=e50]: african elephant bull tusks
+            - listbox
+          - button "Clear" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "Visual search" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Get Unsplash+" [ref=e60] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e61] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks
+        - button "Submit an image" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Photos 3k":
+                - /url: /s/photos/african-elephant-bull-tusks
+                - img
+                - text: Photos
+                - generic: 3k
+            - listitem [ref=e73]:
+              - link "Illustrations 7" [ref=e74] [cursor=pointer]:
+                - /url: /s/illustrations/african-elephant-bull-tusks
+                - img [ref=e75]
+                - text: Illustrations
+                - generic [ref=e77]: "7"
+            - listitem [ref=e78]:
+              - button "More" [ref=e79] [cursor=pointer]
+          - generic [ref=e82]:
+            - button "License" [ref=e83] [cursor=pointer]:
+              - img [ref=e84]
+              - generic [ref=e86]: License
+              - img [ref=e87]
+            - button "Orientation" [ref=e89] [cursor=pointer]:
+              - img [ref=e90]
+              - generic [ref=e92]: Orientation
+              - img [ref=e93]
+            - button "Sort by Relevance" [ref=e95] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e98]: Sort by Relevance
+              - img [ref=e99]
+        - generic [ref=e101]:
+          - heading "African elephant bull tusks" [level=1] [ref=e103]
+          - generic [ref=e105]:
+            - button "scroll list to the right" [ref=e107] [cursor=pointer]:
+              - img [ref=e108]
+            - generic [ref=e111]:
+              - link "elephant" [ref=e113] [cursor=pointer]:
+                - /url: /s/photos/elephant
+              - link "animal" [ref=e115] [cursor=pointer]:
+                - /url: /s/photos/animal
+              - link "grey" [ref=e117] [cursor=pointer]:
+                - /url: /s/photos/grey
+              - link "elephant wallpaper" [ref=e119] [cursor=pointer]:
+                - /url: /s/photos/elephant-wallpaper
+              - link "elephant background" [ref=e121] [cursor=pointer]:
+                - /url: /s/photos/elephant-background
+              - link "wildlife" [ref=e123] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "safari" [ref=e125] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "nature" [ref=e127] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "africa" [ref=e129] [cursor=pointer]:
+                - /url: /s/photos/africa
+              - link "mammal" [ref=e131] [cursor=pointer]:
+                - /url: /s/photos/mammal
+              - link "tusk" [ref=e133] [cursor=pointer]:
+                - /url: /s/photos/tusk
+              - link "elephant trunk" [ref=e135] [cursor=pointer]:
+                - /url: /s/photos/elephant-trunk
+        - generic [ref=e137]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - figure [ref=e143]:
+                - generic [ref=e145]:
+                  - link "Close up details of an African Elephant in Chobe National Park, Botswana." [ref=e146]:
+                    - /url: /photos/close-up-details-of-an-african-elephant-in-chobe-national-park-botswana-wRBDpmizxcw
+                    - img "Close up details of an African Elephant in Chobe National Park, Botswana." [ref=e147]
+                  - link [ref=e148] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fclose-up-details-of-an-african-elephant-in-chobe-national-park-botswana-wRBDpmizxcw
+                    - img [ref=e149]
+              - generic [ref=e151]:
+                - heading "Sponsored images" [level=4] [ref=e152]:
+                  - generic [ref=e153]: Sponsored images
+                  - link [ref=e154] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A8450afae-c52e-4835-a63b-941406f1e440&phrase=african+elephant+bull+tusks&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+                    - img [ref=e155]
+                - generic [ref=e157]:
+                  - link "Elephants at a waterhole in Botswana, Khwai Private Reserve." [ref=e158] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/elephants-at-a-waterhole-in-botswana-khwai-private-reserve-gm1483109986-509811161?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A655b4b1b-a323-4c40-82e0-86af064b3b4c
+                    - img "Elephants at a waterhole in Botswana, Khwai Private Reserve." [ref=e159]
+                  - link "Elephant approaching" [ref=e160] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/elephant-approaching-gm166673845-23720653?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A0e111a2e-b222-44d9-9f6e-33e7706f0d8e
+                    - img "Elephant approaching" [ref=e161]
+                  - link "African elephant" [ref=e162] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/african-elephant-gm691589556-127623515?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3Aa4273289-b1a6-4eb9-9ccb-d140b7d38ca6
+                    - img "African elephant" [ref=e163]
+                  - link "Male African Elephant (Loxodonta africana) with large tusks, Kruger Park, South Africa." [ref=e164] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/male-african-elephant-with-large-tusks-kruger-park-south-africa-gm2263395557-676136726?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A2e9559ba-27a5-4226-84ef-81a035e5dddc
+                    - img "Male African Elephant (Loxodonta africana) with large tusks, Kruger Park, South Africa." [ref=e165]
+                - link "Get 20% off with code UNSPLASH20" [ref=e166] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A8450afae-c52e-4835-a63b-941406f1e440&phrase=african+elephant+bull+tusks&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+              - figure [ref=e167]:
+                - generic [ref=e169]:
+                  - link "an elephant is standing in a field with trees in the background" [ref=e170]:
+                    - /url: /photos/an-elephant-is-standing-in-a-field-with-trees-in-the-background-Ofuy7ZAwVY0
+                    - img "an elephant is standing in a field with trees in the background" [ref=e171]
+                  - link [ref=e172] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fan-elephant-is-standing-in-a-field-with-trees-in-the-background-Ofuy7ZAwVY0
+                    - img [ref=e173]
+              - figure [ref=e175]:
+                - link "grey elephant on green grass field during daytime" [ref=e178]:
+                  - /url: /photos/grey-elephant-on-green-grass-field-during-daytime-Bh-eVoRTD34
+                  - img "grey elephant on green grass field during daytime" [ref=e179]
+              - figure [ref=e180]:
+                - link "an adult elephant and a baby elephant walking down a road" [ref=e183]:
+                  - /url: /photos/an-adult-elephant-and-a-baby-elephant-walking-down-a-road-L-IgT6MQXVs
+                  - img "an adult elephant and a baby elephant walking down a road" [ref=e184]
+              - figure [ref=e185]:
+                - link "two elephants and a giraffe in a field" [ref=e188]:
+                  - /url: /photos/two-elephants-and-a-giraffe-in-a-field-a_P7zRdm-LI
+                  - img "two elephants and a giraffe in a field" [ref=e189]
+              - figure [ref=e190]:
+                - link "close-up photography of white elephant tusk" [ref=e193]:
+                  - /url: /photos/close-up-photography-of-white-elephant-tusk-J33o16cP0SA
+                  - img "close-up photography of white elephant tusk" [ref=e194]
+              - figure [ref=e195]:
+                - link "a bird on a tree branch" [ref=e198]:
+                  - /url: /photos/a-bird-on-a-tree-branch-ob1Y2jUAstk
+                  - img "a bird on a tree branch" [ref=e199]
+            - generic [ref=e200]:
+              - figure [ref=e201]:
+                - link "brown elephant on grass field" [ref=e204]:
+                  - /url: /photos/brown-elephant-on-grass-field-7COocBblpyE
+                  - img "brown elephant on grass field" [ref=e205]
+              - figure [ref=e206]:
+                - link "shallow focus photography of elephant touching tusk" [ref=e209]:
+                  - /url: /photos/shallow-focus-photography-of-elephant-touching-tusk-Ypv-kNjcnDA
+                  - img "shallow focus photography of elephant touching tusk" [ref=e210]
+              - figure [ref=e211]:
+                - link "wildlife photography of gray elephant" [ref=e214]:
+                  - /url: /photos/wildlife-photography-of-gray-elephant-6Rbqy9jS7xs
+                  - img "wildlife photography of gray elephant" [ref=e215]
+              - figure [ref=e216]:
+                - link "Close-up of an elephant's head with tusks" [ref=e219]:
+                  - /url: /photos/close-up-of-an-elephants-head-with-tusks-jGLG1bQsi10
+                  - img "Close-up of an elephant's head with tusks" [ref=e220]
+              - figure [ref=e221]:
+                - link "Large elephant with tusks and lions in dry savanna." [ref=e224]:
+                  - /url: /photos/large-elephant-with-tusks-and-lions-in-dry-savanna-csTME4HPaKs
+                  - img "Large elephant with tusks and lions in dry savanna." [ref=e225]
+              - figure [ref=e226]:
+                - link "Close-up of an elephant's wrinkled face and tusks." [ref=e229]:
+                  - /url: /photos/close-up-of-an-elephants-wrinkled-face-and-tusks-zpiwRVDK8jU
+                  - img "Close-up of an elephant's wrinkled face and tusks." [ref=e230]
+              - figure [ref=e231]:
+                - generic [ref=e233]:
+                  - link "Close up of an elephants trunk." [ref=e234]:
+                    - /url: /photos/close-up-of-an-elephants-trunk-SFF7FR7g7Fo
+                    - img "Close up of an elephants trunk." [ref=e235]
+                  - link [ref=e236] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fclose-up-of-an-elephants-trunk-SFF7FR7g7Fo
+                    - img [ref=e237]
+              - figure [ref=e239]:
+                - link "Close up of an elephant's tusks and trunk" [ref=e242]:
+                  - /url: /photos/close-up-of-an-elephants-tusks-and-trunk-2aMYPGwuZg0
+                  - img "Close up of an elephant's tusks and trunk" [ref=e243]
+            - generic [ref=e244]:
+              - link "Save up to 15% with a team plan. Get your team on Unsplash+" [ref=e247] [cursor=pointer]:
+                - /url: https://e-10457.adzerk.net/r?e=eyJ2IjoiMS4xNCIsImF2Ijo4MjM1NTIsImF0Ijo1LCJidCI6MCwiY20iOjk0ODU5NTcsImNoIjo0NTE2MywiY2siOnt9LCJjciI6OTI0MTYxOTgxLCJkaSI6ImY1MzAwOTg4ODUxMTRkYzFhN2U2MjllMDMzNTcwNzQ1IiwiZGoiOjAsImlpIjoiYjJhYmYyOTcwNWFiNDRiNzkzMmQwY2Q5MDgwNTE1YjUiLCJkbSI6MywiZmMiOjExMDAyOTk3NTEsImZsIjo4NjM1NzEwMTAsImlwIjoiNzQuMjQ0LjE5Ny4xOTYiLCJudyI6MTA0NTcsInBjIjowLCJvcCI6MCwibXAiOjAsImVjIjowLCJnbSI6MCwiZXAiOm51bGwsInByIjoyMDgyODMsInJ0IjoxLCJycyI6NTAwLCJzYSI6Ijk2Iiwic2IiOiJpLTA0OWNlMmYyYzU2YWY5NzZlIiwic3AiOjE3NzYxNjgsInN0IjoxMTIxOTU0LCJ1ayI6ImRiNzdlMTcwLTZhMjktNDg5Yy04YTg0LTYzMDAzN2E4MWM1MCIsInpuIjoyNDEzNDgsInptIjpbMjQxMzQ4XSwidHMiOjE3ODU5NTk3MDc0NjAsInBuIjoic2VhcmNoLWluLWZlZWQiLCJnciI6dHJ1ZSwiZ2MiOnRydWUsImdDIjp0cnVlLCJncyI6Im5vbmUiLCJ0eiI6IkFtZXJpY2EvTmV3X1lvcmsiLCJ1ciI6bnVsbH0&s=yDWP6Fh2VPRVuN1XRKeDPYBhakc
+                - contentinfo [ref=e251]:
+                  - generic [ref=e252]:
+                    - img [ref=e254]
+                    - generic [ref=e258]: Save up to 15% with a team plan.
+                  - generic [ref=e259]: Get your team on Unsplash+
+              - figure [ref=e260]:
+                - link "brown elephant on green grass field during daytime" [ref=e263]:
+                  - /url: /photos/brown-elephant-on-green-grass-field-during-daytime-CFcGYVIKBQ0
+                  - img "brown elephant on green grass field during daytime" [ref=e264]
+              - figure [ref=e265]:
+                - link "gray elephant near tree during day" [ref=e268]:
+                  - /url: /photos/gray-elephant-near-tree-during-day-pVenxLuBJCk
+                  - img "gray elephant near tree during day" [ref=e269]
+              - figure [ref=e270]:
+                - generic [ref=e272]:
+                  - link "Portrait of an Asian elephant. Indonesia. Sumatra. Way Kambas National Park. An excellent illustration." [ref=e273]:
+                    - /url: /photos/portrait-of-an-asian-elephant-indonesia-sumatra-way-kambas-national-park-an-excellent-illustration-OocuSos_6KU
+                    - img "Portrait of an Asian elephant. Indonesia. Sumatra. Way Kambas National Park. An excellent illustration." [ref=e274]
+                  - link [ref=e275] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fportrait-of-an-asian-elephant-indonesia-sumatra-way-kambas-national-park-an-excellent-illustration-OocuSos_6KU
+                    - img [ref=e276]
+              - figure [ref=e278]:
+                - generic [ref=e280]:
+                  - link "an elephant standing in a grassy field with trees in the background" [ref=e281]:
+                    - /url: /photos/an-elephant-standing-in-a-grassy-field-with-trees-in-the-background-ilsGE1I9E8k
+                    - img "an elephant standing in a grassy field with trees in the background" [ref=e282]
+                  - link [ref=e283] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fan-elephant-standing-in-a-grassy-field-with-trees-in-the-background-ilsGE1I9E8k
+                    - img [ref=e284]
+              - figure [ref=e286]:
+                - link "grayscale photography of elephant" [ref=e289]:
+                  - /url: /photos/grayscale-photography-of-elephant-O74BajLi4i0
+                  - img "grayscale photography of elephant" [ref=e290]
+          - generic [ref=e293]:
+            - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e294]:
+              - text: Browse premium images on iStock
+              - generic [ref=e295]: "| Claim your discount now"
+            - generic [ref=e297]:
+              - link "Front view of a bull elephant in the grasslands of Amboseli National Park." [ref=e298] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/front-view-of-a-bull-elephant-in-the-grasslands-of-amboseli-national-park-gm1219745751-356886274?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3Ae616a021-d10d-4403-a088-e440fa7627e4
+                - img "Front view of a bull elephant in the grasslands of Amboseli National Park." [ref=e299]
+              - link "Bull African Elephants fighting" [ref=e300] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/bull-african-elephants-fighting-gm2274412441-686735507?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A6e54a781-0b85-4757-bdf8-451bfc59b4eb
+                - img "Bull African Elephants fighting" [ref=e301]
+              - link "Elephant in the Mahango Game Reserve in Namibia" [ref=e302] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/elephant-in-the-mahango-game-reserve-in-namibia-gm2278714207-690814181?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A0109e4d7-d0ac-4220-888d-2124cf253f3f
+                - img "Elephant in the Mahango Game Reserve in Namibia" [ref=e303]
+              - link "Male elephant in the Etosha National Park in Namibia" [ref=e304] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/male-elephant-in-the-etosha-national-park-in-namibia-gm2278713357-690813859?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A710a8b75-4ca9-43e1-97a5-adcd2628bea1
+                - img "Male elephant in the Etosha National Park in Namibia" [ref=e305]
+              - link "Elephant Bull Isolated on white" [ref=e306] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/elephant-bull-isolated-on-white-gm125916171-8251800?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A56723ce7-e6d4-492c-807d-cc00d000940f
+                - img "Elephant Bull Isolated on white" [ref=e307]
+              - link "Male elephant in the Etosha National Park in Namibia" [ref=e308] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/male-elephant-in-the-etosha-national-park-in-namibia-gm2278713402-690813892?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3Ac50ea9f1-a9e4-48c2-9912-9ba1e194cf57
+                - img "Male elephant in the Etosha National Park in Namibia" [ref=e309]
+              - link "Low angle of an African elephant bull drinking out a pool, Greater Kruger." [ref=e310] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/low-angle-of-an-african-elephant-bull-drinking-out-a-pool-greater-kruger-gm2249703896-663459020?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A98fcdb22-6fa2-4dd1-a63e-c2d882bd86a4
+                - img "Low angle of an African elephant bull drinking out a pool, Greater Kruger." [ref=e311]
+              - generic [ref=e312]:
+                - link "Group of Red Elephants walking" [ref=e313] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/group-of-red-elephants-walking-gm2266592624-679246866?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A8ec84ec7-4691-4406-af71-a65eab3bbb5a
+                  - img "Group of Red Elephants walking" [ref=e314]
+                - link "View more on iStock ↗" [ref=e315] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fafrican-elephant-bull-tusks&utm_term=african+elephant+bull+tusks%3A%3Asearch-affiliate%3Aexperiment%3A7f8a1409-4382-4643-95e2-c52edde92427&phrase=african+elephant+bull+tusks&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - button "Load more" [ref=e319] [cursor=pointer]
+          - generic [ref=e320]:
+            - link [ref=e321] [cursor=pointer]:
+              - /url: /
+              - img [ref=e322]
+            - paragraph [ref=e324]: Make something awesome
+    - generic:
+      - region "Notifications"

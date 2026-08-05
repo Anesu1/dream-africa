@@ -11,7 +11,7 @@ const FRAMES = [
     body: "Every guide on our roster grew up between Hwange and the Falls — they read the bush the way you read a street sign.",
   },
   {
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=2000&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577971132997-c10be9372519?w=2000&q=80&auto=format&fit=crop",
     caption: "Six guests, never more",
     body: "Small groups and private departures, so the herd you're watching never has another vehicle in the frame.",
   },

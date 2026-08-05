@@ -14,7 +14,7 @@ export default function SafariHero() {
     <section ref={ref} className="relative flex h-[85vh] min-h-[560px] items-end overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0 -top-[10%] h-[120%]">
         <Image
-          src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=2400&q=80&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1554490679-5b6a0a7eeab3?w=2400&q=80&auto=format&fit=crop"
           alt="Elephant herd at Hwange"
           fill
           priority

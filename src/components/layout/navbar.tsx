@@ -25,11 +25,13 @@ export default function Navbar() {
     setOpen(false);
   }, [pathname]);
 
+  const transparent = !scrolled && !open;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-        scrolled || open ? "bg-paper/90 backdrop-blur-md border-b border-line" : "bg-transparent"
-      }`}
+        transparent ? "bg-transparent" : "bg-paper/90 backdrop-blur-md border-b border-line"
+      } ${transparent ? "text-paper [text-shadow:0_1px_6px_rgba(0,0,0,0.35)]" : "text-ink"}`}
     >
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 sm:px-10">
         <Link href="/" className="flex items-center gap-3">
@@ -68,11 +70,11 @@ export default function Navbar() {
           className="flex flex-col gap-1.5 lg:hidden"
         >
           <motion.span
-            className="h-px w-6 bg-ink"
+            className={`h-px w-6 ${transparent ? "bg-paper" : "bg-ink"}`}
             animate={{ rotate: open ? 45 : 0, y: open ? 4 : 0 }}
           />
           <motion.span
-            className="h-px w-6 bg-ink"
+            className={`h-px w-6 ${transparent ? "bg-paper" : "bg-ink"}`}
             animate={{ rotate: open ? -45 : 0, y: open ? -4 : 0 }}
           />
         </button>

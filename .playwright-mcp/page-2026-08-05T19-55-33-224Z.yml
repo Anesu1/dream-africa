@@ -1,0 +1,212 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Felephants-sunset-silhouette-africa
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: elephants sunset silhouette africa
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Felephants-sunset-silhouette-africa
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 169":
+                - /url: /s/photos/elephants-sunset-silhouette-africa
+                - img
+                - text: Photos
+                - generic: "169"
+            - listitem [ref=e74]:
+              - link "Illustrations 3" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/elephants-sunset-silhouette-africa
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "3"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Elephants sunset silhouette africa" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "elephant" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/elephant
+              - link "nature" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "savanna" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/savanna
+              - link "natural beauty" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/natural-beauty
+              - link "wildlife" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "animal kingdom" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/animal-kingdom
+              - link "tusk" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/tusk
+              - link "african wildlife" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/african-wildlife
+              - link "safari" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "sunset" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/sunset
+              - link "outdoor" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/outdoor
+              - link "animal" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/animal
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - link "Two elephants battle in the afternoon dust" [ref=e147]:
+                  - /url: /photos/two-elephants-battle-in-the-afternoon-dust-dR6zttiCx9g
+                  - img "Two elephants battle in the afternoon dust" [ref=e148]
+              - generic [ref=e149]:
+                - heading "Sponsored images" [level=4] [ref=e150]:
+                  - generic [ref=e151]: Sponsored images
+                  - img [ref=e152]
+                - generic [ref=e159]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e160]:
+                - link "a large elephant standing next to a body of water" [ref=e163]:
+                  - /url: /photos/a-large-elephant-standing-next-to-a-body-of-water-1XhmIcBB-EA
+                  - img "a large elephant standing next to a body of water" [ref=e164]
+              - figure [ref=e165]:
+                - link "Two elephants walking in a grassy field at sunset" [ref=e168]:
+                  - /url: /photos/two-elephants-walking-in-a-grassy-field-at-sunset-vx__JuQP4cU
+                  - img "Two elephants walking in a grassy field at sunset" [ref=e169]
+              - figure [ref=e170]:
+                - link "man in black jacket standing on green grass field during daytime" [ref=e173]:
+                  - /url: /photos/man-in-black-jacket-standing-on-green-grass-field-during-daytime-uN27WV-QO2M
+                  - img "man in black jacket standing on green grass field during daytime" [ref=e174]
+              - figure [ref=e175]:
+                - link "Bull elephants fighting" [ref=e178]:
+                  - /url: /photos/bull-elephants-fighting-dtyrCFiJnDA
+                  - img "Bull elephants fighting" [ref=e179]
+              - figure [ref=e180]:
+                - link "the sun is setting over a small river" [ref=e183]:
+                  - /url: /photos/the-sun-is-setting-over-a-small-river-0JerlXDvMHI
+                  - img "the sun is setting over a small river" [ref=e184]
+              - figure [ref=e185]:
+                - link "a couple of giraffe standing on top of a lush green field" [ref=e188]:
+                  - /url: /photos/a-couple-of-giraffe-standing-on-top-of-a-lush-green-field-Dn3Fw3usDCs
+                  - img "a couple of giraffe standing on top of a lush green field" [ref=e189]
+            - generic [ref=e190]:
+              - figure [ref=e191]:
+                - link "silhouette of elephant during sunset" [ref=e194]:
+                  - /url: /photos/silhouette-of-elephant-during-sunset-ui6DYFBdeVw
+                  - img "silhouette of elephant during sunset" [ref=e195]
+              - figure [ref=e196]:
+                - link "Golden sunset over a silhouetted african savanna landscape" [ref=e199]:
+                  - /url: /photos/golden-sunset-over-a-silhouetted-african-savanna-landscape-3b3A8BhxzDE
+                  - img "Golden sunset over a silhouetted african savanna landscape" [ref=e200]
+              - figure [ref=e201]:
+                - link "Silhouette of an elephant walking at sunset" [ref=e204]:
+                  - /url: /photos/silhouette-of-an-elephant-walking-at-sunset-7BxxFZckZC8
+                  - img "Silhouette of an elephant walking at sunset" [ref=e205]
+              - figure [ref=e206]:
+                - link "two elephants walking on brown sand during sunset" [ref=e209]:
+                  - /url: /photos/two-elephants-walking-on-brown-sand-during-sunset-_GRFN1FzpFw
+                  - img "two elephants walking on brown sand during sunset" [ref=e210]
+              - figure [ref=e211]:
+                - link "a group of animals walking across a grass covered field" [ref=e214]:
+                  - /url: /photos/a-group-of-animals-walking-across-a-grass-covered-field-93x21T3EXAI
+                  - img "a group of animals walking across a grass covered field" [ref=e215]
+              - figure [ref=e216]:
+                - link "a group of elephants walking across a lush green field" [ref=e219]:
+                  - /url: /photos/a-group-of-elephants-walking-across-a-lush-green-field-c4nomVc_dgw
+                  - img "a group of elephants walking across a lush green field" [ref=e220]
+              - figure [ref=e221]:
+                - link "Two Elephants in the sunset" [ref=e224]:
+                  - /url: /photos/two-elephants-in-the-sunset-LhQLC4CVv-w
+                  - img "Two Elephants in the sunset" [ref=e225]
+              - figure [ref=e226]:
+                - link "a field with a tree in the middle of it" [ref=e229]:
+                  - /url: /photos/a-field-with-a-tree-in-the-middle-of-it-NqAz6BSX918
+                  - img "a field with a tree in the middle of it" [ref=e230]
+            - generic [ref=e231]:
+              - contentinfo [ref=e236]:
+                - generic [ref=e242]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e244]:
+                - link "Elephant at sunset" [ref=e247]:
+                  - /url: /photos/elephant-at-sunset--PDwCpDp9Qg
+                  - img "Elephant at sunset" [ref=e248]
+              - figure [ref=e249]:
+                - link "Elephants silhouetted against a vibrant african savanna sunset." [ref=e252]:
+                  - /url: /photos/elephants-silhouetted-against-a-vibrant-african-savanna-sunset-DHx9_Sa8jpU
+                  - img "Elephants silhouetted against a vibrant african savanna sunset." [ref=e253]
+              - figure [ref=e254]:
+                - link "a large elephant walking across a grass covered field" [ref=e257]:
+                  - /url: /photos/a-large-elephant-walking-across-a-grass-covered-field-RdX3gVUxWcY
+                  - img "a large elephant walking across a grass covered field" [ref=e258]
+              - figure [ref=e259]:
+                - link "elephant walking on green grass field during sunset" [ref=e262]:
+                  - /url: /photos/elephant-walking-on-green-grass-field-during-sunset-OeD4SjY-gMI
+                  - img "elephant walking on green grass field during sunset" [ref=e263]
+              - figure [ref=e264]:
+                - link "A sunset with giraffes in the foreground" [ref=e267]:
+                  - /url: /photos/a-sunset-with-giraffes-in-the-foreground-aejQcXWZlDU
+                  - img "A sunset with giraffes in the foreground" [ref=e268]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e272]:
+            - text: Browse premium images on iStock
+            - generic [ref=e273]: "| Claim your discount now"
+          - button "Load more" [ref=e287] [cursor=pointer]
+          - generic [ref=e288]:
+            - link [ref=e289] [cursor=pointer]:
+              - /url: /
+              - img [ref=e290]
+            - paragraph [ref=e292]: Make something awesome
+    - generic:
+      - region "Notifications"

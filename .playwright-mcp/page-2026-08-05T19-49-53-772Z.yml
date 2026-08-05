@@ -1,0 +1,232 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Felephant-waterhole-drinking
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: elephant waterhole drinking
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Felephant-waterhole-drinking
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 132":
+                - /url: /s/photos/elephant-waterhole-drinking
+                - img
+                - text: Photos
+                - generic: "132"
+            - listitem [ref=e74]:
+              - link "Illustrations 0" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/elephant-waterhole-drinking
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "0"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Elephant waterhole drinking" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "elephant" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/elephant
+              - link "mammal" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/mammal
+              - link "waterhole" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/waterhole
+              - link "nature" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "wildlife" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "savanna" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/savanna
+              - link "animal behavior" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/animal-behavior
+              - link "african elephant" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/african-elephant
+              - link "safari" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "tusk" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/tusk
+              - link "animal wildlife" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/animal-wildlife
+              - link "wildlife photography" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/wildlife-photography
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - generic [ref=e146]:
+                  - link "An Elephant bull walks through the shallows of Chobe River." [ref=e147]:
+                    - /url: /photos/an-elephant-bull-walks-through-the-shallows-of-chobe-river-co0c6VuJ-jE
+                    - img "An Elephant bull walks through the shallows of Chobe River." [ref=e148]
+                  - link [ref=e149] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fan-elephant-bull-walks-through-the-shallows-of-chobe-river-co0c6VuJ-jE
+                    - img [ref=e150]
+              - generic [ref=e152]:
+                - heading "Sponsored images" [level=4] [ref=e153]:
+                  - generic [ref=e154]: Sponsored images
+                  - img [ref=e155]
+                - generic [ref=e162]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e163]:
+                - link "An elephant walks through a dusty, rocky landscape." [ref=e166]:
+                  - /url: /photos/an-elephant-walks-through-a-dusty-rocky-landscape-OJBeUyZUYU4
+                  - img "An elephant walks through a dusty, rocky landscape." [ref=e167]
+              - figure [ref=e168]:
+                - link "African elephants and calves in a lush green savanna." [ref=e171]:
+                  - /url: /photos/african-elephants-and-calves-in-a-lush-green-savanna-xtGT4cGKFuw
+                  - img "African elephants and calves in a lush green savanna." [ref=e172]
+              - figure [ref=e173]:
+                - link "Elephants gather at a waterhole in a green landscape." [ref=e176]:
+                  - /url: /photos/elephants-gather-at-a-waterhole-in-a-green-landscape-SROlNbLpqxo
+                  - img "Elephants gather at a waterhole in a green landscape." [ref=e177]
+              - figure [ref=e178]:
+                - link "An elephant stands by a waterhole with small birds." [ref=e181]:
+                  - /url: /photos/an-elephant-stands-by-a-waterhole-with-small-birds-ger_gAXUOJk
+                  - img "An elephant stands by a waterhole with small birds." [ref=e182]
+              - figure [ref=e183]:
+                - link "Elephants bathing in muddy water on a sunny day." [ref=e186]:
+                  - /url: /photos/elephants-bathing-in-muddy-water-on-a-sunny-day-l5t6TqwpQnI
+                  - img "Elephants bathing in muddy water on a sunny day." [ref=e187]
+            - generic [ref=e188]:
+              - figure [ref=e189]:
+                - link "two gray elephants beside water" [ref=e192]:
+                  - /url: /photos/two-gray-elephants-beside-water-ny8DoR0IezI
+                  - img "two gray elephants beside water" [ref=e193]
+              - figure [ref=e194]:
+                - link "brown elephant on green grass during daytime" [ref=e197]:
+                  - /url: /photos/brown-elephant-on-green-grass-during-daytime-3h926BK9OCU
+                  - img "brown elephant on green grass during daytime" [ref=e198]
+              - figure [ref=e199]:
+                - link "A herd of elephants drinking water at sunset" [ref=e202]:
+                  - /url: /photos/a-herd-of-elephants-drinking-water-at-sunset-wyhkG8l3BGk
+                  - img "A herd of elephants drinking water at sunset" [ref=e203]
+              - figure [ref=e204]:
+                - link "A herd of elephants gathered at a watering hole" [ref=e207]:
+                  - /url: /photos/a-herd-of-elephants-gathered-at-a-watering-hole-APFayunuFkc
+                  - img "A herd of elephants gathered at a watering hole" [ref=e208]
+              - figure [ref=e209]:
+                - link "Two elephants drink water at a sunny watering hole." [ref=e212]:
+                  - /url: /photos/two-elephants-drink-water-at-a-sunny-watering-hole-2QJjZo220n0
+                  - img "Two elephants drink water at a sunny watering hole." [ref=e213]
+              - figure [ref=e214]:
+                - link "Elephants drinking water from a muddy puddle in savanna." [ref=e217]:
+                  - /url: /photos/elephants-drinking-water-from-a-muddy-puddle-in-savanna-WEjppL8FwxY
+                  - img "Elephants drinking water from a muddy puddle in savanna." [ref=e218]
+              - figure [ref=e219]:
+                - generic [ref=e221]:
+                  - link "Elephant bathing in mud" [ref=e222]:
+                    - /url: /photos/elephant-bathing-in-mud-S3Kl9UzrUGY
+                    - img "Elephant bathing in mud" [ref=e223]
+                  - link [ref=e224] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Felephant-bathing-in-mud-S3Kl9UzrUGY
+                    - img [ref=e225]
+              - figure [ref=e227]:
+                - link "Three elephants stand near a muddy waterhole." [ref=e230]:
+                  - /url: /photos/three-elephants-stand-near-a-muddy-waterhole-ILm__G7arPg
+                  - img "Three elephants stand near a muddy waterhole." [ref=e231]
+            - generic [ref=e232]:
+              - contentinfo [ref=e237]:
+                - generic [ref=e243]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e245]:
+                - generic [ref=e247]:
+                  - link "Elephant at the Okaukuejo water hole" [ref=e248]:
+                    - /url: /photos/elephant-at-the-okaukuejo-water-hole-mjNEQl_mOGM
+                    - img "Elephant at the Okaukuejo water hole" [ref=e249]
+                  - link [ref=e250] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Felephant-at-the-okaukuejo-water-hole-mjNEQl_mOGM
+                    - img [ref=e251]
+              - figure [ref=e253]:
+                - generic [ref=e255]:
+                  - link "Elephants at a water hole" [ref=e256]:
+                    - /url: /photos/elephants-at-a-water-hole-_HXTwMqmgMo
+                    - img "Elephants at a water hole" [ref=e257]
+                  - link [ref=e258] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Felephants-at-a-water-hole-_HXTwMqmgMo
+                    - img [ref=e259]
+              - figure [ref=e261]:
+                - link "Three elephants standing near a muddy watering hole." [ref=e264]:
+                  - /url: /photos/three-elephants-standing-near-a-muddy-watering-hole-CveZYCmSG14
+                  - img "Three elephants standing near a muddy watering hole." [ref=e265]
+              - figure [ref=e266]:
+                - link "African elephants, adults and calves, gathered in a dry landscape." [ref=e269]:
+                  - /url: /photos/african-elephants-adults-and-calves-gathered-in-a-dry-landscape-QO4HyX2KLpc
+                  - img "African elephants, adults and calves, gathered in a dry landscape." [ref=e270]
+              - figure [ref=e271]:
+                - generic [ref=e273]:
+                  - link "Elephants at a water hole" [ref=e274]:
+                    - /url: /photos/elephants-at-a-water-hole-sl9rENBlzP4
+                    - img "Elephants at a water hole" [ref=e275]
+                  - link [ref=e276] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Felephants-at-a-water-hole-sl9rENBlzP4
+                    - img [ref=e277]
+              - figure [ref=e279]:
+                - link "A herd of elephants gathered at a watering hole." [ref=e282]:
+                  - /url: /photos/a-herd-of-elephants-gathered-at-a-watering-hole-3wm2OTO9je0
+                  - img "A herd of elephants gathered at a watering hole." [ref=e283]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e287]:
+            - text: Browse premium images on iStock
+            - generic [ref=e288]: "| Claim your discount now"
+          - button "Load more" [ref=e302] [cursor=pointer]
+          - generic [ref=e303]:
+            - link [ref=e304] [cursor=pointer]:
+              - /url: /
+              - img [ref=e305]
+            - paragraph [ref=e307]: Make something awesome
+    - generic:
+      - region "Notifications"

@@ -14,8 +14,8 @@ export default function RentalsHero() {
     <section ref={ref} className="relative flex h-[85vh] min-h-[560px] items-end overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0 -top-[10%] h-[120%]">
         <Image
-          src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=2400&q=80&auto=format&fit=crop"
-          alt="4x4 on a dirt road"
+          src="https://images.unsplash.com/photo-1663659321400-d397a637b59c?w=2400&q=80&auto=format&fit=crop"
+          alt="Land Cruiser overlooking the African bush at sunset"
           fill
           priority
           className="object-cover"

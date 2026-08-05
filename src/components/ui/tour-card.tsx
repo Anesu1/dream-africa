@@ -13,7 +13,7 @@ export default function TourCard({ tour }: { tour: Tour }) {
           className="h-[420px] w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-110"
         />
       </div>
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/0 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 p-7 text-paper">
         <div className="mb-3.5 flex gap-2.5 text-[10px] uppercase tracking-[0.18em] text-gold">
           <span>{tour.category}</span>

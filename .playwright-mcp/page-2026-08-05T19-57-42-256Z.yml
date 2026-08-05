@@ -1,0 +1,212 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Flion-golden-hour-safari-africa
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: lion golden hour safari africa
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Flion-golden-hour-safari-africa
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 1.4k":
+                - /url: /s/photos/lion-golden-hour-safari-africa
+                - img
+                - text: Photos
+                - generic: 1.4k
+            - listitem [ref=e74]:
+              - link "Illustrations 1" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/lion-golden-hour-safari-africa
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "1"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Lion golden hour safari africa" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "lion" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/lion
+              - link "africa" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/africa
+              - link "safari" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "nature" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "wildlife" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "animal" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/animal
+              - link "animal portrait" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/animal-portrait
+              - link "predator" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/predator
+              - link "animal kingdom" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/animal-kingdom
+              - link "natural habitat" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/natural-habitat
+              - link "big cat" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/big-cat
+              - link "savanna" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/savanna
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - link "a lion standing in a field of tall grass" [ref=e147]:
+                  - /url: /photos/a-lion-standing-in-a-field-of-tall-grass-XTFJh5rrLLs
+                  - img "a lion standing in a field of tall grass" [ref=e148]
+              - generic [ref=e149]:
+                - heading "Sponsored images" [level=4] [ref=e150]:
+                  - generic [ref=e151]: Sponsored images
+                  - img [ref=e152]
+                - generic [ref=e159]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e160]:
+                - link "a safari vehicle with passengers and a lion in the grass" [ref=e163]:
+                  - /url: /photos/a-safari-vehicle-with-passengers-and-a-lion-in-the-grass-Q3YmoeoQ9g0
+                  - img "a safari vehicle with passengers and a lion in the grass" [ref=e164]
+              - figure [ref=e165]:
+                - link "brown lion on green grass field during daytime" [ref=e168]:
+                  - /url: /photos/brown-lion-on-green-grass-field-during-daytime-NAmlq7_JEYw
+                  - img "brown lion on green grass field during daytime" [ref=e169]
+              - figure [ref=e170]:
+                - link "brown lioness on brown grass field during daytime" [ref=e173]:
+                  - /url: /photos/brown-lioness-on-brown-grass-field-during-daytime-yXt2BNgUHCI
+                  - img "brown lioness on brown grass field during daytime" [ref=e174]
+              - figure [ref=e175]:
+                - link "A lion walking across a dry grass covered field" [ref=e178]:
+                  - /url: /photos/a-lion-walking-across-a-dry-grass-covered-field-k2Knxp77X-k
+                  - img "A lion walking across a dry grass covered field" [ref=e179]
+              - figure [ref=e180]:
+                - link "a group of people in a safari vehicle with a lion" [ref=e183]:
+                  - /url: /photos/a-group-of-people-in-a-safari-vehicle-with-a-lion-tmMTpr_D-dQ
+                  - img "a group of people in a safari vehicle with a lion" [ref=e184]
+              - figure [ref=e185]:
+                - link "lion leaning near tree during daytime" [ref=e188]:
+                  - /url: /photos/lion-leaning-near-tree-during-daytime-9g-IHdZQ4Mk
+                  - img "lion leaning near tree during daytime" [ref=e189]
+            - generic [ref=e190]:
+              - figure [ref=e191]:
+                - link "man riding on gray car during sunset" [ref=e194]:
+                  - /url: /photos/man-riding-on-gray-car-during-sunset-0LwfbRtQ-ac
+                  - img "man riding on gray car during sunset" [ref=e195]
+              - figure [ref=e196]:
+                - link "a safari vehicle with passengers and a lion" [ref=e199]:
+                  - /url: /photos/a-safari-vehicle-with-passengers-and-a-lion-RtZUgho6x-s
+                  - img "a safari vehicle with passengers and a lion" [ref=e200]
+              - figure [ref=e201]:
+                - link "car passing by in between trees" [ref=e204]:
+                  - /url: /photos/car-passing-by-in-between-trees-wdMWMHXUpsc
+                  - img "car passing by in between trees" [ref=e205]
+              - figure [ref=e206]:
+                - link "a group of people riding in the back of a truck" [ref=e209]:
+                  - /url: /photos/a-group-of-people-riding-in-the-back-of-a-truck-atzjD7UuxcI
+                  - img "a group of people riding in the back of a truck" [ref=e210]
+              - figure [ref=e211]:
+                - link "Lion pride at dawn" [ref=e214]:
+                  - /url: /photos/lion-pride-at-dawn-yfiU6SUcTWA
+                  - img "Lion pride at dawn" [ref=e215]
+              - figure [ref=e216]:
+                - link "brown lion lying on ground covered with snow during daytime" [ref=e219]:
+                  - /url: /photos/brown-lion-lying-on-ground-covered-with-snow-during-daytime-AX2vhty4Njg
+                  - img "brown lion lying on ground covered with snow during daytime" [ref=e220]
+              - figure [ref=e221]:
+                - link "lion leaning on trees" [ref=e224]:
+                  - /url: /photos/lion-leaning-on-trees-1b4CCsFSzjw
+                  - img "lion leaning on trees" [ref=e225]
+              - figure [ref=e226]:
+                - link "a close up of a lion with its mouth open" [ref=e229]:
+                  - /url: /photos/a-close-up-of-a-lion-with-its-mouth-open-yAhGD0B6zPA
+                  - img "a close up of a lion with its mouth open" [ref=e230]
+            - generic [ref=e231]:
+              - contentinfo [ref=e236]:
+                - generic [ref=e242]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e244]:
+                - link "a lion walking across a grass covered field" [ref=e247]:
+                  - /url: /photos/a-lion-walking-across-a-grass-covered-field-gUh_yPhWMRo
+                  - img "a lion walking across a grass covered field" [ref=e248]
+              - figure [ref=e249]:
+                - link "a safari vehicle with a cow standing in the grass" [ref=e252]:
+                  - /url: /photos/a-safari-vehicle-with-a-cow-standing-in-the-grass-GxU80twc7KA
+                  - img "a safari vehicle with a cow standing in the grass" [ref=e253]
+              - figure [ref=e254]:
+                - link "Large male lion" [ref=e257]:
+                  - /url: /photos/large-male-lion-k5cFdVpTUjY
+                  - img "Large male lion" [ref=e258]
+              - figure [ref=e259]:
+                - link "A majestic lion poses in the sunlight." [ref=e262]:
+                  - /url: /photos/a-majestic-lion-poses-in-the-sunlight-mTPYSr_ce1A
+                  - img "A majestic lion poses in the sunlight." [ref=e263]
+              - figure [ref=e264]:
+                - link "a safari vehicle with a cow in the foreground" [ref=e267]:
+                  - /url: /photos/a-safari-vehicle-with-a-cow-in-the-foreground-sX-D_FqqyQA
+                  - img "a safari vehicle with a cow in the foreground" [ref=e268]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e272]:
+            - text: Browse premium images on iStock
+            - generic [ref=e273]: "| Claim your discount now"
+          - button "Load more" [ref=e287] [cursor=pointer]
+          - generic [ref=e288]:
+            - link [ref=e289] [cursor=pointer]:
+              - /url: /
+              - img [ref=e290]
+            - paragraph [ref=e292]: Make something awesome
+    - generic:
+      - region "Notifications"

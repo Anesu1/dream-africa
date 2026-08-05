@@ -1,0 +1,232 @@
+- generic [ref=e5]:
+  - navigation [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Unsplash Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e10]
+        - link "Photos" [ref=e12] [cursor=pointer]:
+          - /url: /
+          - img [ref=e13]
+        - link "Illustrations" [ref=e15] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e16]
+      - generic [ref=e18]:
+        - button "Explore" [ref=e19] [cursor=pointer]:
+          - img [ref=e20]
+        - button "Collections" [ref=e22] [cursor=pointer]:
+          - img [ref=e23]
+        - button "Download History" [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+      - button "Bookmarks" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e32]:
+      - link "Log in / Sign up" [ref=e33] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fluxury-safari-lodge-pool-sunset
+        - img [ref=e34]
+      - button "Language" [ref=e36] [cursor=pointer]:
+        - img [ref=e37]
+      - button "Menu" [ref=e39] [cursor=pointer]:
+        - img [ref=e40]
+  - generic [ref=e42]:
+    - generic [ref=e43]:
+      - navigation [ref=e44]:
+        - search "Find visuals sitewide" [ref=e46]:
+          - button "Search Unsplash" [ref=e47] [cursor=pointer]:
+            - img [ref=e48]
+          - combobox [ref=e50]:
+            - searchbox "Search Unsplash" [ref=e51]: luxury safari lodge pool sunset
+            - listbox
+          - button "Clear" [ref=e52] [cursor=pointer]:
+            - img [ref=e53]
+          - button "Visual search" [ref=e57] [cursor=pointer]:
+            - img [ref=e58]
+        - generic [ref=e60]:
+          - link "Get Unsplash+" [ref=e61] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e62] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Fluxury-safari-lodge-pool-sunset
+        - button "Submit an image" [ref=e64] [cursor=pointer]
+      - generic [ref=e65]:
+        - generic [ref=e71]:
+          - list [ref=e72]:
+            - listitem [ref=e73]:
+              - link "Photos 125":
+                - /url: /s/photos/luxury-safari-lodge-pool-sunset
+                - img
+                - text: Photos
+                - generic: "125"
+            - listitem [ref=e74]:
+              - link "Illustrations 0" [ref=e75] [cursor=pointer]:
+                - /url: /s/illustrations/luxury-safari-lodge-pool-sunset
+                - img [ref=e76]
+                - text: Illustrations
+                - generic [ref=e78]: "0"
+            - listitem [ref=e79]:
+              - button "More" [ref=e80] [cursor=pointer]
+          - generic [ref=e83]:
+            - button "License" [ref=e84] [cursor=pointer]:
+              - img [ref=e85]
+              - generic [ref=e87]: License
+              - img [ref=e88]
+            - button "Orientation" [ref=e90] [cursor=pointer]:
+              - img [ref=e91]
+              - generic [ref=e93]: Orientation
+              - img [ref=e94]
+            - button "Sort by Relevance" [ref=e96] [cursor=pointer]:
+              - img [ref=e97]
+              - generic [ref=e99]: Sort by Relevance
+              - img [ref=e100]
+        - generic [ref=e102]:
+          - heading "Luxury safari lodge pool sunset" [level=1] [ref=e104]
+          - generic [ref=e106]:
+            - button "scroll list to the right" [ref=e108] [cursor=pointer]:
+              - img [ref=e109]
+            - generic [ref=e112]:
+              - link "sunset" [ref=e114] [cursor=pointer]:
+                - /url: /s/photos/sunset
+              - link "swimming pool" [ref=e116] [cursor=pointer]:
+                - /url: /s/photos/swimming-pool
+              - link "relaxation" [ref=e118] [cursor=pointer]:
+                - /url: /s/photos/relaxation
+              - link "vacation" [ref=e120] [cursor=pointer]:
+                - /url: /s/photos/vacation
+              - link "landscape" [ref=e122] [cursor=pointer]:
+                - /url: /s/photos/landscape
+              - link "nature" [ref=e124] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "luxury travel" [ref=e126] [cursor=pointer]:
+                - /url: /s/photos/luxury-travel
+              - link "golden hour" [ref=e128] [cursor=pointer]:
+                - /url: /s/photos/golden-hour
+              - link "water" [ref=e130] [cursor=pointer]:
+                - /url: /s/photos/water
+              - link "resort" [ref=e132] [cursor=pointer]:
+                - /url: /s/photos/resort
+              - link "sea" [ref=e134] [cursor=pointer]:
+                - /url: /s/photos/sea
+              - link "travel destination" [ref=e136] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+        - generic [ref=e138]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - figure [ref=e144]:
+                - generic [ref=e146]:
+                  - link "the sun is setting over the water of a swimming pool" [ref=e147]:
+                    - /url: /photos/the-sun-is-setting-over-the-water-of-a-swimming-pool-qJ52U40PQos
+                    - img "the sun is setting over the water of a swimming pool" [ref=e148]
+                  - link [ref=e149] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fthe-sun-is-setting-over-the-water-of-a-swimming-pool-qJ52U40PQos
+                    - img [ref=e150]
+              - generic [ref=e152]:
+                - heading "Sponsored images" [level=4] [ref=e153]:
+                  - generic [ref=e154]: Sponsored images
+                  - img [ref=e155]
+                - generic [ref=e162]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e163]:
+                - generic [ref=e165]:
+                  - link "a house with a pool in front of it" [ref=e166]:
+                    - /url: /photos/a-house-with-a-pool-in-front-of-it-puk9ju-kWHI
+                    - img "a house with a pool in front of it" [ref=e167]
+                  - link [ref=e168] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-house-with-a-pool-in-front-of-it-puk9ju-kWHI
+                    - img [ref=e169]
+              - figure [ref=e171]:
+                - link "Infinity pool overlooking desert landscape at sunset" [ref=e174]:
+                  - /url: /photos/infinity-pool-overlooking-desert-landscape-at-sunset-NWx2bVh0z2g
+                  - img "Infinity pool overlooking desert landscape at sunset" [ref=e175]
+              - figure [ref=e176]:
+                - link "a view of a pool through a window" [ref=e179]:
+                  - /url: /photos/a-view-of-a-pool-through-a-window-zWrMlc_ryYA
+                  - img "a view of a pool through a window" [ref=e180]
+              - figure [ref=e181]:
+                - link "silhouette photography of plants and water" [ref=e184]:
+                  - /url: /photos/silhouette-photography-of-plants-and-water-4-2wcWPElmU
+                  - img "silhouette photography of plants and water" [ref=e185]
+              - figure [ref=e186]:
+                - link "silhouette of river" [ref=e189]:
+                  - /url: /photos/silhouette-of-river-WPO1rdTA-90
+                  - img "silhouette of river" [ref=e190]
+            - generic [ref=e191]:
+              - figure [ref=e192]:
+                - link "Lounge chairs by pool overlooking mountains at sunset" [ref=e195]:
+                  - /url: /photos/lounge-chairs-by-pool-overlooking-mountains-at-sunset-tlB0GiilTu4
+                  - img "Lounge chairs by pool overlooking mountains at sunset" [ref=e196]
+              - figure [ref=e197]:
+                - link "Lounge chairs and umbrellas by pool at sunset" [ref=e200]:
+                  - /url: /photos/lounge-chairs-and-umbrellas-by-pool-at-sunset-JIcWnsBH3-M
+                  - img "Lounge chairs and umbrellas by pool at sunset" [ref=e201]
+              - figure [ref=e202]:
+                - link "a couple of chairs sitting on top of a swimming pool" [ref=e205]:
+                  - /url: /photos/a-couple-of-chairs-sitting-on-top-of-a-swimming-pool-ujzsaltDYOg
+                  - img "a couple of chairs sitting on top of a swimming pool" [ref=e206]
+              - figure [ref=e207]:
+                - generic [ref=e209]:
+                  - link "Rear view of a woman with hat relaxing in infinity swimming pool and looking at a beautiful sunset and the sea view" [ref=e210]:
+                    - /url: /photos/rear-view-of-a-woman-with-hat-relaxing-in-infinity-swimming-pool-and-looking-at-a-beautiful-sunset-and-the-sea-view-RfpYELpUnr8
+                    - img "Rear view of a woman with hat relaxing in infinity swimming pool and looking at a beautiful sunset and the sea view" [ref=e211]
+                  - link [ref=e212] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Frear-view-of-a-woman-with-hat-relaxing-in-infinity-swimming-pool-and-looking-at-a-beautiful-sunset-and-the-sea-view-RfpYELpUnr8
+                    - img [ref=e213]
+              - figure [ref=e215]:
+                - link "people walking on the beach during sunset" [ref=e218]:
+                  - /url: /photos/people-walking-on-the-beach-during-sunset-XqRn99qopMQ
+                  - img "people walking on the beach during sunset" [ref=e219]
+              - figure [ref=e220]:
+                - generic [ref=e222]:
+                  - link "Black silhouette of asian woman splash water on summer vacation holiday relaxing in infinity swimming pool with blue sea sunset view with high rise skyscape urban downtown Healthy happiness lifestyle" [ref=e223]:
+                    - /url: /photos/black-silhouette-of-asian-woman-splash-water-on-summer-vacation-holiday-relaxing-in-infinity-swimming-pool-with-blue-sea-sunset-view-with-high-rise-skyscape-urban-downtown-healthy-happiness-lifestyle-GIXPnFMvCv8
+                    - img "Black silhouette of asian woman splash water on summer vacation holiday relaxing in infinity swimming pool with blue sea sunset view with high rise skyscape urban downtown Healthy happiness lifestyle" [ref=e224]
+                  - link [ref=e225] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fblack-silhouette-of-asian-woman-splash-water-on-summer-vacation-holiday-relaxing-in-infinity-swimming-pool-with-blue-sea-sunset-view-with-high-rise-skyscape-urban-downtown-healthy-happiness-lifestyle-GIXPnFMvCv8
+                    - img [ref=e226]
+              - figure [ref=e228]:
+                - link "lounge chairs on wooden porch during golden hour" [ref=e231]:
+                  - /url: /photos/lounge-chairs-on-wooden-porch-during-golden-hour--UpZzX87_tc
+                  - img "lounge chairs on wooden porch during golden hour" [ref=e232]
+              - figure [ref=e233]:
+                - link "palm trees near body of water during sunset" [ref=e236]:
+                  - /url: /photos/palm-trees-near-body-of-water-during-sunset-5SLUtE1PMuM
+                  - img "palm trees near body of water during sunset" [ref=e237]
+            - generic [ref=e238]:
+              - contentinfo [ref=e243]:
+                - generic [ref=e249]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e251]:
+                - link "a bridge over a body of water" [ref=e254]:
+                  - /url: /photos/a-bridge-over-a-body-of-water-i37F6A_gjqY
+                  - img "a bridge over a body of water" [ref=e255]
+              - figure [ref=e256]:
+                - link "water poll near house during golden hour" [ref=e259]:
+                  - /url: /photos/water-poll-near-house-during-golden-hour-so3wgJLwDxo
+                  - img "water poll near house during golden hour" [ref=e260]
+              - figure [ref=e261]:
+                - link "silhouette of palm tree near body of water during sunset" [ref=e264]:
+                  - /url: /photos/silhouette-of-palm-tree-near-body-of-water-during-sunset-4bOtywWzLSA
+                  - img "silhouette of palm tree near body of water during sunset" [ref=e265]
+              - figure [ref=e266]:
+                - link "Dark clouds reflect on calm water at dusk." [ref=e269]:
+                  - /url: /photos/dark-clouds-reflect-on-calm-water-at-dusk-AqRI2ggyr20
+                  - img "Dark clouds reflect on calm water at dusk." [ref=e270]
+              - figure [ref=e271]:
+                - generic [ref=e273]:
+                  - link "Black silhouette of asian woman splash water on summer vacation holiday relaxing in infinity swimming pool with blue sea sunset view with high rise skyscape urban downtown Healthy happiness lifestyle" [ref=e274]:
+                    - /url: /photos/black-silhouette-of-asian-woman-splash-water-on-summer-vacation-holiday-relaxing-in-infinity-swimming-pool-with-blue-sea-sunset-view-with-high-rise-skyscape-urban-downtown-healthy-happiness-lifestyle-lXO2afwmj7k
+                    - img "Black silhouette of asian woman splash water on summer vacation holiday relaxing in infinity swimming pool with blue sea sunset view with high rise skyscape urban downtown Healthy happiness lifestyle" [ref=e275]
+                  - link [ref=e276] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fblack-silhouette-of-asian-woman-splash-water-on-summer-vacation-holiday-relaxing-in-infinity-swimming-pool-with-blue-sea-sunset-view-with-high-rise-skyscape-urban-downtown-healthy-happiness-lifestyle-lXO2afwmj7k
+                    - img [ref=e277]
+              - figure [ref=e279]:
+                - link "Sunset over the ocean viewed from an infinity pool." [ref=e282]:
+                  - /url: /photos/sunset-over-the-ocean-viewed-from-an-infinity-pool-ckdHCAOfkLg
+                  - img "Sunset over the ocean viewed from an infinity pool." [ref=e283]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e287]:
+            - text: Browse premium images on iStock
+            - generic [ref=e288]: "| Claim your discount now"
+          - button "Load more" [ref=e302] [cursor=pointer]
+          - generic [ref=e303]:
+            - link [ref=e304] [cursor=pointer]:
+              - /url: /
+              - img [ref=e305]
+            - paragraph [ref=e307]: Make something awesome
+    - generic:
+      - region "Notifications"

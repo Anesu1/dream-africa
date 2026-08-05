@@ -57,7 +57,7 @@ export const EXPERIENCES = [
     title: "Luxury Safaris",
     description: "Private guided expeditions through Victoria Falls, Hwange and the Zambezi — small groups, exclusive concessions, guides born on this river.",
     href: "/safaris",
-    image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1709403108621-66fe97132946?w=1600&q=80&auto=format&fit=crop",
     cta: "Explore Safaris",
   },
   {
@@ -66,7 +66,7 @@ export const EXPERIENCES = [
     title: "Premium Car Rental",
     description: "A meticulously serviced 4×4 fleet delivered to your lodge or the airport gate — self-drive freedom with a chauffeur option when you'd rather not.",
     href: "/rentals",
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1600&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1663659321400-d397a637b59c?w=1600&q=80&auto=format&fit=crop",
     cta: "Explore the Fleet",
   },
 ];
@@ -89,7 +89,7 @@ export const DESTINATIONS = [
   {
     name: "Hwange National Park",
     description: "Zimbabwe's largest reserve, elephant herds a thousand strong.",
-    image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1200&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1548523507-fe3c0f2ed39d?w=1200&q=80&auto=format&fit=crop",
   },
   {
     name: "Upper Zambezi",
@@ -135,7 +135,7 @@ export const TOURS: Tour[] = [
     description: "Four nights in Zimbabwe's largest reserve, tracking elephant herds a thousand strong.",
     price: "$2,450",
     priceUnit: "/person",
-    image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1575187105891-be9b5d30cecd?w=1400&q=80&auto=format&fit=crop",
     highlights: ["Six guests max", "Luxury tented camp", "Private vehicle"],
   },
   {
@@ -146,7 +146,7 @@ export const TOURS: Tour[] = [
     description: "Cross into Botswana for a river cruise and game drive through Chobe National Park, back at the Falls by dinner.",
     price: "$220",
     priceUnit: "/person",
-    image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1711092038197-7082ba6d20ef?w=1400&q=80&auto=format&fit=crop",
     highlights: ["Border paperwork handled", "River cruise + game drive", "Back at the Falls by evening"],
   },
   {
@@ -177,17 +177,17 @@ export const LODGES = [
   {
     name: "Zambezi Sands Camp",
     region: "Upper Zambezi",
-    image: "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1200&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1535759554012-8cbbc491f0b7?w=1200&q=80&auto=format&fit=crop",
   },
   {
     name: "Hwange Elephant Camp",
     region: "Hwange National Park",
-    image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1200&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1754679996635-9fa307b38c36?w=1200&q=80&auto=format&fit=crop",
   },
   {
     name: "Falls Rainforest Lodge",
     region: "Victoria Falls",
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1678714001094-ba90abd57fec?w=1200&q=80&auto=format&fit=crop",
   },
 ];
 
@@ -208,7 +208,7 @@ export const VEHICLES: Vehicle[] = [
     name: "Toyota Fortuner",
     subtitle: "2.8 GD-6 4×4",
     price: 250,
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1670054953044-2605dbd0d747?w=1400&q=80&auto=format&fit=crop",
     specs: [
       { label: "Seats", value: "7" },
       { label: "Drive", value: "4×4 Auto" },
@@ -222,7 +222,7 @@ export const VEHICLES: Vehicle[] = [
     name: "Land Cruiser 79",
     subtitle: "Expedition-spec, single cab",
     price: 310,
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1663659321400-d397a637b59c?w=1400&q=80&auto=format&fit=crop",
     specs: [
       { label: "Seats", value: "2" },
       { label: "Drive", value: "4×4 Manual" },
@@ -236,7 +236,7 @@ export const VEHICLES: Vehicle[] = [
     name: "Hilux Double Cab",
     subtitle: "City & park, rooftop tent optional",
     price: 195,
-    image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1631377875413-b1e3e660bfa2?w=1400&q=80&auto=format&fit=crop",
     specs: [
       { label: "Seats", value: "5" },
       { label: "Drive", value: "4×4 Auto" },
@@ -250,7 +250,7 @@ export const VEHICLES: Vehicle[] = [
     name: "Executive Sedan",
     subtitle: "Airport transfers & chauffeur",
     price: 140,
-    image: "https://images.unsplash.com/photo-1563720223185-11003d516935?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1780296269675-169390638617?w=1400&q=80&auto=format&fit=crop",
     specs: [
       { label: "Seats", value: "4" },
       { label: "Drive", value: "Auto" },
@@ -355,7 +355,7 @@ export const JOURNAL_POSTS: JournalPost[] = [
       "Once a year our guides join the waterhole count across Hwange, logging herd sizes from first light until the pans empty out at dusk. It's slow, quiet work — long stretches of nothing, then a herd of eighty arriving at once.",
       "It's also the best way we know to actually understand where the animals are that season, which shapes which routes we run on the Big Five itinerary for the rest of the year.",
     ],
-    image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1400&q=80&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1577115025117-af4768ae5447?w=1400&q=80&auto=format&fit=crop",
   },
 ];
 

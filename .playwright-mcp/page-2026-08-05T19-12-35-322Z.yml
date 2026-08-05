@@ -1,0 +1,229 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Eden Car Rental
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Eden Car Rental logo Eden Car Rental" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Eden Car Rental logo" [ref=e7]
+        - generic [ref=e8]: Eden Car Rental
+      - navigation [ref=e9]:
+        - link "Safaris" [ref=e10] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e11] [cursor=pointer]:
+          - /url: /rentals
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e13] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e16]
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - img "Land Cruiser overlooking the African bush at sunset" [ref=e20]
+      - generic [ref=e22]:
+        - generic [ref=e25]: Dream Africa · Vehicle Hire Division
+        - heading "Eden Car Rental" [level=1] [ref=e27]
+        - paragraph [ref=e29]: A meticulously serviced 4×4 fleet delivered to your lodge or the airport gate — self-drive freedom, or a chauffeur when you'd rather not.
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: (01) How you travel
+        - heading "Behind the wheel, or behind the scenes." [level=2] [ref=e33]
+      - generic [ref=e34]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: Self Drive
+          - paragraph [ref=e38]: Unlimited kilometres, cross-border papers prepared before collection.
+        - generic [ref=e40]:
+          - generic [ref=e41]: Chauffeur Service
+          - paragraph [ref=e42]: A dedicated driver for the length of your stay, day or night.
+        - generic [ref=e44]:
+          - generic [ref=e45]: Airport Transfers
+          - paragraph [ref=e46]: Met at the gate, vehicle already warm, luggage handled.
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: (02) The fleet
+          - heading "Thirty-two vehicles, serviced every 5,000km." [level=2] [ref=e52]
+        - generic [ref=e53]:
+          - button "All" [ref=e54]
+          - button "SUV" [ref=e55]
+          - button "4x4" [ref=e56]
+          - button "Executive" [ref=e57]
+      - generic [ref=e58]:
+        - article [ref=e60]:
+          - generic [ref=e61]:
+            - img "Toyota Fortuner" [ref=e62]
+            - generic [ref=e63]: SUV
+          - generic [ref=e64]:
+            - heading "Toyota Fortuner" [level=3] [ref=e65]
+            - paragraph [ref=e66]: 2.8 GD-6 4×4
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - generic [ref=e69]: Seats
+                - generic [ref=e70]: "7"
+              - generic [ref=e71]:
+                - generic [ref=e72]: Drive
+                - generic [ref=e73]: 4×4 Auto
+              - generic [ref=e74]:
+                - generic [ref=e75]: Range
+                - generic [ref=e76]: 1,100 km
+              - generic [ref=e77]:
+                - generic [ref=e78]: Kms
+                - generic [ref=e79]: Unlimited
+            - generic [ref=e80]:
+              - generic [ref=e81]: $250 / day
+              - link "Reserve →" [ref=e82] [cursor=pointer]:
+                - /url: "#book"
+        - article [ref=e84]:
+          - generic [ref=e85]:
+            - img "Land Cruiser 79" [ref=e86]
+            - generic [ref=e87]: 4x4
+          - generic [ref=e88]:
+            - heading "Land Cruiser 79" [level=3] [ref=e89]
+            - paragraph [ref=e90]: Expedition-spec, single cab
+            - generic [ref=e91]:
+              - generic [ref=e92]:
+                - generic [ref=e93]: Seats
+                - generic [ref=e94]: "2"
+              - generic [ref=e95]:
+                - generic [ref=e96]: Drive
+                - generic [ref=e97]: 4×4 Manual
+              - generic [ref=e98]:
+                - generic [ref=e99]: Range
+                - generic [ref=e100]: 1,300 km
+              - generic [ref=e101]:
+                - generic [ref=e102]: Kms
+                - generic [ref=e103]: Unlimited
+            - generic [ref=e104]:
+              - generic [ref=e105]: $310 / day
+              - link "Reserve →" [ref=e106] [cursor=pointer]:
+                - /url: "#book"
+        - article [ref=e108]:
+          - generic [ref=e109]:
+            - img "Hilux Double Cab" [ref=e110]
+            - generic [ref=e111]: 4x4
+          - generic [ref=e112]:
+            - heading "Hilux Double Cab" [level=3] [ref=e113]
+            - paragraph [ref=e114]: City & park, rooftop tent optional
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - generic [ref=e117]: Seats
+                - generic [ref=e118]: "5"
+              - generic [ref=e119]:
+                - generic [ref=e120]: Drive
+                - generic [ref=e121]: 4×4 Auto
+              - generic [ref=e122]:
+                - generic [ref=e123]: Range
+                - generic [ref=e124]: 950 km
+              - generic [ref=e125]:
+                - generic [ref=e126]: Kms
+                - generic [ref=e127]: Unlimited
+            - generic [ref=e128]:
+              - generic [ref=e129]: $195 / day
+              - link "Reserve →" [ref=e130] [cursor=pointer]:
+                - /url: "#book"
+        - article [ref=e132]:
+          - generic [ref=e133]:
+            - img "Executive Sedan" [ref=e134]
+            - generic [ref=e135]: Executive
+          - generic [ref=e136]:
+            - heading "Executive Sedan" [level=3] [ref=e137]
+            - paragraph [ref=e138]: Airport transfers & chauffeur
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - generic [ref=e141]: Seats
+                - generic [ref=e142]: "4"
+              - generic [ref=e143]:
+                - generic [ref=e144]: Drive
+                - generic [ref=e145]: Auto
+              - generic [ref=e146]:
+                - generic [ref=e147]: Range
+                - generic [ref=e148]: 700 km
+              - generic [ref=e149]:
+                - generic [ref=e150]: Kms
+                - generic [ref=e151]: Unlimited
+            - generic [ref=e152]:
+              - generic [ref=e153]: $140 / day
+              - link "Reserve →" [ref=e154] [cursor=pointer]:
+                - /url: "#book"
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - generic [ref=e158]: Start Planning
+        - heading "let's get you on the road." [level=2] [ref=e160]:
+          - text: let's get you
+          - text: on the road.
+        - paragraph [ref=e162]: Tell us your dates and which vehicle you're after — combine it with a guided day for 10% off the tour portion.
+      - generic [ref=e164]:
+        - textbox "Full name" [ref=e165]
+        - generic [ref=e166]:
+          - textbox "Email address" [ref=e167]
+          - textbox "Phone / WhatsApp" [ref=e168]
+        - generic [ref=e169]:
+          - combobox [ref=e170]:
+            - option "Service" [disabled] [selected]
+            - option "Self-drive"
+            - option "Chauffeur drive"
+            - option "Airport transfer"
+          - combobox [ref=e171]:
+            - option "Vehicle class" [disabled] [selected]
+            - option "SUV"
+            - option "4x4"
+            - option "Executive"
+            - option "Not sure yet"
+          - textbox "Pick-up date" [ref=e172]
+          - textbox "Return date" [ref=e173]
+        - textbox "Anything else we should know" [ref=e174]
+        - button "Send enquiry" [ref=e175]
+  - contentinfo [ref=e176]:
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - generic [ref=e179]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e180]: Best Safari Operator 2025
+        - generic [ref=e181]: Rated 4.9 from 480+ guests
+        - generic [ref=e182]: 24/7 Roadside & Guide Support
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - img "Eden Car Rental logo" [ref=e186]
+            - generic [ref=e187]: Eden Car Rental
+          - paragraph [ref=e188]: Eden Car Rental is Dream Africa's premium vehicle-hire division. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e189]:
+          - generic [ref=e190]: Safaris
+          - generic [ref=e191]:
+            - link "All tours" [ref=e192] [cursor=pointer]:
+              - /url: /safaris
+            - link "Hwange" [ref=e193] [cursor=pointer]:
+              - /url: /safaris
+            - link "Zambezi" [ref=e194] [cursor=pointer]:
+              - /url: /safaris
+            - link "Private charter" [ref=e195] [cursor=pointer]:
+              - /url: /safaris
+        - generic [ref=e196]:
+          - generic [ref=e197]: Eden Car Rental
+          - generic [ref=e198]:
+            - link "The fleet" [ref=e199] [cursor=pointer]:
+              - /url: /rentals
+            - link "Chauffeur service" [ref=e200] [cursor=pointer]:
+              - /url: /rentals
+            - link "Airport transfers" [ref=e201] [cursor=pointer]:
+              - /url: /rentals
+            - link "Cross-border" [ref=e202] [cursor=pointer]:
+              - /url: /rentals
+        - generic [ref=e203]:
+          - generic [ref=e204]: Newsletter
+          - paragraph [ref=e205]: Departures, road reports and the odd elephant photo.
+          - generic [ref=e206]:
+            - textbox "Email address" [ref=e207]
+            - button "Send" [ref=e208]
+      - generic [ref=e209]:
+        - generic [ref=e210]: © 2026 Dream Africa Tours & Car Hire
+        - generic [ref=e211]:
+          - link "Instagram" [ref=e212] [cursor=pointer]:
+            - /url: "#top"
+          - link "WhatsApp" [ref=e213] [cursor=pointer]:
+            - /url: "#top"
+          - link "Legal" [ref=e214] [cursor=pointer]:
+            - /url: "#top"
+  - button "Open Next.js Dev Tools" [ref=e220] [cursor=pointer]:
+    - img [ref=e221]
+  - alert [ref=e224]
