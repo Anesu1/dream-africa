@@ -1,0 +1,7 @@
+[build.environment]
+  # NEXT_PUBLIC_* vars are meant to be embedded in client-side output — that's what the
+  # prefix means in Next.js. Neither is a real secret: the Sanity project ID and dataset
+  # name don't grant read or write access on their own (the dataset is publicly readable,
+  # and writes require SANITY_TOKEN, which is deliberately left OUT of this list so the
+  # scanner keeps checking for it).
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SANITY_PROJECT_ID,NEXT_PUBLIC_SANITY_DATASET"

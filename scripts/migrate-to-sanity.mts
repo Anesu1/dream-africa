@@ -25,8 +25,8 @@ import {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const client = createClient({
-  projectId: "7zk2mk45",
-  dataset: "production",
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: "2025-01-01",
   token: process.env.SANITY_TOKEN,
   useCdn: false,
