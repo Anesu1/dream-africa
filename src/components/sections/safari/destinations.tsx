@@ -7,7 +7,7 @@ import type { NamedImage } from "@/sanity/lib/types";
 
 export default function Destinations({ destinations }: { destinations: NamedImage[] }) {
   return (
-    <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
+    <section id="destinations" className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
       <Reveal className="mb-14 max-w-2xl">
         <div className="mb-6 text-[11px] uppercase tracking-[0.28em] text-gold">(01) Where we go</div>
         <h2

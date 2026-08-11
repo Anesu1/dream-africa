@@ -60,7 +60,6 @@ export default function Footer({ siteSettings }: { siteSettings: SiteSettings })
         <div className="flex flex-wrap items-center justify-between gap-6 pt-8 text-[11px] uppercase tracking-[0.16em] text-white/40">
           <span>{siteSettings.copyright}</span>
           <div className="flex gap-6">
-            <a href="#top" className="transition-colors hover:text-gold">Instagram</a>
             <a
               href={whatsappLink(siteSettings.whatsapp, `Hi ${brand.name}, I'd like to plan a trip.`)}
               target="_blank"
@@ -69,7 +68,7 @@ export default function Footer({ siteSettings }: { siteSettings: SiteSettings })
             >
               WhatsApp
             </a>
-            <a href="#top" className="transition-colors hover:text-gold">Legal</a>
+            <Link href="/legal" className="transition-colors hover:text-gold">Legal</Link>
           </div>
         </div>
       </div>

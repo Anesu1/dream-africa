@@ -3,7 +3,7 @@ import type { RentalService } from "@/sanity/lib/types";
 
 export default function Services({ services }: { services: RentalService[] }) {
   return (
-    <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
+    <section id="services" className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
       <Reveal className="mb-14 max-w-2xl">
         <div className="mb-6 text-[11px] uppercase tracking-[0.28em] text-gold">(01) How you travel</div>
         <h2
