@@ -1,0 +1,211 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Dream Africa
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Dream Africa logo Dream Africa" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Dream Africa logo" [ref=e7]
+        - generic [ref=e8]: Dream Africa
+      - navigation [ref=e9]:
+        - link "Safaris" [ref=e10] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e11] [cursor=pointer]:
+          - /url: /rentals
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e13] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e16]
+  - generic [ref=e17]:
+    - generic [ref=e21]:
+      - generic [ref=e24]: Victoria Falls, Zimbabwe
+      - heading "Discover Zimbabwe. Travel in luxury." [level=1] [ref=e25]:
+        - text: Discover Zimbabwe.
+        - text: Travel in luxury.
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: One company. Guided safaris through Hwange and the Zambezi, and a premium 4×4 fleet to explore the rest — every journey handled by the same trusted team.
+        - generic [ref=e28]:
+          - button "Plan Your Journey" [ref=e29]
+          - button "Explore Services" [ref=e30]
+    - generic [ref=e32]:
+      - img "Guide at the Zambezi" [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]: Who we are
+        - heading "Fourteen years on the Zambezi, one standard of care." [level=2] [ref=e39]:
+          - text: Fourteen years on the Zambezi,
+          - text: one standard of care.
+        - paragraph [ref=e41]: We started in 2011 with one Land Cruiser and a permit to guide in Hwange. Today Dream Africa runs two disciplines from the same Victoria Falls base — guided expeditions and a self-drive rental fleet — so a single call plans your whole trip, not two separate bookings with two separate companies.
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - generic [ref=e44]: "2011"
+            - generic [ref=e45]: One Land Cruiser, one Parks permit
+          - generic [ref=e46]:
+            - generic [ref=e47]: "2015"
+            - generic [ref=e48]: First rental fleet vehicles added
+          - generic [ref=e49]:
+            - generic [ref=e50]: "2019"
+            - generic [ref=e51]: Best Safari Operator, Zimbabwe Tourism Awards
+          - generic [ref=e52]:
+            - generic [ref=e53]: "2026"
+            - generic [ref=e54]: 32 vehicles, 12 guided itineraries
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]: Our Experiences
+        - heading "One company, two ways to meet Zimbabwe." [level=2] [ref=e59]
+      - generic [ref=e60]:
+        - link "Luxury Safaris Experience 01 Luxury Safaris Private guided expeditions through Victoria Falls, Hwange and the Zambezi — small groups, exclusive concessions, guides born on this river. Explore Safaris →" [ref=e62] [cursor=pointer]:
+          - /url: /safaris
+          - img "Luxury Safaris" [ref=e64]
+          - generic [ref=e66]:
+            - generic [ref=e67]: Experience 01
+            - heading "Luxury Safaris" [level=3] [ref=e68]
+            - paragraph [ref=e69]: Private guided expeditions through Victoria Falls, Hwange and the Zambezi — small groups, exclusive concessions, guides born on this river.
+            - generic [ref=e70]:
+              - generic [ref=e71]: Explore Safaris
+              - generic [ref=e72]: →
+        - link "Premium Car Rental Experience 02 Premium Car Rental A meticulously serviced 4×4 fleet delivered to your lodge or the airport gate — self-drive freedom with a chauffeur option when you'd rather not. Explore the Fleet →" [ref=e74] [cursor=pointer]:
+          - /url: /rentals
+          - img "Premium Car Rental" [ref=e76]
+          - generic [ref=e78]:
+            - generic [ref=e79]: Experience 02
+            - heading "Premium Car Rental" [level=3] [ref=e80]
+            - paragraph [ref=e81]: A meticulously serviced 4×4 fleet delivered to your lodge or the airport gate — self-drive freedom with a chauffeur option when you'd rather not.
+            - generic [ref=e82]:
+              - generic [ref=e83]: Explore the Fleet
+              - generic [ref=e84]: →
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - text: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e88]: ◆
+      - generic [ref=e89]:
+        - text: Best Safari Operator 2025
+        - generic [ref=e90]: ◆
+      - generic [ref=e91]:
+        - text: Rated 4.9 from 480+ guests
+        - generic [ref=e92]: ◆
+      - generic [ref=e93]:
+        - text: 24/7 Roadside & Guide Support
+        - generic [ref=e94]: ◆
+      - generic [ref=e95]:
+        - text: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e96]: ◆
+      - generic [ref=e97]:
+        - text: Best Safari Operator 2025
+        - generic [ref=e98]: ◆
+      - generic [ref=e99]:
+        - text: Rated 4.9 from 480+ guests
+        - generic [ref=e100]: ◆
+      - generic [ref=e101]:
+        - text: 24/7 Roadside & Guide Support
+        - generic [ref=e102]: ◆
+    - generic [ref=e104]:
+      - generic [ref=e105]:
+        - generic [ref=e106]: "0"
+        - generic [ref=e107]: Years on the Zambezi
+      - generic [ref=e108]:
+        - generic [ref=e110]: 0+
+        - generic [ref=e111]: Guests hosted
+      - generic [ref=e112]:
+        - generic [ref=e113]: "0"
+        - generic [ref=e114]: Vehicles in fleet
+      - generic [ref=e115]:
+        - generic [ref=e116]: "0.0"
+        - generic [ref=e117]: Average guest rating
+    - generic [ref=e119]:
+      - generic [ref=e120]: Guest Notes
+      - generic [ref=e122]:
+        - blockquote [ref=e123]: “We hired the Fortuner for ten days and took two guided drives. Everything arrived early, spotless, with a fridge already cold. Nothing in Zimbabwe touched it.”
+        - generic [ref=e124]: Marike de Villiers — Cape Town
+      - generic [ref=e125]:
+        - button "Show testimonial 1" [ref=e126]
+        - button "Show testimonial 2" [ref=e127]
+        - button "Show testimonial 3" [ref=e128]
+    - generic [ref=e130]:
+      - generic [ref=e131]:
+        - generic [ref=e132]: Questions
+        - heading "Common questions" [level=2] [ref=e134]
+        - paragraph [ref=e136]: Still unsure? Our Victoria Falls office answers within the hour, every day.
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - button "Can I combine a rental with a guided tour?" [ref=e139]:
+            - generic [ref=e140]: Can I combine a rental with a guided tour?
+            - generic [ref=e141]: +
+          - paragraph [ref=e142]: Yes — it's our most popular booking. Keep the vehicle for the week and we'll slot guided days in around it. Combined bookings get 10% off the tour portion.
+        - generic [ref=e143]:
+          - button "What licence do I need to rent?" [ref=e144]:
+            - generic [ref=e145]: What licence do I need to rent?
+            - generic [ref=e146]: +
+          - paragraph [ref=e147]: A valid licence held for two years, in English or with an international permit, plus a passport. Minimum driver age is 23 for the Fortuner and Land Cruiser.
+        - generic [ref=e148]:
+          - button "How small are the tour groups?" [ref=e149]:
+            - generic [ref=e150]: How small are the tour groups?
+            - generic [ref=e151]: +
+          - paragraph [ref=e152]: Six guests maximum on every departure, and we never merge groups. Private departures are available on any tour for a flat supplement.
+        - generic [ref=e153]:
+          - button "Can I take the vehicle across the border?" [ref=e154]:
+            - generic [ref=e155]: Can I take the vehicle across the border?
+            - generic [ref=e156]: +
+          - paragraph [ref=e157]: South Africa, Zambia, Botswana and Namibia are all permitted. We prepare the cross-border letter, third-party insurance and carbon tax paperwork before collection.
+        - generic [ref=e158]:
+          - button "What is your cancellation policy?" [ref=e159]:
+            - generic [ref=e160]: What is your cancellation policy?
+            - generic [ref=e161]: +
+          - paragraph [ref=e162]: Full refund up to 30 days out, 50% to 14 days. Inside 14 days we'll move your dates once at no charge rather than keep your deposit.
+    - generic [ref=e166]:
+      - generic [ref=e167]: Start Planning
+      - heading "Create memories that last a lifetime." [level=2] [ref=e169]
+      - generic [ref=e170]:
+        - button "Plan Your Journey" [ref=e171]
+        - button "Speak To Our Team" [ref=e172]
+  - contentinfo [ref=e173]:
+    - generic [ref=e174]:
+      - generic [ref=e175]:
+        - generic [ref=e176]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e177]: Best Safari Operator 2025
+        - generic [ref=e178]: Rated 4.9 from 480+ guests
+        - generic [ref=e179]: 24/7 Roadside & Guide Support
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - img "Dream Africa logo" [ref=e183]
+            - generic [ref=e184]: Dream Africa
+          - paragraph [ref=e185]: Luxury safaris and premium vehicle hire, one trusted company. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e186]:
+          - generic [ref=e187]: Safaris
+          - generic [ref=e188]:
+            - link "All tours" [ref=e189] [cursor=pointer]:
+              - /url: /safaris
+            - link "Hwange" [ref=e190] [cursor=pointer]:
+              - /url: /safaris
+            - link "Zambezi" [ref=e191] [cursor=pointer]:
+              - /url: /safaris
+            - link "Private charter" [ref=e192] [cursor=pointer]:
+              - /url: /safaris
+        - generic [ref=e193]:
+          - generic [ref=e194]: Eden Car Rental
+          - generic [ref=e195]:
+            - link "The fleet" [ref=e196] [cursor=pointer]:
+              - /url: /rentals
+            - link "Chauffeur service" [ref=e197] [cursor=pointer]:
+              - /url: /rentals
+            - link "Airport transfers" [ref=e198] [cursor=pointer]:
+              - /url: /rentals
+            - link "Cross-border" [ref=e199] [cursor=pointer]:
+              - /url: /rentals
+        - generic [ref=e200]:
+          - generic [ref=e201]: Newsletter
+          - paragraph [ref=e202]: Departures, road reports and the odd elephant photo.
+          - generic [ref=e203]:
+            - textbox "Email address" [ref=e204]
+            - button "Send" [ref=e205]
+      - generic [ref=e206]:
+        - generic [ref=e207]: © 2026 Dream Africa Tours & Car Hire
+        - generic [ref=e208]:
+          - link "Instagram" [ref=e209] [cursor=pointer]:
+            - /url: "#top"
+          - link "WhatsApp" [ref=e210] [cursor=pointer]:
+            - /url: "#top"
+          - link "Legal" [ref=e211] [cursor=pointer]:
+            - /url: "#top"

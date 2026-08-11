@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Reveal from "@/components/ui/reveal";
-import { LODGES } from "@/lib/content";
+import type { LodgeItem } from "@/sanity/lib/types";
 
-export default function Lodges() {
+export default function Lodges({ lodges }: { lodges: LodgeItem[] }) {
   return (
     <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
       <Reveal className="mb-14 max-w-2xl">
@@ -16,7 +16,7 @@ export default function Lodges() {
       </Reveal>
 
       <div className="grid grid-cols-1 gap-7 sm:grid-cols-3">
-        {LODGES.map((lodge, i) => (
+        {lodges.map((lodge, i) => (
           <Reveal key={lodge.name} delay={i * 0.1}>
             <div className="group overflow-hidden rounded-sm">
               <div className="relative h-[320px] overflow-hidden">

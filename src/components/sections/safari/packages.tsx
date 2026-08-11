@@ -1,8 +1,8 @@
 import Reveal from "@/components/ui/reveal";
 import TourCard from "@/components/ui/tour-card";
-import { TOURS } from "@/lib/content";
+import type { Tour } from "@/sanity/lib/types";
 
-export default function Packages() {
+export default function Packages({ tours, whatsapp }: { tours: Tour[]; whatsapp: string }) {
   return (
     <section className="border-t border-line bg-off-white py-28 sm:py-36">
       <div className="mx-auto max-w-[1440px] px-6 sm:px-10">
@@ -17,9 +17,9 @@ export default function Packages() {
         </Reveal>
 
         <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-          {TOURS.map((tour, i) => (
+          {tours.map((tour, i) => (
             <Reveal key={tour.slug} delay={i * 0.08}>
-              <TourCard tour={tour} />
+              <TourCard tour={tour} whatsapp={whatsapp} />
             </Reveal>
           ))}
         </div>

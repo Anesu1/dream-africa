@@ -6,11 +6,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import MagneticButton from "@/components/ui/magnetic-button";
-import { NAV_LINKS, BRANDS } from "@/lib/content";
+import { whatsappLink } from "@/lib/whatsapp";
+import type { SiteSettings } from "@/sanity/lib/types";
 
-export default function Navbar() {
+export default function Navbar({ siteSettings }: { siteSettings: SiteSettings }) {
   const pathname = usePathname();
-  const brand = pathname?.startsWith("/rentals") ? BRANDS.rentals : BRANDS.safaris;
+  const brand = pathname?.startsWith("/rentals") ? siteSettings.brandRentals : siteSettings.brandSafaris;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -49,7 +50,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-9 text-xs uppercase tracking-[0.18em] lg:flex">
-          {NAV_LINKS.map((link) => (
+          {siteSettings.navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="transition-colors hover:text-gold">
               {link.label}
             </Link>
@@ -57,7 +58,16 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <MagneticButton className="rounded-full bg-ink px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-paper transition-colors hover:bg-gold hover:text-ink">
+          <MagneticButton
+            className="rounded-full bg-ink px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-paper transition-colors hover:bg-gold hover:text-ink"
+            onClick={() =>
+              window.open(
+                whatsappLink(siteSettings.whatsapp, `Hi ${brand.name}, I'd like to plan a trip.`),
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
+          >
             Plan Your Journey
           </MagneticButton>
         </div>
@@ -90,11 +100,20 @@ export default function Navbar() {
             className="overflow-hidden border-t border-line bg-paper lg:hidden"
           >
             <nav className="flex flex-col gap-6 px-6 py-8 text-sm uppercase tracking-[0.16em]">
-              {NAV_LINKS.map((link) => (
+              {siteSettings.navLinks.map((link) => (
                 <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
                   {link.label}
                 </Link>
               ))}
+              <a
+                href={whatsappLink(siteSettings.whatsapp, `Hi ${brand.name}, I'd like to plan a trip.`)}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="rounded-full bg-ink px-6 py-3 text-center text-[11px] font-semibold text-paper"
+              >
+                Plan Your Journey
+              </a>
             </nav>
           </motion.div>
         )}

@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "@/components/ui/reveal";
-import { TESTIMONIALS } from "@/lib/content";
+import type { TestimonialItem } from "@/sanity/lib/types";
 
-export default function Testimonials() {
+export default function Testimonials({ testimonials }: { testimonials: TestimonialItem[] }) {
   const [index, setIndex] = useState(0);
-  const t = TESTIMONIALS[index];
+  const t = testimonials[index];
 
   return (
     <section className="border-t border-line px-6 py-28 sm:px-10 sm:py-40">
@@ -37,7 +37,7 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-10 flex justify-center gap-3">
-          {TESTIMONIALS.map((_, i) => (
+          {testimonials.map((_, i) => (
             <button
               key={i}
               type="button"

@@ -1,0 +1,232 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Africa Dream Adventures logo Africa Dream Adventures" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Africa Dream Adventures logo" [ref=e5]
+        - generic [ref=e6]: Africa Dream Adventures
+      - navigation [ref=e7]:
+        - link "Safaris" [ref=e8] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e9] [cursor=pointer]:
+          - /url: /rentals
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e12] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e14]
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - img "Elephant herd at Hwange" [ref=e18]
+      - generic [ref=e20]:
+        - generic [ref=e23]: Experience 01
+        - heading "Luxury Safaris" [level=1] [ref=e25]
+        - paragraph [ref=e27]: Private guided expeditions through Victoria Falls, Hwange and the Zambezi — small groups, exclusive concessions, and guides who were born on this river.
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]: (01) Where we go
+        - heading "Four regions, one river running through them." [level=2] [ref=e31]
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - img "Victoria Falls" [ref=e36]
+          - generic [ref=e38]:
+            - heading "Victoria Falls" [level=3] [ref=e39]
+            - paragraph [ref=e40]: The smoke that thunders — rainforest walks, sunset cruises and the gateway to it all.
+        - generic [ref=e42]:
+          - img "Hwange National Park" [ref=e44]
+          - generic [ref=e46]:
+            - heading "Hwange National Park" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Zimbabwe's largest reserve, elephant herds a thousand strong.
+        - generic [ref=e50]:
+          - img "Upper Zambezi" [ref=e52]
+          - generic [ref=e54]:
+            - heading "Upper Zambezi" [level=3] [ref=e55]
+            - paragraph [ref=e56]: River islands, canoe channels, and camps that don't appear on any public booking site.
+        - generic [ref=e58]:
+          - img "Mana Pools" [ref=e60]
+          - generic [ref=e62]:
+            - heading "Mana Pools" [level=3] [ref=e63]
+            - paragraph [ref=e64]: A UNESCO floodplain on the Zambezi, walking safaris and wild, unfenced camps.
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]: (02) Packages
+        - heading "Game drives, canoe trails and walking safaris." [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - article [ref=e72]:
+          - img "Falls Rainforest Walk" [ref=e74]
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: Walking
+              - generic [ref=e78]: ·
+              - generic [ref=e79]: 1 day
+            - heading "Falls Rainforest Walk" [level=3] [ref=e80]
+            - paragraph [ref=e81]: All sixteen viewpoints at sunrise, before the crowds and while the spray still catches gold.
+            - generic [ref=e82]:
+              - generic [ref=e83]: $180 /person
+              - generic [ref=e84]: View →
+        - article [ref=e86]:
+          - img "Hwange Big Five" [ref=e88]
+          - generic [ref=e89]:
+            - generic [ref=e90]:
+              - generic [ref=e91]: Game drive
+              - generic [ref=e92]: ·
+              - generic [ref=e93]: 4 days
+            - heading "Hwange Big Five" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Four nights in Zimbabwe's largest reserve, tracking elephant herds a thousand strong.
+            - generic [ref=e96]:
+              - generic [ref=e97]: $2,450 /person
+              - generic [ref=e98]: View →
+        - article [ref=e100]:
+          - img "Chobe Day Trip" [ref=e102]
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: Day trip
+              - generic [ref=e106]: ·
+              - generic [ref=e107]: 1 day
+            - heading "Chobe Day Trip" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Cross into Botswana for a river cruise and game drive through Chobe National Park, back at the Falls by dinner.
+            - generic [ref=e110]:
+              - generic [ref=e111]: $220 /person
+              - generic [ref=e112]: View →
+        - article [ref=e114]:
+          - img "Upper Zambezi Canoe" [ref=e116]
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: River
+              - generic [ref=e120]: ·
+              - generic [ref=e121]: 2 days
+            - heading "Upper Zambezi Canoe" [level=3] [ref=e122]
+            - paragraph [ref=e123]: Two days paddling the channels above the Falls, camping on a private island.
+            - generic [ref=e124]:
+              - generic [ref=e125]: $890 /person
+              - generic [ref=e126]: View →
+        - article [ref=e128]:
+          - img "Mana Pools Canoe Safari" [ref=e130]
+          - generic [ref=e131]:
+            - generic [ref=e132]:
+              - generic [ref=e133]: River
+              - generic [ref=e134]: ·
+              - generic [ref=e135]: 5 days
+            - heading "Mana Pools Canoe Safari" [level=3] [ref=e136]
+            - paragraph [ref=e137]: A UNESCO floodplain, walking safaris on foot and wild camps with no fences at all.
+            - generic [ref=e138]:
+              - generic [ref=e139]: $3,200 /person
+              - generic [ref=e140]: View →
+    - generic [ref=e142]:
+      - generic [ref=e143]:
+        - img "Guides born on this river" [ref=e144]
+        - generic [ref=e147]:
+          - generic [ref=e148]: 01 / 03
+          - heading "Guides born on this river" [level=3] [ref=e149]
+          - paragraph [ref=e150]: Every guide on our roster grew up between Hwange and the Falls — they read the bush the way you read a street sign.
+      - generic [ref=e151]:
+        - img "Six guests, never more" [ref=e152]
+        - generic [ref=e155]:
+          - generic [ref=e156]: 02 / 03
+          - heading "Six guests, never more" [level=3] [ref=e157]
+          - paragraph [ref=e158]: Small groups and private departures, so the herd you're watching never has another vehicle in the frame.
+      - generic [ref=e159]:
+        - img "Access most operators can't get" [ref=e160]
+        - generic [ref=e163]:
+          - generic [ref=e164]: 03 / 03
+          - heading "Access most operators can't get" [level=3] [ref=e165]
+          - paragraph [ref=e166]: Fourteen years of relationships with Parks and private concessions open camps that never appear on a public site.
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - generic [ref=e169]: (03) Where you stay
+        - heading "Camps you can't book anywhere else." [level=2] [ref=e170]
+      - generic [ref=e171]:
+        - generic [ref=e173]:
+          - img "Zambezi Sands Camp" [ref=e175]
+          - generic [ref=e176]:
+            - heading "Zambezi Sands Camp" [level=3] [ref=e177]
+            - paragraph [ref=e178]: Upper Zambezi
+        - generic [ref=e180]:
+          - img "Hwange Elephant Camp" [ref=e182]
+          - generic [ref=e183]:
+            - heading "Hwange Elephant Camp" [level=3] [ref=e184]
+            - paragraph [ref=e185]: Hwange National Park
+        - generic [ref=e187]:
+          - img "Falls Rainforest Lodge" [ref=e189]
+          - generic [ref=e190]:
+            - heading "Falls Rainforest Lodge" [level=3] [ref=e191]
+            - paragraph [ref=e192]: Victoria Falls
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e196]: Start Planning
+        - heading "let's get you on the water." [level=2] [ref=e198]:
+          - text: let's get you
+          - text: on the water.
+        - paragraph [ref=e200]: Tell us your dates and group size — private departures and combined rental bookings both welcome. We reply within the hour.
+      - generic [ref=e202]:
+        - textbox "Full name" [ref=e203]
+        - generic [ref=e204]:
+          - textbox "Email address" [ref=e205]
+          - textbox "Phone / WhatsApp" [ref=e206]
+        - generic [ref=e207]:
+          - combobox [ref=e208]:
+            - option "Experience" [disabled] [selected]
+            - option "Game drive"
+            - option "Walking safari"
+            - option "River / canoe"
+            - option "Day trip"
+            - option "Not sure yet"
+          - textbox "Travel date" [ref=e209]
+          - spinbutton [ref=e210]
+        - textbox "Anything else we should know" [ref=e211]
+        - button "Send enquiry" [ref=e212]
+  - contentinfo [ref=e213]:
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - generic [ref=e216]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e217]: Best Safari Operator 2025
+        - generic [ref=e218]: Rated 4.9 from 480+ guests
+        - generic [ref=e219]: 24/7 Roadside & Guide Support
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - img "Africa Dream Adventures logo" [ref=e223]
+            - generic [ref=e224]: Africa Dream Adventures
+          - paragraph [ref=e225]: Luxury safaris and premium vehicle hire, one trusted company. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e226]:
+          - generic [ref=e227]: Safaris
+          - generic [ref=e228]:
+            - link "All tours" [ref=e229] [cursor=pointer]:
+              - /url: /safaris
+            - link "Hwange" [ref=e230] [cursor=pointer]:
+              - /url: /safaris
+            - link "Zambezi" [ref=e231] [cursor=pointer]:
+              - /url: /safaris
+            - link "Private charter" [ref=e232] [cursor=pointer]:
+              - /url: /safaris
+        - generic [ref=e233]:
+          - generic [ref=e234]: Eden Car Rental
+          - generic [ref=e235]:
+            - link "The fleet" [ref=e236] [cursor=pointer]:
+              - /url: /rentals
+            - link "Chauffeur service" [ref=e237] [cursor=pointer]:
+              - /url: /rentals
+            - link "Airport transfers" [ref=e238] [cursor=pointer]:
+              - /url: /rentals
+            - link "Cross-border" [ref=e239] [cursor=pointer]:
+              - /url: /rentals
+        - generic [ref=e240]:
+          - generic [ref=e241]: Newsletter
+          - paragraph [ref=e242]: Departures, road reports and the odd elephant photo.
+          - generic [ref=e243]:
+            - textbox "Email address" [ref=e244]
+            - button "Send" [ref=e245]
+      - generic [ref=e246]:
+        - generic [ref=e247]: © 2026 Africa Dream Adventures Tours & Car Hire
+        - generic [ref=e248]:
+          - link "Instagram" [ref=e249] [cursor=pointer]:
+            - /url: "#top"
+          - link "WhatsApp" [ref=e250] [cursor=pointer]:
+            - /url: "#top"
+          - link "Legal" [ref=e251] [cursor=pointer]:
+            - /url: "#top"
+  - button "Open Next.js Dev Tools" [ref=e257] [cursor=pointer]:
+    - img [ref=e258]
+  - alert [ref=e261]

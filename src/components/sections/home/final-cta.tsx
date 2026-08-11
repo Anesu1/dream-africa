@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Reveal from "@/components/ui/reveal";
 import MagneticButton from "@/components/ui/magnetic-button";
+import { whatsappLink } from "@/lib/whatsapp";
 
-export default function FinalCta() {
+export default function FinalCta({ siteName, whatsapp }: { siteName: string; whatsapp: string }) {
   return (
     <section className="relative overflow-hidden px-6 py-32 sm:px-10 sm:py-44">
       <div className="absolute inset-0">
@@ -29,10 +30,16 @@ export default function FinalCta() {
           </h2>
         </Reveal>
         <Reveal className="flex flex-wrap justify-center gap-4">
-          <MagneticButton className="rounded-full bg-gold px-9 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-ink transition-colors hover:bg-paper">
+          <MagneticButton
+            className="rounded-full bg-gold px-9 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-ink transition-colors hover:bg-paper"
+            onClick={() => window.open(whatsappLink(whatsapp, `Hi ${siteName}, I'd like to plan a trip.`), "_blank", "noopener,noreferrer")}
+          >
             Plan Your Journey
           </MagneticButton>
-          <MagneticButton className="rounded-full border border-paper/35 px-9 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:border-gold hover:text-gold">
+          <MagneticButton
+            className="rounded-full border border-paper/35 px-9 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:border-gold hover:text-gold"
+            onClick={() => window.open(whatsappLink(whatsapp, `Hi ${siteName}, I'd like to speak to your team.`), "_blank", "noopener,noreferrer")}
+          >
             Speak To Our Team
           </MagneticButton>
         </Reveal>

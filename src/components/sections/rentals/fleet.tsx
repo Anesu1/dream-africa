@@ -4,16 +4,16 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "@/components/ui/reveal";
 import VehicleCard from "@/components/ui/vehicle-card";
-import { VEHICLES } from "@/lib/content";
+import type { Vehicle } from "@/sanity/lib/types";
 
 const CATEGORIES = ["All", "SUV", "4x4", "Executive"] as const;
 
-export default function Fleet() {
+export default function Fleet({ vehicles, whatsapp }: { vehicles: Vehicle[]; whatsapp: string }) {
   const [category, setCategory] = useState<(typeof CATEGORIES)[number]>("All");
 
   const filtered = useMemo(
-    () => (category === "All" ? VEHICLES : VEHICLES.filter((v) => v.category === category)),
-    [category],
+    () => (category === "All" ? vehicles : vehicles.filter((v) => v.category === category)),
+    [category, vehicles],
   );
 
   return (
@@ -60,7 +60,7 @@ export default function Fleet() {
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               >
-                <VehicleCard vehicle={vehicle} />
+                <VehicleCard vehicle={vehicle} whatsapp={whatsapp} />
               </motion.div>
             ))}
           </AnimatePresence>

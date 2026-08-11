@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/ui/reveal";
-import { JOURNAL_POSTS } from "@/lib/content";
+import type { JournalPostSummary } from "@/sanity/lib/types";
 
-export default function JournalListing() {
+export default function JournalListing({ posts }: { posts: JournalPostSummary[] }) {
   return (
     <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
       <Reveal className="mb-14 max-w-2xl">
@@ -17,7 +17,7 @@ export default function JournalListing() {
       </Reveal>
 
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {JOURNAL_POSTS.map((post, i) => (
+        {posts.map((post, i) => (
           <Reveal key={post.slug} delay={i * 0.08}>
             <Link href={`/journal/${post.slug}`} className="group block">
               <div className="overflow-hidden rounded-sm">

@@ -1,10 +1,9 @@
-export function OrganizationJsonLd() {
+export function OrganizationJsonLd({ name, description }: { name: string; description: string }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Dream Africa",
-    description:
-      "Luxury Victoria Falls safaris and premium vehicle rental across Zimbabwe, operating as one company through two divisions.",
+    name,
+    description,
     areaServed: ["Victoria Falls", "Hwange", "Zambezi", "Zimbabwe"],
     // Address, telephone and sameAs (social profiles) are intentionally omitted until
     // real, verified contact details and domain are available — publishing placeholder
@@ -14,21 +13,35 @@ export function OrganizationJsonLd() {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
-export function TravelAgencyJsonLd() {
+export function TravelAgencyJsonLd({ parentName }: { parentName: string }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "Dream Africa Safaris",
+    name: `${parentName} Safaris`,
     description:
       "Private guided safari expeditions through Victoria Falls, Hwange and the Zambezi — game drives, canoe trails, walking safaris and boutique camps.",
     areaServed: ["Victoria Falls", "Hwange National Park", "Zambezi", "Zimbabwe"],
-    parentOrganization: { "@type": "Organization", name: "Dream Africa" },
+    parentOrganization: { "@type": "Organization", name: parentName },
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
-export function AutoRentalJsonLd() {
+export function FaqJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
+export function AutoRentalJsonLd({ parentName }: { parentName: string }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "AutoRental",
@@ -36,7 +49,7 @@ export function AutoRentalJsonLd() {
     description:
       "Self-drive, chauffeured and airport-transfer vehicle rental across Victoria Falls and Zimbabwe — 4x4 SUVs, executive sedans and rugged expedition vehicles.",
     areaServed: ["Victoria Falls", "Harare", "Zimbabwe"],
-    parentOrganization: { "@type": "Organization", name: "Dream Africa" },
+    parentOrganization: { "@type": "Organization", name: parentName },
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

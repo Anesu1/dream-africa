@@ -1,0 +1,168 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+      - /url: /
+      - img "Unsplash Home" [ref=e9]
+    - generic [ref=e11]:
+      - link "Log in / Sign up" [ref=e12] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fchobe-river-elephants-boat
+        - img [ref=e13]
+      - button "Language" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+      - button "Menu" [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - navigation [ref=e23]:
+        - search "Find visuals sitewide" [ref=e25]:
+          - button "Search Unsplash" [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+          - combobox [ref=e29]:
+            - searchbox "Search Unsplash" [ref=e30]: chobe river elephants boat
+            - listbox
+          - button "Clear" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+          - button "Visual search" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+      - generic [ref=e39]:
+        - generic [ref=e45]:
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Photos 18":
+                - /url: /s/photos/chobe-river-elephants-boat
+                - img
+                - text: Photos
+                - generic: "18"
+            - listitem [ref=e48]:
+              - link "Illustrations 0" [ref=e49] [cursor=pointer]:
+                - /url: /s/illustrations/chobe-river-elephants-boat
+                - img [ref=e50]
+                - text: Illustrations
+                - generic [ref=e52]: "0"
+            - listitem [ref=e53]:
+              - button "More" [ref=e54] [cursor=pointer]
+          - button "Filters" [ref=e56] [cursor=pointer]:
+            - img [ref=e58]
+            - text: Filters
+        - generic [ref=e60]:
+          - heading "Chobe river elephants boat" [level=1] [ref=e62]
+          - generic [ref=e64]:
+            - button "scroll list to the right" [ref=e66] [cursor=pointer]:
+              - img [ref=e67]
+            - generic [ref=e70]:
+              - link "animal" [ref=e72] [cursor=pointer]:
+                - /url: /s/photos/animal
+              - link "elephant" [ref=e74] [cursor=pointer]:
+                - /url: /s/photos/elephant
+              - link "nature" [ref=e76] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "botswana" [ref=e78] [cursor=pointer]:
+                - /url: /s/photos/botswana
+              - link "wildlife" [ref=e80] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "chobe river" [ref=e82] [cursor=pointer]:
+                - /url: /s/photos/chobe-river
+              - link "chobe national park" [ref=e84] [cursor=pointer]:
+                - /url: /s/photos/chobe-national-park
+              - link "chobe" [ref=e86] [cursor=pointer]:
+                - /url: /s/photos/chobe
+              - link "africa" [ref=e88] [cursor=pointer]:
+                - /url: /s/photos/africa
+              - link "herd" [ref=e90] [cursor=pointer]:
+                - /url: /s/photos/herd
+              - link "african elephant" [ref=e92] [cursor=pointer]:
+                - /url: /s/photos/african-elephant
+              - link "green" [ref=e94] [cursor=pointer]:
+                - /url: /s/photos/green
+        - generic [ref=e96]:
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - figure [ref=e102]:
+                - link "a herd of elephants drinking water from a river" [ref=e105]:
+                  - /url: /photos/a-herd-of-elephants-drinking-water-from-a-river-9f0AchL0eqQ
+                  - img "a herd of elephants drinking water from a river" [ref=e106]
+              - generic [ref=e107]:
+                - heading "Sponsored images" [level=4] [ref=e108]:
+                  - generic [ref=e109]: Sponsored images
+                  - img [ref=e110]
+                - generic [ref=e117]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e118]:
+                - link "A herd of elephants walking in a dry, dusty savanna." [ref=e121]:
+                  - /url: /photos/a-herd-of-elephants-walking-in-a-dry-dusty-savanna-2KY5UROTlAE
+                  - img "A herd of elephants walking in a dry, dusty savanna." [ref=e122]
+              - figure [ref=e123]:
+                - link "a herd of elephants walking across a dirt field" [ref=e126]:
+                  - /url: /photos/a-herd-of-elephants-walking-across-a-dirt-field-utr5ifIk19c
+                  - img "a herd of elephants walking across a dirt field" [ref=e127]
+              - figure [ref=e128]:
+                - link "Hippopotamus grazing by a river with birds nearby" [ref=e131]:
+                  - /url: /photos/hippopotamus-grazing-by-a-river-with-birds-nearby-7eKC2ifkHes
+                  - img "Hippopotamus grazing by a river with birds nearby" [ref=e132]
+              - figure [ref=e133]:
+                - link "A group of elephants standing next to each other" [ref=e136]:
+                  - /url: /photos/a-group-of-elephants-standing-next-to-each-other-xj3t1ezMkOY
+                  - img "A group of elephants standing next to each other" [ref=e137]
+            - generic [ref=e138]:
+              - figure [ref=e139]:
+                - link "A herd of elephants walks along a riverbank." [ref=e142]:
+                  - /url: /photos/a-herd-of-elephants-walks-along-a-riverbank-5HJXNC5SWtE
+                  - img "A herd of elephants walks along a riverbank." [ref=e143]
+              - figure [ref=e144]:
+                - link "A herd of elephants walks along a sandy riverbank." [ref=e147]:
+                  - /url: /photos/a-herd-of-elephants-walks-along-a-sandy-riverbank-MOofbAFdp-k
+                  - img "A herd of elephants walks along a sandy riverbank." [ref=e148]
+              - figure [ref=e149]:
+                - link "Elephants and antelopes by a wide river." [ref=e152]:
+                  - /url: /photos/elephants-and-antelopes-by-a-wide-river-NhYsQtmKBMo
+                  - img "Elephants and antelopes by a wide river." [ref=e153]
+              - figure [ref=e154]:
+                - link "A herd of elephants walks together in a dry landscape." [ref=e157]:
+                  - /url: /photos/a-herd-of-elephants-walks-together-in-a-dry-landscape-ymEHe4XqLQo
+                  - img "A herd of elephants walks together in a dry landscape." [ref=e158]
+              - figure [ref=e159]:
+                - link "the sun is setting over a body of water" [ref=e162]:
+                  - /url: /photos/the-sun-is-setting-over-a-body-of-water-hoNPbyHEzz0
+                  - img "the sun is setting over a body of water" [ref=e163]
+              - figure [ref=e164]:
+                - link "Two elephants walk across a dry, dusty landscape." [ref=e167]:
+                  - /url: /photos/two-elephants-walk-across-a-dry-dusty-landscape-7IPEbyEWnG0
+                  - img "Two elephants walk across a dry, dusty landscape." [ref=e168]
+              - figure [ref=e169]:
+                - link "A jeep drives down a dusty dirt road through trees." [ref=e172]:
+                  - /url: /photos/a-jeep-drives-down-a-dusty-dirt-road-through-trees-_gJIQ1Mq0jY
+                  - img "A jeep drives down a dusty dirt road through trees." [ref=e173]
+            - generic [ref=e174]:
+              - figure [ref=e175]:
+                - link "Elephants walk along a riverbank in a dry landscape." [ref=e178]:
+                  - /url: /photos/elephants-walk-along-a-riverbank-in-a-dry-landscape-0aZW1JcSSrY
+                  - img "Elephants walk along a riverbank in a dry landscape." [ref=e179]
+              - figure [ref=e180]:
+                - link "an elephant standing in a field next to a body of water" [ref=e183]:
+                  - /url: /photos/an-elephant-standing-in-a-field-next-to-a-body-of-water-Fnvv1TBCndU
+                  - img "an elephant standing in a field next to a body of water" [ref=e184]
+              - figure [ref=e185]:
+                - link "2 elephants walking on brown field during daytime" [ref=e188]:
+                  - /url: /photos/2-elephants-walking-on-brown-field-during-daytime-ThxPX8Un1BU
+                  - img "2 elephants walking on brown field during daytime" [ref=e189]
+              - figure [ref=e190]:
+                - link "a herd of elephants standing on top of a lush green field" [ref=e193]:
+                  - /url: /photos/a-herd-of-elephants-standing-on-top-of-a-lush-green-field-X6eVytdolrY
+                  - img "a herd of elephants standing on top of a lush green field" [ref=e194]
+              - figure [ref=e195]:
+                - link "A herd of elephants stands together in dry terrain." [ref=e198]:
+                  - /url: /photos/a-herd-of-elephants-stands-together-in-dry-terrain-eDTohyeuXwk
+                  - img "A herd of elephants stands together in dry terrain." [ref=e199]
+              - figure [ref=e200]:
+                - link "A group of elephants standing next to each other" [ref=e203]:
+                  - /url: /photos/a-group-of-elephants-standing-next-to-each-other-HOwkihxgVrY
+                  - img "A group of elephants standing next to each other" [ref=e204]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e208]:
+            - text: Browse premium images on iStock
+            - generic [ref=e209]: "| Claim your discount now"
+          - generic [ref=e221]:
+            - link [ref=e222] [cursor=pointer]:
+              - /url: /
+              - img [ref=e223]
+            - paragraph [ref=e225]: Make something awesome
+    - generic:
+      - region "Notifications"

@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { BRANDS } from "@/lib/content";
+import type { SiteSettings } from "@/sanity/lib/types";
 
-export default function LoadingScreen() {
+export default function LoadingScreen({ siteSettings }: { siteSettings: SiteSettings }) {
   const pathname = usePathname();
-  const brand = pathname?.startsWith("/rentals") ? BRANDS.rentals : BRANDS.safaris;
+  const brand = pathname?.startsWith("/rentals") ? siteSettings.brandRentals : siteSettings.brandSafaris;
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {

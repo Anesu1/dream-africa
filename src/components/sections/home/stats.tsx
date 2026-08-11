@@ -1,16 +1,16 @@
-import { STATS } from "@/lib/content";
 import Reveal from "@/components/ui/reveal";
 import Counter from "@/components/ui/counter";
+import type { StatItem } from "@/sanity/lib/types";
 
-export default function Stats() {
+export default function Stats({ stats }: { stats: StatItem[] }) {
   return (
     <section className="bg-ink text-paper">
       <div className="mx-auto grid max-w-[1440px] grid-cols-2 px-6 sm:px-10 lg:grid-cols-4">
-        {STATS.map((stat, i) => (
+        {stats.map((stat, i) => (
           <Reveal
             key={stat.label}
             delay={i * 0.08}
-            className={`border-white/10 py-16 sm:py-20 ${i < STATS.length - 1 ? "border-r" : ""} ${
+            className={`border-white/10 py-16 sm:py-20 ${i < stats.length - 1 ? "border-r" : ""} ${
               i % 2 === 0 ? "pr-4" : "pl-4"
             } lg:px-8`}
           >

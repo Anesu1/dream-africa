@@ -1,7 +1,8 @@
 import Image from "next/image";
-import type { Vehicle } from "@/lib/content";
+import { whatsappLink } from "@/lib/whatsapp";
+import type { Vehicle } from "@/sanity/lib/types";
 
-export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
+export default function VehicleCard({ vehicle, whatsapp }: { vehicle: Vehicle; whatsapp: string }) {
   return (
     <article className="group overflow-hidden rounded-sm border border-line transition-colors hover:border-gold">
       <div className="relative h-[240px] overflow-hidden">
@@ -33,7 +34,12 @@ export default function VehicleCard({ vehicle }: { vehicle: Vehicle }) {
           <span className="font-data text-2xl font-medium">
             ${vehicle.price} <span className="font-sans text-xs text-muted">/ day</span>
           </span>
-          <a href="#book" className="text-[11px] uppercase tracking-[0.16em] text-gold">
+          <a
+            href={whatsappLink(whatsapp, `Hi, I'd like to reserve the ${vehicle.name}.`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[11px] uppercase tracking-[0.16em] text-gold"
+          >
             Reserve →
           </a>
         </div>

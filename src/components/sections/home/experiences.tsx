@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/reveal";
-import { EXPERIENCES } from "@/lib/content";
+import type { ExperienceCard } from "@/sanity/lib/types";
 
-export default function Experiences() {
+export default function Experiences({ experiences }: { experiences: [ExperienceCard, ExperienceCard] }) {
   return (
     <section id="experiences" className="border-t border-line bg-off-white py-28 sm:py-40">
       <div className="mx-auto max-w-[1440px] px-6 sm:px-10">
@@ -21,7 +21,7 @@ export default function Experiences() {
         </Reveal>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          {EXPERIENCES.map((exp, i) => (
+          {experiences.map((exp, i) => (
             <Reveal key={exp.key} delay={i * 0.12}>
               <Link href={exp.href} className="group relative block h-[560px] overflow-hidden rounded-sm">
                 <motion.div

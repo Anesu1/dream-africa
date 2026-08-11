@@ -1,8 +1,8 @@
 import Reveal from "@/components/ui/reveal";
 import FaqItem from "@/components/ui/faq-item";
-import { FAQS } from "@/lib/content";
+import type { FaqItem as FaqItemType } from "@/sanity/lib/types";
 
-export default function Faq() {
+export default function Faq({ faqs }: { faqs: FaqItemType[] }) {
   return (
     <section className="border-t border-line py-28 sm:py-40">
       <div className="mx-auto grid max-w-[1440px] gap-16 px-6 sm:px-10 lg:grid-cols-[.75fr_1.25fr] lg:gap-20">
@@ -23,7 +23,7 @@ export default function Faq() {
           </Reveal>
         </div>
         <div>
-          {FAQS.map((faq) => (
+          {faqs.map((faq) => (
             <FaqItem key={faq.question} question={faq.question} answer={faq.answer} />
           ))}
         </div>

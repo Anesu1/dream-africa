@@ -3,9 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Reveal from "@/components/ui/reveal";
-import { DESTINATIONS } from "@/lib/content";
+import type { NamedImage } from "@/sanity/lib/types";
 
-export default function Destinations() {
+export default function Destinations({ destinations }: { destinations: NamedImage[] }) {
   return (
     <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
       <Reveal className="mb-14 max-w-2xl">
@@ -19,7 +19,7 @@ export default function Destinations() {
       </Reveal>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {DESTINATIONS.map((d, i) => (
+        {destinations.map((d, i) => (
           <Reveal key={d.name} delay={i * 0.08}>
             <div className="group relative h-[380px] overflow-hidden rounded-sm">
               <motion.div className="absolute inset-0" whileHover={{ scale: 1.08 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}>

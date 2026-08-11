@@ -1,13 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Playfair_Display, Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
-import SmoothScroll from "@/components/providers/smooth-scroll";
-import Cursor from "@/components/providers/cursor";
-import LoadingScreen from "@/components/providers/loading-screen";
-import PageTransition from "@/components/providers/page-transition";
-import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
-import { OrganizationJsonLd } from "@/components/seo/json-ld";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -38,13 +31,22 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+// No production domain has been confirmed yet — set NEXT_PUBLIC_SITE_URL once the
+// real domain is live. Falls back to a placeholder so this doesn't silently resolve
+// canonical/OG URLs against the wrong host.
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const DEFAULT_TITLE = "Victoria Falls Safaris & Car Rental | Africa Dream Adventures";
+const DEFAULT_DESCRIPTION =
+  "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium self-drive and chauffeured car rental across Zimbabwe — one trusted company for your whole trip.";
+const SOCIAL_IMAGE = "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&h=630&q=80&auto=format&fit=crop";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: "Victoria Falls Safaris & Car Rental | Dream Africa",
-    template: "%s | Dream Africa",
+    default: DEFAULT_TITLE,
+    template: "%s | Africa Dream Adventures",
   },
-  description:
-    "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium self-drive and chauffeured car rental across Zimbabwe — one trusted company for your whole trip.",
+  description: DEFAULT_DESCRIPTION,
   keywords: [
     "Victoria Falls safaris",
     "Zimbabwe safari packages",
@@ -55,12 +57,20 @@ export const metadata: Metadata = {
     "4x4 rental Zimbabwe",
     "Hwange National Park tours",
   ],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Victoria Falls Safaris & Car Rental | Dream Africa",
+    title: DEFAULT_TITLE,
     description:
       "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium car rental across Zimbabwe.",
     type: "website",
     locale: "en_ZW",
+    images: [{ url: SOCIAL_IMAGE, width: 1200, height: 630, alt: DEFAULT_TITLE }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [SOCIAL_IMAGE],
   },
   robots: { index: true, follow: true },
 };
@@ -74,16 +84,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cinzel.variable} ${playfair.variable} ${jakarta.variable} ${spaceGrotesk.variable}`}>
-      <body className="bg-paper text-ink">
-        <OrganizationJsonLd />
-        <LoadingScreen />
-        <Cursor />
-        <SmoothScroll>
-          <Navbar />
-          <PageTransition>{children}</PageTransition>
-          <Footer />
-        </SmoothScroll>
-      </body>
+      <body className="bg-paper text-ink">{children}</body>
     </html>
   );
 }

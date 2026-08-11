@@ -1,9 +1,15 @@
 import Image from "next/image";
-import type { Tour } from "@/lib/content";
+import { whatsappLink } from "@/lib/whatsapp";
+import type { Tour } from "@/sanity/lib/types";
 
-export default function TourCard({ tour }: { tour: Tour }) {
+export default function TourCard({ tour, whatsapp }: { tour: Tour; whatsapp: string }) {
   return (
-    <article className="group relative overflow-hidden rounded-sm">
+    <a
+      href={whatsappLink(whatsapp, `Hi, I'd like to book the ${tour.title} (${tour.price}${tour.priceUnit}).`)}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative block overflow-hidden rounded-sm"
+    >
       <div className="overflow-hidden">
         <Image
           src={tour.image}
@@ -29,6 +35,6 @@ export default function TourCard({ tour }: { tour: Tour }) {
           <span className="text-[11px] uppercase tracking-[0.18em] text-gold">View →</span>
         </div>
       </div>
-    </article>
+    </a>
   );
 }

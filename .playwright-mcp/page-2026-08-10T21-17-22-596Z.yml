@@ -1,0 +1,49 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+      - /url: /
+      - img "Unsplash Home" [ref=e9]
+    - generic [ref=e11]:
+      - link "Log in / Sign up" [ref=e12] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fafrican-bush-lodge-river-view-thatched
+        - img [ref=e13]
+      - button "Language" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+      - button "Menu" [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - navigation [ref=e23]:
+        - search "Find visuals sitewide" [ref=e25]:
+          - button "Search Unsplash" [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+          - combobox [ref=e29]:
+            - searchbox "Search Unsplash" [ref=e30]: african bush lodge river view thatched
+            - listbox
+          - button "Clear" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+          - button "Visual search" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+      - generic [ref=e39]:
+        - generic [ref=e45]:
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Photos 0":
+                - /url: /s/photos/african-bush-lodge-river-view-thatched
+                - img
+                - text: Photos
+                - generic: "0"
+            - listitem [ref=e48]:
+              - link "Illustrations 0" [ref=e49] [cursor=pointer]:
+                - /url: /s/illustrations/african-bush-lodge-river-view-thatched
+                - img [ref=e50]
+                - text: Illustrations
+                - generic [ref=e52]: "0"
+            - listitem [ref=e53]:
+              - button "More" [ref=e54] [cursor=pointer]
+          - button "Filters" [ref=e56] [cursor=pointer]:
+            - img [ref=e58]
+            - text: Filters
+        - heading "African bush lodge river view thatched" [level=1] [ref=e62]
+    - generic:
+      - region "Notifications"

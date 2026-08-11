@@ -1,0 +1,179 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+      - /url: /
+      - img "Unsplash Home" [ref=e9]
+    - generic [ref=e11]:
+      - link "Log in / Sign up" [ref=e12] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Flion-golden-hour-safari
+        - img [ref=e13]
+      - button "Language" [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+      - button "Menu" [ref=e18] [cursor=pointer]:
+        - img [ref=e19]
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - navigation [ref=e23]:
+        - search "Find visuals sitewide" [ref=e25]:
+          - button "Search Unsplash" [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+          - combobox [ref=e29]:
+            - searchbox "Search Unsplash" [ref=e30]: lion golden hour safari
+            - listbox
+          - button "Clear" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+          - button "Visual search" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+      - generic [ref=e39]:
+        - generic [ref=e45]:
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Photos 7.8k":
+                - /url: /s/photos/lion-golden-hour-safari
+                - img
+                - text: Photos
+                - generic: 7.8k
+            - listitem [ref=e48]:
+              - link "Illustrations 15" [ref=e49] [cursor=pointer]:
+                - /url: /s/illustrations/lion-golden-hour-safari
+                - img [ref=e50]
+                - text: Illustrations
+                - generic [ref=e52]: "15"
+            - listitem [ref=e53]:
+              - button "More" [ref=e54] [cursor=pointer]
+          - button "Filters" [ref=e56] [cursor=pointer]:
+            - img [ref=e58]
+            - text: Filters
+        - generic [ref=e60]:
+          - heading "Lion golden hour safari" [level=1] [ref=e62]
+          - generic [ref=e64]:
+            - button "scroll list to the right" [ref=e66] [cursor=pointer]:
+              - img [ref=e67]
+            - generic [ref=e70]:
+              - link "lion" [ref=e72] [cursor=pointer]:
+                - /url: /s/photos/lion
+              - link "animal" [ref=e74] [cursor=pointer]:
+                - /url: /s/photos/animal
+              - link "wildlife" [ref=e76] [cursor=pointer]:
+                - /url: /s/photos/wildlife
+              - link "safari" [ref=e78] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "male animal" [ref=e80] [cursor=pointer]:
+                - /url: /s/photos/male-animal
+              - link "natural habitat" [ref=e82] [cursor=pointer]:
+                - /url: /s/photos/natural-habitat
+              - link "animals in the wild" [ref=e84] [cursor=pointer]:
+                - /url: /s/photos/animals-in-the-wild
+              - link "safari animal" [ref=e86] [cursor=pointer]:
+                - /url: /s/photos/safari-animal
+              - link "male lion" [ref=e88] [cursor=pointer]:
+                - /url: /s/photos/male-lion
+              - link "mane" [ref=e90] [cursor=pointer]:
+                - /url: /s/photos/mane
+              - link "african wildlife" [ref=e92] [cursor=pointer]:
+                - /url: /s/photos/african-wildlife
+              - link "wildlife photography" [ref=e94] [cursor=pointer]:
+                - /url: /s/photos/wildlife-photography
+        - generic [ref=e96]:
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - figure [ref=e102]:
+                - link "a lion standing in a field of tall grass" [ref=e105]:
+                  - /url: /photos/a-lion-standing-in-a-field-of-tall-grass-XTFJh5rrLLs
+                  - img "a lion standing in a field of tall grass" [ref=e106]
+              - generic [ref=e107]:
+                - heading "Sponsored images" [level=4] [ref=e108]:
+                  - generic [ref=e109]: Sponsored images
+                  - img [ref=e110]
+                - generic [ref=e117]: ––– – –– –– – –– –––– ––– ––––
+              - figure [ref=e118]:
+                - link "lion roaring on top of mountain during golden hour" [ref=e121]:
+                  - /url: /photos/lion-roaring-on-top-of-mountain-during-golden-hour-aMBhrrveocw
+                  - img "lion roaring on top of mountain during golden hour" [ref=e122]
+              - figure [ref=e123]:
+                - link "lion lying on brown grass field during sunset" [ref=e126]:
+                  - /url: /photos/lion-lying-on-brown-grass-field-during-sunset-8oLnCRz7hwM
+                  - img "lion lying on brown grass field during sunset" [ref=e127]
+              - figure [ref=e128]:
+                - link "brown lion lying on brown grass during daytime" [ref=e131]:
+                  - /url: /photos/brown-lion-lying-on-brown-grass-during-daytime-GV2LxPJArgQ
+                  - img "brown lion lying on brown grass during daytime" [ref=e132]
+              - figure [ref=e133]:
+                - link "silhouette of SUV under orange sky" [ref=e136]:
+                  - /url: /photos/silhouette-of-suv-under-orange-sky-epf1tdtIIkM
+                  - img "silhouette of SUV under orange sky" [ref=e137]
+              - figure [ref=e138]:
+                - link "lion on ground during daytime" [ref=e141]:
+                  - /url: /photos/lion-on-ground-during-daytime-xHnb8UeZnmg
+                  - img "lion on ground during daytime" [ref=e142]
+              - figure [ref=e143]:
+                - link "Two lionesses are lying on the hill. Okavango Delta. An excellent illustration." [ref=e146]:
+                  - /url: /photos/two-lionesses-are-lying-on-the-hill-okavango-delta-an-excellent-illustration-QZzZSpnK_Og
+                  - img "Two lionesses are lying on the hill. Okavango Delta. An excellent illustration." [ref=e147]
+              - figure [ref=e148]:
+                - link "brown cougar" [ref=e151]:
+                  - /url: /photos/brown-cougar-OYq3l_mbTxY
+                  - img "brown cougar" [ref=e152]
+            - generic [ref=e153]:
+              - figure [ref=e154]:
+                - link "man riding on gray car during sunset" [ref=e157]:
+                  - /url: /photos/man-riding-on-gray-car-during-sunset-0LwfbRtQ-ac
+                  - img "man riding on gray car during sunset" [ref=e158]
+              - figure [ref=e159]:
+                - link "a safari vehicle with passengers and a lion" [ref=e162]:
+                  - /url: /photos/a-safari-vehicle-with-passengers-and-a-lion-RtZUgho6x-s
+                  - img "a safari vehicle with passengers and a lion" [ref=e163]
+              - figure [ref=e164]:
+                - link "lion on brown grass field during daytime" [ref=e167]:
+                  - /url: /photos/lion-on-brown-grass-field-during-daytime-vu0gvM5he8o
+                  - img "lion on brown grass field during daytime" [ref=e168]
+              - figure [ref=e169]:
+                - link "lion on green grass during golden hour" [ref=e172]:
+                  - /url: /photos/lion-on-green-grass-during-golden-hour-ywPqgpKsXls
+                  - img "lion on green grass during golden hour" [ref=e173]
+              - figure [ref=e174]:
+                - link "lioness reclining on soil in front of lion" [ref=e177]:
+                  - /url: /photos/lioness-reclining-on-soil-in-front-of-lion-f5CFy6-FaC4
+                  - img "lioness reclining on soil in front of lion" [ref=e178]
+              - figure [ref=e179]:
+                - link "a safari vehicle with passengers and a lion in the grass" [ref=e182]:
+                  - /url: /photos/a-safari-vehicle-with-passengers-and-a-lion-in-the-grass-Q3YmoeoQ9g0
+                  - img "a safari vehicle with passengers and a lion in the grass" [ref=e183]
+              - figure [ref=e184]:
+                - link "brown lion" [ref=e187]:
+                  - /url: /photos/brown-lion-sAGXVK6bNFc
+                  - img "brown lion" [ref=e188]
+              - figure [ref=e189]:
+                - link "a group of people riding in the back of a truck" [ref=e192]:
+                  - /url: /photos/a-group-of-people-riding-in-the-back-of-a-truck-atzjD7UuxcI
+                  - img "a group of people riding in the back of a truck" [ref=e193]
+            - generic [ref=e194]:
+              - contentinfo [ref=e199]:
+                - generic [ref=e205]: –– ––– ––– –– ––– – ––– ––– –––– – – –– ––– – – ––– –– –– –––– ––
+              - figure [ref=e207]:
+                - link "A lion portrait in the Maasai Mara, Africa" [ref=e210]:
+                  - /url: /photos/a-lion-portrait-in-the-maasai-mara-africa-rpR1PcP1384
+                  - img "A lion portrait in the Maasai Mara, Africa" [ref=e211]
+              - figure [ref=e212]:
+                - link "A lion portrait in the Maasai Mara, Africa" [ref=e215]:
+                  - /url: /photos/a-lion-portrait-in-the-maasai-mara-africa-k66p9SqWPQ4
+                  - img "A lion portrait in the Maasai Mara, Africa" [ref=e216]
+              - figure [ref=e217]:
+                - link "a lion standing on top of a grass covered field" [ref=e220]:
+                  - /url: /photos/a-lion-standing-on-top-of-a-grass-covered-field-V8Ece86Ltr4
+                  - img "a lion standing on top of a grass covered field" [ref=e221]
+              - figure [ref=e222]:
+                - link "a pair of lions in a grassy field" [ref=e225]:
+                  - /url: /photos/a-pair-of-lions-in-a-grassy-field-hesJq5WhaSA
+                  - img "a pair of lions in a grassy field" [ref=e226]
+          - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e230]:
+            - text: Browse premium images on iStock
+            - generic [ref=e231]: "| Claim your discount now"
+          - button "Load more" [ref=e245] [cursor=pointer]
+          - generic [ref=e246]:
+            - link [ref=e247] [cursor=pointer]:
+              - /url: /
+              - img [ref=e248]
+            - paragraph [ref=e250]: Make something awesome
+    - generic:
+      - region "Notifications"

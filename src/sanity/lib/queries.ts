@@ -1,0 +1,99 @@
+import { defineQuery } from "groq";
+
+const brandProjection = `{ name, tagline, "logo": logo.asset->url, parentNote }`;
+
+export const SITE_SETTINGS_QUERY = defineQuery(`*[_type == "siteSettings"][0]{
+  name,
+  tagline,
+  address,
+  founded,
+  copyright,
+  whatsapp,
+  "brandSafaris": brandSafaris${brandProjection},
+  "brandRentals": brandRentals${brandProjection},
+  navLinks[]{ label, href },
+  footerSafarisLinks[]{ label, href },
+  footerRentalsLinks[]{ label, href },
+  trustIndicators,
+}`);
+
+export const HOME_PAGE_QUERY = defineQuery(`*[_type == "homePage"][0]{
+  "eyebrow": heroEyebrow,
+  "headline": heroHeadline,
+  "sub": heroSub,
+  "primaryCta": heroPrimaryCta{ label, href },
+  "secondaryCta": heroSecondaryCta{ label, href },
+  "image": heroImage.asset->url,
+  "whoWeAre": {
+    "eyebrow": whoWeAreEyebrow,
+    "heading": whoWeAreHeading,
+    "body": whoWeAreBody,
+    "image": whoWeAreImage.asset->url,
+    "milestones": milestones[]{ year, label },
+  },
+  "experiences": [
+    experienceSafaris{ "key": "safaris", label, title, description, "image": image.asset->url, cta, "href": "/safaris" },
+    experienceRentals{ "key": "rentals", label, title, description, "image": image.asset->url, cta, "href": "/rentals" },
+  ],
+  "stats": stats[]{ value, suffix, decimals, label },
+  "testimonials": testimonials[]{ quote, author, location },
+  "faqs": faqs[]{ question, answer },
+}`);
+
+export const SAFARI_PAGE_QUERY = defineQuery(`*[_type == "safariPageSettings"][0]{
+  heroEyebrow,
+  heroTitle,
+  heroDescription,
+  "heroImage": heroImage.asset->url,
+  "destinations": destinations[]{ name, description, "image": image.asset->url },
+  "lodges": lodges[]{ name, region, "image": image.asset->url },
+}`);
+
+export const RENTALS_PAGE_QUERY = defineQuery(`*[_type == "rentalsPageSettings"][0]{
+  heroEyebrow,
+  heroTitle,
+  heroDescription,
+  "heroImage": heroImage.asset->url,
+  "rentalServices": rentalServices[]{ title, description },
+}`);
+
+export const TOURS_QUERY = defineQuery(`*[_type == "tour"] | order(order asc) {
+  "slug": slug.current,
+  category,
+  duration,
+  title,
+  description,
+  price,
+  priceUnit,
+  "image": image.asset->url,
+  highlights,
+}`);
+
+export const VEHICLES_QUERY = defineQuery(`*[_type == "vehicle"] | order(order asc) {
+  "slug": slug.current,
+  category,
+  name,
+  subtitle,
+  price,
+  "image": image.asset->url,
+  "specs": specs[]{ label, value },
+}`);
+
+export const JOURNAL_POSTS_QUERY = defineQuery(`*[_type == "journalPost"] | order(publishedAt desc) {
+  "slug": slug.current,
+  category,
+  title,
+  excerpt,
+  "image": image.asset->url,
+}`);
+
+export const JOURNAL_POST_SLUGS_QUERY = defineQuery(`*[_type == "journalPost"]{ "slug": slug.current }`);
+
+export const JOURNAL_POST_BY_SLUG_QUERY = defineQuery(`*[_type == "journalPost" && slug.current == $slug][0] {
+  "slug": slug.current,
+  category,
+  title,
+  excerpt,
+  body,
+  "image": image.asset->url,
+}`);

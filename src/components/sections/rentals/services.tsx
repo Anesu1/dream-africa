@@ -1,7 +1,7 @@
 import Reveal from "@/components/ui/reveal";
-import { RENTAL_SERVICES } from "@/lib/content";
+import type { RentalService } from "@/sanity/lib/types";
 
-export default function Services() {
+export default function Services({ services }: { services: RentalService[] }) {
   return (
     <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
       <Reveal className="mb-14 max-w-2xl">
@@ -15,7 +15,7 @@ export default function Services() {
       </Reveal>
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
-        {RENTAL_SERVICES.map((service, i) => (
+        {services.map((service, i) => (
           <Reveal key={service.title} delay={i * 0.1}>
             <div className="rounded-sm border border-line p-9 transition-colors hover:border-gold">
               <div className="mb-4 font-subheading text-2xl font-medium">{service.title}</div>
