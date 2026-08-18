@@ -79,6 +79,22 @@ export type RentalsPageSettings = {
   rentalServices: RentalService[];
 };
 
+export type ActivityItem = { label: string; price: string; note?: string };
+export type ActivityCategory = { title: string; items: ActivityItem[] };
+export type ComboPackage = { title: string; price: string; savings?: string; description: string; checklist?: string[] };
+export type PackageTier = { tier: string; title: string; price: string; productCount?: string; included: string };
+
+export type ActivitiesPageSettings = {
+  heroEyebrow: string;
+  heroTitle: string;
+  heroDescription: string;
+  heroImage: string;
+  specialCombos: ComboPackage[];
+  packageTiers: PackageTier[];
+  categories: ActivityCategory[];
+  disclaimer?: string;
+};
+
 export type Tour = {
   slug: string;
   category: string;

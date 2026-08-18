@@ -1,0 +1,342 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Africa Dream Adventures
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Africa Dream Adventures logo Africa Dream Adventures" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Africa Dream Adventures logo" [ref=e7]
+        - generic [ref=e8]: Africa Dream Adventures
+      - navigation [ref=e9]:
+        - link "Safaris" [ref=e10] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e11] [cursor=pointer]:
+          - /url: /rentals
+        - link "Activities" [ref=e12] [cursor=pointer]:
+          - /url: /activities
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e14] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e17]
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - img "Adventure Activities" [ref=e21]
+      - generic [ref=e23]:
+        - generic [ref=e26]: Victoria Falls, Zimbabwe
+        - heading "Adventure Activities" [level=1] [ref=e28]
+        - paragraph [ref=e30]: Bungee jumps, white-water rafting, jetboat runs, scenic flights and sunset cruises over the Zambezi — real 2026 pricing, bundled combos and discounted packages.
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: (01) Special combos
+        - heading "Bundle the adrenaline, save on the total." [level=2] [ref=e34]
+      - generic [ref=e35]:
+        - generic [ref=e37]:
+          - heading "Tick It To Adventure 1" [level=3] [ref=e38]
+          - generic [ref=e40]: US$370
+          - paragraph [ref=e41]: A Standard Sunset Cruise plus your choice of any TWO activities from the list below.
+          - generic [ref=e42]:
+            - generic [ref=e43]: Adventure Jetboat
+            - generic [ref=e44]: Rafting
+            - generic [ref=e45]: Guided Falls Tour
+            - generic [ref=e46]: Bridge Swing
+            - generic [ref=e47]: Game Walk
+            - generic [ref=e48]: Luxury Sunset Cruise
+            - generic [ref=e49]: Bungee Jump
+            - generic [ref=e50]: Bridge Slide
+            - generic [ref=e51]: Boma Dinner
+            - generic [ref=e52]: Night Drive
+            - generic [ref=e53]: Ele Crew Dinner
+            - generic [ref=e54]: Game Drive
+            - generic [ref=e55]: Bridge Tour
+            - generic [ref=e56]: Dinner Cruise
+            - generic [ref=e57]: Through the eye of an Elephant
+            - generic [ref=e58]: Simunye
+            - generic [ref=e59]: Helicopter Flight of Angels 12-13mins
+        - generic [ref=e61]:
+          - heading "Tick It To Adventure 2" [level=3] [ref=e62]
+          - generic [ref=e64]: US$478
+          - paragraph [ref=e65]: Your choice of any THREE activities from the list below.
+          - generic [ref=e66]:
+            - generic [ref=e67]: Adventure Jetboat
+            - generic [ref=e68]: Rafting
+            - generic [ref=e69]: Guided Falls Tour
+            - generic [ref=e70]: Bridge Swing
+            - generic [ref=e71]: Game Walk
+            - generic [ref=e72]: Luxury Sunset Cruise
+            - generic [ref=e73]: Bungee Jump
+            - generic [ref=e74]: Bridge Slide
+            - generic [ref=e75]: Boma Dinner
+            - generic [ref=e76]: Night Drive
+            - generic [ref=e77]: Ele Crew Dinner
+            - generic [ref=e78]: Game Drive
+            - generic [ref=e79]: Bridge Tour
+            - generic [ref=e80]: Dinner Cruise
+            - generic [ref=e81]: Through the eye of an Elephant
+            - generic [ref=e82]: Simunye
+            - generic [ref=e83]: Helicopter Flight of Angels 12-13mins
+        - generic [ref=e85]:
+          - heading "Gruesome Twosome 1 — Raft and Bungee Combo" [level=3] [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]: US$347
+            - generic [ref=e89]: (SAVE US$10)
+          - paragraph [ref=e90]: One Day Rafting Trip paired with a Bungee Jump off the Victoria Falls Bridge.
+        - generic [ref=e92]:
+          - heading "Gruesome Twosome 2 — Bungee and Jetboat Combo" [level=3] [ref=e93]
+          - generic [ref=e94]:
+            - generic [ref=e95]: US$312
+            - generic [ref=e96]: (SAVE US$34)
+          - paragraph [ref=e97]: A Bungee Jump paired with an Adventure Jetboat run through the Zambezi rapids.
+        - generic [ref=e99]:
+          - heading "Big Air Experience" [level=3] [ref=e100]
+          - generic [ref=e102]: US$280
+          - paragraph [ref=e103]: Bridge Swing, Bridge Slide and Bungee Jump — all three bridge activities in one booking.
+        - generic [ref=e105]:
+          - heading "Rampage Combo" [level=3] [ref=e106]
+          - generic [ref=e108]: US$204
+          - paragraph [ref=e109]: Adventure Jetboat paired with Rafting (Rapid 1-5).
+        - generic [ref=e111]:
+          - heading "Jetboat & Rafting" [level=3] [ref=e112]
+          - generic [ref=e114]: US$268
+          - paragraph [ref=e115]: Excluding National Parks fees. Bring US$12 to check in.
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e119]: (02) Discounted packages
+        - heading "One booking, a full day sorted." [level=2] [ref=e120]
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - generic [ref=e124]: Platinum Package
+          - heading "The Full Monty" [level=3] [ref=e125]
+          - generic [ref=e126]: US$326
+          - generic [ref=e127]: Four Products/One Package
+          - paragraph [ref=e128]: Zambezi Sunset Cruise, early morning Helicopter Flight followed by a Guided Tour of the Falls, lunch at the Rainforest Rest (optional), Historic Bridge Tour — return to hotel late afternoon.
+        - generic [ref=e130]:
+          - generic [ref=e131]: Gold Package
+          - heading "A Bridge Too Far" [level=3] [ref=e132]
+          - generic [ref=e133]: US$247
+          - generic [ref=e134]: Three Products/One Package (Excludes Historic Bridge Tour)
+          - paragraph [ref=e135]: Zambezi Sunset Cruise, early morning Helicopter Flight followed by a Guided Tour of the Falls, lunch at the Rainforest Restaurant (optional), return to hotel after lunch.
+        - generic [ref=e137]:
+          - generic [ref=e138]: Silver Package
+          - heading "The No-Fly Zone" [level=3] [ref=e139]
+          - generic [ref=e140]: US$150
+          - generic [ref=e141]: Three Products/One Package
+          - paragraph [ref=e142]: Zambezi Sunset Cruise, mid-morning Guided Tour of the Falls, lunch at the Rainforest (optional), Historic Bridge Tour — return to hotel late afternoon.
+        - generic [ref=e144]:
+          - generic [ref=e145]: Bronze Package
+          - heading "Basic" [level=3] [ref=e146]
+          - generic [ref=e147]: US$75
+          - generic [ref=e148]: Two Products/One Package (Excludes Historic Bridge Tour and Helicopter Flight)
+          - paragraph [ref=e149]: Zambezi Sunset Cruise, mid-morning Guided Tour of the Falls, lunch at the Rainforest Restaurant (optional), return to hotel after lunch.
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - generic [ref=e152]: (03) Full price list
+        - heading "Every activity, one honest rate card." [level=2] [ref=e153]
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - heading "Bridge Activities" [level=3] [ref=e156]
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e160]: Bungee Jumping
+              - generic [ref=e161]: US$194
+            - generic [ref=e162]:
+              - generic [ref=e164]: Bridge Slide / Zipline
+              - generic [ref=e165]: US$58
+            - generic [ref=e166]:
+              - generic [ref=e168]: Tandem Bridge Slide / Zipline
+              - generic [ref=e169]: US$82
+            - generic [ref=e170]:
+              - generic [ref=e172]: Bridge Swing
+              - generic [ref=e173]: US$131
+            - generic [ref=e174]:
+              - generic [ref=e176]: Tandem Bridge Swing
+              - generic [ref=e177]: US$201
+        - generic [ref=e178]:
+          - heading "Rafting" [level=3] [ref=e179]
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - generic [ref=e183]: One Day Rafting Trip (High Water)
+              - generic [ref=e184]: US$161
+            - generic [ref=e185]:
+              - generic [ref=e187]: One Day Rafting Trip (Low Water)
+              - generic [ref=e188]: US$173
+            - generic [ref=e189]:
+              - generic [ref=e191]: One Day + Overnight Rafting Trip
+              - generic [ref=e192]: US$330
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - generic [ref=e195]: Adventure Jetboat
+                - generic [ref=e196]: Excluding National Parks fees, bring US$12 to check in.
+              - generic [ref=e197]: US$141
+        - generic [ref=e198]:
+          - heading "Scenic Flights" [level=3] [ref=e199]
+          - generic [ref=e200]:
+            - generic [ref=e201]:
+              - generic [ref=e202]:
+                - generic [ref=e203]: Flight of Angels (12-13 mins)
+                - generic [ref=e204]: Excl. government fees and fuel surcharge, bring US$29 to check in.
+              - generic [ref=e205]: US$173
+            - generic [ref=e206]:
+              - generic [ref=e208]: Zambezi Explorers Flight (20 mins)
+              - generic [ref=e209]: US$29
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - generic [ref=e212]: Zambezi Spectacular (25 mins)
+                - generic [ref=e213]: Excl. government fees and fuel surcharge, bring US$35 to check in.
+              - generic [ref=e214]: US$328
+            - generic [ref=e215]:
+              - generic [ref=e217]: Premium Lounge
+              - generic [ref=e218]: US$58
+        - generic [ref=e219]:
+          - heading "Cruises" [level=3] [ref=e220]
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - generic [ref=e224]: Riversong Premium Luxury — Morning
+              - generic [ref=e225]: US$80
+            - generic [ref=e226]:
+              - generic [ref=e228]: Riversong Premium Luxury — Lunch
+              - generic [ref=e229]: US$100
+            - generic [ref=e230]:
+              - generic [ref=e232]: Riversong Premium Luxury — Sunset
+              - generic [ref=e233]: US$52
+            - generic [ref=e234]:
+              - generic [ref=e235]:
+                - generic [ref=e236]: Standard Sunset Cruise
+                - generic [ref=e237]: Excluding National Parks fees, bring US$12 to check in.
+              - generic [ref=e238]: US$110
+            - generic [ref=e239]:
+              - generic [ref=e241]: Dinner Cruise
+              - generic [ref=e242]: US$110
+        - generic [ref=e243]:
+          - heading "Third Party Activities" [level=3] [ref=e244]
+          - generic [ref=e245]:
+            - generic [ref=e246]:
+              - generic [ref=e248]: Quad Bike
+              - generic [ref=e249]: US$60
+            - generic [ref=e250]:
+              - generic [ref=e252]: Horse Trails (Horse Riding)
+              - generic [ref=e253]: US$140
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - generic [ref=e256]: Rhino Encounter Game Drive
+                - generic [ref=e257]: Excludes conservation fees of $8 for am/pm Game Drive.
+              - generic [ref=e258]: US$158
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic [ref=e261]: Boma Dinner
+                - generic [ref=e262]: Excluding US$15 transfer fee.
+              - generic [ref=e263]: US$65
+            - generic [ref=e264]:
+              - generic [ref=e265]:
+                - generic [ref=e266]: Livingstone Island Tour
+                - generic [ref=e267]: Excludes transfer.
+              - generic [ref=e268]: From US$159
+            - generic [ref=e269]:
+              - generic [ref=e271]: Transfer to Livingstone Island
+              - generic [ref=e272]: US$46 Return
+            - generic [ref=e273]:
+              - generic [ref=e275]: Bridge Tour Fees
+              - generic [ref=e276]: US$3 1 Way
+        - generic [ref=e277]:
+          - heading "Safari Adventures" [level=3] [ref=e278]
+          - generic [ref=e279]:
+            - generic [ref=e280]:
+              - generic [ref=e281]:
+                - generic [ref=e282]: Night Game Drive (incl. Dinner)
+                - generic [ref=e283]: Suggested donation.
+              - generic [ref=e284]: US$159
+            - generic [ref=e285]:
+              - generic [ref=e286]:
+                - generic [ref=e287]: AM/PM Game Drive
+                - generic [ref=e288]: Suggested donation.
+              - generic [ref=e289]: US$81
+            - generic [ref=e290]:
+              - generic [ref=e291]:
+                - generic [ref=e292]: Safari Game Walks
+                - generic [ref=e293]: Suggested donation.
+              - generic [ref=e294]: US$132
+            - generic [ref=e295]:
+              - generic [ref=e297]: Breakfast with Elephants
+              - generic [ref=e298]: US$100
+            - generic [ref=e299]:
+              - generic [ref=e300]:
+                - generic [ref=e301]: Chobe Day Trip
+                - generic [ref=e302]: Excl. National Parks fees, bring $20 per person to check in.
+              - generic [ref=e303]: US$167
+        - generic [ref=e304]:
+          - heading "Tours & Transfers" [level=3] [ref=e305]
+          - generic [ref=e306]:
+            - generic [ref=e307]:
+              - generic [ref=e309]: Theatrical Historical Bridge Tour
+              - generic [ref=e310]: US$64
+            - generic [ref=e311]:
+              - generic [ref=e313]: Traditional Village Tour
+              - generic [ref=e314]: US$74
+            - generic [ref=e315]:
+              - generic [ref=e316]:
+                - generic [ref=e317]: Guided Tour of Victoria Falls
+                - generic [ref=e318]: Excl. entry fee.
+              - generic [ref=e319]: US$32
+            - generic [ref=e320]:
+              - generic [ref=e322]: Simunye — The Spirit of Africa
+              - generic [ref=e323]: US$58
+            - generic [ref=e324]:
+              - generic [ref=e326]: Victoria Falls Airport Transfer
+              - generic [ref=e327]: US$30 1 Way
+            - generic [ref=e328]:
+              - generic [ref=e330]: Livingstone Airport Transfer
+              - generic [ref=e331]: US$45 1 Way
+            - generic [ref=e332]:
+              - generic [ref=e334]: Bridge Toll Fees
+              - generic [ref=e335]: US$5 1 Way
+      - generic [ref=e336]: National Park, government fees and fuel surcharge fees are payable on some products.
+    - generic [ref=e337]:
+      - generic [ref=e338]: Ready when you are
+      - heading "Tell us which activities, we'll sort the rest." [level=2] [ref=e340]
+      - generic [ref=e341]:
+        - paragraph [ref=e342]: Message us on WhatsApp with the activities or combo you have in mind and your preferred dates — we reply within the hour with availability and booking details.
+        - link "Message us on WhatsApp" [ref=e343] [cursor=pointer]:
+          - /url: https://wa.me/263775530678?text=Hi%2C%20I'd%20like%20to%20book%20some%20activities%20in%20Victoria%20Falls.
+  - contentinfo [ref=e344]:
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - generic [ref=e347]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e348]: Best Safari Operator 2025
+        - generic [ref=e349]: Rated 4.9 from 480+ guests
+        - generic [ref=e350]: 24/7 Roadside & Guide Support
+      - generic [ref=e351]:
+        - generic [ref=e352]:
+          - generic [ref=e353]:
+            - img "Africa Dream Adventures logo" [ref=e354]
+            - generic [ref=e355]: Africa Dream Adventures
+          - paragraph [ref=e356]: Luxury safaris and premium vehicle hire, one trusted company. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e357]:
+          - generic [ref=e358]: Safaris
+          - generic [ref=e359]:
+            - link "All tours" [ref=e360] [cursor=pointer]:
+              - /url: /safaris#packages
+            - link "Hwange" [ref=e361] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Zambezi" [ref=e362] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Private charter" [ref=e363] [cursor=pointer]:
+              - /url: /safaris#book
+        - generic [ref=e364]:
+          - generic [ref=e365]: Eden Car Rental
+          - generic [ref=e366]:
+            - link "The fleet" [ref=e367] [cursor=pointer]:
+              - /url: /rentals#fleet
+            - link "Chauffeur service" [ref=e368] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Airport transfers" [ref=e369] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Cross-border" [ref=e370] [cursor=pointer]:
+              - /url: /rentals#book
+      - generic [ref=e371]:
+        - generic [ref=e372]: © 2026 Africa Dream Adventures Tours & Car Hire
+        - generic [ref=e373]:
+          - link "WhatsApp" [ref=e374] [cursor=pointer]:
+            - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I'd%20like%20to%20plan%20a%20trip.
+          - link "Legal" [ref=e375] [cursor=pointer]:
+            - /url: /legal

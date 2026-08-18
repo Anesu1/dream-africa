@@ -1,13 +1,28 @@
+export {
+  default as SchemaOrgGraph,
+  BASE_SITE_URL,
+  TourJsonLd,
+  ActivityJsonLd,
+  VehicleJsonLd,
+  FaqJsonLd,
+  HowToJsonLd,
+  BreadcrumbJsonLd,
+} from "./JsonLd";
+
 export function OrganizationJsonLd({ name, description }: { name: string; description: string }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name,
     description,
-    areaServed: ["Victoria Falls", "Hwange", "Zambezi", "Zimbabwe"],
-    // Address, telephone and sameAs (social profiles) are intentionally omitted until
-    // real, verified contact details and domain are available — publishing placeholder
-    // or invented business data here would mislead real search users.
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://africadreamadventures.co.zw",
+    areaServed: ["Victoria Falls", "Hwange", "Zambezi", "Livingstone", "Chobe", "Zimbabwe"],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Victoria Falls Town Center",
+      addressLocality: "Victoria Falls",
+      addressCountry: "ZW",
+    },
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
@@ -27,15 +42,15 @@ export function TravelAgencyJsonLd({ parentName }: { parentName: string }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
-export function FaqJsonLd({ faqs }: { faqs: { question: string; answer: string }[] }) {
+export function ActivitiesJsonLd({ parentName }: { parentName: string }) {
   const data = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
+    "@type": "TravelAgency",
+    name: `${parentName} Activities`,
+    description:
+      "Victoria Falls adventure activities and tour bookings — bungee jumping, white-water rafting, jetboat, scenic flights, river cruises and cultural experiences.",
+    areaServed: ["Victoria Falls", "Zambezi", "Zimbabwe"],
+    parentOrganization: { "@type": "Organization", name: parentName },
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
@@ -48,7 +63,7 @@ export function AutoRentalJsonLd({ parentName }: { parentName: string }) {
     name: "Eden Car Rental",
     description:
       "Self-drive, chauffeured and airport-transfer vehicle rental across Victoria Falls and Zimbabwe — 4x4 SUVs, executive sedans and rugged expedition vehicles.",
-    areaServed: ["Victoria Falls", "Harare", "Zimbabwe"],
+    areaServed: ["Victoria Falls", "Harare", "Zimbabwe", "Hwange", "Livingstone", "Kasane"],
     parentOrganization: { "@type": "Organization", name: parentName },
   };
 

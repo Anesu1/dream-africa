@@ -1,0 +1,117 @@
+[   15816ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[   17875ms] [LOG] [Fast Refresh] done in 1786723660264ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[   17880ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[   18350ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[   18399ms] [LOG] [Fast Refresh] done in 49ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[   20192ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3010/activities?_rsc=9sYGwkX-1ib7NLmr:0
+[   20216ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[   20227ms] [LOG] [Fast Refresh] done in 10ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[   21199ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[   21270ms] [LOG] [Fast Refresh] done in 72ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[   24369ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[   24603ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/api/image.js:6:125)
+    at (app-pages-browser)/./node_modules/next/dist/api/image.js (http://localhost:3010/_next/static/chunks/app/(site)/activities/page.js:3139:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/sections/safari/hero.tsx:6:68)
+    at (app-pages-browser)/./src/components/sections/safari/hero.tsx (http://localhost:3010/_next/static/chunks/app/(site)/activities/page.js:3357:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24606ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/api/image.js:6:125)
+    at (app-pages-browser)/./node_modules/next/dist/api/image.js (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:6956:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/layout/footer.tsx:6:68)
+    at (app-pages-browser)/./src/components/layout/footer.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8349:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24607ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/layout/navbar.tsx:7:104)
+    at (app-pages-browser)/./src/components/layout/navbar.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8360:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24607ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/providers/cursor.tsx:7:104)
+    at (app-pages-browser)/./src/components/providers/cursor.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8371:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24608ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/providers/loading-screen.tsx:7:104)
+    at (app-pages-browser)/./src/components/providers/loading-screen.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8382:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24608ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/api/navigation.js:3:128)
+    at (app-pages-browser)/./node_modules/next/dist/api/navigation.js (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:6967:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/providers/page-transition.tsx:6:73)
+    at (app-pages-browser)/./src/components/providers/page-transition.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8393:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24609ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/providers/smooth-scroll.tsx:7:104)
+    at (app-pages-browser)/./src/components/providers/smooth-scroll.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8404:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24613ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./node_modules/styled-components/dist/styled-components.browser.esm.js:24:104)
+    at (app-pages-browser)/./node_modules/styled-components/dist/styled-components.browser.esm.js (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8074:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at eval (webpack-internal:///(app-pages-browser)/./node_modules/@sanity/ui/dist/_chunks/portalProvider.js:96:75)
+    at (app-pages-browser)/./node_modules/@sanity/ui/dist/_chunks/portalProvider.js (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:557:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at eval (webpack-internal:///(app-pages-browser)/./node_modules/@sanity/visual-editing/dist/react/index.js:18:83)
+    at (app-pages-browser)/./node_modules/@sanity/visual-editing/dist/react/index.js (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:722:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/providers/visual-editing.tsx:6:86)
+    at (app-pages-browser)/./src/components/providers/visual-editing.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8415:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+[   24701ms] TypeError: __webpack_require__.n is not a function
+    at eval (webpack-internal:///(app-pages-browser)/./src/components/providers/loading-screen.tsx:7:104)
+    at (app-pages-browser)/./src/components/providers/loading-screen.tsx (http://localhost:3010/_next/static/chunks/app/(site)/layout.js:8382:1)
+    at options.factory (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:680:31)
+    at __webpack_require__ (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:29:33)
+    at fn (http://localhost:3010/_next/static/chunks/webpack.js?v=1786723663831:337:21)
+    at requireModule (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:100:27)
+    at initializeModuleChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:1299:21)
+    at readChunk (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-server-dom-webpack/cjs/react-server-dom-webpack-client.browser.development.js:953:11)
+    at Object.react_stack_bottom_frame (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:23691:18)
+    at resolveLazy (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:5177:16)
+    at beginWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:10784:24)
+    at runWithFiberInDEV (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:872:30)
+    at performUnitOfWork (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15727:22)
+    at workLoopConcurrentByScheduler (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15721:9)
+    at renderRootConcurrent (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:15696:15)
+    at performWorkOnRoot (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:14990:13)
+    at performWorkOnRootViaSchedulerTask (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:16816:7)
+    at MessagePort.performWorkUntilDeadline (webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/scheduler/cjs/scheduler.development.js:45:48)
+[   25772ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[   29002ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:113
+[   29134ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3010/activities:0
+[   30390ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[   31090ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3010/activities?_rsc=pd-RRf4uS6HBp2Fq:0
+[   31103ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[   31105ms] [LOG] [Fast Refresh] done in 3ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[   31554ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3010/activities:0
+[   32319ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630

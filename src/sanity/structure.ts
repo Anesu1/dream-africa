@@ -5,6 +5,7 @@ const SINGLETONS = [
   { id: "homePage", title: "Home Page" },
   { id: "safariPageSettings", title: "Safaris Page" },
   { id: "rentalsPageSettings", title: "Rentals Page" },
+  { id: "activitiesPageSettings", title: "Activities Page" },
 ];
 
 export const structure: StructureResolver = (S) =>

@@ -6,6 +6,7 @@ import LoadingScreen from "@/components/providers/loading-screen";
 import PageTransition from "@/components/providers/page-transition";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
+import WhatsAppFloating from "@/components/ui/whatsapp-floating";
 import { OrganizationJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
@@ -25,6 +26,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
         <PageTransition>{children}</PageTransition>
         <Footer siteSettings={siteSettings} />
       </SmoothScroll>
+      <WhatsAppFloating whatsappNumber={siteSettings.whatsapp} />
       {isDraftMode && (
         <>
           <VisualEditing />

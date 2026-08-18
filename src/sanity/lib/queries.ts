@@ -57,6 +57,17 @@ export const RENTALS_PAGE_QUERY = defineQuery(`*[_type == "rentalsPageSettings"]
   "rentalServices": rentalServices[]{ title, description },
 }`);
 
+export const ACTIVITIES_PAGE_QUERY = defineQuery(`*[_type == "activitiesPageSettings"][0]{
+  heroEyebrow,
+  heroTitle,
+  heroDescription,
+  "heroImage": heroImage.asset->url,
+  "specialCombos": specialCombos[]{ title, price, savings, description, checklist },
+  "packageTiers": packageTiers[]{ tier, title, price, productCount, included },
+  "categories": categories[]{ title, "items": items[]{ label, price, note } },
+  disclaimer,
+}`);
+
 export const TOURS_QUERY = defineQuery(`*[_type == "tour"] | order(order asc) {
   "slug": slug.current,
   category,
