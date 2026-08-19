@@ -1,116 +1,76 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import MagneticButton from "@/components/ui/magnetic-button";
+import type { HomePage } from "@/sanity/lib/types";
 
-const TRUST_POINTS = [
-  "Guaranteed Airport Pickup at Victoria Falls (VFA)",
-  "Zero Hidden Fees on 4x4 Rentals & Cross-Border Permits",
-  "Tailor-Made Private Safaris & Helicopter Flights",
-  "Instant WhatsApp Booking & 24/7 Local Support",
-];
-
-export default function Hero({
-  hero,
-}: {
-  hero: {
-    eyebrow?: string;
-    headline?: [string, string];
-    sub?: string;
-    image?: string;
-    primaryCta?: { label: string; href?: string };
-    secondaryCta?: { label: string; href?: string };
-  };
-}) {
+export default function Hero({ hero }: { hero: Pick<HomePage, "eyebrow" | "headline" | "sub" | "primaryCta" | "secondaryCta" | "image"> }) {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  const bgImage =
-    hero?.image ||
-    "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&h=900&q=80&auto=format&fit=crop";
-
   return (
-    <section id="top" ref={ref} className="relative flex min-h-screen items-end overflow-hidden">
+    <section id="top" ref={ref} className="relative flex h-screen min-h-[720px] items-end overflow-hidden bg-ink">
       <motion.div style={{ y }} className="absolute inset-0 -top-[10%] h-[120%]">
-        <Image src={bgImage} alt="Victoria Falls Safaris and 4x4 Rental" fill priority className="object-cover" sizes="100vw" />
+        <Image src={hero.image} alt="" fill priority className="object-cover" sizes="100vw" />
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0B] via-[#0B0B0B]/50 to-[#0B0B0B]/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-ink/40" />
 
-      <motion.div style={{ opacity }} className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-16 pt-36 text-paper sm:px-10">
-        {/* Eyebrow */}
+      <motion.div style={{ opacity }} className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-24 pt-40 text-paper sm:px-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-4 flex items-center gap-3.5"
+          transition={{ duration: 1, delay: 1.5, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-6 flex items-center gap-3.5"
         >
-          <span className="h-px w-10 bg-gold" />
-          <span className="text-[11px] uppercase tracking-[0.28em] text-gold">
-            Africa Dream Adventures & Eden Car Rental
-          </span>
+          <span className="h-px w-12 bg-gold" />
+          <span className="text-[11px] uppercase tracking-[0.28em] text-gold">{hero.eyebrow}</span>
         </motion.div>
 
-        {/* User-Specified Hero Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-          className="m-0 max-w-5xl font-display font-semibold uppercase leading-[1.05] tracking-tight text-white"
-          style={{ fontSize: "clamp(32px, 5.2vw, 84px)" }}
+          transition={{ duration: 1.1, delay: 1.65, ease: [0.22, 1, 0.36, 1] }}
+          className="m-0 max-w-4xl font-display font-semibold uppercase leading-[1.02] tracking-tight text-balance"
+          style={{ fontSize: "clamp(36px, 5.8vw, 92px)" }}
         >
-          Experience Victoria Falls:{" "}
-          <span className="text-gold">From Luxury Safaris to Self-Drive Freedom</span>
+          {hero.headline[0]}
+          <br />
+          <span className="text-gold">{hero.headline[1]}</span>
         </motion.h1>
 
-        {/* User-Specified Subheadline */}
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1.2fr_.8fr] lg:items-end">
+        <div className="mt-10 grid gap-10 sm:grid-cols-[1.15fr_.85fr] sm:items-end">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="m-0 max-w-2xl text-base sm:text-lg leading-relaxed text-paper/85"
+            transition={{ duration: 1, delay: 1.85, ease: [0.22, 1, 0.36, 1] }}
+            className="m-0 max-w-[520px] text-[17px] leading-relaxed text-paper/75"
           >
-            Discover Africa Dream Adventures for private luxury safaris and helicopter tours, or take the wheel with Eden Car Rental for safari-ready 4x4s and airport pickups.
+            {hero.sub}
           </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-wrap gap-4 lg:justify-end"
+            transition={{ duration: 1, delay: 2, ease: [0.22, 1, 0.36, 1] }}
+            className="flex flex-wrap gap-3.5 sm:justify-end"
           >
-            <Link href="/safaris">
-              <MagneticButton className="rounded-full bg-gold px-8 py-4 text-xs font-bold uppercase tracking-[0.18em] text-ink shadow-lg transition-colors hover:bg-white">
-                Luxury Safaris →
-              </MagneticButton>
-            </Link>
-            <Link href="/car-rental">
-              <MagneticButton className="rounded-full border border-paper/40 bg-ink/40 backdrop-blur-sm px-8 py-4 text-xs font-bold uppercase tracking-[0.18em] text-paper transition-colors hover:border-gold hover:text-gold">
-                4x4 Car Hire →
-              </MagneticButton>
-            </Link>
+            <MagneticButton
+              className="rounded-full bg-gold px-8 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-ink transition-colors hover:bg-paper"
+              onClick={() => document.getElementById("experiences")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              {hero.primaryCta.label}
+            </MagneticButton>
+            <MagneticButton
+              className="rounded-full border border-paper/35 px-8 py-4 text-xs font-semibold uppercase tracking-[0.18em] text-paper transition-colors hover:border-gold hover:text-gold"
+              onClick={() => document.getElementById("experiences")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              {hero.secondaryCta.label}
+            </MagneticButton>
           </motion.div>
         </div>
-
-        {/* Trust Banner (Key Selling Points) */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-14 grid grid-cols-1 gap-3 border-t border-white/15 pt-8 sm:grid-cols-2 lg:grid-cols-4"
-        >
-          {TRUST_POINTS.map((point, idx) => (
-            <div key={idx} className="flex items-center gap-3 text-xs uppercase tracking-wider text-slate-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold flex-shrink-0" />
-              <span>{point}</span>
-            </div>
-          ))}
-        </motion.div>
       </motion.div>
     </section>
   );

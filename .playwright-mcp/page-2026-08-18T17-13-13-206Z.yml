@@ -1,0 +1,76 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Africa Dream Adventures
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Africa Dream Adventures logo Africa Dream Adventures" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Africa Dream Adventures logo" [ref=e7]
+        - generic [ref=e8]: Africa Dream Adventures
+      - navigation [ref=e9]:
+        - link "Safaris" [ref=e10] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e11] [cursor=pointer]:
+          - /url: /rentals
+        - link "Activities" [ref=e12] [cursor=pointer]:
+          - /url: /activities
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e14] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e17]
+  - article [ref=e19]:
+    - generic [ref=e20]: Self drive
+    - heading "What your rental insurance actually covers on Hwange's gravel roads" [level=1] [ref=e22]
+    - img "What your rental insurance actually covers on Hwange's gravel roads" [ref=e24]
+    - generic [ref=e26]:
+      - paragraph [ref=e27]: Most rental car insurance — in Zimbabwe or anywhere else — is written with tarred roads in mind. The moment you turn off the main road onto Hwange's gravel and sand tracks, a lot of standard collision damage waivers quietly stop covering you. The three exclusions we see catch travellers out most often are chipped windscreens from flying stones, underbody damage on rutted sections after rain, and tyre damage.
+      - paragraph [ref=e28]: Before you book anywhere, ask specifically whether unpaved-road cover is included or a separate add-on, whether windscreens and tyres are covered at all, and what the excess looks like if something goes wrong an hour from the nearest workshop. We'll walk you through exactly what's covered on your specific vehicle before you sign anything — message us on WhatsApp if you want a straight answer before you commit.
+    - link "← Back to the Journal" [ref=e30] [cursor=pointer]:
+      - /url: /journal
+  - contentinfo [ref=e31]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e35]: Best Safari Operator 2025
+        - generic [ref=e36]: Rated 4.9 from 480+ guests
+        - generic [ref=e37]: 24/7 Roadside & Guide Support
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - img "Africa Dream Adventures logo" [ref=e41]
+            - generic [ref=e42]: Africa Dream Adventures
+          - paragraph [ref=e43]: Luxury safaris and premium vehicle hire, one trusted company. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e44]:
+          - generic [ref=e45]: Safaris
+          - generic [ref=e46]:
+            - link "All tours" [ref=e47] [cursor=pointer]:
+              - /url: /safaris#packages
+            - link "Hwange" [ref=e48] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Zambezi" [ref=e49] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Private charter" [ref=e50] [cursor=pointer]:
+              - /url: /safaris#book
+        - generic [ref=e51]:
+          - generic [ref=e52]: Eden Car Rental
+          - generic [ref=e53]:
+            - link "The fleet" [ref=e54] [cursor=pointer]:
+              - /url: /rentals#fleet
+            - link "Chauffeur service" [ref=e55] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Airport transfers" [ref=e56] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Cross-border" [ref=e57] [cursor=pointer]:
+              - /url: /rentals#book
+      - generic [ref=e58]:
+        - generic [ref=e59]: © 2026 Africa Dream Adventures Tours & Car Hire
+        - generic [ref=e60]:
+          - link "WhatsApp" [ref=e61] [cursor=pointer]:
+            - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I'd%20like%20to%20plan%20a%20trip.
+          - link "Legal" [ref=e62] [cursor=pointer]:
+            - /url: /legal
+  - link "Chat with us on WhatsApp" [ref=e63] [cursor=pointer]:
+    - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I%20would%20like%20to%20check%20availability%20and%20rates%20for%20Victoria%20Falls%20safaris%20and%20activities.
+    - img [ref=e64]

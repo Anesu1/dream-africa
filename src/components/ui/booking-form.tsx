@@ -145,7 +145,7 @@ export default function BookingForm({ division }: { division: Division }) {
         name="message"
         required
         rows={3}
-        placeholder={division === "safaris" ? "Anything else we should know" : "Anything else we should know"}
+        placeholder="Anything else we should know"
         className={`resize-none ${inputClass}`}
       />
 

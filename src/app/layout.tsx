@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Playfair_Display, Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
-import SchemaOrgGraph from "@/components/seo/JsonLd";
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -32,10 +31,13 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://africadreamadventures.co.zw";
-const DEFAULT_TITLE = "Africa Dream Adventures | Luxury Safaris & Victoria Falls Car Rental";
+// No production domain has been confirmed yet — set NEXT_PUBLIC_SITE_URL once the
+// real domain is live. Falls back to a placeholder so this doesn't silently resolve
+// canonical/OG URLs against the wrong host.
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const DEFAULT_TITLE = "Victoria Falls Safaris & Car Rental | Africa Dream Adventures";
 const DEFAULT_DESCRIPTION =
-  "Experience Victoria Falls with Africa Dream Adventures & Eden Car Rental. Book luxury safaris, helicopter flights & 4x4 self-drive hire.";
+  "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium self-drive and chauffeured car rental across Zimbabwe — one trusted company for your whole trip.";
 const SOCIAL_IMAGE = "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&h=630&q=80&auto=format&fit=crop";
 
 export const metadata: Metadata = {
@@ -47,38 +49,22 @@ export const metadata: Metadata = {
   description: DEFAULT_DESCRIPTION,
   keywords: [
     "Victoria Falls luxury safaris",
-    "Victoria Falls car rental",
-    "Eden Car Rental",
-    "Africa Dream Adventures",
-    "4x4 car rental Victoria Falls self drive",
-    "Car hire Victoria Falls airport VFA",
-    "Hwange safari tours from Victoria Falls",
+    "private Hwange safari tours",
+    "Zambezi sunset dinner cruise",
     "Victoria Falls helicopter flight of angels",
-    "Zambezi luxury sunset dinner cruise",
     "Chobe day trip from Victoria Falls",
-    "Cross border car rental Victoria Falls to Botswana",
-    "Batoka gorge white water rafting",
-    "Hwange self drive 4x4 rental with camping gear",
-    "Affordable car hire Victoria Falls Zimbabwe",
+    "car hire Victoria Falls airport",
+    "4x4 self drive Victoria Falls",
+    "cross border car rental Victoria Falls Botswana",
   ],
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   openGraph: {
     title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
-    url: BASE_URL,
-    siteName: "Africa Dream Adventures & Eden Car Rental",
-    locale: "en_ZW",
+    description:
+      "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium car rental across Zimbabwe.",
     type: "website",
-    images: [
-      {
-        url: SOCIAL_IMAGE,
-        width: 1200,
-        height: 630,
-        alt: "Africa Dream Adventures and Eden Car Rental in Victoria Falls",
-      },
-    ],
+    locale: "en_ZW",
+    images: [{ url: SOCIAL_IMAGE, width: 1200, height: 630, alt: DEFAULT_TITLE }],
   },
   twitter: {
     card: "summary_large_image",
@@ -86,37 +72,19 @@ export const metadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: [SOCIAL_IMAGE],
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#1A1A1A",
+  themeColor: "#0b0b0b",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${cinzel.variable} ${playfair.variable} ${jakarta.variable} ${spaceGrotesk.variable}`}
-    >
-      <head>
-        <SchemaOrgGraph />
-      </head>
-      <body className="bg-paper text-ink antialiased selection:bg-gold selection:text-ink">
-        {children}
-      </body>
+    <html lang="en" className={`${cinzel.variable} ${playfair.variable} ${jakarta.variable} ${spaceGrotesk.variable}`}>
+      <body className="bg-paper text-ink">{children}</body>
     </html>
   );
 }

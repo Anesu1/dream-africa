@@ -28,7 +28,11 @@ export async function POST(request: Request) {
   };
 
   try {
-    await sendEnquiryEmail(enquiry);
+    const { sent } = await sendEnquiryEmail(enquiry);
+    if (!sent) {
+      console.error("[enquiry] Mailer not configured — enquiry was not delivered:", enquiry);
+      return NextResponse.json({ error: "Failed to send enquiry. Please try again." }, { status: 502 });
+    }
   } catch (error) {
     console.error("[enquiry] Failed to send email:", error);
     return NextResponse.json({ error: "Failed to send enquiry. Please try again." }, { status: 502 });

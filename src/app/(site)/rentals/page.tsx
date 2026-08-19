@@ -3,17 +3,24 @@ import RentalsHero from "@/components/sections/rentals/hero";
 import Services from "@/components/sections/rentals/services";
 import Fleet from "@/components/sections/rentals/fleet";
 import BookingSection from "@/components/sections/booking-section";
-import CrossSellCard from "@/components/ui/cross-sell-card";
 import { AutoRentalJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { RENTALS_PAGE_QUERY, SITE_SETTINGS_QUERY, VEHICLES_QUERY } from "@/sanity/lib/queries";
 import type { RentalsPageSettings, SiteSettings, Vehicle } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Victoria Falls Car Rental & 4x4 Hire | Eden Car Rental",
+  title: "Car Rental Victoria Falls & Zimbabwe — Eden Car Rental",
   description:
-    "Rent reliable 4x4s and SUVs at Victoria Falls Airport. Transparent rates, zero hidden fees, and full self-drive safari insurance.",
-  alternates: { canonical: "/car-rental" },
+    "Rent 4x4 SUVs, executive sedans and rugged self-drive vehicles across Victoria Falls and Zimbabwe. Self-drive, chauffeur or airport transfer — Africa Dream Adventures' vehicle hire division.",
+  keywords: [
+    "Victoria Falls car rental",
+    "car hire Victoria Falls airport",
+    "4x4 self drive Victoria Falls",
+    "Hwange self drive 4x4 rental",
+    "cross border car rental Victoria Falls Botswana Zambia",
+    "affordable car hire Victoria Falls Zimbabwe",
+  ],
+  alternates: { canonical: "/rentals" },
 };
 
 export default async function RentalsPage() {
@@ -34,15 +41,6 @@ export default async function RentalsPage() {
       />
       <Services services={rentalsPage.rentalServices} />
       <Fleet vehicles={vehicles} whatsapp={siteSettings.whatsapp} />
-
-      <div className="mx-auto max-w-[1440px] px-6 sm:px-10">
-        <CrossSellCard
-          type="rental-to-safari"
-          customHeadline="Bundle Your Vehicle with Victoria Falls Activities"
-          customBody="Add a helicopter flight over the falls or a sunset cruise on the Zambezi to your rental booking for special bundled package rates."
-        />
-      </div>
-
       <BookingSection
         division="rentals"
         eyebrow="Start Planning"

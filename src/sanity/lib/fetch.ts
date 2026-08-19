@@ -1,7 +1,8 @@
+import { cache } from "react";
 import { draftMode } from "next/headers";
 import { client } from "./client";
 
-export async function sanityFetch<QueryResponse>({
+export const sanityFetch = cache(async function sanityFetch<QueryResponse>({
   query,
   params = {},
 }: {
@@ -22,4 +23,4 @@ export async function sanityFetch<QueryResponse>({
   }
 
   return client.fetch<QueryResponse>(query, params, { next: { revalidate: 60 } });
-}
+});

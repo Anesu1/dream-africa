@@ -1,0 +1,86 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Africa Dream Adventures
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Africa Dream Adventures logo Africa Dream Adventures" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Africa Dream Adventures logo" [ref=e7]
+        - generic [ref=e8]: Africa Dream Adventures
+      - navigation [ref=e9]:
+        - link "Safaris" [ref=e10] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e11] [cursor=pointer]:
+          - /url: /rentals
+        - link "Activities" [ref=e12] [cursor=pointer]:
+          - /url: /activities
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e14] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e17]
+  - article [ref=e19]:
+    - generic [ref=e20]: Legal
+    - heading "Privacy & Terms" [level=1] [ref=e22]
+    - generic [ref=e24]:
+      - paragraph [ref=e25]: This page explains what happens to the information you share when you use this site — through the enquiry form or by messaging us on WhatsApp. It's written in plain terms because that's how we'd want it explained to us.
+      - heading "What we collect" [level=2] [ref=e26]
+      - paragraph [ref=e27]: The enquiry form on the Safaris and Car Rental pages asks for your name, email address, and optionally your phone number, along with trip details relevant to what you're booking (travel dates, guest count, vehicle preference, and so on) and any message you write. We only collect what's shown on the form — nothing is gathered silently in the background.
+      - heading "What we do with it" [level=2] [ref=e28]
+      - paragraph [ref=e29]: Submitting the form sends that information directly to our team by email, solely to respond to your enquiry and arrange your booking. We don't sell, rent, or share it with third parties for marketing, and we don't add you to a mailing list unless you separately ask us to.
+      - heading "WhatsApp" [level=2] [ref=e30]
+      - paragraph [ref=e31]:
+        - text: Buttons labelled “Plan Your Journey,” “Reserve,” or similar open a chat with us on WhatsApp. That conversation happens on WhatsApp's own platform and is subject to
+        - link "WhatsApp's privacy policy" [ref=e32] [cursor=pointer]:
+          - /url: https://www.whatsapp.com/legal/privacy-policy
+        - text: ", not ours — we don't control how WhatsApp itself handles that data."
+      - heading "Cookies & tracking" [level=2] [ref=e33]
+      - paragraph [ref=e34]: This site does not use analytics or advertising cookies. Some photography is served from Unsplash's servers, which may log standard request data (like your IP address) the same way any image host does.
+      - heading "Questions" [level=2] [ref=e35]
+      - paragraph [ref=e36]: If you have questions about how your information is handled, message us on WhatsApp using any of the contact buttons on this site and we'll answer directly.
+  - contentinfo [ref=e37]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e41]: Best Safari Operator 2025
+        - generic [ref=e42]: Rated 4.9 from 480+ guests
+        - generic [ref=e43]: 24/7 Roadside & Guide Support
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - img "Africa Dream Adventures logo" [ref=e47]
+            - generic [ref=e48]: Africa Dream Adventures
+          - paragraph [ref=e49]: Luxury safaris and premium vehicle hire, one trusted company. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e50]:
+          - generic [ref=e51]: Safaris
+          - generic [ref=e52]:
+            - link "All tours" [ref=e53] [cursor=pointer]:
+              - /url: /safaris#packages
+            - link "Hwange" [ref=e54] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Zambezi" [ref=e55] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Private charter" [ref=e56] [cursor=pointer]:
+              - /url: /safaris#book
+        - generic [ref=e57]:
+          - generic [ref=e58]: Eden Car Rental
+          - generic [ref=e59]:
+            - link "The fleet" [ref=e60] [cursor=pointer]:
+              - /url: /rentals#fleet
+            - link "Chauffeur service" [ref=e61] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Airport transfers" [ref=e62] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Cross-border" [ref=e63] [cursor=pointer]:
+              - /url: /rentals#book
+      - generic [ref=e64]:
+        - generic [ref=e65]: © 2026 Africa Dream Adventures Tours & Car Hire
+        - generic [ref=e66]:
+          - link "WhatsApp" [ref=e67] [cursor=pointer]:
+            - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I'd%20like%20to%20plan%20a%20trip.
+          - link "Legal" [ref=e68] [cursor=pointer]:
+            - /url: /legal
+  - link "Chat with us on WhatsApp" [ref=e69] [cursor=pointer]:
+    - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I%20would%20like%20to%20check%20availability%20and%20rates%20for%20Victoria%20Falls%20safaris%20and%20activities.
+    - img [ref=e70]

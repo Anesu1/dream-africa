@@ -1,0 +1,96 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Africa Dream Adventures
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Africa Dream Adventures logo Africa Dream Adventures" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Africa Dream Adventures logo" [ref=e7]
+        - generic [ref=e8]: Africa Dream Adventures
+      - navigation [ref=e9]:
+        - link "Safaris" [ref=e10] [cursor=pointer]:
+          - /url: /safaris
+        - link "Car Rental" [ref=e11] [cursor=pointer]:
+          - /url: /rentals
+        - link "Activities" [ref=e12] [cursor=pointer]:
+          - /url: /activities
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: /#about
+        - link "Journal" [ref=e14] [cursor=pointer]:
+          - /url: /journal
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: /#contact
+      - button "Plan Your Journey" [ref=e17]
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: The Journal
+      - heading "Field notes from Victoria Falls." [level=1] [ref=e22]
+    - generic [ref=e23]:
+      - link "What your rental insurance actually covers on Hwange's gravel roads Self drive What your rental insurance actually covers on Hwange's gravel roads Standard collision damage waivers are written for tar roads. Here's what to check before you turn off onto Hwange's gravel tracks." [ref=e25] [cursor=pointer]:
+        - /url: /journal/hwange-gravel-road-insurance-guide
+        - img "What your rental insurance actually covers on Hwange's gravel roads" [ref=e27]
+        - generic [ref=e28]: Self drive
+        - heading "What your rental insurance actually covers on Hwange's gravel roads" [level=2] [ref=e29]
+        - paragraph [ref=e30]: Standard collision damage waivers are written for tar roads. Here's what to check before you turn off onto Hwange's gravel tracks.
+      - link "Nine hours with the Hwange elephant census Guides Nine hours with the Hwange elephant census Our head guide spent a day counting at Nyamandhlovu pan. What he saw." [ref=e32] [cursor=pointer]:
+        - /url: /journal/nine-hours-with-the-hwange-elephant-census
+        - img "Nine hours with the Hwange elephant census" [ref=e34]
+        - generic [ref=e35]: Guides
+        - heading "Nine hours with the Hwange elephant census" [level=2] [ref=e36]
+        - paragraph [ref=e37]: Our head guide spent a day counting at Nyamandhlovu pan. What he saw.
+      - link "Crossing into Botswana without the queue Self drive Crossing into Botswana without the queue Kazungula in under forty minutes — paperwork, timing and the one form nobody mentions." [ref=e39] [cursor=pointer]:
+        - /url: /journal/crossing-into-botswana-without-the-queue
+        - img "Crossing into Botswana without the queue" [ref=e41]
+        - generic [ref=e42]: Self drive
+        - heading "Crossing into Botswana without the queue" [level=2] [ref=e43]
+        - paragraph [ref=e44]: Kazungula in under forty minutes — paperwork, timing and the one form nobody mentions.
+      - link "When to visit the Falls for full spray Field notes When to visit the Falls for full spray February to May the river is at its loudest. Here's how to plan around it." [ref=e46] [cursor=pointer]:
+        - /url: /journal/when-to-visit-the-falls-for-full-spray
+        - img "When to visit the Falls for full spray" [ref=e48]
+        - generic [ref=e49]: Field notes
+        - heading "When to visit the Falls for full spray" [level=2] [ref=e50]
+        - paragraph [ref=e51]: February to May the river is at its loudest. Here's how to plan around it.
+  - contentinfo [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]: Zimbabwe Tourism Authority Licensed
+        - generic [ref=e56]: Best Safari Operator 2025
+        - generic [ref=e57]: Rated 4.9 from 480+ guests
+        - generic [ref=e58]: 24/7 Roadside & Guide Support
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - img "Africa Dream Adventures logo" [ref=e62]
+            - generic [ref=e63]: Africa Dream Adventures
+          - paragraph [ref=e64]: Luxury safaris and premium vehicle hire, one trusted company. 21 Livingstone Way, Victoria Falls, Zimbabwe.
+        - generic [ref=e65]:
+          - generic [ref=e66]: Safaris
+          - generic [ref=e67]:
+            - link "All tours" [ref=e68] [cursor=pointer]:
+              - /url: /safaris#packages
+            - link "Hwange" [ref=e69] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Zambezi" [ref=e70] [cursor=pointer]:
+              - /url: /safaris#destinations
+            - link "Private charter" [ref=e71] [cursor=pointer]:
+              - /url: /safaris#book
+        - generic [ref=e72]:
+          - generic [ref=e73]: Eden Car Rental
+          - generic [ref=e74]:
+            - link "The fleet" [ref=e75] [cursor=pointer]:
+              - /url: /rentals#fleet
+            - link "Chauffeur service" [ref=e76] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Airport transfers" [ref=e77] [cursor=pointer]:
+              - /url: /rentals#services
+            - link "Cross-border" [ref=e78] [cursor=pointer]:
+              - /url: /rentals#book
+      - generic [ref=e79]:
+        - generic [ref=e80]: © 2026 Africa Dream Adventures Tours & Car Hire
+        - generic [ref=e81]:
+          - link "WhatsApp" [ref=e82] [cursor=pointer]:
+            - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I'd%20like%20to%20plan%20a%20trip.
+          - link "Legal" [ref=e83] [cursor=pointer]:
+            - /url: /legal
+  - link "Chat with us on WhatsApp" [ref=e84] [cursor=pointer]:
+    - /url: https://wa.me/263775530678?text=Hi%20Africa%20Dream%20Adventures%2C%20I%20would%20like%20to%20check%20availability%20and%20rates%20for%20Victoria%20Falls%20safaris%20and%20activities.
+    - img [ref=e85]

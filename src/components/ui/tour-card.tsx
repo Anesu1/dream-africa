@@ -1,15 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
+import { whatsappLink } from "@/lib/whatsapp";
 import type { Tour } from "@/sanity/lib/types";
 
-export default function TourCard({ tour }: { tour: Tour; whatsapp: string }) {
-  const isCustomSlug = ["hwange-national-park", "luxury-victoria-falls", "chobe-day-trip", "tri-park-circuit-safari"].includes(tour.slug);
-  const href = isCustomSlug ? `/safaris/${tour.slug}` : `/safaris`;
-
+export default function TourCard({ tour, whatsapp }: { tour: Tour; whatsapp: string }) {
   return (
-    <Link
-      href={href}
-      className="group relative block overflow-hidden rounded-sm border border-line/40 transition-all hover:border-gold"
+    <a
+      href={whatsappLink(whatsapp, `Hi, I'd like to book the ${tour.title}.`)}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative block overflow-hidden rounded-sm"
     >
       <div className="overflow-hidden">
         <Image
@@ -28,16 +27,12 @@ export default function TourCard({ tour }: { tour: Tour; whatsapp: string }) {
           <span>{tour.duration}</span>
         </div>
         <h3 className="mb-2.5 font-subheading text-[28px] font-medium leading-none">{tour.title}</h3>
-        <p className="mb-5 text-sm leading-relaxed text-paper/70 line-clamp-2">{tour.description}</p>
-        <div className="flex items-center justify-between border-t border-paper/20 pt-4">
-          <span className="font-data text-xs uppercase tracking-wider text-gold">
-            Inquire for Rates
-          </span>
-          <span className="text-[11px] uppercase tracking-[0.18em] text-paper/80 group-hover:text-gold transition-colors">
-            View Details →
-          </span>
+        <p className="mb-5 text-sm leading-relaxed text-paper/70">{tour.description}</p>
+        <div className="flex items-baseline justify-between border-t border-paper/20 pt-4">
+          <span className="font-data text-xs uppercase tracking-[0.14em] text-paper/70">Message for rates</span>
+          <span className="text-[11px] uppercase tracking-[0.18em] text-gold">View →</span>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }

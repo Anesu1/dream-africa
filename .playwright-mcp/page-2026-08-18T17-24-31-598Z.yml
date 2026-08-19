@@ -1,0 +1,272 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explore" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "Collections" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "Download History" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "Bookmarks" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Log in / Sign up" [ref=e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna
+        - img [ref=e33]
+      - button "Language" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Find visuals sitewide" [ref=e45]:
+          - button "Search Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Search Unsplash" [ref=e50]: 4x4 vehicle border crossing africa savanna
+            - listbox
+          - button "Clear" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "Visual search" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Get Unsplash+" [ref=e60] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e61] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna
+        - button "Submit an image" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Photos 204":
+                - /url: /s/photos/4x4-vehicle-border-crossing-africa-savanna
+                - img
+                - text: Photos
+                - generic: "204"
+            - listitem [ref=e73]:
+              - link "Illustrations 12" [ref=e74] [cursor=pointer]:
+                - /url: /s/illustrations/4x4-vehicle-border-crossing-africa-savanna
+                - img [ref=e75]
+                - text: Illustrations
+                - generic [ref=e77]: "12"
+            - listitem [ref=e78]:
+              - button "More" [ref=e79] [cursor=pointer]
+          - button "Filters" [ref=e81] [cursor=pointer]:
+            - img [ref=e83]
+            - text: Filters
+        - generic [ref=e85]:
+          - heading "4x4 vehicle border crossing africa savanna" [level=1] [ref=e87]
+          - generic [ref=e89]:
+            - button "scroll list to the right" [ref=e91] [cursor=pointer]:
+              - img [ref=e92]
+            - generic [ref=e95]:
+              - link "travel" [ref=e97] [cursor=pointer]:
+                - /url: /s/photos/travel
+              - link "savanna" [ref=e99] [cursor=pointer]:
+                - /url: /s/photos/savanna
+              - link "safari vehicle" [ref=e101] [cursor=pointer]:
+                - /url: /s/photos/safari-vehicle
+              - link "safari" [ref=e103] [cursor=pointer]:
+                - /url: /s/photos/safari
+              - link "exploration" [ref=e105] [cursor=pointer]:
+                - /url: /s/photos/exploration
+              - link "africa" [ref=e107] [cursor=pointer]:
+                - /url: /s/photos/africa
+              - link "african landscape" [ref=e109] [cursor=pointer]:
+                - /url: /s/photos/african-landscape
+              - link "adventure travel" [ref=e111] [cursor=pointer]:
+                - /url: /s/photos/adventure-travel
+              - link "travel destination" [ref=e113] [cursor=pointer]:
+                - /url: /s/photos/travel-destination
+              - link "adventure" [ref=e115] [cursor=pointer]:
+                - /url: /s/photos/adventure
+              - link "nature" [ref=e117] [cursor=pointer]:
+                - /url: /s/photos/nature
+              - link "african safari" [ref=e119] [cursor=pointer]:
+                - /url: /s/photos/african-safari
+        - generic [ref=e121]:
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - figure [ref=e127]:
+                - generic [ref=e129]:
+                  - link "a truck driving down a dirt road next to a tree" [ref=e130]:
+                    - /url: /photos/a-truck-driving-down-a-dirt-road-next-to-a-tree-0sFTdlcFYxE
+                    - img "a truck driving down a dirt road next to a tree" [ref=e131]
+                  - link [ref=e132] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-truck-driving-down-a-dirt-road-next-to-a-tree-0sFTdlcFYxE
+                    - img [ref=e133]
+              - generic [ref=e135]:
+                - heading "Sponsored images" [level=4] [ref=e136]:
+                  - generic [ref=e137]: Sponsored images
+                  - link [ref=e138] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A5eb319e7-89a7-4e4d-b226-59c52eeffc7f&phrase=4x4+vehicle+border+crossing+africa+savanna&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+                    - img [ref=e139]
+                - generic [ref=e141]:
+                  - link "Safari jeep traveling." [ref=e142] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/safari-jeep-traveling-gm183232616-14635797?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A1bc1e03d-689f-4acf-abf3-b36f4386d963
+                    - img "Safari jeep traveling." [ref=e143]
+                  - link "Adventure in all-terrain vehicle" [ref=e144] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/adventure-in-all-terrain-vehicle-gm907666726-250036902?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A53ba4d40-1a98-4a49-a8a2-3d3e7a036609
+                    - img "Adventure in all-terrain vehicle" [ref=e145]
+                  - link "Off-road" [ref=e146] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/off-road-gm173022456-7002690?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3Ae93d8527-a216-4de1-8483-83d9da769d91
+                    - img "Off-road" [ref=e147]
+                  - link "African savanna landscape. Wild nature of Kenya. Eastern Africa" [ref=e148] [cursor=pointer]:
+                    - /url: https://www.istockphoto.com/photo/african-savanna-landscape-wild-nature-of-kenya-eastern-africa-gm823725484-133301543?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A41c7a974-43e5-47bf-99dd-d77fe6d38cdf
+                    - img "African savanna landscape. Wild nature of Kenya. Eastern Africa" [ref=e149]
+                - link "Get 20% off with code UNSPLASH20" [ref=e150] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A5eb319e7-89a7-4e4d-b226-59c52eeffc7f&phrase=4x4+vehicle+border+crossing+africa+savanna&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+              - figure [ref=e151]:
+                - link "People on safari in a vehicle looking out" [ref=e154]:
+                  - /url: /photos/people-on-safari-in-a-vehicle-looking-out-7SgjdZt7wlM
+                  - img "People on safari in a vehicle looking out" [ref=e155]
+              - figure [ref=e156]:
+                - generic [ref=e158]:
+                  - link "a man standing in a field with a camera" [ref=e159]:
+                    - /url: /photos/a-man-standing-in-a-field-with-a-camera-QiZyi8N3hBc
+                    - img "a man standing in a field with a camera" [ref=e160]
+                  - link [ref=e161] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-man-standing-in-a-field-with-a-camera-QiZyi8N3hBc
+                    - img [ref=e162]
+              - figure [ref=e164]:
+                - link "A jeep drives down a dusty dirt road through trees" [ref=e167]:
+                  - /url: /photos/a-jeep-drives-down-a-dusty-dirt-road-through-trees-_gJIQ1Mq0jY
+                  - img "A jeep drives down a dusty dirt road through trees" [ref=e168]
+              - figure [ref=e169]:
+                - link "a large open field with animals in the distance" [ref=e172]:
+                  - /url: /photos/a-large-open-field-with-animals-in-the-distance-Ul8JjaUwh1w
+                  - img "a large open field with animals in the distance" [ref=e173]
+              - figure [ref=e174]:
+                - link "vehicle running near the antelope during daytim" [ref=e177]:
+                  - /url: /photos/vehicle-running-near-the-antelope-during-daytim-DEBrMzu-D8I
+                  - img "vehicle running near the antelope during daytim" [ref=e178]
+            - generic [ref=e179]:
+              - figure [ref=e180]:
+                - link "Two vehicles drive on a dusty dirt road" [ref=e183]:
+                  - /url: /photos/two-vehicles-drive-on-a-dusty-dirt-road-cfPPaM5v49Q
+                  - img "Two vehicles drive on a dusty dirt road" [ref=e184]
+              - figure [ref=e185]:
+                - link "A couple of trucks driving down a dirt road" [ref=e188]:
+                  - /url: /photos/a-couple-of-trucks-driving-down-a-dirt-road-MOaALyttqzM
+                  - img "A couple of trucks driving down a dirt road" [ref=e189]
+              - figure [ref=e190]:
+                - link "Man driving safari vehicle on dirt road" [ref=e193]:
+                  - /url: /photos/man-driving-safari-vehicle-on-dirt-road-pKZp-o4tfB0
+                  - img "Man driving safari vehicle on dirt road" [ref=e194]
+              - figure [ref=e195]:
+                - link "Safari vehicle entering tarangire national park entrance" [ref=e198]:
+                  - /url: /photos/safari-vehicle-entering-tarangire-national-park-entrance-XgHKWDXY0UM
+                  - img "Safari vehicle entering tarangire national park entrance" [ref=e199]
+              - figure [ref=e200]:
+                - link "An off-road vehicle drives on a dusty track" [ref=e203]:
+                  - /url: /photos/an-off-road-vehicle-drives-on-a-dusty-track-kM2hT4b7eGk
+                  - img "An off-road vehicle drives on a dusty track" [ref=e204]
+              - figure [ref=e205]:
+                - generic [ref=e207]:
+                  - link "Elephants around a waterhole at dusk" [ref=e208]:
+                    - /url: /photos/elephants-around-a-waterhole-at-dusk-PgGEwoWcFAM
+                    - img "Elephants around a waterhole at dusk" [ref=e209]
+                  - link [ref=e210] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Felephants-around-a-waterhole-at-dusk-PgGEwoWcFAM
+                    - img [ref=e211]
+              - figure [ref=e213]:
+                - link "A herd of cattle standing on the side of a road" [ref=e216]:
+                  - /url: /photos/a-herd-of-cattle-standing-on-the-side-of-a-road-yTjgb90GTlY
+                  - img "A herd of cattle standing on the side of a road" [ref=e217]
+              - figure [ref=e218]:
+                - link "Cheetahs walk near safari vehicles in grassy savanna" [ref=e221]:
+                  - /url: /photos/cheetahs-walk-near-safari-vehicles-in-grassy-savanna-GtHP9TwZPmo
+                  - img "Cheetahs walk near safari vehicles in grassy savanna" [ref=e222]
+            - generic [ref=e223]:
+              - link "Save up to 15% with a team plan. Get your team on Unsplash+" [ref=e226] [cursor=pointer]:
+                - /url: https://e-10457.adzerk.net/r?e=eyJ2IjoiMS4xNCIsImF2Ijo4MjM1NTIsImF0Ijo1LCJidCI6MCwiY20iOjk0ODU5NTcsImNoIjo0NTE2MywiY2siOnt9LCJjciI6OTI0MTYxOTgxLCJkaSI6IjkyZTEwMzkxNzliYTRjOWI4ZjQ3ZGI4YmQzMjk5NDk4IiwiZGoiOjAsImlpIjoiMTE2NzdlZDI3MmU0NGIxM2FlYWFkMGVjNjUxMWZkYWMiLCJkbSI6MywiZmMiOjExMDAyOTk3NTEsImZsIjo4NjM1NzEwMTAsImlwIjoiMjE2LjIzNC4yMTUuMTUwIiwibnciOjEwNDU3LCJwYyI6MCwib3AiOjAsIm1wIjowLCJlYyI6MCwiZ20iOjAsImVwIjpudWxsLCJwciI6MjA4MjgzLCJydCI6MSwicnMiOjUwMCwic2EiOiI5NiIsInNiIjoiaS0wMGI3ZDE5MmZkNjQ3MTA1NCIsInNwIjoxNDg5MDEzLCJzdCI6MTEyMTk1NCwidWsiOiJkYjc3ZTE3MC02YTI5LTQ4OWMtOGE4NC02MzAwMzdhODFjNTAiLCJ6biI6MjQxMzQ4LCJ6bSI6WzI0MTM0OF0sInRzIjoxNzg3MDczOTc1MjYxLCJwbiI6InNlYXJjaC1pbi1mZWVkIiwiZ3IiOnRydWUsImdjIjp0cnVlLCJnQyI6dHJ1ZSwiZ3MiOiJub25lIiwidHoiOiJBbWVyaWNhL05ld19Zb3JrIiwidXIiOm51bGx9&s=5YG0ZsvT0SYcD_sREZrpTuXDCF0
+                - contentinfo [ref=e230]:
+                  - generic [ref=e231]:
+                    - img [ref=e233]
+                    - generic [ref=e237]: Save up to 15% with a team plan.
+                  - generic [ref=e238]: Get your team on Unsplash+
+              - figure [ref=e239]:
+                - generic [ref=e241]:
+                  - link "The African sunset over safari vehicles in the Masai Mara, Nairobi" [ref=e242]:
+                    - /url: /photos/the-african-sunset-over-safari-vehicles-in-the-masai-mara-nairobi-Lv7PRE8e_ew
+                    - img "The African sunset over safari vehicles in the Masai Mara, Nairobi" [ref=e243]
+                  - link [ref=e244] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fthe-african-sunset-over-safari-vehicles-in-the-masai-mara-nairobi-Lv7PRE8e_ew
+                    - img [ref=e245]
+              - figure [ref=e247]:
+                - link "Safari vehicle parked near wooden fence with mountains beyond" [ref=e250]:
+                  - /url: /photos/safari-vehicle-parked-near-wooden-fence-with-mountains-beyond-PjaQG6rdOlA
+                  - img "Safari vehicle parked near wooden fence with mountains beyond" [ref=e251]
+              - figure [ref=e252]:
+                - link "brown field under white sky during daytime" [ref=e255]:
+                  - /url: /photos/brown-field-under-white-sky-during-daytime-Y_XMj5NENPo
+                  - img "brown field under white sky during daytime" [ref=e256]
+              - figure [ref=e257]:
+                - link "Baobab trees silhouette at sunset with a vehicle driving past" [ref=e260]:
+                  - /url: /photos/baobab-trees-silhouette-at-sunset-with-a-vehicle-driving-past-c3cQASC9sNU
+                  - img "Baobab trees silhouette at sunset with a vehicle driving past" [ref=e261]
+              - figure [ref=e262]:
+                - generic [ref=e264]:
+                  - link "A rhino standing on a dirt road next to a truck" [ref=e265]:
+                    - /url: /photos/a-rhino-standing-on-a-dirt-road-next-to-a-truck-cP62I6V79Ho
+                    - img "A rhino standing on a dirt road next to a truck" [ref=e266]
+                  - link [ref=e267] [cursor=pointer]:
+                    - /url: /plus?referrer=%2Fphotos%2Fa-rhino-standing-on-a-dirt-road-next-to-a-truck-cP62I6V79Ho
+                    - img [ref=e268]
+              - figure [ref=e270]:
+                - link "White pickup truck driving through dry grassy savanna" [ref=e273]:
+                  - /url: /photos/white-pickup-truck-driving-through-dry-grassy-savanna-JwoibPDe7NA
+                  - img "White pickup truck driving through dry grassy savanna" [ref=e274]
+          - generic [ref=e277]:
+            - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e278]:
+              - text: Browse premium images on iStock
+              - generic [ref=e279]: "| Claim your discount now"
+            - generic [ref=e281]:
+              - link "4x4 jeep adventure safari in Chobe National Park, Botswana, Africa. White 4x4 truck making his way on dirt and sandy road through wild nature" [ref=e282] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/4x4-jeep-adventure-safari-in-chobe-national-park-botswana-africa-white-4x4-truck-gm1192681625-338960508?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A23312456-3778-48dd-a2b3-de952084c371
+                - img "4x4 jeep adventure safari in Chobe National Park, Botswana, Africa. White 4x4 truck making his way on dirt and sandy road through wild nature" [ref=e283]
+              - link "Safari in Kenya" [ref=e284] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/safari-in-kenya-gm178500182-23748930?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A17f1fdaa-de67-4013-8c88-a30fe281f1e9
+                - img "Safari in Kenya" [ref=e285]
+              - link "landscape image or Uragate cultural festival grounds" [ref=e286] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/landscape-image-or-uragate-cultural-festival-grounds-gm2224528571-640616283?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A3b32815e-29b5-494d-8924-3323e5c2bc8b
+                - img "landscape image or Uragate cultural festival grounds" [ref=e287]
+              - link "Muddy road" [ref=e288] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/muddy-road-gm537741537-57984402?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A5cde287e-795d-493a-85f4-bd5067952e98
+                - img "Muddy road" [ref=e289]
+              - link "African wildlife" [ref=e290] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/african-wildlife-gm153483185-16982210?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3Ad88fb6f5-15b2-427c-9fb9-8d9c7956f9a7
+                - img "African wildlife" [ref=e291]
+              - link "Safari, Tanzania" [ref=e292] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/safari-tanzania-gm842513656-137745517?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A2deb00d8-f92d-4be6-aeb3-4fb3a059f8e9
+                - img "Safari, Tanzania" [ref=e293]
+              - link "Safari - Lake Manyara National Park" [ref=e294] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/safari-lake-manyara-national-park-gm466125200-59616494?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3A75e822c6-34f4-4765-a439-badd44242c17
+                - img "Safari - Lake Manyara National Park" [ref=e295]
+              - generic [ref=e296]:
+                - link "Dirt road in Akagera Safari with safari car approaching, Rwanda" [ref=e297] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/dirt-road-in-akagera-safari-with-safari-car-approaching-rwanda-gm1153576474-313350869?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3Ae366f891-62b9-485c-b609-a6b658f4c5e7
+                  - img "Dirt road in Akagera Safari with safari car approaching, Rwanda" [ref=e298]
+                - link "View more on iStock ↗" [ref=e299] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2F4x4-vehicle-border-crossing-africa-savanna&utm_term=4x4+vehicle+border+crossing+africa+savanna%3A%3Asearch-affiliate%3Aexperiment%3Ad6fff847-4a32-49f4-920b-e3c8e1b29639&phrase=4x4+vehicle+border+crossing+africa+savanna&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - button "Load more" [ref=e303] [cursor=pointer]
+          - generic [ref=e304]:
+            - link [ref=e305] [cursor=pointer]:
+              - /url: /
+              - img [ref=e306]
+            - paragraph [ref=e308]: Make something awesome
+    - generic:
+      - region "Notifications"

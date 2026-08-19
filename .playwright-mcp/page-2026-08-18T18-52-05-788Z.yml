@@ -1,0 +1,148 @@
+- generic [ref=e4]:
+  - navigation [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Unsplash Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Unsplash Home" [ref=e9]
+        - link "Photos" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - img [ref=e12]
+        - link "Illustrations" [ref=e14] [cursor=pointer]:
+          - /url: /illustrations
+          - img [ref=e15]
+      - generic [ref=e17]:
+        - button "Explore" [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "Collections" [ref=e21] [cursor=pointer]:
+          - img [ref=e22]
+        - button "Download History" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+      - button "Bookmarks" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+    - generic [ref=e31]:
+      - link "Log in / Sign up" [ref=e32] [cursor=pointer]:
+        - /url: /login?referrer=%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky
+        - img [ref=e33]
+      - button "Language" [ref=e35] [cursor=pointer]:
+        - img [ref=e36]
+      - button "Menu" [ref=e38] [cursor=pointer]:
+        - img [ref=e39]
+  - generic [ref=e41]:
+    - generic [ref=e42]:
+      - navigation [ref=e43]:
+        - search "Find visuals sitewide" [ref=e45]:
+          - button "Search Unsplash" [ref=e46] [cursor=pointer]:
+            - img [ref=e47]
+          - combobox [ref=e49]:
+            - searchbox "Search Unsplash" [ref=e50]: safari vehicle dirt road acacia trees blue sky
+            - listbox
+          - button "Clear" [ref=e51] [cursor=pointer]:
+            - img [ref=e52]
+          - button "Visual search" [ref=e56] [cursor=pointer]:
+            - img [ref=e57]
+        - generic [ref=e59]:
+          - link "Get Unsplash+" [ref=e60] [cursor=pointer]:
+            - /url: /plus
+          - link "Log in" [ref=e61] [cursor=pointer]:
+            - /url: /login?referrer=%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky
+        - button "Submit an image" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e70]:
+          - list [ref=e71]:
+            - listitem [ref=e72]:
+              - link "Photos 2":
+                - /url: /s/photos/safari-vehicle-dirt-road-acacia-trees-blue-sky
+                - img
+                - text: Photos
+                - generic: "2"
+            - listitem [ref=e73]:
+              - link "Illustrations 0" [ref=e74] [cursor=pointer]:
+                - /url: /s/illustrations/safari-vehicle-dirt-road-acacia-trees-blue-sky
+                - img [ref=e75]
+                - text: Illustrations
+                - generic [ref=e77]: "0"
+            - listitem [ref=e78]:
+              - button "More" [ref=e79] [cursor=pointer]
+          - button "Filters" [ref=e81] [cursor=pointer]:
+            - img [ref=e83]
+            - text: Filters
+        - generic [ref=e85]:
+          - heading "Safari vehicle dirt road acacia trees blue sky" [level=1] [ref=e87]
+          - generic [ref=e89]:
+            - button "scroll list to the right" [ref=e91] [cursor=pointer]:
+              - img [ref=e92]
+            - generic [ref=e95]:
+              - link "acacia tree" [ref=e97] [cursor=pointer]:
+                - /url: /s/photos/acacia-tree
+              - link "wilderness" [ref=e99] [cursor=pointer]:
+                - /url: /s/photos/wilderness
+              - link "scrubland" [ref=e101] [cursor=pointer]:
+                - /url: /s/photos/scrubland
+              - link "horizon" [ref=e103] [cursor=pointer]:
+                - /url: /s/photos/horizon
+              - link "desert landscape" [ref=e105] [cursor=pointer]:
+                - /url: /s/photos/desert-landscape
+              - link "purple" [ref=e107] [cursor=pointer]:
+                - /url: /s/photos/purple
+              - link "dirt road" [ref=e109] [cursor=pointer]:
+                - /url: /s/photos/dirt-road
+              - link "dry season" [ref=e111] [cursor=pointer]:
+                - /url: /s/photos/dry-season
+              - link "blue" [ref=e113] [cursor=pointer]:
+                - /url: /s/photos/blue
+              - link "desert" [ref=e115] [cursor=pointer]:
+                - /url: /s/photos/desert
+              - link "barren land" [ref=e117] [cursor=pointer]:
+                - /url: /s/photos/barren-land
+              - link "arid climate" [ref=e119] [cursor=pointer]:
+                - /url: /s/photos/arid-climate
+        - generic [ref=e121]:
+          - generic [ref=e125]:
+            - figure [ref=e127]:
+              - link "Acacia trees scattered across a dry, sandy landscape" [ref=e130]:
+                - /url: /photos/acacia-trees-scattered-across-a-dry-sandy-landscape-GlcZ_l928oM
+                - img "Acacia trees scattered across a dry, sandy landscape" [ref=e131]
+            - figure [ref=e133]:
+              - link "A dry desert landscape with sparse trees and distant mountains" [ref=e136]:
+                - /url: /photos/a-dry-desert-landscape-with-sparse-trees-and-distant-mountains-bZkZ8L-Fn5U
+                - img "A dry desert landscape with sparse trees and distant mountains" [ref=e137]
+          - generic [ref=e140]:
+            - heading "Browse premium images on iStock | Claim your discount now" [level=2] [ref=e141]:
+              - text: Browse premium images on iStock
+              - generic [ref=e142]: "| Claim your discount now"
+            - generic [ref=e144]:
+              - link "Wildebeest crossing the Road, African Savannah, Migration, Serengeti, Tanzania, Africa" [ref=e145] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/wildebeest-crossing-the-road-african-savannah-migration-serengeti-tanzania-africa-gm472087525-31866096?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3Aac14fa4e-a7e5-4da9-8a62-4e02cecf94bb
+                - img "Wildebeest crossing the Road, African Savannah, Migration, Serengeti, Tanzania, Africa" [ref=e146]
+              - link "Flowering acacia in Sahara, Egypt" [ref=e147] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/flowering-acacia-in-sahara-egypt-gm1051717164-281193408?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3A87414514-ac5e-40e7-a1bb-2b2b63e4f089
+                - img "Flowering acacia in Sahara, Egypt" [ref=e148]
+              - link "Crossroads in the savannah with acacia trees and a safari vehicle in Serengeti National Park Tanzania" [ref=e149] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/crossroads-in-the-savannah-with-acacia-trees-and-a-safari-vehicle-in-serengeti-gm2286527998-698359419?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3A9fa1e836-e635-438b-bf6e-11740aa95d74
+                - img "Crossroads in the savannah with acacia trees and a safari vehicle in Serengeti National Park Tanzania" [ref=e150]
+              - link "Wilderness Wildlife Dirt Road" [ref=e151] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/wilderness-wildlife-dirt-road-gm900443070-248439787?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3A3c91d7b7-a831-492d-b091-f0fb70c40d0f
+                - img "Wilderness Wildlife Dirt Road" [ref=e152]
+              - link "Tarangire National Park landscape, Tanzania, Africa" [ref=e153] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/tarangire-national-park-landscape-tanzania-africa-gm1225172139-360525380?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3A899d288b-4160-49ca-a877-3ee6ccfa64cb
+                - img "Tarangire National Park landscape, Tanzania, Africa" [ref=e154]
+              - link "Safari in the Ngorongoro Crater National Park" [ref=e155] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/safari-in-the-ngorongoro-crater-national-park-gm842224188-137745473?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3A7ada05c2-ec8e-4ac4-a1f3-4aacabdf9cfa
+                - img "Safari in the Ngorongoro Crater National Park" [ref=e156]
+              - link "Safari Vehicle by Acacia Tree" [ref=e157] [cursor=pointer]:
+                - /url: https://www.istockphoto.com/photo/safari-vehicle-by-acacia-tree-gm471178661-8973993?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3A4c56e407-927a-4cba-8b25-fd257d220490
+                - img "Safari Vehicle by Acacia Tree" [ref=e158]
+              - generic [ref=e159]:
+                - link "Endless Safari Road Leading Towards Hills Under a Vast Blue Sky, Serengeti, Tanzania" [ref=e160] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/photo/endless-safari-road-leading-towards-hills-under-a-vast-blue-sky-serengeti-tanzania-gm2242900112-657160761?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3Ab05adc7e-bf87-4dbb-a558-e67424c845a2
+                  - img "Endless Safari Road Leading Towards Hills Under a Vast Blue Sky, Serengeti, Tanzania" [ref=e161]
+                - link "View more on iStock ↗" [ref=e162] [cursor=pointer]:
+                  - /url: https://www.istockphoto.com/search/2/image?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsafari-vehicle-dirt-road-acacia-trees-blue-sky&utm_term=safari+vehicle+dirt+road+acacia+trees+blue+sky%3A%3Asearch-affiliate%3Aexperiment%3Afaca4969-b8f1-4f36-82e1-acb58e834a77&phrase=safari+vehicle+dirt+road+acacia+trees+blue+sky&alloweduse=availableforalluses&excludenudity=true&sort=best&mediatype=photography
+          - generic [ref=e164]:
+            - link [ref=e165] [cursor=pointer]:
+              - /url: /
+              - img [ref=e166]
+            - paragraph [ref=e168]: Make something awesome
+    - generic:
+      - region "Notifications"
