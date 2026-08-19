@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import MountReveal from "@/components/ui/mount-reveal";
 import Reveal from "@/components/ui/reveal";
 import type { JournalPostSummary } from "@/sanity/lib/types";
 
 export default function JournalListing({ posts }: { posts: JournalPostSummary[] }) {
   return (
     <section className="mx-auto max-w-[1440px] px-6 py-28 sm:px-10 sm:py-36">
-      <Reveal className="mb-14 max-w-2xl">
+      <MountReveal className="mb-14 max-w-2xl">
         <div className="mb-6 text-[11px] uppercase tracking-[0.28em] text-gold">The Journal</div>
         <h1
           className="m-0 font-display font-semibold uppercase leading-[1.15] tracking-tight"
@@ -14,7 +15,7 @@ export default function JournalListing({ posts }: { posts: JournalPostSummary[] 
         >
           Field notes from <span className="text-gold">Victoria Falls.</span>
         </h1>
-      </Reveal>
+      </MountReveal>
 
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, i) => (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import MountReveal from "@/components/ui/mount-reveal";
 import Reveal from "@/components/ui/reveal";
 
 export const metadata: Metadata = {
@@ -11,15 +12,15 @@ export const metadata: Metadata = {
 export default function LegalPage() {
   return (
     <article className="mx-auto max-w-[820px] px-6 py-28 sm:px-10 sm:py-40">
-      <Reveal className="mb-6 text-[11px] uppercase tracking-[0.28em] text-gold">Legal</Reveal>
-      <Reveal>
+      <MountReveal className="mb-6 text-[11px] uppercase tracking-[0.28em] text-gold">Legal</MountReveal>
+      <MountReveal>
         <h1
           className="m-0 mb-10 font-display font-semibold uppercase leading-[1.15] tracking-tight"
           style={{ fontSize: "clamp(26px, 4vw, 46px)" }}
         >
           Privacy &amp; Terms
         </h1>
-      </Reveal>
+      </MountReveal>
 
       <Reveal>
         <div className="max-w-2xl text-lg leading-relaxed text-muted text-pretty [&_h2]:font-subheading [&_h2]:text-2xl [&_h2]:font-medium [&_h2]:text-ink [&_h2]:mt-12 [&_h2]:mb-4 [&_p]:mb-6">
