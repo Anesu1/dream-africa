@@ -35,7 +35,7 @@ const spaceGrotesk = Space_Grotesk({
 // real domain is live. Falls back to a placeholder so this doesn't silently resolve
 // canonical/OG URLs against the wrong host.
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
-const DEFAULT_TITLE = "Victoria Falls Safaris & Car Rental | Africa Dream Adventures";
+const DEFAULT_TITLE = "Victoria Falls Car Rental, Tours & Safaris | Africa Dream Adventures";
 const DEFAULT_DESCRIPTION =
   "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium self-drive and chauffeured car rental across Zimbabwe — one trusted company for your whole trip.";
 const SOCIAL_IMAGE = "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&h=630&q=80&auto=format&fit=crop";
