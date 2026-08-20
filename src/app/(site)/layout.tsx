@@ -18,7 +18,12 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
 
   return (
     <>
-      <OrganizationJsonLd name={siteSettings.name} description={siteSettings.tagline} />
+      <OrganizationJsonLd
+        name={siteSettings.name}
+        description={siteSettings.tagline}
+        address={siteSettings.address}
+        telephone={siteSettings.whatsapp}
+      />
       <LoadingScreen siteSettings={siteSettings} />
       <Cursor />
       <SmoothScroll>

@@ -8,6 +8,15 @@ import type { Vehicle } from "@/sanity/lib/types";
 
 const CATEGORIES = ["All", "SUV", "4x4", "Executive"] as const;
 
+const SMALL_NUMBER_WORDS = [
+  "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+  "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty",
+];
+
+function spellCount(n: number) {
+  return SMALL_NUMBER_WORDS[n] ?? String(n);
+}
+
 export default function Fleet({ vehicles, whatsapp }: { vehicles: Vehicle[]; whatsapp: string }) {
   const [category, setCategory] = useState<(typeof CATEGORIES)[number]>("All");
 
@@ -26,7 +35,7 @@ export default function Fleet({ vehicles, whatsapp }: { vehicles: Vehicle[]; wha
               className="m-0 font-display font-semibold uppercase leading-[1.15] tracking-tight"
               style={{ fontSize: "clamp(22px, 2.8vw, 36px)" }}
             >
-              Thirty-two vehicles, <span className="text-gold">serviced every 5,000km.</span>
+              {spellCount(vehicles.length)} vehicles, <span className="text-gold">serviced every 5,000km.</span>
             </h2>
           </Reveal>
 

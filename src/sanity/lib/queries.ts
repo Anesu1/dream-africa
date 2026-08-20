@@ -55,6 +55,7 @@ export const RENTALS_PAGE_QUERY = defineQuery(`*[_type == "rentalsPageSettings"]
   heroDescription,
   "heroImage": heroImage.asset->url,
   "rentalServices": rentalServices[]{ title, description },
+  "rentalFaqs": rentalFaqs[]{ question, answer },
 }`);
 
 export const ACTIVITIES_PAGE_QUERY = defineQuery(`*[_type == "activitiesPageSettings"][0]{
@@ -80,11 +81,40 @@ export const TOURS_QUERY = defineQuery(`*[_type == "tour"] | order(order asc) {
   highlights,
 }`);
 
+export const TOUR_SLUGS_QUERY = defineQuery(`*[_type == "tour"]{ "slug": slug.current }`);
+
+export const TOUR_BY_SLUG_QUERY = defineQuery(`*[_type == "tour" && slug.current == $slug][0]{
+  "slug": slug.current,
+  category,
+  duration,
+  title,
+  description,
+  price,
+  priceUnit,
+  "image": image.asset->url,
+  highlights,
+}`);
+
+export const VEHICLES_COUNT_QUERY = defineQuery(`count(*[_type == "vehicle"])`);
+
 export const VEHICLES_QUERY = defineQuery(`*[_type == "vehicle"] | order(order asc) {
   "slug": slug.current,
   category,
   name,
   subtitle,
+  price,
+  "image": image.asset->url,
+  "specs": specs[]{ label, value },
+}`);
+
+export const VEHICLE_SLUGS_QUERY = defineQuery(`*[_type == "vehicle"]{ "slug": slug.current }`);
+
+export const VEHICLE_BY_SLUG_QUERY = defineQuery(`*[_type == "vehicle" && slug.current == $slug][0]{
+  "slug": slug.current,
+  category,
+  name,
+  subtitle,
+  description,
   price,
   "image": image.asset->url,
   "specs": specs[]{ label, value },

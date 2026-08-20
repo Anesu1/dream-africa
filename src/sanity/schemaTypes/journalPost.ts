@@ -18,7 +18,29 @@ export default defineType({
       name: "body",
       title: "Body",
       type: "array",
-      of: [{ type: "block" }],
+      of: [
+        {
+          type: "block",
+          marks: {
+            annotations: [
+              {
+                name: "link",
+                type: "object",
+                title: "Link",
+                fields: [
+                  defineField({
+                    name: "href",
+                    title: "URL",
+                    type: "string",
+                    description: "Relative path, e.g. /rentals or /safaris/chobe-day-trip",
+                    validation: (r) => r.required(),
+                  }),
+                ],
+              },
+            ],
+          },
+        },
+      ],
       validation: (r) => r.required(),
     }),
     defineField({

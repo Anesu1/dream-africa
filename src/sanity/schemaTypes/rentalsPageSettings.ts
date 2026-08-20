@@ -7,6 +7,7 @@ export default defineType({
   groups: [
     { name: "hero", title: "Hero", default: true },
     { name: "services", title: "Services" },
+    { name: "faq", title: "FAQ" },
   ],
   fields: [
     defineField({ group: "hero", name: "heroEyebrow", type: "string", validation: (r) => r.required() }),
@@ -35,6 +36,13 @@ export default defineType({
           preview: { select: { title: "title", subtitle: "description" } },
         },
       ],
+    }),
+    defineField({
+      group: "faq",
+      name: "rentalFaqs",
+      title: "Rental FAQs",
+      type: "array",
+      of: [{ type: "faqItem" }],
     }),
   ],
   preview: {

@@ -77,6 +77,7 @@ export type RentalsPageSettings = {
   heroDescription: string;
   heroImage: string;
   rentalServices: RentalService[];
+  rentalFaqs?: FaqItem[];
 };
 
 export type ActivityItem = { label: string; price: string; note?: string };
@@ -112,6 +113,7 @@ export type Vehicle = {
   category: "SUV" | "4x4" | "Executive";
   name: string;
   subtitle: string;
+  description?: string;
   price: number;
   image: string;
   specs: { label: string; value: string }[];

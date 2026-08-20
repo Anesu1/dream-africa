@@ -14,14 +14,16 @@ export default function Counter({
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-10% 0px -10% 0px" });
-  const [display, setDisplay] = useState(0);
+  // Starts at the real value so the server-rendered HTML — what crawlers and
+  // slow-JS visitors actually see — never shows a placeholder zero. The
+  // count-up below is a purely decorative layer on top of an already-correct
+  // number, triggered only once the browser confirms it's in view.
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     if (!inView) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setDisplay(value);
-      return;
-    }
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const duration = 1400;
     const start = performance.now();
     let raf = 0;

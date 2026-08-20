@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import RentalsHero from "@/components/sections/rentals/hero";
 import Services from "@/components/sections/rentals/services";
 import Fleet from "@/components/sections/rentals/fleet";
+import RentalsFaq from "@/components/sections/rentals/faq";
 import BookingSection from "@/components/sections/booking-section";
-import { AutoRentalJsonLd } from "@/components/seo/json-ld";
+import { AutoRentalJsonLd, FaqJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { RENTALS_PAGE_QUERY, SITE_SETTINGS_QUERY, VEHICLES_QUERY } from "@/sanity/lib/queries";
 import type { RentalsPageSettings, SiteSettings, Vehicle } from "@/sanity/lib/types";
@@ -33,6 +34,7 @@ export default async function RentalsPage() {
   return (
     <>
       <AutoRentalJsonLd parentName={siteSettings.name} />
+      {rentalsPage.rentalFaqs && rentalsPage.rentalFaqs.length > 0 && <FaqJsonLd faqs={rentalsPage.rentalFaqs} />}
       <RentalsHero
         eyebrow={rentalsPage.heroEyebrow}
         title={rentalsPage.heroTitle}
@@ -41,6 +43,7 @@ export default async function RentalsPage() {
       />
       <Services services={rentalsPage.rentalServices} />
       <Fleet vehicles={vehicles} whatsapp={siteSettings.whatsapp} />
+      <RentalsFaq faqs={rentalsPage.rentalFaqs ?? []} />
       <BookingSection
         division="rentals"
         eyebrow="Start Planning"
