@@ -37,7 +37,7 @@ const spaceGrotesk = Space_Grotesk({
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
 const DEFAULT_TITLE = "Victoria Falls Car Rental, Tours & Safaris | Africa Dream Adventures";
 const DEFAULT_DESCRIPTION =
-  "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium self-drive and chauffeured car rental across Zimbabwe — one trusted company for your whole trip.";
+  "Premium car rental, 4x4 hire, private tours and safaris in Victoria Falls, Zimbabwe. Explore Victoria Falls, Hwange and the Zambezi with Africa Dream Adventures.";
 const SOCIAL_IMAGE = "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200&h=630&q=80&auto=format&fit=crop";
 
 export const metadata: Metadata = {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: DEFAULT_TITLE,
     description:
-      "Luxury Victoria Falls safaris, Zambezi cruises and Chobe day trips, plus premium car rental across Zimbabwe.",
+      "Premium car rental, 4x4 hire, private tours and safaris in Victoria Falls, Zimbabwe.",
     type: "website",
     locale: "en_ZW",
     images: [{ url: SOCIAL_IMAGE, width: 1200, height: 630, alt: DEFAULT_TITLE }],
