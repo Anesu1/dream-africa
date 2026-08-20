@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+// Without this, this page inherits the root layout's index:true — telling
+// Google to index every dead/typo'd/not-yet-published URL as real content.
+export const metadata: Metadata = {
+  title: "Page Not Found",
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (
