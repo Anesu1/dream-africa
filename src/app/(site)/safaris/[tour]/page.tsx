@@ -84,6 +84,20 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
             <p className="mb-10 max-w-[60ch] text-[17px] leading-relaxed text-muted">{tour.description}</p>
           </MountReveal>
 
+          {tour.slug === "hwange-big-five" && (
+            <MountReveal delay={0.18} className="mb-10 rounded-sm border border-line bg-off-white p-6">
+              <p className="m-0 text-[15px] leading-relaxed">
+                <span className="font-subheading text-lg font-medium">Rather explore Hwange yourself?</span>
+                <br />
+                Our 4x4 fleet is built for exactly this route —{" "}
+                <Link href="/rentals" className="text-gold underline underline-offset-2">
+                  see the self-drive vehicles
+                </Link>
+                .
+              </p>
+            </MountReveal>
+          )}
+
           {related.length > 0 && (
             <MountReveal delay={0.2}>
               <h2 className="mb-5 font-subheading text-xl font-medium">Other tours</h2>
