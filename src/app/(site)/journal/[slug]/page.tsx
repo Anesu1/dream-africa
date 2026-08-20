@@ -39,7 +39,13 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
 
   return (
     <article className="mx-auto max-w-[820px] px-6 py-28 sm:px-10 sm:py-40">
-      <MountReveal className="mb-6 text-[11px] uppercase tracking-[0.28em] text-gold">{post.category}</MountReveal>
+      <MountReveal className="mb-6 flex items-center gap-3">
+        <Link href="/journal" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
+          Journal
+        </Link>
+        <span className="text-[11px] text-muted">/</span>
+        <span className="text-[11px] uppercase tracking-[0.28em] text-muted">{post.category}</span>
+      </MountReveal>
       <MountReveal>
         <h1
           className="m-0 mb-10 font-display font-semibold uppercase leading-[1.15] tracking-tight"
