@@ -91,6 +91,20 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
             </MountReveal>
           )}
 
+          {vehicle.category === "4x4" && (
+            <MountReveal delay={0.18} className="mb-10 rounded-sm border border-line bg-off-white p-6">
+              <p className="m-0 text-[15px] leading-relaxed">
+                <span className="font-subheading text-lg font-medium">Planning a safari to Hwange?</span>
+                <br />
+                This is the vehicle for it —{" "}
+                <Link href="/safaris/hwange-big-five" className="text-gold underline underline-offset-2">
+                  see the Hwange Big Five safari
+                </Link>
+                .
+              </p>
+            </MountReveal>
+          )}
+
           {related.length > 0 && (
             <MountReveal delay={0.2}>
               <h2 className="mb-5 font-subheading text-xl font-medium">Other vehicles in the fleet</h2>

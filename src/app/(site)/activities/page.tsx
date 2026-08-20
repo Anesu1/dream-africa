@@ -10,7 +10,7 @@ import { ACTIVITIES_PAGE_QUERY, SITE_SETTINGS_QUERY } from "@/sanity/lib/queries
 import type { ActivitiesPageSettings, SiteSettings } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Victoria Falls Adventure Activities",
+  title: "Things to Do in Victoria Falls — Adventure Activities",
   description:
     "Bungee jumping, white-water rafting, jetboat, scenic flights, river cruises and cultural experiences at Victoria Falls — combo deals and discounted packages, message us for current rates.",
   keywords: [
