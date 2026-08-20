@@ -6,7 +6,7 @@ import type { Vehicle } from "@/sanity/lib/types";
 export default function VehicleCard({ vehicle, whatsapp }: { vehicle: Vehicle; whatsapp: string }) {
   return (
     <article className="group overflow-hidden rounded-sm border border-line transition-colors hover:border-gold">
-      <Link href={`/rentals/${vehicle.slug}`}>
+      <Link href={`/car-rental-victoria-falls/${vehicle.slug}`}>
         <div className="relative h-[240px] overflow-hidden">
           <Image
             src={vehicle.image}

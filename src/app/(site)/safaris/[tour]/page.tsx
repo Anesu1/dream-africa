@@ -90,7 +90,7 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
                 <span className="font-subheading text-lg font-medium">Rather explore Hwange yourself?</span>
                 <br />
                 Our 4x4 fleet is built for exactly this route —{" "}
-                <Link href="/rentals" className="text-gold underline underline-offset-2">
+                <Link href="/car-rental-victoria-falls" className="text-gold underline underline-offset-2">
                   see the self-drive vehicles
                 </Link>
                 .

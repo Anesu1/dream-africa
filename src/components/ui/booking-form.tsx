@@ -10,7 +10,7 @@ type Division = "safaris" | "rentals";
 const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> = {
   safaris: {
     text: "Need a vehicle for the rest of your trip?",
-    href: "/rentals",
+    href: "/car-rental-victoria-falls",
     cta: "See the fleet",
   },
   rentals: {

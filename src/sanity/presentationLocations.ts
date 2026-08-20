@@ -7,7 +7,7 @@ export const locations: DocumentLocationResolvers = {
   siteSettings: { locations: [{ title: "Whole site", href: "/" }] },
   homePage: { locations: [{ title: "Home Page", href: "/" }] },
   safariPageSettings: { locations: [{ title: "Safaris Page", href: "/safaris" }] },
-  rentalsPageSettings: { locations: [{ title: "Rentals Page", href: "/rentals" }] },
+  rentalsPageSettings: { locations: [{ title: "Rentals Page", href: "/car-rental-victoria-falls" }] },
   activitiesPageSettings: { locations: [{ title: "Activities Page", href: "/activities" }] },
   vehicle: {
     select: { slug: "slug.current", name: "name" },
@@ -15,8 +15,8 @@ export const locations: DocumentLocationResolvers = {
       doc?.slug
         ? {
             locations: [
-              { title: doc.name ?? "Vehicle", href: `/rentals/${doc.slug}` },
-              { title: "Car Rental", href: "/rentals" },
+              { title: doc.name ?? "Vehicle", href: `/car-rental-victoria-falls/${doc.slug}` },
+              { title: "Car Rental", href: "/car-rental-victoria-falls" },
             ],
           }
         : null,

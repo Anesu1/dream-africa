@@ -7,7 +7,7 @@ import type { SiteSettings } from "@/sanity/lib/types";
 
 export default function LoadingScreen({ siteSettings }: { siteSettings: SiteSettings }) {
   const pathname = usePathname();
-  const brand = pathname?.startsWith("/rentals") ? siteSettings.brandRentals : siteSettings.brandSafaris;
+  const brand = pathname?.startsWith("/car-rental-victoria-falls") ? siteSettings.brandRentals : siteSettings.brandSafaris;
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {

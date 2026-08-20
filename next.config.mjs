@@ -11,5 +11,13 @@ const nextConfig = {
     // not necessarily true of the eventual hosting environment.
     unoptimized: true,
   },
+  async redirects() {
+    // /rentals moved to /car-rental-victoria-falls — permanent redirect so
+    // existing indexing/backlinks transfer instead of hitting a dead page.
+    return [
+      { source: "/rentals", destination: "/car-rental-victoria-falls", permanent: true },
+      { source: "/rentals/:vehicle", destination: "/car-rental-victoria-falls/:vehicle", permanent: true },
+    ];
+  },
 };
 export default nextConfig;

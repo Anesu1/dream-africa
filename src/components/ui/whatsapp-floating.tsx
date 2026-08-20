@@ -6,7 +6,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 
 export default function WhatsAppFloating({ whatsappNumber }: { whatsappNumber: string }) {
   const pathname = usePathname();
-  const isRentals = pathname?.startsWith("/rentals");
+  const isRentals = pathname?.startsWith("/car-rental-victoria-falls");
 
   const message = isRentals
     ? "Hi Eden Car Rental, I need a car or 4x4 today in Victoria Falls. Please share available vehicles and rates."

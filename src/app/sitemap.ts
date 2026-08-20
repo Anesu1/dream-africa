@@ -20,9 +20,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     client.fetch<{ slug: string }[]>(TOUR_SLUGS_QUERY),
   ]);
 
-  const routes = ["", "/safaris", "/rentals", "/activities", "/journal"];
+  const routes = ["", "/safaris", "/car-rental-victoria-falls", "/activities", "/journal"];
   const journalRoutes = journalSlugs.map(({ slug }) => `/journal/${slug}`);
-  const vehicleRoutes = vehicleSlugs.map(({ slug }) => `/rentals/${slug}`);
+  const vehicleRoutes = vehicleSlugs.map(({ slug }) => `/car-rental-victoria-falls/${slug}`);
   const tourRoutes = tourSlugs.map(({ slug }) => `/safaris/${slug}`);
 
   return [...routes, ...vehicleRoutes, ...tourRoutes, ...journalRoutes].map((route) => ({

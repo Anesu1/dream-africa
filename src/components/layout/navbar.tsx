@@ -11,7 +11,7 @@ import type { SiteSettings } from "@/sanity/lib/types";
 
 export default function Navbar({ siteSettings }: { siteSettings: SiteSettings }) {
   const pathname = usePathname();
-  const brand = pathname?.startsWith("/rentals") ? siteSettings.brandRentals : siteSettings.brandSafaris;
+  const brand = pathname?.startsWith("/car-rental-victoria-falls") ? siteSettings.brandRentals : siteSettings.brandSafaris;
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -29,7 +29,7 @@ export default function Navbar({ siteSettings }: { siteSettings: SiteSettings })
   // Only the pages with a full-bleed dark hero at the top can support a
   // transparent, light-text navbar — everywhere else (journal, legal) starts
   // on a plain white background, so light text would be invisible.
-  const hasHero = pathname === "/" || pathname === "/safaris" || pathname === "/rentals" || pathname === "/activities";
+  const hasHero = pathname === "/" || pathname === "/safaris" || pathname === "/car-rental-victoria-falls" || pathname === "/activities";
   const transparent = hasHero && !scrolled && !open;
 
   return (

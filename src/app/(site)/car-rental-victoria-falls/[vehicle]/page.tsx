@@ -28,7 +28,7 @@ export async function generateMetadata({
   return {
     title: `${vehicle.name} Rental in Victoria Falls`,
     description: `Rent the ${vehicle.name} — ${vehicle.subtitle} — from Eden Car Rental in Victoria Falls. ${vehicle.description ?? ""}`.trim(),
-    alternates: { canonical: `/rentals/${vehicle.slug}` },
+    alternates: { canonical: `/car-rental-victoria-falls/${vehicle.slug}` },
   };
 }
 
@@ -53,7 +53,7 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
       />
 
       <MountReveal className="mb-6 flex items-center gap-3">
-        <Link href="/rentals" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
+        <Link href="/car-rental-victoria-falls" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
           Car Rental
         </Link>
         <span className="text-[11px] text-muted">/</span>
@@ -112,7 +112,7 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
                 {related.map((v) => (
                   <Link
                     key={v.slug}
-                    href={`/rentals/${v.slug}`}
+                    href={`/car-rental-victoria-falls/${v.slug}`}
                     className="group block overflow-hidden rounded-sm border border-line transition-colors hover:border-gold"
                   >
                     <Image

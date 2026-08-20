@@ -33,7 +33,7 @@ export const HOME_PAGE_QUERY = defineQuery(`*[_type == "homePage"][0]{
   },
   "experiences": [
     experienceSafaris{ "key": "safaris", label, title, description, "image": image.asset->url, cta, "href": "/safaris" },
-    experienceRentals{ "key": "rentals", label, title, description, "image": image.asset->url, cta, "href": "/rentals" },
+    experienceRentals{ "key": "rentals", label, title, description, "image": image.asset->url, cta, "href": "/car-rental-victoria-falls" },
   ],
   "stats": stats[]{ value, suffix, decimals, label },
   "testimonials": testimonials[]{ quote, author, location },

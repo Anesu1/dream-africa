@@ -8,7 +8,7 @@ import type { SiteSettings } from "@/sanity/lib/types";
 
 export default function Footer({ siteSettings }: { siteSettings: SiteSettings }) {
   const pathname = usePathname();
-  const isRentals = pathname?.startsWith("/rentals");
+  const isRentals = pathname?.startsWith("/car-rental-victoria-falls");
   const brand = isRentals ? siteSettings.brandRentals : siteSettings.brandSafaris;
 
   return (
