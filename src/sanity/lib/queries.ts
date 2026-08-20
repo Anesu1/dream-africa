@@ -122,7 +122,9 @@ export const VEHICLE_BY_SLUG_QUERY = defineQuery(`*[_type == "vehicle" && slug.c
   "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 
-export const JOURNAL_POSTS_QUERY = defineQuery(`*[_type == "journalPost"] | order(publishedAt desc) {
+// publishedAt <= now() lets posts be written and dated ahead of time and
+// simply appear on their own schedule — no cron job or manual publish step.
+export const JOURNAL_POSTS_QUERY = defineQuery(`*[_type == "journalPost" && publishedAt <= now()] | order(publishedAt desc) {
   "slug": slug.current,
   category,
   title,
@@ -130,9 +132,9 @@ export const JOURNAL_POSTS_QUERY = defineQuery(`*[_type == "journalPost"] | orde
   "image": image.asset->url,
 }`);
 
-export const JOURNAL_POST_SLUGS_QUERY = defineQuery(`*[_type == "journalPost"]{ "slug": slug.current }`);
+export const JOURNAL_POST_SLUGS_QUERY = defineQuery(`*[_type == "journalPost" && publishedAt <= now()]{ "slug": slug.current }`);
 
-export const JOURNAL_POST_BY_SLUG_QUERY = defineQuery(`*[_type == "journalPost" && slug.current == $slug][0] {
+export const JOURNAL_POST_BY_SLUG_QUERY = defineQuery(`*[_type == "journalPost" && slug.current == $slug && publishedAt <= now()][0] {
   "slug": slug.current,
   category,
   title,

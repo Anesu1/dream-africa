@@ -7,6 +7,12 @@ import { JOURNAL_POST_SLUGS_QUERY, TOUR_SLUGS_QUERY, VEHICLE_SLUGS_QUERY } from 
 // at the wrong host.
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
 
+// Without this, Next treats sitemap.xml as fully static — generated once and
+// cached indefinitely (confirmed: Netlify held a stale copy for ~1 year TTL
+// after a deploy). Scheduled journal posts need this to actually appear here
+// as their publish dates arrive, not just at the next code deploy.
+export const revalidate = 3600;
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [journalSlugs, vehicleSlugs, tourSlugs] = await Promise.all([
     client.fetch<{ slug: string }[]>(JOURNAL_POST_SLUGS_QUERY),
