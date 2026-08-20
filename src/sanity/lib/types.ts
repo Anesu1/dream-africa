@@ -96,6 +96,8 @@ export type ActivitiesPageSettings = {
   disclaimer?: string;
 };
 
+export type RelatedJournalPost = { slug: string; title: string; excerpt: string; image: string };
+
 export type Tour = {
   slug: string;
   category: string;
@@ -106,6 +108,7 @@ export type Tour = {
   priceUnit: string;
   image: string;
   highlights: string[];
+  relatedJournalPosts?: RelatedJournalPost[];
 };
 
 export type Vehicle = {
@@ -117,6 +120,7 @@ export type Vehicle = {
   price: number;
   image: string;
   specs: { label: string; value: string }[];
+  relatedJournalPosts?: RelatedJournalPost[];
 };
 
 export type JournalPostSummary = {

@@ -93,6 +93,7 @@ export const TOUR_BY_SLUG_QUERY = defineQuery(`*[_type == "tour" && slug.current
   priceUnit,
   "image": image.asset->url,
   highlights,
+  "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 
 export const VEHICLES_COUNT_QUERY = defineQuery(`count(*[_type == "vehicle"])`);
@@ -118,6 +119,7 @@ export const VEHICLE_BY_SLUG_QUERY = defineQuery(`*[_type == "vehicle" && slug.c
   price,
   "image": image.asset->url,
   "specs": specs[]{ label, value },
+  "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 
 export const JOURNAL_POSTS_QUERY = defineQuery(`*[_type == "journalPost"] | order(publishedAt desc) {

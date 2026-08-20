@@ -25,6 +25,12 @@ export default defineType({
     }),
     defineField({ name: "highlights", type: "array", of: [{ type: "string" }] }),
     defineField({
+      name: "relatedJournalPosts",
+      title: "Related Journal posts",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "journalPost" }] }],
+    }),
+    defineField({
       name: "order",
       title: "Display order",
       type: "number",

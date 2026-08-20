@@ -117,6 +117,33 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
               </div>
             </MountReveal>
           )}
+
+          {vehicle.relatedJournalPosts && vehicle.relatedJournalPosts.length > 0 && (
+            <MountReveal delay={0.25} className="mt-10">
+              <h2 className="mb-5 font-subheading text-xl font-medium">From the Journal</h2>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {vehicle.relatedJournalPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/journal/${post.slug}`}
+                    className="group flex gap-4 overflow-hidden rounded-sm border border-line p-3 transition-colors hover:border-gold"
+                  >
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={120}
+                      height={120}
+                      className="h-20 w-20 shrink-0 rounded-sm object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
+                    />
+                    <div>
+                      <div className="font-subheading text-sm font-medium leading-snug">{post.title}</div>
+                      <div className="mt-1 text-xs text-muted line-clamp-2">{post.excerpt}</div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </MountReveal>
+          )}
         </div>
 
         <MountReveal delay={0.15}>

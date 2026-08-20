@@ -35,6 +35,12 @@ export default defineType({
     }),
     defineField({ name: "specs", type: "array", of: [{ type: "vehicleSpec" }] }),
     defineField({
+      name: "relatedJournalPosts",
+      title: "Related Journal posts",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "journalPost" }] }],
+    }),
+    defineField({
       name: "order",
       title: "Display order",
       type: "number",
