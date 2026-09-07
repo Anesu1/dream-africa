@@ -10,9 +10,9 @@ import { RENTALS_PAGE_QUERY, SITE_SETTINGS_QUERY, VEHICLES_QUERY } from "@/sanit
 import type { RentalsPageSettings, SiteSettings, Vehicle } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Car Rental in Victoria Falls, Zimbabwe",
+  title: "Car Hire & Car Rental in Victoria Falls, Zimbabwe",
   description:
-    "Premium 4x4, SUV and self-drive car rental in Victoria Falls, Zimbabwe. Choose from our fleet for self-drive safaris, airport pickup, hotel delivery and journeys across Zimbabwe and beyond — Eden Car Rental, Africa Dream Adventures' vehicle hire division.",
+    "Hire a car in Victoria Falls with Eden Car Rental, Africa Dream Adventures' vehicle hire division. Premium 4x4, SUV and self-drive rentals for safaris, airport pickup, hotel delivery and journeys across Zimbabwe and beyond.",
   keywords: [
     "Victoria Falls car rental",
     "car hire Victoria Falls",
