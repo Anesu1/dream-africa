@@ -24,7 +24,6 @@ const BRAND = {
   line: "#e7e2d8",
   logo: "https://cdn.sanity.io/images/7zk2mk45/production/d1ead7fbdd42f09280aa5b1cadd1c242896fa7a9-1080x1080.jpg",
   address: "21 Livingstone Way, Victoria Falls, Zimbabwe",
-  whatsapp: "263716337133",
   siteUrl: "https://africadreamadventures.co.zw",
   fromAddress: "Africa Dream Adventures <info@africadreamadventures.co.zw>",
   // Email clients can't load Google Fonts (Playfair/Cinzel/Jakarta) — these are
@@ -86,8 +85,8 @@ function emailShell(bodyHtml: string) {
 </html>`;
 }
 
-function confirmationHtml(data: EnquiryEmailData) {
-  const whatsappHref = `https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(`Hi, I just sent an enquiry (${data.division}) — following up here.`)}`;
+function confirmationHtml(data: EnquiryEmailData, whatsapp: string) {
+  const whatsappHref = `https://wa.me/${whatsapp}?text=${encodeURIComponent(`Hi, I just sent an enquiry (${data.division}) — following up here.`)}`;
   return emailShell(`
     <div style="color:${BRAND.gold};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Message received</div>
     <h1 style="margin:0 0 16px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:26px;font-weight:600;line-height:1.25;">Thanks for reaching out, ${data.name}.</h1>
@@ -132,7 +131,7 @@ function notificationHtml(data: EnquiryEmailData) {
   `);
 }
 
-export async function sendEnquiryEmail(data: EnquiryEmailData): Promise<{ sent: boolean }> {
+export async function sendEnquiryEmail(data: EnquiryEmailData, whatsapp: string): Promise<{ sent: boolean }> {
   if (!isConfigured()) {
     console.log("[enquiry] Resend not configured (RESEND_API_KEY / ENQUIRY_TO_EMAIL) — not sending, logging only.", data);
     return { sent: false };
@@ -152,7 +151,7 @@ export async function sendEnquiryEmail(data: EnquiryEmailData): Promise<{ sent: 
       from: BRAND.fromAddress,
       to: data.email,
       subject: "We've received your message — Africa Dream Adventures",
-      html: confirmationHtml(data),
+      html: confirmationHtml(data, whatsapp),
     }),
   ]);
 

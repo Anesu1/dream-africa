@@ -17,6 +17,8 @@ export const SITE_SETTINGS_QUERY = defineQuery(`*[_type == "siteSettings"][0]{
   trustIndicators,
 }`);
 
+export const SITE_WHATSAPP_QUERY = defineQuery(`*[_type == "siteSettings"][0].whatsapp`);
+
 export const HOME_PAGE_QUERY = defineQuery(`*[_type == "homePage"][0]{
   "eyebrow": heroEyebrow,
   "headline": heroHeadline,

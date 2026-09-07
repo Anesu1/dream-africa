@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
 import { sendEnquiryEmail } from "@/lib/mailer";
+import { sanityFetch } from "@/sanity/lib/fetch";
+import { SITE_WHATSAPP_QUERY } from "@/sanity/lib/queries";
 
 export async function POST(request: Request) {
   const body = await request.json().catch(() => null);
@@ -28,7 +30,8 @@ export async function POST(request: Request) {
   };
 
   try {
-    const { sent } = await sendEnquiryEmail(enquiry);
+    const whatsapp = await sanityFetch<string>({ query: SITE_WHATSAPP_QUERY });
+    const { sent } = await sendEnquiryEmail(enquiry, whatsapp);
     if (!sent) {
       console.error("[enquiry] Mailer not configured — enquiry was not delivered:", enquiry);
       return NextResponse.json({ error: "Failed to send enquiry. Please try again." }, { status: 502 });
