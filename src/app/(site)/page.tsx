@@ -19,9 +19,15 @@ export default async function Home() {
     sanityFetch<number>({ query: VEHICLES_COUNT_QUERY }),
   ]);
 
-  // "Vehicles in fleet" tracks the actual fleet size instead of a manually
-  // entered number that goes stale the moment a vehicle is added or removed.
-  const stats = home.stats.map((stat) => (stat.label === "Vehicles in fleet" ? { ...stat, value: vehicleCount } : stat));
+  // "Vehicles in fleet" and "Years on the Zambezi" both track live values
+  // instead of manually entered numbers that go stale — the years figure
+  // was already wrong (hardcoded 14, actually 15 as of this year).
+  const yearsSinceFounded = new Date().getFullYear() - siteSettings.founded;
+  const stats = home.stats.map((stat) => {
+    if (stat.label === "Vehicles in fleet") return { ...stat, value: vehicleCount };
+    if (stat.label === "Years on the Zambezi") return { ...stat, value: yearsSinceFounded };
+    return stat;
+  });
 
   return (
     <>
