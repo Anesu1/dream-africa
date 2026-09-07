@@ -94,6 +94,7 @@ export type ActivitiesPageSettings = {
   packageTiers: PackageTier[];
   categories: ActivityCategory[];
   disclaimer?: string;
+  relatedJournalPosts?: RelatedJournalPost[];
 };
 
 export type RelatedJournalPost = { slug: string; title: string; excerpt: string; image: string };

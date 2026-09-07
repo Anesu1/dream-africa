@@ -69,6 +69,7 @@ export const ACTIVITIES_PAGE_QUERY = defineQuery(`*[_type == "activitiesPageSett
   "packageTiers": packageTiers[]{ tier, title, price, productCount, included },
   "categories": categories[]{ title, "items": items[]{ label, price, note } },
   disclaimer,
+  "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 
 export const TOURS_QUERY = defineQuery(`*[_type == "tour"] | order(order asc) {

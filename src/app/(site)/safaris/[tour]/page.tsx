@@ -26,7 +26,7 @@ export async function generateMetadata({
   const tour = await sanityFetch<Tour | null>({ query: TOUR_BY_SLUG_QUERY, params: { slug } });
   if (!tour) return {};
   return {
-    title: `${tour.title} — Victoria Falls ${tour.category} Safari`,
+    title: `${tour.title} from Victoria Falls`,
     description: tour.description,
     alternates: { canonical: `/safaris/${tour.slug}` },
   };

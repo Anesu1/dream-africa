@@ -31,6 +31,12 @@ export default defineType({
       rows: 2,
       description: "Fine-print note shown beneath the price list",
     }),
+    defineField({
+      name: "relatedJournalPosts",
+      title: "Related Journal posts",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "journalPost" }] }],
+    }),
   ],
   preview: {
     prepare() {
