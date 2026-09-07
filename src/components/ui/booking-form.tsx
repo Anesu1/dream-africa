@@ -5,7 +5,7 @@ import type { FormEvent } from "react";
 import Link from "next/link";
 
 type Status = "idle" | "submitting" | "success" | "error";
-type Division = "safaris" | "rentals";
+type Division = "safaris" | "rentals" | "general";
 
 const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> = {
   safaris: {
@@ -15,6 +15,11 @@ const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> 
   },
   rentals: {
     text: "Want to add a guided day to your trip?",
+    href: "/safaris",
+    cta: "Browse safaris",
+  },
+  general: {
+    text: "Curious what we offer?",
     href: "/safaris",
     cta: "Browse safaris",
   },
@@ -32,29 +37,31 @@ export default function BookingForm({ division }: { division: Division }) {
     const form = e.currentTarget;
     const field = (name: string) => (form.elements.namedItem(name) as HTMLInputElement | HTMLSelectElement | null)?.value ?? "";
 
+    const base = {
+      name: field("name"),
+      email: field("email"),
+      phone: field("phone"),
+      message: field("message"),
+      division,
+    };
+
     const data =
       division === "safaris"
         ? {
-            name: field("name"),
-            email: field("email"),
-            phone: field("phone"),
+            ...base,
             experienceType: field("experienceType"),
             travelDate: field("travelDate"),
             guests: field("guests"),
-            message: field("message"),
-            division,
           }
-        : {
-            name: field("name"),
-            email: field("email"),
-            phone: field("phone"),
-            serviceType: field("serviceType"),
-            vehicleClass: field("vehicleClass"),
-            pickupDate: field("pickupDate"),
-            returnDate: field("returnDate"),
-            message: field("message"),
-            division,
-          };
+        : division === "rentals"
+          ? {
+              ...base,
+              serviceType: field("serviceType"),
+              vehicleClass: field("vehicleClass"),
+              pickupDate: field("pickupDate"),
+              returnDate: field("returnDate"),
+            }
+          : base;
 
     try {
       const res = await fetch("/api/enquiry", {
@@ -102,7 +109,7 @@ export default function BookingForm({ division }: { division: Division }) {
         <input name="phone" type="tel" placeholder="Phone / WhatsApp" className={inputClass} />
       </div>
 
-      {division === "safaris" ? (
+      {division === "safaris" && (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <select name="experienceType" defaultValue="" className={selectClass}>
             <option value="" disabled>
@@ -117,7 +124,9 @@ export default function BookingForm({ division }: { division: Division }) {
           <input name="travelDate" type="date" aria-label="Travel date" className={inputClass} />
           <input name="guests" type="number" min={1} placeholder="Guests" className={inputClass} />
         </div>
-      ) : (
+      )}
+
+      {division === "rentals" && (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <select name="serviceType" defaultValue="" className={selectClass}>
             <option value="" disabled>
@@ -145,7 +154,7 @@ export default function BookingForm({ division }: { division: Division }) {
         name="message"
         required
         rows={3}
-        placeholder="Anything else we should know"
+        placeholder={division === "general" ? "What can we help with?" : "Anything else we should know"}
         className={`resize-none ${inputClass}`}
       />
 

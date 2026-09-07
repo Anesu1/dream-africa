@@ -12,7 +12,7 @@ export default function Footer({ siteSettings }: { siteSettings: SiteSettings })
   const brand = isRentals ? siteSettings.brandRentals : siteSettings.brandSafaris;
 
   return (
-    <footer id="contact" className="bg-ink px-6 pb-24 pt-24 text-paper sm:px-10">
+    <footer className="bg-ink px-6 pb-24 pt-24 text-paper sm:px-10">
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-16 flex flex-wrap gap-3 border-b border-white/10 pb-10 text-[11px] uppercase tracking-[0.2em] text-white/50">
           {siteSettings.trustIndicators.map((item) => (

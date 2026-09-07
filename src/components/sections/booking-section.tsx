@@ -6,14 +6,16 @@ export default function BookingSection({
   eyebrow,
   headline,
   body,
+  id = "book",
 }: {
-  division: "safaris" | "rentals";
+  division: "safaris" | "rentals" | "general";
   eyebrow: string;
   headline: [string, string];
   body: string;
+  id?: string;
 }) {
   return (
-    <section id="book" className="bg-ink px-6 py-28 text-paper sm:px-10 sm:py-36">
+    <section id={id} className="bg-ink px-6 py-28 text-paper sm:px-10 sm:py-36">
       <div className="mx-auto grid max-w-[1440px] gap-16 lg:grid-cols-[1.1fr_.9fr]">
         <div>
           <Reveal className="mb-7 text-[11px] uppercase tracking-[0.28em] text-gold">{eyebrow}</Reveal>

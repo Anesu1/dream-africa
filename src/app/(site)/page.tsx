@@ -5,6 +5,7 @@ import Stats from "@/components/sections/home/stats";
 import Testimonials from "@/components/sections/home/testimonials";
 import Faq from "@/components/sections/home/faq";
 import FinalCta from "@/components/sections/home/final-cta";
+import BookingSection from "@/components/sections/booking-section";
 import GsapMarquee from "@/components/ui/gsap-marquee";
 import { FaqJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -42,6 +43,13 @@ export default async function Home() {
       <Testimonials testimonials={home.testimonials} />
       <Faq faqs={home.faqs} />
       <FinalCta siteName={siteSettings.name} whatsapp={siteSettings.whatsapp} />
+      <BookingSection
+        id="contact"
+        division="general"
+        eyebrow="Get In Touch"
+        headline={["Ask us", "anything."]}
+        body="Not booking a specific safari or rental yet? Tell us what's on your mind — we reply within the hour."
+      />
     </>
   );
 }
