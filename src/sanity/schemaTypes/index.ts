@@ -13,6 +13,7 @@ import activityItem from "./objects/activityItem";
 import activityCategory from "./objects/activityCategory";
 import comboPackage from "./objects/comboPackage";
 import packageTier from "./objects/packageTier";
+import itineraryDay from "./objects/itineraryDay";
 
 import siteSettings from "./siteSettings";
 import homePage from "./homePage";
@@ -22,6 +23,7 @@ import activitiesPageSettings from "./activitiesPageSettings";
 import tour from "./tour";
 import vehicle from "./vehicle";
 import journalPost from "./journalPost";
+import itineraryPage from "./itineraryPage";
 
 export const schemaTypes = [
   // objects
@@ -40,6 +42,7 @@ export const schemaTypes = [
   activityCategory,
   comboPackage,
   packageTier,
+  itineraryDay,
   // singletons
   siteSettings,
   homePage,
@@ -50,4 +53,5 @@ export const schemaTypes = [
   tour,
   vehicle,
   journalPost,
+  itineraryPage,
 ];

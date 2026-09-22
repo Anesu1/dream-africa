@@ -12,6 +12,14 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { HOME_PAGE_QUERY, SITE_SETTINGS_QUERY, VEHICLES_COUNT_QUERY } from "@/sanity/lib/queries";
 import type { HomePage, SiteSettings } from "@/sanity/lib/types";
 
+// Only needs to cover the range this site will plausibly display before
+// someone updates the copy anyway — falls back to the numeral past that.
+const YEAR_WORDS = [
+  "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+  "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty",
+  "Twenty-One", "Twenty-Two", "Twenty-Three", "Twenty-Four", "Twenty-Five",
+];
+
 export default async function Home() {
   const [home, siteSettings, vehicleCount] = await Promise.all([
     sanityFetch<HomePage>({ query: HOME_PAGE_QUERY }),
@@ -29,6 +37,15 @@ export default async function Home() {
     return stat;
   });
 
+  // The "Who We Are" heading restates the same years-on-the-Zambezi fact in
+  // prose ("Fourteen years..."), separately from the stats strip above — that
+  // copy was still hardcoded and had gone stale the same way the stat did.
+  const yearsWord = YEAR_WORDS[yearsSinceFounded] ?? String(yearsSinceFounded);
+  const whoWeAre = {
+    ...home.whoWeAre,
+    heading: [`${yearsWord} Years on the Zambezi,`, home.whoWeAre.heading[1]] as [string, string],
+  };
+
   return (
     <>
       <FaqJsonLd faqs={home.faqs} />
@@ -42,7 +59,7 @@ export default async function Home() {
           image: home.image,
         }}
       />
-      <WhoWeAre whoWeAre={home.whoWeAre} />
+      <WhoWeAre whoWeAre={whoWeAre} />
       <Experiences experiences={home.experiences} />
       <GsapMarquee items={siteSettings.trustIndicators} />
       <Stats stats={stats} />

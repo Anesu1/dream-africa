@@ -135,3 +135,23 @@ export type JournalPostSummary = {
 export type JournalPost = JournalPostSummary & {
   body: PortableTextBlock[];
 };
+
+export type ItineraryDay = { rangeLabel: string; title: string; description: string; link?: CtaLink };
+
+export type ItinerarySummary = {
+  slug: string;
+  title: string;
+  durationLabel: string;
+  summary: string;
+  heroImage: string;
+};
+
+export type ItineraryPage = ItinerarySummary & {
+  metaDescription: string;
+  heroEyebrow: string;
+  heroTitle: string;
+  heroDescription: string;
+  idealFor?: string[];
+  days: ItineraryDay[];
+  relatedJournalPosts?: RelatedJournalPost[];
+};

@@ -145,3 +145,28 @@ export const JOURNAL_POST_BY_SLUG_QUERY = defineQuery(`*[_type == "journalPost" 
   body,
   "image": image.asset->url,
 }`);
+
+export const ITINERARIES_QUERY = defineQuery(`*[_type == "itineraryPage"] | order(order asc) {
+  "slug": slug.current,
+  title,
+  durationLabel,
+  summary,
+  "heroImage": heroImage.asset->url,
+}`);
+
+export const ITINERARY_SLUGS_QUERY = defineQuery(`*[_type == "itineraryPage"]{ "slug": slug.current }`);
+
+export const ITINERARY_BY_SLUG_QUERY = defineQuery(`*[_type == "itineraryPage" && slug.current == $slug][0]{
+  "slug": slug.current,
+  title,
+  metaDescription,
+  heroEyebrow,
+  heroTitle,
+  heroDescription,
+  "heroImage": heroImage.asset->url,
+  durationLabel,
+  summary,
+  idealFor,
+  "days": days[]{ rangeLabel, title, description, link },
+  "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
+}`);

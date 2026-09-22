@@ -121,6 +121,41 @@ export function TourJsonLd({
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
+// No Offer/price here deliberately, same reasoning as TourJsonLd — itineraries
+// are a planning framework, not a fixed-price product.
+export function ItineraryJsonLd({
+  name,
+  description,
+  image,
+  durationLabel,
+  days,
+}: {
+  name: string;
+  description: string;
+  image: string;
+  durationLabel: string;
+  days: { rangeLabel: string; title: string }[];
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name,
+    description,
+    image,
+    itinerary: {
+      "@type": "ItemList",
+      name: durationLabel,
+      itemListElement: days.map((day, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: `${day.rangeLabel}: ${day.title}`,
+      })),
+    },
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
 export function AutoRentalJsonLd({ parentName }: { parentName: string }) {
   const data = {
     "@context": "https://schema.org",

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { client } from "@/sanity/lib/client";
-import { JOURNAL_POST_SLUGS_QUERY, TOUR_SLUGS_QUERY, VEHICLE_SLUGS_QUERY } from "@/sanity/lib/queries";
+import { ITINERARY_SLUGS_QUERY, JOURNAL_POST_SLUGS_QUERY, TOUR_SLUGS_QUERY, VEHICLE_SLUGS_QUERY } from "@/sanity/lib/queries";
 
 // No production domain has been confirmed yet — set NEXT_PUBLIC_SITE_URL once the
 // real domain is live. Falls back to a placeholder so this doesn't silently point
@@ -14,18 +14,20 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
 export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [journalSlugs, vehicleSlugs, tourSlugs] = await Promise.all([
+  const [journalSlugs, vehicleSlugs, tourSlugs, itinerarySlugs] = await Promise.all([
     client.fetch<{ slug: string }[]>(JOURNAL_POST_SLUGS_QUERY),
     client.fetch<{ slug: string }[]>(VEHICLE_SLUGS_QUERY),
     client.fetch<{ slug: string }[]>(TOUR_SLUGS_QUERY),
+    client.fetch<{ slug: string }[]>(ITINERARY_SLUGS_QUERY),
   ]);
 
-  const routes = ["", "/safaris", "/car-rental-victoria-falls", "/activities", "/journal"];
+  const routes = ["", "/safaris", "/car-rental-victoria-falls", "/activities", "/journal", "/itineraries"];
   const journalRoutes = journalSlugs.map(({ slug }) => `/journal/${slug}`);
   const vehicleRoutes = vehicleSlugs.map(({ slug }) => `/car-rental-victoria-falls/${slug}`);
   const tourRoutes = tourSlugs.map(({ slug }) => `/safaris/${slug}`);
+  const itineraryRoutes = itinerarySlugs.map(({ slug }) => `/itineraries/${slug}`);
 
-  return [...routes, ...vehicleRoutes, ...tourRoutes, ...journalRoutes].map((route) => ({
+  return [...routes, ...vehicleRoutes, ...tourRoutes, ...itineraryRoutes, ...journalRoutes].map((route) => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date().toISOString(),
     changeFrequency: "weekly" as const,
