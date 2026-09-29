@@ -78,6 +78,7 @@ export type RentalsPageSettings = {
   heroImage: string;
   rentalServices: RentalService[];
   rentalFaqs?: FaqItem[];
+  relatedJournalPosts?: RelatedJournalPost[];
 };
 
 export type ActivityItem = { label: string; price: string; note?: string };

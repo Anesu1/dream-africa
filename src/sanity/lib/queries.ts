@@ -58,6 +58,7 @@ export const RENTALS_PAGE_QUERY = defineQuery(`*[_type == "rentalsPageSettings"]
   "heroImage": heroImage.asset->url,
   "rentalServices": rentalServices[]{ title, description },
   "rentalFaqs": rentalFaqs[]{ question, answer },
+  "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 
 export const ACTIVITIES_PAGE_QUERY = defineQuery(`*[_type == "activitiesPageSettings"][0]{

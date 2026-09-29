@@ -44,6 +44,12 @@ export default defineType({
       type: "array",
       of: [{ type: "faqItem" }],
     }),
+    defineField({
+      name: "relatedJournalPosts",
+      title: "Related Journal posts",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "journalPost" }] }],
+    }),
   ],
   preview: {
     prepare() {
