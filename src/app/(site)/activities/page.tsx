@@ -13,17 +13,22 @@ import { ACTIVITIES_PAGE_QUERY, SITE_SETTINGS_QUERY } from "@/sanity/lib/queries
 import type { ActivitiesPageSettings, SiteSettings } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Things to Do in Victoria Falls — Adventure Activities",
+  title: "Victoria Falls Adventure Activities & Activity Packages",
   description:
-    "Bungee jumping, white-water rafting, jet boat, scenic flights, river cruises and cultural experiences at Victoria Falls — combo deals and discounted packages, message us for current rates.",
+    "Bungee jumping, white-water rafting, jet boat, the Zambezi Spectacular helicopter flight, river cruises and cultural experiences at Victoria Falls — adrenaline activities, combo deals and discounted activity packages, message us for current rates.",
   keywords: [
     "Victoria Falls helicopter flight of angels",
+    "Zambezi Spectacular helicopter flight",
     "Zambezi luxury sunset dinner cruise",
     "Batoka gorge white water rafting",
     "Victoria Falls bridge bungee jump",
     "Victoria Falls jet boat",
+    "jet boat Victoria Falls",
     "best things to do in Victoria Falls",
     "Victoria Falls adventure activities",
+    "adventure sports Victoria Falls",
+    "Victoria Falls adrenaline activities",
+    "Victoria Falls activity packages",
   ],
   alternates: { canonical: "/activities" },
 };
