@@ -6,8 +6,6 @@ export default defineType({
   type: "object",
   fields: [
     defineField({ name: "title", type: "string", validation: (r) => r.required() }),
-    defineField({ name: "price", type: "string", validation: (r) => r.required() }),
-    defineField({ name: "savings", type: "string", description: "e.g. (SAVE US$10)" }),
     defineField({ name: "description", type: "text", rows: 2, validation: (r) => r.required() }),
     defineField({
       name: "checklist",
@@ -17,6 +15,6 @@ export default defineType({
     }),
   ],
   preview: {
-    select: { title: "title", subtitle: "price" },
+    select: { title: "title", subtitle: "description" },
   },
 });

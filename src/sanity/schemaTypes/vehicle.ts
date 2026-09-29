@@ -26,7 +26,6 @@ export default defineType({
       rows: 4,
       description: "Shown on this vehicle's own page. Keep it grounded in the specs below — no claims that aren't true of this specific vehicle.",
     }),
-    defineField({ name: "price", title: "Price per day (USD)", type: "number", validation: (r) => r.required() }),
     defineField({
       name: "image",
       type: "image",

@@ -15,8 +15,6 @@ export default defineType({
     defineField({ name: "category", type: "string", validation: (r) => r.required() }),
     defineField({ name: "duration", type: "string", validation: (r) => r.required() }),
     defineField({ name: "description", type: "text", rows: 3, validation: (r) => r.required() }),
-    defineField({ name: "price", title: "Price (e.g. $180)", type: "string", validation: (r) => r.required() }),
-    defineField({ name: "priceUnit", title: "Price unit (e.g. /person)", type: "string", validation: (r) => r.required() }),
     defineField({
       name: "image",
       type: "image",

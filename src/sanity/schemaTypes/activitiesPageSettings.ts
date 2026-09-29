@@ -8,7 +8,7 @@ export default defineType({
     { name: "hero", title: "Hero", default: true },
     { name: "combos", title: "Special Combos" },
     { name: "packages", title: "Discounted Packages" },
-    { name: "priceList", title: "Price List" },
+    { name: "directory", title: "Activity Directory" },
   ],
   fields: [
     defineField({ group: "hero", name: "heroEyebrow", type: "string", validation: (r) => r.required() }),
@@ -23,13 +23,13 @@ export default defineType({
     }),
     defineField({ group: "combos", name: "specialCombos", type: "array", of: [{ type: "comboPackage" }] }),
     defineField({ group: "packages", name: "packageTiers", type: "array", of: [{ type: "packageTier" }] }),
-    defineField({ group: "priceList", name: "categories", type: "array", of: [{ type: "activityCategory" }] }),
+    defineField({ group: "directory", name: "categories", type: "array", of: [{ type: "activityCategory" }] }),
     defineField({
-      group: "priceList",
+      group: "directory",
       name: "disclaimer",
       type: "text",
       rows: 2,
-      description: "Fine-print note shown beneath the price list",
+      description: "Fine-print note shown beneath the activity directory",
     }),
     defineField({
       name: "relatedJournalPosts",

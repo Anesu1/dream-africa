@@ -81,10 +81,10 @@ export type RentalsPageSettings = {
   relatedJournalPosts?: RelatedJournalPost[];
 };
 
-export type ActivityItem = { label: string; price: string; note?: string };
+export type ActivityItem = { label: string; note?: string };
 export type ActivityCategory = { title: string; items: ActivityItem[] };
-export type ComboPackage = { title: string; price: string; savings?: string; description: string; checklist?: string[] };
-export type PackageTier = { tier: string; title: string; price: string; productCount?: string; included: string };
+export type ComboPackage = { title: string; description: string; checklist?: string[] };
+export type PackageTier = { tier: string; title: string; productCount?: string; included: string };
 
 export type ActivitiesPageSettings = {
   heroEyebrow: string;
@@ -106,8 +106,6 @@ export type Tour = {
   duration: string;
   title: string;
   description: string;
-  price: string;
-  priceUnit: string;
   image: string;
   highlights: string[];
   itinerarySteps?: ItineraryDay[];
@@ -121,7 +119,6 @@ export type Vehicle = {
   name: string;
   subtitle: string;
   description?: string;
-  price: number;
   image: string;
   specs: { label: string; value: string }[];
   relatedJournalPosts?: RelatedJournalPost[];
