@@ -21,7 +21,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     client.fetch<{ slug: string }[]>(ITINERARY_SLUGS_QUERY),
   ]);
 
-  const routes = ["", "/safaris", "/car-rental-victoria-falls", "/activities", "/journal", "/itineraries"];
+  const routes = ["", "/safaris", "/car-rental-victoria-falls", "/activities", "/journal", "/itineraries", "/services"];
   const journalRoutes = journalSlugs.map(({ slug }) => `/journal/${slug}`);
   const vehicleRoutes = vehicleSlugs.map(({ slug }) => `/car-rental-victoria-falls/${slug}`);
   const tourRoutes = tourSlugs.map(({ slug }) => `/safaris/${slug}`);

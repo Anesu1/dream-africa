@@ -68,6 +68,7 @@ export default function Footer({ siteSettings }: { siteSettings: SiteSettings })
             >
               WhatsApp
             </a>
+            <Link href="/services" className="transition-colors hover:text-gold">All Services</Link>
             <Link href="/legal" className="transition-colors hover:text-gold">Legal</Link>
           </div>
         </div>
