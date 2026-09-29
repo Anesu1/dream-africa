@@ -62,6 +62,18 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
           <PortableText value={post.body} />
         </div>
       </Reveal>
+
+      {post.primaryCta && (
+        <Reveal className="mt-12 rounded-sm border border-line bg-off-white p-6 sm:p-8">
+          <Link
+            href={post.primaryCta.href}
+            className="inline-block rounded-full bg-gold px-7 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:bg-ink hover:text-paper"
+          >
+            {post.primaryCta.label}
+          </Link>
+        </Reveal>
+      )}
+
       <Reveal className="mt-12 border-t border-line pt-8">
         <Link href="/journal" className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">
           ← Back to the Journal

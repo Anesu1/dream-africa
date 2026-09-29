@@ -134,6 +134,7 @@ export type JournalPostSummary = {
 
 export type JournalPost = JournalPostSummary & {
   body: PortableTextBlock[];
+  primaryCta?: CtaLink;
 };
 
 export type ItineraryDay = { rangeLabel: string; title: string; description: string; link?: CtaLink };

@@ -144,6 +144,7 @@ export const JOURNAL_POST_BY_SLUG_QUERY = defineQuery(`*[_type == "journalPost" 
   excerpt,
   body,
   "image": image.asset->url,
+  primaryCta,
 }`);
 
 export const ITINERARIES_QUERY = defineQuery(`*[_type == "itineraryPage"] | order(order asc) {

@@ -54,6 +54,12 @@ export default defineType({
       type: "datetime",
       initialValue: () => new Date().toISOString(),
     }),
+    defineField({
+      name: "primaryCta",
+      title: "Primary CTA button",
+      description: "Shown as a button at the end of the post — links to the real service this article is about.",
+      type: "ctaLink",
+    }),
   ],
   orderings: [
     {
