@@ -109,6 +109,8 @@ export type Tour = {
   priceUnit: string;
   image: string;
   highlights: string[];
+  itinerarySteps?: ItineraryDay[];
+  faqs?: FaqItem[];
   relatedJournalPosts?: RelatedJournalPost[];
 };
 

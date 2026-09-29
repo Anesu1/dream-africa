@@ -96,6 +96,8 @@ export const TOUR_BY_SLUG_QUERY = defineQuery(`*[_type == "tour" && slug.current
   priceUnit,
   "image": image.asset->url,
   highlights,
+  "itinerarySteps": itinerarySteps[]{ rangeLabel, title, description, link },
+  faqs,
   "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MountReveal from "@/components/ui/mount-reveal";
-import { TourJsonLd } from "@/components/seo/json-ld";
+import { FaqJsonLd, TourJsonLd } from "@/components/seo/json-ld";
 import { whatsappLink } from "@/lib/whatsapp";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -46,6 +46,7 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
   return (
     <article className="mx-auto max-w-[1000px] px-6 py-28 sm:px-10 sm:py-40">
       <TourJsonLd name={tour.title} description={tour.description} image={tour.image} duration={tour.duration} />
+      {tour.faqs && tour.faqs.length > 0 && <FaqJsonLd faqs={tour.faqs} />}
 
       <MountReveal className="mb-6 flex items-center gap-3">
         <Link href="/safaris" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
@@ -84,6 +85,21 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
             <p className="mb-10 max-w-[60ch] text-[17px] leading-relaxed text-muted">{tour.description}</p>
           </MountReveal>
 
+          {tour.itinerarySteps && tour.itinerarySteps.length > 0 && (
+            <MountReveal delay={0.17} className="mb-12">
+              <h2 className="mb-6 font-subheading text-xl font-medium">How the day runs</h2>
+              <div className="flex flex-col gap-6">
+                {tour.itinerarySteps.map((step) => (
+                  <div key={step.rangeLabel} className="border-l-2 border-line pl-6">
+                    <div className="mb-1.5 text-[11px] uppercase tracking-[0.24em] text-gold">{step.rangeLabel}</div>
+                    <h3 className="m-0 mb-1.5 font-subheading text-base font-medium">{step.title}</h3>
+                    <p className="m-0 text-sm leading-relaxed text-muted">{step.description}</p>
+                  </div>
+                ))}
+              </div>
+            </MountReveal>
+          )}
+
           {tour.slug === "hwange-big-five" && (
             <MountReveal delay={0.18} className="mb-10 rounded-sm border border-line bg-off-white p-6">
               <p className="m-0 text-[15px] leading-relaxed">
@@ -120,6 +136,20 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
                       <div className="text-xs text-muted">{t.category}</div>
                     </div>
                   </Link>
+                ))}
+              </div>
+            </MountReveal>
+          )}
+
+          {tour.faqs && tour.faqs.length > 0 && (
+            <MountReveal delay={0.22} className="mt-10">
+              <h2 className="mb-5 font-subheading text-xl font-medium">Frequently asked questions</h2>
+              <div className="flex flex-col gap-5">
+                {tour.faqs.map((faq) => (
+                  <div key={faq.question} className="border-b border-line pb-5">
+                    <div className="mb-1.5 font-subheading text-sm font-medium">{faq.question}</div>
+                    <p className="m-0 text-sm leading-relaxed text-muted">{faq.answer}</p>
+                  </div>
                 ))}
               </div>
             </MountReveal>

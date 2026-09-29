@@ -25,6 +25,19 @@ export default defineType({
     }),
     defineField({ name: "highlights", type: "array", of: [{ type: "string" }] }),
     defineField({
+      name: "itinerarySteps",
+      title: "Itinerary",
+      description: "Stage-by-stage breakdown for the day (or days) — optional, but strongly recommended for anything cross-border or multi-stop.",
+      type: "array",
+      of: [{ type: "itineraryDay" }],
+    }),
+    defineField({
+      name: "faqs",
+      title: "FAQs",
+      type: "array",
+      of: [{ type: "faqItem" }],
+    }),
+    defineField({
       name: "relatedJournalPosts",
       title: "Related Journal posts",
       type: "array",
