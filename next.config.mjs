@@ -17,6 +17,9 @@ const nextConfig = {
     return [
       { source: "/rentals", destination: "/car-rental-victoria-falls", permanent: true },
       { source: "/rentals/:vehicle", destination: "/car-rental-victoria-falls/:vehicle", permanent: true },
+      { source: "/review", destination: "https://g.page/r/Cc4so9OdwapFEAI/review", permanent: false },
+      { source: "/reviews", destination: "https://g.page/r/Cc4so9OdwapFEAI/review", permanent: false },
+      { source: "/google-review", destination: "https://g.page/r/Cc4so9OdwapFEAI/review", permanent: false },
     ];
   },
 };

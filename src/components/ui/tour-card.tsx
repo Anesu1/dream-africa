@@ -17,17 +17,17 @@ export default function TourCard({ tour, whatsapp }: { tour: Tour; whatsapp: str
           />
         </div>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 p-7 pb-[74px] text-paper">
+        <div className="absolute inset-x-0 bottom-0 p-5 pb-[70px] text-paper sm:p-7 sm:pb-[74px]">
           <div className="mb-3.5 flex gap-2.5 text-[10px] uppercase tracking-[0.18em] text-gold">
             <span>{tour.category}</span>
             <span>·</span>
             <span>{tour.duration}</span>
           </div>
-          <h3 className="mb-2.5 font-subheading text-[28px] font-medium leading-none">{tour.title}</h3>
-          <p className="m-0 text-sm leading-relaxed text-paper/70">{tour.description}</p>
+          <h3 className="mb-2.5 font-subheading text-2xl font-medium leading-tight sm:text-[28px] sm:leading-none">{tour.title}</h3>
+          <p className="m-0 text-sm leading-relaxed text-paper/70 line-clamp-3 sm:line-clamp-none">{tour.description}</p>
         </div>
       </Link>
-      <div className="absolute inset-x-0 bottom-0 flex items-baseline justify-between border-t border-paper/20 p-7 pt-4 text-paper">
+      <div className="absolute inset-x-0 bottom-0 flex items-baseline justify-between border-t border-paper/20 p-5 pt-3.5 text-paper sm:p-7 sm:pt-4">
         <span className="font-data text-xs uppercase tracking-[0.14em] text-paper/70">Message for rates</span>
         <a
           href={whatsappLink(whatsapp, `Hi, I'd like to book the ${tour.title}.`)}

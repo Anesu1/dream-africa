@@ -48,6 +48,18 @@ export default function Testimonials({ testimonials }: { testimonials: Testimoni
             />
           ))}
         </div>
+
+        <div className="mt-12 flex justify-center">
+          <a
+            href="https://g.page/r/Cc4so9OdwapFEAI/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-line px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-muted transition-colors hover:border-gold hover:text-ink"
+          >
+            <span className="text-gold">★★★★★</span>
+            <span>Leave a Google Review</span>
+          </a>
+        </div>
       </div>
     </section>
   );

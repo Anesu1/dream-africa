@@ -8,7 +8,7 @@ export default function BookingSection({
   body,
   id = "book",
 }: {
-  division: "safaris" | "rentals" | "general";
+  division: "safaris" | "rentals" | "general" | "activities";
   eyebrow: string;
   headline: [string, string];
   body: string;

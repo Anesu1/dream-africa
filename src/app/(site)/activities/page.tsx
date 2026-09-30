@@ -48,6 +48,46 @@ export default async function ActivitiesPage() {
         description={activitiesPage.heroDescription}
         image={activitiesPage.heroImage}
       />
+
+      {/* Featured Service Guides */}
+      <section className="border-b border-line bg-off-white py-10">
+        <div className="mx-auto max-w-[1440px] px-6 sm:px-10">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <Link
+              href="/activities/victoria-falls-jet-boat"
+              className="group flex flex-col justify-between rounded-sm border border-line bg-paper p-6 transition-all hover:border-gold hover:shadow-sm"
+            >
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.24em] text-gold font-semibold">Extreme Water Adventure</span>
+                <h3 className="mt-2 font-display text-2xl font-semibold text-ink group-hover:text-gold transition-colors">
+                  Victoria Falls Jet Boat →
+                </h3>
+                <p className="mt-2 text-sm text-muted leading-relaxed">
+                  Power through Batoka Gorge rapids #23–#27 at 75 km/h in a 460 HP jet craft. Funicular cable car gorge descent included.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-gold">Explore Jet Boat Experience</span>
+            </Link>
+
+            <Link
+              href="/activities/packages"
+              className="group flex flex-col justify-between rounded-sm border border-line bg-paper p-6 transition-all hover:border-gold hover:shadow-sm"
+            >
+              <div>
+                <span className="text-[10px] uppercase tracking-[0.24em] text-gold font-semibold">2026 Price & Combo Guide</span>
+                <h3 className="mt-2 font-display text-2xl font-semibold text-ink group-hover:text-gold transition-colors">
+                  Activity Packages & 2026 Prices →
+                </h3>
+                <p className="mt-2 text-sm text-muted leading-relaxed">
+                  Compare adrenaline combos, classic scenic flights, and family packages. Transparent rates, park fees, and multi-activity savings.
+                </p>
+              </div>
+              <span className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-gold">View Packages & Rates</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Combos combos={activitiesPage.specialCombos} />
       <Packages tiers={activitiesPage.packageTiers} />
       <PriceList categories={activitiesPage.categories} disclaimer={activitiesPage.disclaimer} />

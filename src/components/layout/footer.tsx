@@ -59,7 +59,15 @@ export default function Footer({ siteSettings }: { siteSettings: SiteSettings })
 
         <div className="flex flex-wrap items-center justify-between gap-6 pt-8 text-[11px] uppercase tracking-[0.16em] text-white/40">
           <span>{siteSettings.copyright}</span>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap items-center gap-6">
+            <a
+              href="https://g.page/r/Cc4so9OdwapFEAI/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold transition-colors hover:text-white"
+            >
+              ★ Review Us on Google
+            </a>
             <a
               href={whatsappLink(siteSettings.whatsapp, `Hi ${brand.name}, I'd like to plan a trip.`)}
               target="_blank"

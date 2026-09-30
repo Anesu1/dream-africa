@@ -5,7 +5,7 @@ import type { FormEvent } from "react";
 import Link from "next/link";
 
 type Status = "idle" | "submitting" | "success" | "error";
-type Division = "safaris" | "rentals" | "general";
+type Division = "safaris" | "rentals" | "activities" | "general";
 
 const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> = {
   safaris: {
@@ -17,6 +17,11 @@ const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> 
     text: "Want to add a guided day to your trip?",
     href: "/safaris",
     cta: "Browse safaris",
+  },
+  activities: {
+    text: "Need reliable 4x4 car rental or private airport transfers?",
+    href: "/car-rental-victoria-falls",
+    cta: "See our fleet",
   },
   general: {
     text: "Curious what we offer?",
@@ -46,7 +51,7 @@ export default function BookingForm({ division }: { division: Division }) {
     };
 
     const data =
-      division === "safaris"
+      division === "safaris" || division === "activities"
         ? {
             ...base,
             experienceType: field("experienceType"),
@@ -122,6 +127,27 @@ export default function BookingForm({ division }: { division: Division }) {
             <option value="Not sure">Not sure yet</option>
           </select>
           <input name="travelDate" type="date" aria-label="Travel date" className={inputClass} />
+          <input name="guests" type="number" min={1} placeholder="Guests" className={inputClass} />
+        </div>
+      )}
+
+      {division === "activities" && (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <select name="experienceType" defaultValue="" className={selectClass}>
+            <option value="" disabled>
+              Select Activity / Package
+            </option>
+            <option value="Activity Packages & Combos">Activity Packages & Combos</option>
+            <option value="Victoria Falls Jet Boat">Victoria Falls Jet Boat (Batoka Rapids)</option>
+            <option value="Helicopter Flight of Angels">Helicopter Flight of Angels / Zambezi Spectacular</option>
+            <option value="White Water Rafting">White Water Rafting</option>
+            <option value="Bungee Jump / Gorge Swing">Bungee Jump / Gorge Swing</option>
+            <option value="Zambezi Sunset Cruise">Zambezi Sunset Dinner Cruise</option>
+            <option value="Chobe Day Trip">Chobe Day Trip from Victoria Falls</option>
+            <option value="Guided Tour of the Falls">Guided Tour of the Falls</option>
+            <option value="Multiple Activities">Custom Multi-Activity Itinerary</option>
+          </select>
+          <input name="travelDate" type="date" aria-label="Preferred date" className={inputClass} />
           <input name="guests" type="number" min={1} placeholder="Guests" className={inputClass} />
         </div>
       )}
