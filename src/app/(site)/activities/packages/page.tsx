@@ -9,9 +9,9 @@ import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
 import type { SiteSettings } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Victoria Falls Activity Packages & 2026 Prices | Save up to 25%",
+  title: "Victoria Falls Activity Packages | Africa Dream Adventures",
   description:
-    "Complete Victoria Falls activity packages and 2026 pricing guide. Compare combo deals: Helicopter Flight of Angels, Zambezi Jet Boat, White Water Rafting, Bungee, Sunset Cruise, and Chobe day trips.",
+    "Combine Victoria Falls experiences into a package — helicopter flights, jet boat, white water rafting, bungee, sunset cruises and Chobe day trips. Message us for an itemised quote.",
   keywords: [
     "victoria falls activity packages",
     "victoria falls activities prices",
@@ -35,12 +35,11 @@ const PACKAGES_2026 = [
     tag: "Best Value",
     description: "The definitive Victoria Falls holiday experience. See the smoke from the sky, walk the rainforest rim, and toast the sunset on the river.",
     included: [
-      "15-Minute Helicopter Flight of Angels over the Falls",
+      "Helicopter Flight of Angels over the Falls",
       "Guided Walking Tour of the Victoria Falls Rainforest",
-      "Luxury Zambezi Sunset Cruise with Premium Drinks & Canapés",
-      "Return transfers from all Victoria Falls town hotels",
+      "Zambezi Sunset Cruise",
+      "Return transfers from Victoria Falls town hotels",
     ],
-    highlight: "Saves ~18% compared to single bookings",
   },
   {
     tier: "Adrenaline Combo",
@@ -49,12 +48,10 @@ const PACKAGES_2026 = [
     tag: "High Octane",
     description: "For true thrill-seekers wanting to conquer Batoka Gorge from every angle: sky, river rapids, and canyon wall.",
     included: [
-      "Victoria Falls Jet Boat in Batoka Gorge (Rapids 23–27)",
-      "Full Day White Water Rafting (Rapids 1–19) with Riverside Lunch",
+      "Victoria Falls Jet Boat in Batoka Gorge",
+      "Full Day White Water Rafting with Riverside Lunch",
       "Choice of Victoria Falls Bridge Bungee, Gorge Swing, or Zip Line",
-      "Funicular cable car gorge access and all safety gear",
     ],
-    highlight: "Most requested adventure combo",
   },
   {
     tier: "Wildlife & Falls",
@@ -65,10 +62,8 @@ const PACKAGES_2026 = [
     included: [
       "Full-Day Chobe Safari (Game Drive + Chobe River Cruise + Lunch)",
       "Zimbabwe–Botswana border crossing management (Kazungula)",
-      "Zambezi Spectacular (25-Min) Helicopter Flight over Falls & Gorge",
-      "Traditional Boma Dinner & Drumming Cultural Experience",
+      "Zambezi Spectacular Helicopter Flight over Falls & Gorge",
     ],
-    highlight: "Includes border permits & national park guides",
   },
   {
     tier: "Family & Scenic",
@@ -77,25 +72,23 @@ const PACKAGES_2026 = [
     tag: "All Ages",
     description: "Designed for families, couples, and travelers wanting relaxed pacing, stunning photography, and zero extreme hiking.",
     included: [
-      "Upper Zambezi River Canoe Safari or Luxury River Catamaran",
-      "Guided Walking Safari & Rainforest Tour with local naturalist",
-      "Breakfast or Lunch at the Lookout Café overlooking Batoka Gorge",
-      "Private air-conditioned minibus transfers throughout",
+      "Upper Zambezi River Canoe Safari",
+      "Guided Walking Safari & Rainforest Tour",
+      "Private transfers throughout",
     ],
-    highlight: "Suitable for children and seniors",
   },
 ];
 
-const INDIVIDUAL_PRICES_OVERVIEW = [
-  { activity: "Helicopter Flight of Angels (13–15 min)", priceRange: "$150 – $165", duration: "15 min flight", parkFee: "$15 National Parks" },
-  { activity: "Zambezi Spectacular Flight (25 min)", priceRange: "$280 – $310", duration: "25 min flight", parkFee: "$15 National Parks" },
-  { activity: "Victoria Falls Jet Boat (Batoka Gorge)", priceRange: "$120 – $140", duration: "3 hours total", parkFee: "$12 National Parks" },
-  { activity: "Full-Day White Water Rafting", priceRange: "$120 – $135", duration: "Full day", parkFee: "$12 National Parks" },
-  { activity: "Victoria Falls Bridge Bungee Jump", priceRange: "$160 – $168", duration: "2 hours", parkFee: "Bridge entry included" },
-  { activity: "Bridge Gorge Swing or Zip Line", priceRange: "$95 – $110", duration: "1.5 hours", parkFee: "Bridge entry included" },
-  { activity: "Zambezi Luxury Sunset Cruise", priceRange: "$65 – $95", duration: "2.5 hours", parkFee: "$10 River levy" },
-  { activity: "Chobe Full-Day Safari (from Vic Falls)", priceRange: "$160 – $185", duration: "Full day", parkFee: "$20 Botswana Parks" },
-  { activity: "Guided Rainforest Tour of Falls", priceRange: "$30 – $40", duration: "2.5 hours", parkFee: "$50 International entry" },
+const INDIVIDUAL_ACTIVITIES_OVERVIEW = [
+  { activity: "Helicopter Flight of Angels", link: null },
+  { activity: "Zambezi Spectacular Flight", link: null },
+  { activity: "Victoria Falls Jet Boat (Batoka Gorge)", link: "/activities/victoria-falls-jet-boat" },
+  { activity: "Full-Day White Water Rafting", link: null },
+  { activity: "Victoria Falls Bridge Bungee Jump", link: null },
+  { activity: "Bridge Gorge Swing or Zip Line", link: null },
+  { activity: "Zambezi Sunset Cruise", link: null },
+  { activity: "Chobe Full-Day Safari (from Vic Falls)", link: "/safaris/chobe-day-trip" },
+  { activity: "Guided Rainforest Tour of Falls", link: null },
 ];
 
 export default async function PackagesPage() {
@@ -124,8 +117,8 @@ export default async function PackagesPage() {
             Victoria Falls <span className="text-gold">Activity Packages</span> & Rates
           </h1>
           <p className="max-w-[800px] text-lg leading-relaxed text-muted sm:text-xl">
-            Maximize your time and budget. Bundling your flights, river adventures, and safaris guarantees guaranteed booking slots,
-            coordinated transfers between operators, and savings of up to 25%.
+            Maximize your time and budget. Bundling your flights, river adventures, and safaris means coordinated transfers between
+            operators — message us for an itemised quote on any combination.
           </p>
         </MountReveal>
 
@@ -144,7 +137,7 @@ export default async function PackagesPage() {
                     </div>
 
                     <h2 className="mt-4 font-subheading text-2xl font-medium text-ink">{pkg.title}</h2>
-                    <div className="mt-1 text-xs text-muted font-data">{pkg.duration} · {pkg.highlight}</div>
+                    <div className="mt-1 text-xs text-muted font-data">{pkg.duration}</div>
 
                     <p className="mt-4 text-sm leading-relaxed text-muted">{pkg.description}</p>
 
@@ -164,12 +157,12 @@ export default async function PackagesPage() {
                   <div className="mt-8 pt-6 border-t border-line flex flex-wrap items-center justify-between gap-4">
                     <span className="text-xs uppercase tracking-[0.14em] text-muted">Customizable itinerary</span>
                     <a
-                      href={whatsappLink(whatsapp, `Hi! I'm interested in booking the "${pkg.title}" package.`)}
+                      href={whatsappLink(whatsapp, `Hi! I'd like a quote for the "${pkg.title}" package.`)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-full bg-gold px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-ink transition-colors hover:bg-ink hover:text-paper"
                     >
-                      Book Combo →
+                      Get a Quote →
                     </a>
                   </div>
                 </div>
@@ -178,16 +171,16 @@ export default async function PackagesPage() {
           </div>
         </section>
 
-        {/* 2026 Individual Activities Price Matrix */}
+        {/* Individual Activities Overview */}
         <section className="mt-20">
           <Reveal className="mb-10 max-w-2xl">
-            <div className="text-[11px] uppercase tracking-[0.28em] text-gold">2026 Benchmark Rates</div>
+            <div className="text-[11px] uppercase tracking-[0.28em] text-gold">Build Your Own</div>
             <h2 className="mt-2 font-display text-3xl font-semibold uppercase text-ink">
-              Individual Activity <span className="text-gold">Price Guide</span>
+              Individual <span className="text-gold">Activities</span>
             </h2>
             <p className="mt-3 text-sm text-muted leading-relaxed">
-              Standard retail rates per person for standalone activities in Victoria Falls. When combined in our activity packages,
-              enjoy package discounts and coordinated round-trip hotel transfers.
+              Any of these can also be booked on its own. Message us with your dates and we'll quote each activity individually or
+              as a combination, including any national park or conservation fees.
             </p>
           </Reveal>
 
@@ -197,37 +190,24 @@ export default async function PackagesPage() {
                 <thead className="border-b border-line bg-off-white font-subheading text-xs uppercase tracking-wider text-muted">
                   <tr>
                     <th className="p-4 sm:px-6">Activity Name</th>
-                    <th className="p-4 sm:px-6">Approx. Duration</th>
-                    <th className="p-4 sm:px-6">Estimated Rate (USD)</th>
-                    <th className="p-4 sm:px-6">Park / Conservation Fee</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-line font-data">
-                  {INDIVIDUAL_PRICES_OVERVIEW.map((row) => (
+                  {INDIVIDUAL_ACTIVITIES_OVERVIEW.map((row) => (
                     <tr key={row.activity} className="transition-colors hover:bg-off-white/50">
                       <td className="p-4 sm:px-6 font-medium text-ink">
-                        {row.activity.includes("Jet Boat") ? (
-                          <Link href="/activities/victoria-falls-jet-boat" className="text-ink hover:text-gold underline underline-offset-4">
-                            {row.activity}
-                          </Link>
-                        ) : row.activity.includes("Chobe") ? (
-                          <Link href="/safaris/chobe-day-trip" className="text-ink hover:text-gold underline underline-offset-4">
+                        {row.link ? (
+                          <Link href={row.link} className="text-ink hover:text-gold underline underline-offset-4">
                             {row.activity}
                           </Link>
                         ) : (
                           row.activity
                         )}
                       </td>
-                      <td className="p-4 sm:px-6 text-muted">{row.duration}</td>
-                      <td className="p-4 sm:px-6 font-semibold text-gold">{row.priceRange}</td>
-                      <td className="p-4 sm:px-6 text-xs text-muted">{row.parkFee}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
-            </div>
-            <div className="mt-4 text-xs text-muted">
-              * Rates are indicative in US Dollars and subject to official operator adjustments. National Parks & river conservation fees are paid directly to park authorities or included in your final invoice based on preference.
             </div>
           </Reveal>
         </section>
