@@ -10,9 +10,9 @@ import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
 import type { SiteSettings } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Victoria Falls Jet Boat | Zambezi Rapid Jet Boat Experience & Combos",
+  title: "Victoria Falls Jet Boat | Africa Dream Adventures",
   description:
-    "Experience the ultimate adrenaline rush: Victoria Falls Jet Boat down the Batoka Gorge rapids. High-speed 360° spins, cable car gorge descent, combo packages with helicopter flights and rafting. Book now.",
+    "Jet boat through the Batoka Gorge rapids below Victoria Falls — an adrenaline-focused ride on the Zambezi. Message us for current operating details, duration and combo options.",
   keywords: [
     "victoria falls jet boat",
     "jet boat victoria falls",
@@ -27,30 +27,27 @@ export const metadata: Metadata = {
 };
 
 const JET_BOAT_SPECS = [
-  { label: "Engine", value: "460 HP Yanmar Twin Turbo" },
-  { label: "Location", value: "Batoka Gorge Rapids #23–#27" },
-  { label: "Duration", value: "Approx. 2.5–3 Hours Total" },
-  { label: "Gorge Access", value: "Funicular Cable Car Included" },
-  { label: "Min Age", value: "10 Years (Must fit life jacket)" },
-  { label: "Transfers", value: "Return Hotel Pick-up Included" },
+  { label: "Location", value: "Batoka Gorge, below Victoria Falls" },
+  { label: "Experience", value: "High-speed, adrenaline-focused" },
+  { label: "Transfers", value: "Hotel pick-up and drop-off" },
 ];
 
 const JET_BOAT_FAQS = [
   {
     q: "Where does the Victoria Falls Jet Boat operate?",
-    a: "The jet boat operates deep in the Batoka Gorge below Victoria Falls, specifically surging through rapids 23 to 27 where the Zambezi boils between vertical sheer rock cliffs. Access down into and out of the gorge is made effortless via a scenic funicular cable lift.",
+    a: "In the Batoka Gorge below Victoria Falls, where the Zambezi runs between sheer rock cliffs — the same stretch of river used for white-water rafting.",
   },
   {
-    q: "How fast does the jet boat travel?",
-    a: "Powered by a high-output 460 HP Yanmar twin turbo marine diesel engine with Hamilton waterjet propulsion, the craft speeds over 75 km/h across surging rapids, performing rapid 360-degree spins and skimming centimetres past towering black basalt canyon walls.",
+    q: "Is this a gentle ride or an adrenaline activity?",
+    a: "Adrenaline — it's built around speed and sharp turns on moving white water, not a scenic float. Message us about age, health and swimming requirements before booking.",
   },
   {
-    q: "Do I have to hike up and down the Batoka Gorge?",
-    a: "No! Unlike traditional rafting trips where you must hike 200 vertical metres up steep gorge paths in the heat, the Victoria Falls Jet Boat experience includes a comfortable cable car (funicular lift) that whisks you smoothly down to the water and back to the canyon rim.",
+    q: "How do I get down into the gorge?",
+    a: "Ask us about current access arrangements for your date — this varies by operator and river conditions.",
   },
   {
-    q: "Can I combine the Jet Boat with Helicopter Flights or Rafting?",
-    a: "Yes! The most popular combination is the Adrenaline Combo: combining the Jet Boat with the Zambezi Spectacular or 15-minute Helicopter Flight of Angels and the Victoria Falls Bridge Bungee or Gorge Swing.",
+    q: "Can I combine the Jet Boat with other activities?",
+    a: "Yes — it's commonly paired with a helicopter flight, rafting, or a bridge activity. Message us and we'll quote the combination you want.",
   },
 ];
 
@@ -61,9 +58,8 @@ export default async function JetBoatPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TouristAttraction",
-    name: "Victoria Falls Jet Boat - Batoka Gorge Extreme Rapids",
-    description:
-      "High-speed jet boat experience through Batoka Gorge rapids below Victoria Falls with funicular cable car access and return transfers.",
+    name: "Victoria Falls Jet Boat - Batoka Gorge",
+    description: "Adrenaline-focused jet boat experience through the Batoka Gorge rapids below Victoria Falls.",
     provider: {
       "@type": "TravelAgency",
       name: siteSettings?.name || "Africa Dream Adventures",
@@ -98,7 +94,7 @@ export default async function JetBoatPage() {
 
         <MountReveal>
           <div className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-gold">
-            Batoka Gorge Extreme Rapid Experience
+            Batoka Gorge Adrenaline Experience
           </div>
           <h1
             className="m-0 mb-6 font-display font-semibold uppercase leading-[1.08] tracking-tight text-ink"
@@ -107,8 +103,8 @@ export default async function JetBoatPage() {
             Victoria Falls <span className="text-gold">Jet Boat</span>
           </h1>
           <p className="max-w-[760px] text-lg leading-relaxed text-muted sm:text-xl">
-            Power through the boiling white-water rapids of the mighty Zambezi in a 460-horsepower jet boat.
-            360-degree spins, sheer basalt canyon walls, and effortless funicular cable car access.
+            A high-speed jet boat ride through the white-water rapids of the Batoka Gorge, below Victoria Falls —
+            fast, sharp turns, close to the canyon walls.
           </p>
         </MountReveal>
 
@@ -116,8 +112,8 @@ export default async function JetBoatPage() {
         <MountReveal delay={0.1} className="my-12 overflow-hidden rounded-sm border border-line">
           <div className="relative h-[380px] w-full sm:h-[520px]">
             <Image
-              src="/images/rafting.jpg"
-              alt="Victoria Falls Jet Boat in Batoka Gorge"
+              src="https://cdn.sanity.io/images/7zk2mk45/production/b9b184f59b139dff44222388104dd39643f14972-1080x608.jpg"
+              alt="Jet boat activity on the Zambezi near Victoria Falls"
               fill
               priority
               className="object-cover"
@@ -127,7 +123,7 @@ export default async function JetBoatPage() {
             <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-4 text-paper sm:bottom-10 sm:left-10 sm:right-10">
               <div>
                 <div className="text-[11px] uppercase tracking-[0.22em] text-gold">High Octane Action</div>
-                <div className="font-display text-2xl font-semibold sm:text-3xl">Rapids #23 to #27 · Batoka Gorge</div>
+                <div className="font-display text-2xl font-semibold sm:text-3xl">Batoka Gorge</div>
               </div>
               <a
                 href={whatsappLink(whatsapp, "Hi, I'd like to book the Victoria Falls Jet Boat.")}
@@ -143,7 +139,7 @@ export default async function JetBoatPage() {
 
         {/* Specs Grid */}
         <MountReveal delay={0.15} className="mb-16">
-          <div className="grid grid-cols-2 gap-4 rounded-sm border border-line bg-off-white p-6 sm:grid-cols-3 lg:grid-cols-6 sm:p-8">
+          <div className="grid grid-cols-1 gap-4 rounded-sm border border-line bg-off-white p-6 sm:grid-cols-3 sm:p-8">
             {JET_BOAT_SPECS.map((spec) => (
               <div key={spec.label} className="border-l-2 border-gold pl-3">
                 <div className="text-[10px] uppercase tracking-[0.18em] text-muted">{spec.label}</div>
@@ -158,39 +154,34 @@ export default async function JetBoatPage() {
           <div>
             <Reveal>
               <h2 className="mb-5 font-subheading text-2xl font-medium sm:text-3xl">
-                The Most Thrilling Ride on the Zambezi
+                An Adrenaline Ride Through the Gorge
               </h2>
               <div className="space-y-5 text-base leading-relaxed text-muted sm:text-[17px]">
                 <p>
-                  The Victoria Falls Jet Boat is not a gentle scenic float — it is a pulse-racing white-water expedition
-                  into one of the deepest river canyons on Earth. Your adventure begins with an effortless descent down the
-                  near-vertical 200-metre cliffs of Batoka Gorge aboard a state-of-the-art funicular cable lift, treating
-                  you to sweeping aerial vistas of the canyon.
+                  The Victoria Falls Jet Boat isn't a scenic float — it's a fast, sharp-turning ride through the same
+                  stretch of white water used for rafting below the Falls, in a boat built for speed rather than a leisurely
+                  pace.
                 </p>
                 <p>
-                  At the river level, you board an engineered custom jet craft piloted by an internationally certified
-                  white-water skipper. Powered by a deafening 460 HP Yanmar twin turbo engine, the boat explodes across the
-                  boiling rapids at speeds exceeding 75 km/h. Experience pulse-pounding 360-degree flat spins, sudden
-                  accelerations, and hair-raising glides inches from the massive basalt gorge walls.
+                  Expect sudden accelerations and tight turns close to the gorge walls, piloted by an experienced local
+                  skipper. It's a short, intense activity rather than a long outing — message us for the current duration
+                  and what a typical run involves.
                 </p>
                 <p>
-                  Unlike standard whitewater rafting which requires strenuous swimming and paddling, the jet boat puts you
-                  right in the heart of class IV and V turbulence with maximum safety and zero climbing fatigue on the return.
+                  Like rafting in the same gorge, this is a genuine white-water activity, not a gentle river cruise — tell
+                  us about any health considerations or swimming ability when you enquire.
                 </p>
               </div>
             </Reveal>
 
             {/* What's Included */}
             <Reveal className="mt-12">
-              <h3 className="mb-4 font-subheading text-xl font-medium">What is Included in Your Ticket</h3>
+              <h3 className="mb-4 font-subheading text-xl font-medium">What's Included</h3>
               <ul className="grid grid-cols-1 gap-3 font-data text-sm text-ink sm:grid-cols-2">
                 {[
                   "Return hotel transfers in Victoria Falls",
-                  "Scenic cable car funicular lift (down & up)",
-                  "Approx. 30–40 min high-speed jet boat run",
                   "Full safety equipment (life vest & helmet)",
-                  "Chilled refreshments at the canyon rim",
-                  "Professional skipper & safety briefings",
+                  "Professional skipper & safety briefing",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2.5 rounded-sm border border-line bg-paper p-3">
                     <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
@@ -206,7 +197,7 @@ export default async function JetBoatPage() {
               <div className="space-y-4">
                 <div className="rounded-sm border border-line p-5 transition-colors hover:border-gold">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <h4 className="font-subheading text-lg font-medium text-ink">Jet Boat + 15-Min Flight of Angels</h4>
+                    <h4 className="font-subheading text-lg font-medium text-ink">Jet Boat + Flight of Angels</h4>
                     <span className="text-xs uppercase tracking-wider text-gold font-semibold">Most Popular</span>
                   </div>
                   <p className="mt-2 text-sm text-muted">
@@ -221,8 +212,8 @@ export default async function JetBoatPage() {
                     <span className="text-xs uppercase tracking-wider text-gold font-semibold">Ultimate Adrenaline</span>
                   </div>
                   <p className="mt-2 text-sm text-muted">
-                    The ultimate adrenaline package for thrill-seekers: tackle rapids 1–19, leap off the historic bridge, and
-                    power through rapids 23–27 on the jet boat.
+                    For thrill-seekers wanting all three: a full day of white-water rafting, a leap off the historic
+                    bridge, and the jet boat run through the gorge.
                   </p>
                 </div>
               </div>
@@ -235,8 +226,7 @@ export default async function JetBoatPage() {
               <div className="text-[10px] uppercase tracking-[0.24em] text-gold">Direct Reservation</div>
               <h3 className="mt-2 font-display text-2xl font-semibold text-paper">Reserve Your Jet Boat Seats</h3>
               <p className="mt-3 text-sm leading-relaxed text-paper/75">
-                Spaces on the jet boat are limited to maintain optimal weight balance and safety. Pre-booking is essential,
-                especially during high season.
+                Spaces are limited, so pre-booking is essential, especially during high season.
               </p>
               <div className="mt-6 flex flex-col gap-3">
                 <a
