@@ -121,6 +121,7 @@ export type Vehicle = {
   description?: string;
   image: string;
   specs: { label: string; value: string }[];
+  faqs?: FaqItem[];
   relatedJournalPosts?: RelatedJournalPost[];
 };
 

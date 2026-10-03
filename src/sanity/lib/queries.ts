@@ -119,6 +119,7 @@ export const VEHICLE_BY_SLUG_QUERY = defineQuery(`*[_type == "vehicle" && slug.c
   description,
   "image": image.asset->url,
   "specs": specs[]{ label, value },
+  faqs,
   "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MountReveal from "@/components/ui/mount-reveal";
-import { VehicleJsonLd } from "@/components/seo/json-ld";
+import { FaqJsonLd, VehicleJsonLd } from "@/components/seo/json-ld";
 import { whatsappLink } from "@/lib/whatsapp";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -51,6 +51,7 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
         image={vehicle.image}
         seatingCapacity={vehicle.specs.find((s) => s.label === "Seats")?.value}
       />
+      {vehicle.faqs && vehicle.faqs.length > 0 && <FaqJsonLd faqs={vehicle.faqs} />}
 
       <MountReveal className="mb-6 flex items-center gap-3">
         <Link href="/car-rental-victoria-falls" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
@@ -102,6 +103,20 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
                 </Link>
                 .
               </p>
+            </MountReveal>
+          )}
+
+          {vehicle.faqs && vehicle.faqs.length > 0 && (
+            <MountReveal delay={0.19} className="mb-10">
+              <h2 className="mb-5 font-subheading text-xl font-medium">Frequently asked questions</h2>
+              <div className="flex flex-col gap-5">
+                {vehicle.faqs.map((faq) => (
+                  <div key={faq.question} className="border-b border-line pb-5">
+                    <div className="mb-1.5 font-subheading text-sm font-medium">{faq.question}</div>
+                    <p className="m-0 text-sm leading-relaxed text-muted">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
             </MountReveal>
           )}
 
