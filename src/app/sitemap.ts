@@ -31,7 +31,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/itineraries", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/services", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/journal", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/legal", priority: 0.4, changeFrequency: "monthly" as const },
   ];
 
   const now = new Date().toISOString();

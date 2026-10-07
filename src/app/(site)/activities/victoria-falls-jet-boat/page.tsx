@@ -10,7 +10,7 @@ import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
 import type { SiteSettings } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Victoria Falls Jet Boat | Africa Dream Adventures",
+  title: "Victoria Falls Jet Boat",
   description:
     "Jet boat through the Batoka Gorge rapids below Victoria Falls — an adrenaline-focused ride on the Zambezi. Message us for current operating details, duration and combo options.",
   keywords: [

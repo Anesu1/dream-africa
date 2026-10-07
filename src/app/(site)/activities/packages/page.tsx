@@ -9,7 +9,7 @@ import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
 import type { SiteSettings } from "@/sanity/lib/types";
 
 export const metadata: Metadata = {
-  title: "Victoria Falls Activity Packages | Africa Dream Adventures",
+  title: "Victoria Falls Activity Packages",
   description:
     "Combine Victoria Falls experiences into a package — helicopter flights, jet boat, white water rafting, bungee, sunset cruises and Chobe day trips. Message us for an itemised quote.",
   keywords: [
