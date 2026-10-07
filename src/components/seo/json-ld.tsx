@@ -1,3 +1,21 @@
+// href is relative (e.g. "/safaris") — resolved against the real domain here
+// so callers never have to know or repeat the production URL.
+export function BreadcrumbJsonLd({ items }: { items: { label: string; href: string }[] }) {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://africadreamadventures.co.zw";
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.label,
+      item: `${siteUrl}${item.href}`,
+    })),
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
 // Upgraded from plain Organization to LocalBusiness now that a real address,
 // phone number and production domain are confirmed (see conversation history —
 // previously withheld specifically because those weren't verified yet).

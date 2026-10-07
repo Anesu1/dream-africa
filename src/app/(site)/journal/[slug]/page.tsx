@@ -6,6 +6,7 @@ import PortableText from "@/components/ui/portable-text";
 import MountReveal from "@/components/ui/mount-reveal";
 import Reveal from "@/components/ui/reveal";
 import BookingSection from "@/components/sections/booking-section";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { JOURNAL_POST_BY_SLUG_QUERY, JOURNAL_POST_SLUGS_QUERY } from "@/sanity/lib/queries";
@@ -30,6 +31,19 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     alternates: { canonical: `/journal/${post.slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.publishedAt,
+      images: [{ url: post.image, width: 1200, height: 500, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
   };
 }
 
@@ -47,8 +61,13 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
           ? "activities"
           : "general";
 
+  const updatedLabel = new Date(post.publishedAt).toLocaleDateString("en-US", { month: "long", year: "numeric" });
+
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[{ label: "Home", href: "/" }, { label: "Journal", href: "/journal" }, { label: post.title, href: `/journal/${post.slug}` }]}
+      />
       <article className="mx-auto max-w-[820px] px-6 py-28 sm:px-10 sm:py-40">
         <MountReveal className="mb-6 flex items-center gap-3">
           <Link href="/journal" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
@@ -59,11 +78,14 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
         </MountReveal>
         <MountReveal>
           <h1
-            className="m-0 mb-10 font-display font-semibold uppercase leading-[1.15] tracking-tight"
+            className="m-0 mb-3 font-display font-semibold uppercase leading-[1.15] tracking-tight"
             style={{ fontSize: "clamp(26px, 4vw, 46px)" }}
           >
             {post.title}
           </h1>
+        </MountReveal>
+        <MountReveal delay={0.05} className="mb-10">
+          <span className="text-xs uppercase tracking-[0.14em] text-muted">Updated {updatedLabel}</span>
         </MountReveal>
         <Reveal className="mb-12 overflow-hidden rounded-sm">
           <Image src={post.image} alt={post.title} width={1200} height={500} className="h-[360px] w-full object-cover sm:h-[460px]" />

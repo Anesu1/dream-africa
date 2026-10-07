@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MountReveal from "@/components/ui/mount-reveal";
-import { FaqJsonLd, TourJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, FaqJsonLd, TourJsonLd } from "@/components/seo/json-ld";
 import { whatsappLink } from "@/lib/whatsapp";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -25,10 +25,22 @@ export async function generateMetadata({
   const { tour: slug } = await params;
   const tour = await sanityFetch<Tour | null>({ query: TOUR_BY_SLUG_QUERY, params: { slug } });
   if (!tour) return {};
+  const title = `${tour.title} from Victoria Falls`;
   return {
-    title: `${tour.title} from Victoria Falls`,
+    title,
     description: tour.description,
     alternates: { canonical: `/safaris/${tour.slug}` },
+    openGraph: {
+      title,
+      description: tour.description,
+      images: [{ url: tour.image, width: 1200, height: 620, alt: tour.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: tour.description,
+      images: [tour.image],
+    },
   };
 }
 
@@ -47,6 +59,7 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
     <article className="mx-auto max-w-[1000px] px-6 py-28 sm:px-10 sm:py-40">
       <TourJsonLd name={tour.title} description={tour.description} image={tour.image} duration={tour.duration} />
       {tour.faqs && tour.faqs.length > 0 && <FaqJsonLd faqs={tour.faqs} />}
+      <BreadcrumbJsonLd items={[{ label: "Home", href: "/" }, { label: "Safaris", href: "/safaris" }, { label: tour.title, href: `/safaris/${tour.slug}` }]} />
 
       <MountReveal className="mb-6 flex items-center gap-3">
         <Link href="/safaris" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">

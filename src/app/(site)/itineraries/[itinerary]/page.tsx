@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import MountReveal from "@/components/ui/mount-reveal";
 import BookingSection from "@/components/sections/booking-section";
-import { ItineraryJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, ItineraryJsonLd } from "@/components/seo/json-ld";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { ITINERARY_BY_SLUG_QUERY, ITINERARY_SLUGS_QUERY, ITINERARIES_QUERY } from "@/sanity/lib/queries";
@@ -29,6 +29,17 @@ export async function generateMetadata({
     title: itinerary.title,
     description: itinerary.metaDescription,
     alternates: { canonical: `/itineraries/${itinerary.slug}` },
+    openGraph: {
+      title: itinerary.title,
+      description: itinerary.metaDescription,
+      images: [{ url: itinerary.heroImage, width: 1200, height: 620, alt: itinerary.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: itinerary.title,
+      description: itinerary.metaDescription,
+      images: [itinerary.heroImage],
+    },
   };
 }
 
@@ -50,6 +61,13 @@ export default async function ItineraryDetailPage({ params }: { params: Promise<
         image={itinerary.heroImage}
         durationLabel={itinerary.durationLabel}
         days={itinerary.days}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Itineraries", href: "/itineraries" },
+          { label: itinerary.title, href: `/itineraries/${itinerary.slug}` },
+        ]}
       />
 
       <MountReveal className="mb-6 flex items-center gap-3">

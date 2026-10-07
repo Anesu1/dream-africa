@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MountReveal from "@/components/ui/mount-reveal";
-import { FaqJsonLd, VehicleJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, FaqJsonLd, VehicleJsonLd } from "@/components/seo/json-ld";
 import { whatsappLink } from "@/lib/whatsapp";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/fetch";
@@ -25,10 +25,23 @@ export async function generateMetadata({
   const { vehicle: slug } = await params;
   const vehicle = await sanityFetch<Vehicle | null>({ query: VEHICLE_BY_SLUG_QUERY, params: { slug } });
   if (!vehicle) return {};
+  const title = `${vehicle.name} Rental in Victoria Falls`;
+  const description = `Rent the ${vehicle.name} — ${vehicle.subtitle} — from Eden Car Rental in Victoria Falls. ${vehicle.description ?? ""}`.trim();
   return {
-    title: `${vehicle.name} Rental in Victoria Falls`,
-    description: `Rent the ${vehicle.name} — ${vehicle.subtitle} — from Eden Car Rental in Victoria Falls. ${vehicle.description ?? ""}`.trim(),
+    title,
+    description,
     alternates: { canonical: `/car-rental-victoria-falls/${vehicle.slug}` },
+    openGraph: {
+      title,
+      description,
+      images: [{ url: vehicle.image, width: 1200, height: 620, alt: vehicle.name }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [vehicle.image],
+    },
   };
 }
 
@@ -52,6 +65,13 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
         seatingCapacity={vehicle.specs.find((s) => s.label === "Seats")?.value}
       />
       {vehicle.faqs && vehicle.faqs.length > 0 && <FaqJsonLd faqs={vehicle.faqs} />}
+      <BreadcrumbJsonLd
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Car Rental", href: "/car-rental-victoria-falls" },
+          { label: vehicle.name, href: `/car-rental-victoria-falls/${vehicle.slug}` },
+        ]}
+      />
 
       <MountReveal className="mb-6 flex items-center gap-3">
         <Link href="/car-rental-victoria-falls" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
