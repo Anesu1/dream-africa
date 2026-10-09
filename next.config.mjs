@@ -15,19 +15,6 @@ const nextConfig = {
     // /rentals moved to /car-rental-victoria-falls — permanent redirect so
     // existing indexing/backlinks transfer instead of hitting a dead page.
     return [
-      // Plain HTTP was serving content directly instead of redirecting to
-      // HTTPS (confirmed via curl — GSC flagged the bare-HTTP homepage as
-      // "Crawled - currently not indexed", which is Google correctly
-      // refusing to index the insecure duplicate). Cloudflare normally
-      // forwards the original scheme via x-forwarded-proto, so this `has`
-      // condition catches it at the routing layer regardless of whether
-      // "Always Use HTTPS" is also enabled on the Cloudflare side.
-      {
-        source: "/:path*",
-        has: [{ type: "header", key: "x-forwarded-proto", value: "http" }],
-        destination: "https://africadreamadventures.co.zw/:path*",
-        permanent: true,
-      },
       { source: "/rentals", destination: "/car-rental-victoria-falls", permanent: true },
       { source: "/rentals/:vehicle", destination: "/car-rental-victoria-falls/:vehicle", permanent: true },
       // Land Cruiser 79 was removed from the fleet (replaced by the Quantum
