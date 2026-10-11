@@ -74,7 +74,7 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
           className="m-0 mb-3 font-display font-semibold uppercase leading-[1.1] tracking-tight"
           style={{ fontSize: "clamp(28px, 4.4vw, 50px)" }}
         >
-          {tour.title}
+          {tour.title} from Victoria Falls
         </h1>
       </MountReveal>
       <MountReveal delay={0.05}>

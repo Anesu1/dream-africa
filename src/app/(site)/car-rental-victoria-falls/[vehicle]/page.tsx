@@ -86,7 +86,7 @@ export default async function VehiclePage({ params }: { params: Promise<{ vehicl
           className="m-0 mb-3 font-display font-semibold uppercase leading-[1.1] tracking-tight"
           style={{ fontSize: "clamp(28px, 4.4vw, 50px)" }}
         >
-          {vehicle.name}
+          {vehicle.name} Rental in Victoria Falls
         </h1>
       </MountReveal>
       <MountReveal delay={0.05}>

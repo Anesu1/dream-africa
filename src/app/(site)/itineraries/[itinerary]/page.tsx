@@ -83,7 +83,7 @@ export default async function ItineraryDetailPage({ params }: { params: Promise<
           className="m-0 mb-3 font-display font-semibold uppercase leading-[1.1] tracking-tight"
           style={{ fontSize: "clamp(28px, 4.4vw, 50px)" }}
         >
-          {itinerary.heroTitle}
+          {itinerary.heroTitle}: Suggested Itinerary
         </h1>
       </MountReveal>
       <MountReveal delay={0.05}>
