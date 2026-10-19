@@ -5,6 +5,7 @@ export type EnquiryEmailData = {
   email: string;
   phone?: string;
   division: string;
+  item?: string;
   experienceType?: string;
   travelDate?: string;
   guests?: string;
@@ -12,6 +13,7 @@ export type EnquiryEmailData = {
   vehicleClass?: string;
   pickupDate?: string;
   returnDate?: string;
+  crossBorder?: string;
   message: string;
 };
 
@@ -32,17 +34,30 @@ const BRAND = {
   fontBody: "Arial, Helvetica, sans-serif",
 };
 
+// Enquiry fields come straight from a public form — escape them before they go into HTML,
+// otherwise anyone could inject markup or links into an email sent from our domain.
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function isConfigured() {
   return Boolean(process.env.RESEND_API_KEY && process.env.ENQUIRY_TO_EMAIL);
 }
 
 function fieldLabel(key: string) {
   const labels: Record<string, string> = {
+    item: "Enquiring about",
     experienceType: "Experience",
     travelDate: "Travel date",
     guests: "Guests",
     serviceType: "Service",
-    vehicleClass: "Vehicle class",
+    vehicleClass: "Vehicle",
+    crossBorder: "Border crossing",
     pickupDate: "Pickup date",
     returnDate: "Return date",
     phone: "Phone",
@@ -86,18 +101,19 @@ function emailShell(bodyHtml: string) {
 }
 
 function confirmationHtml(data: EnquiryEmailData, whatsapp: string) {
-  const whatsappHref = `https://wa.me/${whatsapp}?text=${encodeURIComponent(`Hi, I just sent an enquiry (${data.division}) — following up here.`)}`;
+  const topic = data.item ?? data.division;
+  const whatsappHref = `https://wa.me/${whatsapp}?text=${encodeURIComponent(`Hi, I just sent an enquiry (${topic}) — following up here.`)}`;
   return emailShell(`
     <div style="color:${BRAND.gold};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Message received</div>
-    <h1 style="margin:0 0 16px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:26px;font-weight:600;line-height:1.25;">Thanks for reaching out, ${data.name}.</h1>
+    <h1 style="margin:0 0 16px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:26px;font-weight:600;line-height:1.25;">Thanks for reaching out, ${escapeHtml(data.name)}.</h1>
     <p style="margin:0 0 24px;color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;">
-      We've received your ${data.division} enquiry and typically reply within the hour during Victoria Falls business hours. If it's urgent, message us directly on WhatsApp below.
+      We've received your ${escapeHtml(data.item ? `${data.item}` : data.division)} enquiry and typically reply within the hour during Victoria Falls business hours. If it's urgent, message us directly on WhatsApp below.
     </p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${BRAND.paper};border:1px solid ${BRAND.line};border-radius:4px;margin-bottom:28px;">
       <tr>
         <td style="padding:18px 20px;">
           <div style="color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Your message</div>
-          <div style="color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:14px;line-height:1.6;font-style:italic;">"${data.message}"</div>
+          <div style="color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:14px;line-height:1.6;font-style:italic;white-space:pre-line;">"${escapeHtml(data.message)}"</div>
         </td>
       </tr>
     </table>
@@ -116,18 +132,18 @@ function notificationHtml(data: EnquiryEmailData) {
     .filter(([key, value]) => value && key !== "message")
     .map(
       ([key, value]) =>
-        `<tr><td style="padding:8px 16px 8px 0;color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:13px;white-space:nowrap;">${fieldLabel(key)}</td><td style="padding:8px 0;color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:14px;">${value}</td></tr>`,
+        `<tr><td style="padding:8px 16px 8px 0;color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:13px;white-space:nowrap;">${fieldLabel(key)}</td><td style="padding:8px 0;color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:14px;">${escapeHtml(String(value))}</td></tr>`,
     )
     .join("");
 
   return emailShell(`
     <div style="color:${BRAND.gold};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">New enquiry</div>
-    <h1 style="margin:0 0 24px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:24px;font-weight:600;">${data.division} enquiry from ${data.name}</h1>
+    <h1 style="margin:0 0 24px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:24px;font-weight:600;">${escapeHtml(data.division)} enquiry from ${escapeHtml(data.name)}</h1>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;border-top:1px solid ${BRAND.line};">
       ${rows}
     </table>
     <div style="color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Message</div>
-    <p style="margin:0;color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;">${data.message}</p>
+    <p style="margin:0;color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;white-space:pre-line;">${escapeHtml(data.message)}</p>
   `);
 }
 
@@ -144,7 +160,7 @@ export async function sendEnquiryEmail(data: EnquiryEmailData, whatsapp: string)
       from: BRAND.fromAddress,
       to: process.env.ENQUIRY_TO_EMAIL!,
       replyTo: data.email,
-      subject: `New ${data.division} enquiry from ${data.name}`,
+      subject: `New ${data.item ?? data.division} enquiry from ${data.name}`,
       html: notificationHtml(data),
     }),
     resend.emails.send({

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BookingSection from "@/components/sections/booking-section";
 import MountReveal from "@/components/ui/mount-reveal";
 import { BreadcrumbJsonLd, FaqJsonLd, TourJsonLd } from "@/components/seo/json-ld";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -54,171 +55,204 @@ export default async function TourPage({ params }: { params: Promise<{ tour: str
   if (!tour) notFound();
 
   const related = allTours.filter((t) => t.slug !== tour.slug).slice(0, 3);
+  // Border tours need nationalities up front — entry and re-entry documents depend on them.
+  const crossesBorder = tour.slug === "chobe-day-trip";
+  const quoteMessage = `Hi, I'd like a quote for the ${tour.title}.\nDate:\nNumber of guests:\nPickup hotel:${
+    crossesBorder ? "\nNationalities:" : ""
+  }`;
 
   return (
-    <article className="mx-auto max-w-[1000px] px-6 py-28 sm:px-10 sm:py-40">
-      <TourJsonLd name={tour.title} description={tour.description} image={tour.image} duration={tour.duration} />
-      {tour.faqs && tour.faqs.length > 0 && <FaqJsonLd faqs={tour.faqs} />}
-      <BreadcrumbJsonLd items={[{ label: "Home", href: "/" }, { label: "Safaris", href: "/safaris" }, { label: tour.title, href: `/safaris/${tour.slug}` }]} />
+    <>
+      <article className="mx-auto max-w-[1000px] px-6 py-28 sm:px-10 sm:py-40">
+        <TourJsonLd name={tour.title} description={tour.description} image={tour.image} duration={tour.duration} />
+        {tour.faqs && tour.faqs.length > 0 && <FaqJsonLd faqs={tour.faqs} />}
+        <BreadcrumbJsonLd items={[{ label: "Home", href: "/" }, { label: "Safaris", href: "/safaris" }, { label: tour.title, href: `/safaris/${tour.slug}` }]} />
 
-      <MountReveal className="mb-6 flex items-center gap-3">
-        <Link href="/safaris" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
-          Safaris
-        </Link>
-        <span className="text-[11px] text-muted">/</span>
-        <span className="text-[11px] uppercase tracking-[0.28em] text-muted">{tour.category}</span>
-      </MountReveal>
-
-      <MountReveal>
-        <h1
-          className="m-0 mb-3 font-display font-semibold uppercase leading-[1.1] tracking-tight"
-          style={{ fontSize: "clamp(28px, 4.4vw, 50px)" }}
-        >
-          {tour.title} from Victoria Falls
-        </h1>
-      </MountReveal>
-      <MountReveal delay={0.05}>
-        <p className="mb-10 text-lg text-muted">{tour.duration}</p>
-      </MountReveal>
-
-      <MountReveal delay={0.1} className="mb-12 overflow-hidden rounded-sm">
-        <Image
-          src={tour.image}
-          alt={tour.title}
-          width={1200}
-          height={620}
-          priority
-          className="h-[360px] w-full object-cover sm:h-[480px]"
-        />
-      </MountReveal>
-
-      <div className="grid gap-12 sm:grid-cols-[1fr_260px]">
-        <div>
-          <MountReveal delay={0.15}>
-            <p className="mb-10 max-w-[60ch] text-[17px] leading-relaxed text-muted">{tour.description}</p>
-          </MountReveal>
-
-          {tour.itinerarySteps && tour.itinerarySteps.length > 0 && (
-            <MountReveal delay={0.17} className="mb-12">
-              <h2 className="mb-6 font-subheading text-xl font-medium">How the day runs</h2>
-              <div className="flex flex-col gap-6">
-                {tour.itinerarySteps.map((step) => (
-                  <div key={step.rangeLabel} className="border-l-2 border-line pl-6">
-                    <div className="mb-1.5 text-[11px] uppercase tracking-[0.24em] text-gold">{step.rangeLabel}</div>
-                    <h3 className="m-0 mb-1.5 font-subheading text-base font-medium">{step.title}</h3>
-                    <p className="m-0 text-sm leading-relaxed text-muted">{step.description}</p>
-                  </div>
-                ))}
-              </div>
-            </MountReveal>
-          )}
-
-          {tour.slug === "hwange-big-five" && (
-            <MountReveal delay={0.18} className="mb-10 rounded-sm border border-line bg-off-white p-6">
-              <p className="m-0 text-[15px] leading-relaxed">
-                <span className="font-subheading text-lg font-medium">Rather explore Hwange yourself?</span>
-                <br />
-                Our 4x4 fleet is built for exactly this route —{" "}
-                <Link href="/car-rental-victoria-falls" className="text-gold underline underline-offset-2">
-                  see the self-drive vehicles
-                </Link>
-                .
-              </p>
-            </MountReveal>
-          )}
-
-          {related.length > 0 && (
-            <MountReveal delay={0.2}>
-              <h2 className="mb-5 font-subheading text-xl font-medium">Other tours</h2>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                {related.map((t) => (
-                  <Link
-                    key={t.slug}
-                    href={`/safaris/${t.slug}`}
-                    className="group block overflow-hidden rounded-sm border border-line transition-colors hover:border-gold"
-                  >
-                    <Image
-                      src={t.image}
-                      alt={t.title}
-                      width={400}
-                      height={220}
-                      className="h-[120px] w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
-                    />
-                    <div className="p-3">
-                      <div className="font-subheading text-sm font-medium">{t.title}</div>
-                      <div className="text-xs text-muted">{t.category}</div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </MountReveal>
-          )}
-
-          {tour.faqs && tour.faqs.length > 0 && (
-            <MountReveal delay={0.22} className="mt-10">
-              <h2 className="mb-5 font-subheading text-xl font-medium">Frequently asked questions</h2>
-              <div className="flex flex-col gap-5">
-                {tour.faqs.map((faq) => (
-                  <div key={faq.question} className="border-b border-line pb-5">
-                    <div className="mb-1.5 font-subheading text-sm font-medium">{faq.question}</div>
-                    <p className="m-0 text-sm leading-relaxed text-muted">{faq.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </MountReveal>
-          )}
-
-          {tour.relatedJournalPosts && tour.relatedJournalPosts.length > 0 && (
-            <MountReveal delay={0.25} className="mt-10">
-              <h2 className="mb-5 font-subheading text-xl font-medium">From the Journal</h2>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {tour.relatedJournalPosts.map((post) => (
-                  <Link
-                    key={post.slug}
-                    href={`/journal/${post.slug}`}
-                    className="group flex gap-4 overflow-hidden rounded-sm border border-line p-3 transition-colors hover:border-gold"
-                  >
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      width={120}
-                      height={120}
-                      className="h-20 w-20 shrink-0 rounded-sm object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
-                    />
-                    <div>
-                      <div className="font-subheading text-sm font-medium leading-snug">{post.title}</div>
-                      <div className="mt-1 text-xs text-muted line-clamp-2">{post.excerpt}</div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </MountReveal>
-          )}
-        </div>
-
-        <MountReveal delay={0.15}>
-          <div className="rounded-sm border border-line p-6">
-            {tour.highlights.length > 0 && (
-              <ul className="mb-5 flex flex-col gap-2.5 font-data text-sm">
-                {tour.highlights.map((h) => (
-                  <li key={h} className="flex items-start gap-2">
-                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-gold" />
-                    {h}
-                  </li>
-                ))}
-              </ul>
-            )}
-            <a
-              href={whatsappLink(siteSettings.whatsapp, `Hi, I'd like to book the ${tour.title}.`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full rounded-full bg-gold px-6 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:bg-paper"
-            >
-              Book on WhatsApp
-            </a>
-          </div>
+        <MountReveal className="mb-6 flex items-center gap-3">
+          <Link href="/safaris" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
+            Safaris
+          </Link>
+          <span className="text-[11px] text-muted">/</span>
+          <span className="text-[11px] uppercase tracking-[0.28em] text-muted">{tour.category}</span>
         </MountReveal>
-      </div>
-    </article>
+
+        <MountReveal>
+          <h1
+            className="m-0 mb-3 font-display font-semibold uppercase leading-[1.1] tracking-tight"
+            style={{ fontSize: "clamp(28px, 4.4vw, 50px)" }}
+          >
+            {tour.title} from Victoria Falls
+          </h1>
+        </MountReveal>
+        <MountReveal delay={0.05}>
+          <p className="mb-10 text-lg text-muted">{tour.duration}</p>
+        </MountReveal>
+
+        <MountReveal delay={0.1} className="mb-12 overflow-hidden rounded-sm">
+          <Image
+            src={tour.image}
+            alt={tour.title}
+            width={1200}
+            height={620}
+            priority
+            className="h-[360px] w-full object-cover sm:h-[480px]"
+          />
+        </MountReveal>
+
+        <div className="grid gap-12 sm:grid-cols-[1fr_260px]">
+          <div>
+            <MountReveal delay={0.15}>
+              <p className="mb-10 max-w-[60ch] text-[17px] leading-relaxed text-muted">{tour.description}</p>
+              <a
+                href="#enquire"
+                className="mb-10 block rounded-full bg-gold px-6 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-ink sm:hidden"
+              >
+                Request a quote
+              </a>
+            </MountReveal>
+
+            {tour.itinerarySteps && tour.itinerarySteps.length > 0 && (
+              <MountReveal delay={0.17} className="mb-12">
+                <h2 className="mb-6 font-subheading text-xl font-medium">How the day runs</h2>
+                <div className="flex flex-col gap-6">
+                  {tour.itinerarySteps.map((step) => (
+                    <div key={step.rangeLabel} className="border-l-2 border-line pl-6">
+                      <div className="mb-1.5 text-[11px] uppercase tracking-[0.24em] text-gold">{step.rangeLabel}</div>
+                      <h3 className="m-0 mb-1.5 font-subheading text-base font-medium">{step.title}</h3>
+                      <p className="m-0 text-sm leading-relaxed text-muted">{step.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </MountReveal>
+            )}
+
+            {tour.slug === "hwange-big-five" && (
+              <MountReveal delay={0.18} className="mb-10 rounded-sm border border-line bg-off-white p-6">
+                <p className="m-0 text-[15px] leading-relaxed">
+                  <span className="font-subheading text-lg font-medium">Rather explore Hwange yourself?</span>
+                  <br />
+                  Our 4x4 fleet is built for exactly this route —{" "}
+                  <Link href="/car-rental-victoria-falls" className="text-gold underline underline-offset-2">
+                    see the self-drive vehicles
+                  </Link>
+                  .
+                </p>
+              </MountReveal>
+            )}
+
+            {related.length > 0 && (
+              <MountReveal delay={0.2}>
+                <h2 className="mb-5 font-subheading text-xl font-medium">Other tours</h2>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                  {related.map((t) => (
+                    <Link
+                      key={t.slug}
+                      href={`/safaris/${t.slug}`}
+                      className="group block overflow-hidden rounded-sm border border-line transition-colors hover:border-gold"
+                    >
+                      <Image
+                        src={t.image}
+                        alt={t.title}
+                        width={400}
+                        height={220}
+                        className="h-[120px] w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
+                      />
+                      <div className="p-3">
+                        <div className="font-subheading text-sm font-medium">{t.title}</div>
+                        <div className="text-xs text-muted">{t.category}</div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </MountReveal>
+            )}
+
+            {tour.faqs && tour.faqs.length > 0 && (
+              <MountReveal delay={0.22} className="mt-10">
+                <h2 className="mb-5 font-subheading text-xl font-medium">Frequently asked questions</h2>
+                <div className="flex flex-col gap-5">
+                  {tour.faqs.map((faq) => (
+                    <div key={faq.question} className="border-b border-line pb-5">
+                      <div className="mb-1.5 font-subheading text-sm font-medium">{faq.question}</div>
+                      <p className="m-0 text-sm leading-relaxed text-muted">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </MountReveal>
+            )}
+
+            {tour.relatedJournalPosts && tour.relatedJournalPosts.length > 0 && (
+              <MountReveal delay={0.25} className="mt-10">
+                <h2 className="mb-5 font-subheading text-xl font-medium">From the Journal</h2>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {tour.relatedJournalPosts.map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`/journal/${post.slug}`}
+                      className="group flex gap-4 overflow-hidden rounded-sm border border-line p-3 transition-colors hover:border-gold"
+                    >
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        width={120}
+                        height={120}
+                        className="h-20 w-20 shrink-0 rounded-sm object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
+                      />
+                      <div>
+                        <div className="font-subheading text-sm font-medium leading-snug">{post.title}</div>
+                        <div className="mt-1 text-xs text-muted line-clamp-2">{post.excerpt}</div>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </MountReveal>
+            )}
+          </div>
+
+          <MountReveal delay={0.15}>
+            <div className="rounded-sm border border-line p-6">
+              {tour.highlights.length > 0 && (
+                <ul className="mb-5 flex flex-col gap-2.5 font-data text-sm">
+                  {tour.highlights.map((h) => (
+                    <li key={h} className="flex items-start gap-2">
+                      <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-gold" />
+                      {h}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="mb-4 text-sm leading-relaxed text-muted">
+                Rates are quoted per booking. Send your date and group size and we&apos;ll confirm price, inclusions and
+                availability.
+              </p>
+              <a href="#enquire" className="block w-full rounded-full bg-gold px-6 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:bg-paper">
+                Request a quote
+              </a>
+              <a
+                href={whatsappLink(siteSettings.whatsapp, quoteMessage)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 block w-full rounded-full border border-gold px-6 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.16em] text-gold transition-colors hover:bg-gold hover:text-ink"
+              >
+                Ask on WhatsApp
+              </a>
+            </div>
+          </MountReveal>
+        </div>
+      </article>
+      <BookingSection
+        id="enquire"
+        division="safaris"
+        item={tour.title}
+        eyebrow="Request a quote"
+        headline={[tour.title, "check dates & price."]}
+        body="Tell us your date, how many are travelling and where you're staying. We'll come back with a quote showing the currency, what's included and anything payable on the day."
+        messagePlaceholder={
+          crossesBorder
+            ? "Nationalities in your group (for border documents), private or shared, anything else"
+            : "Pickup hotel, private or shared, anything else we should know"
+        }
+      />
+    </>
   );
 }

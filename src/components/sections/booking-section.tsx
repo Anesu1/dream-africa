@@ -7,12 +7,18 @@ export default function BookingSection({
   headline,
   body,
   id = "book",
+  item,
+  vehicleOptions,
+  messagePlaceholder,
 }: {
   division: "safaris" | "rentals" | "general" | "activities";
   eyebrow: string;
   headline: [string, string];
   body: string;
   id?: string;
+  item?: string;
+  vehicleOptions?: string[];
+  messagePlaceholder?: string;
 }) {
   return (
     <section id={id} className="bg-ink px-6 py-28 text-paper sm:px-10 sm:py-36">
@@ -34,7 +40,12 @@ export default function BookingSection({
           </Reveal>
         </div>
         <Reveal>
-          <BookingForm division={division} />
+          <BookingForm
+            division={division}
+            item={item}
+            vehicleOptions={vehicleOptions}
+            messagePlaceholder={messagePlaceholder}
+          />
         </Reveal>
       </div>
     </section>

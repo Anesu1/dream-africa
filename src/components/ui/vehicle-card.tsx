@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { whatsappLink } from "@/lib/whatsapp";
+import { rentalQuoteMessage, whatsappLink } from "@/lib/whatsapp";
 import type { Vehicle } from "@/sanity/lib/types";
 
 export default function VehicleCard({ vehicle, whatsapp }: { vehicle: Vehicle; whatsapp: string }) {
@@ -36,7 +36,7 @@ export default function VehicleCard({ vehicle, whatsapp }: { vehicle: Vehicle; w
       <div className="flex items-baseline justify-between px-6 pb-6">
         <span className="font-data text-xs uppercase tracking-[0.14em] text-muted">Message for rates</span>
         <a
-          href={whatsappLink(whatsapp, `Hi, I'd like to reserve the ${vehicle.name}.`)}
+          href={whatsappLink(whatsapp, rentalQuoteMessage(vehicle.name))}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[11px] uppercase tracking-[0.16em] text-gold"

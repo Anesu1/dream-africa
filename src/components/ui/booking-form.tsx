@@ -30,7 +30,19 @@ const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> 
   },
 };
 
-export default function BookingForm({ division }: { division: Division }) {
+export default function BookingForm({
+  division,
+  item,
+  vehicleOptions,
+  messagePlaceholder,
+}: {
+  division: Division;
+  /** The specific tour this form sits on — sent with the enquiry so it's never ambiguous. */
+  item?: string;
+  /** Real vehicle names from the fleet; falls back to generic classes when not provided. */
+  vehicleOptions?: string[];
+  messagePlaceholder?: string;
+}) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
 
@@ -48,13 +60,14 @@ export default function BookingForm({ division }: { division: Division }) {
       phone: field("phone"),
       message: field("message"),
       division,
+      item: item ?? "",
     };
 
     const data =
       division === "safaris" || division === "activities"
         ? {
             ...base,
-            experienceType: field("experienceType"),
+            experienceType: item ? "" : field("experienceType"),
             travelDate: field("travelDate"),
             guests: field("guests"),
           }
@@ -65,6 +78,8 @@ export default function BookingForm({ division }: { division: Division }) {
               vehicleClass: field("vehicleClass"),
               pickupDate: field("pickupDate"),
               returnDate: field("returnDate"),
+              guests: field("guests"),
+              crossBorder: field("crossBorder"),
             }
           : base;
 
@@ -105,6 +120,9 @@ export default function BookingForm({ division }: { division: Division }) {
   const inputClass =
     "border-b border-paper/25 bg-transparent py-3 text-base text-paper outline-none placeholder:text-paper/45";
   const selectClass = `${inputClass} [&>option]:bg-ink`;
+  // Date inputs render blank on most phones, so they get a visible label rather than relying on aria-label.
+  const dateLabelClass = "flex flex-col text-[10px] uppercase tracking-[0.16em] text-paper/55";
+  const vehicleChoices = vehicleOptions && vehicleOptions.length > 0 ? vehicleOptions : null;
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -114,26 +132,37 @@ export default function BookingForm({ division }: { division: Division }) {
         <input name="phone" type="tel" placeholder="Phone / WhatsApp" className={inputClass} />
       </div>
 
+      {division === "safaris" && item && (
+        <p className="m-0 text-sm text-paper/70">
+          Enquiring about: <span className="font-medium text-gold">{item}</span>
+        </p>
+      )}
+
       {division === "safaris" && (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <select name="experienceType" defaultValue="" className={selectClass}>
-            <option value="" disabled>
-              Experience
-            </option>
-            <option value="Game drive">Game drive</option>
-            <option value="Walking">Walking safari</option>
-            <option value="River">River / canoe</option>
-            <option value="Day trip">Day trip</option>
-            <option value="Not sure">Not sure yet</option>
-          </select>
-          <input name="travelDate" type="date" aria-label="Travel date" className={inputClass} />
-          <input name="guests" type="number" min={1} placeholder="Guests" className={inputClass} />
+        <div className={`grid grid-cols-1 gap-4 ${item ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
+          {!item && (
+            <select name="experienceType" defaultValue="" className={`self-end ${selectClass}`}>
+              <option value="" disabled>
+                Experience
+              </option>
+              <option value="Game drive">Game drive</option>
+              <option value="Walking">Walking safari</option>
+              <option value="River">River / canoe</option>
+              <option value="Day trip">Day trip</option>
+              <option value="Not sure">Not sure yet</option>
+            </select>
+          )}
+          <label className={dateLabelClass}>
+            Travel date
+            <input name="travelDate" type="date" className={inputClass} />
+          </label>
+          <input name="guests" type="number" min={1} max={99} placeholder="Number of guests" className={`self-end ${inputClass}`} />
         </div>
       )}
 
       {division === "activities" && (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <select name="experienceType" defaultValue="" className={selectClass}>
+          <select name="experienceType" defaultValue="" className={`self-end ${selectClass}`}>
             <option value="" disabled>
               Select Activity / Package
             </option>
@@ -147,8 +176,11 @@ export default function BookingForm({ division }: { division: Division }) {
             <option value="Guided Tour of the Falls">Guided Tour of the Falls</option>
             <option value="Multiple Activities">Custom Multi-Activity Itinerary</option>
           </select>
-          <input name="travelDate" type="date" aria-label="Preferred date" className={inputClass} />
-          <input name="guests" type="number" min={1} placeholder="Guests" className={inputClass} />
+          <label className={dateLabelClass}>
+            Preferred date
+            <input name="travelDate" type="date" className={inputClass} />
+          </label>
+          <input name="guests" type="number" min={1} max={99} placeholder="Guests" className={`self-end ${inputClass}`} />
         </div>
       )}
 
@@ -162,17 +194,38 @@ export default function BookingForm({ division }: { division: Division }) {
             <option value="Chauffeur">Chauffeur drive</option>
             <option value="Airport transfer">Airport transfer</option>
           </select>
-          <select name="vehicleClass" defaultValue="" className={selectClass}>
+          <select
+            name="vehicleClass"
+            defaultValue={item && vehicleChoices?.includes(item) ? item : ""}
+            className={selectClass}
+          >
             <option value="" disabled>
-              Vehicle class
+              {vehicleChoices ? "Vehicle" : "Vehicle class"}
             </option>
-            <option value="SUV">SUV</option>
-            <option value="4x4">4x4</option>
-            <option value="Executive">Executive</option>
+            {(vehicleChoices ?? ["SUV", "4x4", "Executive"]).map((v) => (
+              <option key={v} value={v}>
+                {v}
+              </option>
+            ))}
             <option value="Not sure">Not sure yet</option>
           </select>
-          <input name="pickupDate" type="date" aria-label="Pick-up date" className={inputClass} />
-          <input name="returnDate" type="date" aria-label="Return date" className={inputClass} />
+          <label className={dateLabelClass}>
+            Pick-up date
+            <input name="pickupDate" type="date" className={inputClass} />
+          </label>
+          <label className={dateLabelClass}>
+            Return date
+            <input name="returnDate" type="date" className={inputClass} />
+          </label>
+          <input name="guests" type="number" min={1} max={99} placeholder="Passengers" className={inputClass} />
+          <select name="crossBorder" defaultValue="" className={selectClass}>
+            <option value="" disabled>
+              Leaving Zimbabwe?
+            </option>
+            <option value="Zimbabwe only">Zimbabwe only</option>
+            <option value="Crossing a border">Crossing a border (say where below)</option>
+            <option value="Not sure">Not sure yet</option>
+          </select>
         </div>
       )}
 
@@ -180,7 +233,14 @@ export default function BookingForm({ division }: { division: Division }) {
         name="message"
         required
         rows={3}
-        placeholder={division === "general" ? "What can we help with?" : "Anything else we should know"}
+        placeholder={
+          messagePlaceholder ??
+          (division === "general"
+            ? "What can we help with?"
+            : division === "rentals"
+              ? "Pick-up location, drivers' ages, anything else we should know"
+              : "Anything else we should know")
+        }
         className={`resize-none ${inputClass}`}
       />
 

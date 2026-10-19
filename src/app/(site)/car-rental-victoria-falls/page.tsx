@@ -82,6 +82,7 @@ export default async function RentalsPage() {
       )}
       <BookingSection
         division="rentals"
+        vehicleOptions={vehicles.map((v) => v.name)}
         eyebrow="Start Planning"
         headline={["let's get you", "on the road."]}
         body="Tell us your dates and which vehicle you're after — combine it with a guided day for 10% off the tour portion."
