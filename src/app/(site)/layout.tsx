@@ -7,6 +7,7 @@ import PageTransition from "@/components/providers/page-transition";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import WhatsAppFloating from "@/components/ui/whatsapp-floating";
+import GoogleAnalytics from "@/components/seo/google-analytics";
 import { OrganizationJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
@@ -32,6 +33,8 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
         <Footer siteSettings={siteSettings} />
       </SmoothScroll>
       <WhatsAppFloating whatsappNumber={siteSettings.whatsapp} />
+      {/* Editors previewing drafts shouldn't count as visitors. */}
+      {!isDraftMode && <GoogleAnalytics />}
       {isDraftMode && (
         <>
           <VisualEditing />

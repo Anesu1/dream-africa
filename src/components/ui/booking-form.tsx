@@ -5,6 +5,12 @@ import type { FormEvent } from "react";
 import Link from "next/link";
 
 type Status = "idle" | "submitting" | "success" | "error";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 type Division = "safaris" | "rentals" | "activities" | "general";
 
 const CROSS_SELL: Record<Division, { text: string; href: string; cta: string }> = {
@@ -90,6 +96,8 @@ export default function BookingForm({
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Request failed");
+      // Only counted once the server has accepted the enquiry, so GA leads match real emails.
+      window.gtag?.("event", "generate_lead", { form_division: division, form_item: item ?? "" });
       setStatus("success");
       form.reset();
     } catch {

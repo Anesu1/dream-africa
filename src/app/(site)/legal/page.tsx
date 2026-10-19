@@ -62,8 +62,19 @@ export default function LegalPage() {
 
           <h2>Cookies &amp; tracking</h2>
           <p>
-            This site does not use analytics or advertising cookies. Some photography is served from Unsplash&apos;s
-            servers, which may log standard request data (like your IP address) the same way any image host does.
+            We use Google Analytics to understand which pages visitors use and how many enquiries the site
+            receives. It sets cookies and collects usage data such as pages viewed, approximate location and device
+            type, handled under{" "}
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold underline"
+            >
+              Google&apos;s privacy policy
+            </a>
+            . We don&apos;t use advertising cookies. Some photography is served from Unsplash&apos;s servers, which
+            may log standard request data (like your IP address) the same way any image host does.
           </p>
 
           <h2>Questions</h2>
