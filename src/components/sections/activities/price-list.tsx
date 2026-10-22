@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "@/components/ui/reveal";
 import type { ActivityCategory } from "@/sanity/lib/types";
 
@@ -30,7 +31,15 @@ export default function PriceList({
               {category.items.map((item) => (
                 <div key={item.label} className="flex items-start justify-between gap-4">
                   <div>
-                    <div className="text-sm font-medium text-ink">{item.label}</div>
+                    <div className="text-sm font-medium text-ink">
+                      {item.href ? (
+                        <Link href={item.href} className="underline decoration-line underline-offset-4 hover:text-gold">
+                          {item.label}
+                        </Link>
+                      ) : (
+                        item.label
+                      )}
+                    </div>
                     {item.note && <div className="mt-1 max-w-[360px] text-xs leading-relaxed text-muted">{item.note}</div>}
                   </div>
                   <span className="text-[11px] uppercase tracking-wider text-gold font-semibold flex-shrink-0">

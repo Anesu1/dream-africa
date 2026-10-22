@@ -10,6 +10,8 @@ export default function BookingSection({
   item,
   vehicleOptions,
   messagePlaceholder,
+  whatsapp,
+  pageUrl,
 }: {
   division: "safaris" | "rentals" | "general" | "activities";
   eyebrow: string;
@@ -19,9 +21,11 @@ export default function BookingSection({
   item?: string;
   vehicleOptions?: string[];
   messagePlaceholder?: string;
+  whatsapp?: string;
+  pageUrl?: string;
 }) {
   return (
-    <section id={id} className="bg-ink px-6 py-28 text-paper sm:px-10 sm:py-36">
+    <section id={id} data-enquiry-section className="bg-ink px-6 py-28 text-paper sm:px-10 sm:py-36">
       <div className="mx-auto grid max-w-[1440px] gap-16 lg:grid-cols-[1.1fr_.9fr]">
         <div>
           <Reveal className="mb-7 text-[11px] uppercase tracking-[0.28em] text-gold">{eyebrow}</Reveal>
@@ -45,6 +49,8 @@ export default function BookingSection({
             item={item}
             vehicleOptions={vehicleOptions}
             messagePlaceholder={messagePlaceholder}
+            whatsapp={whatsapp}
+            pageUrl={pageUrl}
           />
         </Reveal>
       </div>

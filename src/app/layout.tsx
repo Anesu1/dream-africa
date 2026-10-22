@@ -1,4 +1,5 @@
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Playfair_Display, Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 
@@ -34,7 +35,7 @@ const spaceGrotesk = Space_Grotesk({
 // No production domain has been confirmed yet — set NEXT_PUBLIC_SITE_URL once the
 // real domain is live. Falls back to a placeholder so this doesn't silently resolve
 // canonical/OG URLs against the wrong host.
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+const BASE_URL = SITE_URL;
 const DEFAULT_TITLE = "Victoria Falls Car Rental, Tours & Safaris | Africa Dream Adventures";
 const DEFAULT_DESCRIPTION =
   "Premium car rental, 4x4 hire, private tours and safaris in Victoria Falls, Zimbabwe. Explore Victoria Falls, Hwange and the Zambezi with Africa Dream Adventures.";

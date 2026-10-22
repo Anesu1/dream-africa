@@ -6,6 +6,7 @@ import lodgeItem from "./objects/lodgeItem";
 import vehicleSpec from "./objects/vehicleSpec";
 import testimonialItem from "./objects/testimonialItem";
 import faqItem from "./objects/faqItem";
+import tripFact from "./objects/tripFact";
 import experienceCard from "./objects/experienceCard";
 import navLinkItem from "./objects/navLinkItem";
 import brandInfo from "./objects/brandInfo";
@@ -35,6 +36,7 @@ export const schemaTypes = [
   vehicleSpec,
   testimonialItem,
   faqItem,
+  tripFact,
   experienceCard,
   navLinkItem,
   brandInfo,

@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/site";
 import { client } from "@/sanity/lib/client";
 import { ITINERARY_SLUGS_QUERY, JOURNAL_POST_SLUGS_QUERY, TOUR_SLUGS_QUERY, VEHICLE_SLUGS_QUERY } from "@/sanity/lib/queries";
 
 // No production domain has been confirmed yet — set NEXT_PUBLIC_SITE_URL once the
 // real domain is live. Falls back to a placeholder so this doesn't silently point
 // at the wrong host.
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://africadreamadventures.co.zw";
+const BASE_URL = SITE_URL;
 
 // Without this, Next treats sitemap.xml as fully static — generated once and
 // cached indefinitely (confirmed: Netlify held a stale copy for ~1 year TTL

@@ -19,9 +19,17 @@ export default defineType({
       name: "image",
       type: "image",
       options: { hotspot: true },
+      fields: [defineField({ name: "alt", title: "Alt text", type: "string", description: "Describe what the photo shows." })],
       validation: (r) => r.required(),
     }),
     defineField({ name: "highlights", type: "array", of: [{ type: "string" }] }),
+    defineField({
+      name: "summary",
+      title: "Trip summary",
+      description: "Short confirmed facts shown near the top of the page (departure, duration, activities, border, price basis).",
+      type: "array",
+      of: [{ type: "tripFact" }],
+    }),
     defineField({
       name: "itinerarySteps",
       title: "Itinerary",

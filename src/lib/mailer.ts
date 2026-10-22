@@ -9,6 +9,9 @@ export type EnquiryEmailData = {
   experienceType?: string;
   travelDate?: string;
   guests?: string;
+  adults?: string;
+  children?: string;
+  pickupLocation?: string;
   serviceType?: string;
   vehicleClass?: string;
   pickupDate?: string;
@@ -55,6 +58,9 @@ function fieldLabel(key: string) {
     experienceType: "Experience",
     travelDate: "Travel date",
     guests: "Guests",
+    adults: "Adults",
+    children: "Children",
+    pickupLocation: "Pickup location",
     serviceType: "Service",
     vehicleClass: "Vehicle",
     crossBorder: "Border crossing",
@@ -107,16 +113,20 @@ function confirmationHtml(data: EnquiryEmailData, whatsapp: string) {
     <div style="color:${BRAND.gold};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Message received</div>
     <h1 style="margin:0 0 16px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:26px;font-weight:600;line-height:1.25;">Thanks for reaching out, ${escapeHtml(data.name)}.</h1>
     <p style="margin:0 0 24px;color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;">
-      We've received your ${escapeHtml(data.item ? `${data.item}` : data.division)} enquiry and typically reply within the hour during Victoria Falls business hours. If it's urgent, message us directly on WhatsApp below.
+      We've received your ${escapeHtml(data.item ? `${data.item}` : data.division)} enquiry and will reply to this email address. If it's urgent, message us directly on WhatsApp below.
     </p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${BRAND.paper};border:1px solid ${BRAND.line};border-radius:4px;margin-bottom:28px;">
+    ${
+      data.message
+        ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${BRAND.paper};border:1px solid ${BRAND.line};border-radius:4px;margin-bottom:28px;">
       <tr>
         <td style="padding:18px 20px;">
           <div style="color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Your message</div>
           <div style="color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:14px;line-height:1.6;font-style:italic;white-space:pre-line;">"${escapeHtml(data.message)}"</div>
         </td>
       </tr>
-    </table>
+    </table>`
+        : ""
+    }
     <table role="presentation" cellpadding="0" cellspacing="0">
       <tr>
         <td style="background:${BRAND.gold};border-radius:100px;">
@@ -142,8 +152,12 @@ function notificationHtml(data: EnquiryEmailData) {
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;border-top:1px solid ${BRAND.line};">
       ${rows}
     </table>
-    <div style="color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Message</div>
-    <p style="margin:0;color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;white-space:pre-line;">${escapeHtml(data.message)}</p>
+    ${
+      data.message
+        ? `<div style="color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;">Message</div>
+    <p style="margin:0;color:${BRAND.ink};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;white-space:pre-line;">${escapeHtml(data.message)}</p>`
+        : ""
+    }
   `);
 }
 

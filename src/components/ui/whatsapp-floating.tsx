@@ -1,27 +1,56 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import { SITE_URL } from "@/lib/site";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export default function WhatsAppFloating({ whatsappNumber }: { whatsappNumber: string }) {
   const pathname = usePathname();
   const isRentals = pathname?.startsWith("/car-rental-victoria-falls");
+  const isTour = pathname?.startsWith("/safaris/");
+  const [formInView, setFormInView] = useState(false);
+
+  // Step aside while an enquiry form is on screen so the button never sits over its fields or submit button.
+  useEffect(() => {
+    const sections = document.querySelectorAll("[data-enquiry-section]");
+    if (sections.length === 0) {
+      setFormInView(false);
+      return;
+    }
+    const visible = new Set<Element>();
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) visible.add(entry.target);
+        else visible.delete(entry.target);
+      }
+      setFormInView(visible.size > 0);
+    });
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, [pathname]);
 
   const message = isRentals
     ? "Hi Eden Car Rental, I need a car or 4x4 today in Victoria Falls. Please share available vehicles and rates."
-    : "Hi Africa Dream Adventures, I would like to check availability and rates for Victoria Falls safaris and activities.";
+    : isTour
+      ? `Hello Africa Dream Adventures, I'm interested in this trip: ${SITE_URL}${pathname}. Please help me confirm availability and a quote.`
+      : "Hi Africa Dream Adventures, I would like to check availability and rates for Victoria Falls safaris and activities.";
 
   return (
     <motion.a
       href={whatsappLink(whatsappNumber, message)}
       target="_blank"
       rel="noopener noreferrer"
+      data-wa-location="floating_button"
+      aria-hidden={formInView || undefined}
+      tabIndex={formInView ? -1 : undefined}
       initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
+      animate={formInView ? { opacity: 0, scale: 0.8 } : { opacity: 1, scale: 1 }}
       transition={{ delay: 1.5, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.96 }}
+      style={{ pointerEvents: formInView ? "none" : undefined }}
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-paper transition-shadow hover:shadow-lg"
       aria-label="Chat with us on WhatsApp"
     >

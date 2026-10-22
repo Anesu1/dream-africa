@@ -1,7 +1,9 @@
+import { SITE_URL } from "@/lib/site";
+
 // href is relative (e.g. "/safaris") — resolved against the real domain here
 // so callers never have to know or repeat the production URL.
 export function BreadcrumbJsonLd({ items }: { items: { label: string; href: string }[] }) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://africadreamadventures.co.zw";
+  const siteUrl = SITE_URL;
   const data = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -32,7 +34,7 @@ export function OrganizationJsonLd({
   address?: string;
   telephone?: string;
 }) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const siteUrl = SITE_URL;
   const data = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -120,12 +122,17 @@ export function TourJsonLd({
   name,
   description,
   image,
-  duration,
+  url,
+  providerName,
+  steps,
 }: {
   name: string;
   description: string;
   image: string;
-  duration: string;
+  url: string;
+  providerName: string;
+  /** Itinerary stage titles, in order — the same stages shown on the page. */
+  steps?: string[];
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -133,7 +140,16 @@ export function TourJsonLd({
     name,
     description,
     image,
-    itinerary: { "@type": "ItemList", name: duration },
+    url,
+    provider: { "@type": "Organization", name: providerName, url: SITE_URL },
+    ...(steps && steps.length > 0
+      ? {
+          itinerary: {
+            "@type": "ItemList",
+            itemListElement: steps.map((step, i) => ({ "@type": "ListItem", position: i + 1, name: step })),
+          },
+        }
+      : {}),
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

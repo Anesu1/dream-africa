@@ -81,7 +81,7 @@ export type RentalsPageSettings = {
   relatedJournalPosts?: RelatedJournalPost[];
 };
 
-export type ActivityItem = { label: string; note?: string };
+export type ActivityItem = { label: string; note?: string; href?: string };
 export type ActivityCategory = { title: string; items: ActivityItem[] };
 export type ComboPackage = { title: string; description: string; checklist?: string[] };
 export type PackageTier = { tier: string; title: string; productCount?: string; included: string };
@@ -107,7 +107,9 @@ export type Tour = {
   title: string;
   description: string;
   image: string;
+  imageAlt?: string;
   highlights: string[];
+  summary?: { label: string; value: string }[];
   itinerarySteps?: ItineraryDay[];
   faqs?: FaqItem[];
   relatedJournalPosts?: RelatedJournalPost[];

@@ -68,7 +68,7 @@ export const ACTIVITIES_PAGE_QUERY = defineQuery(`*[_type == "activitiesPageSett
   "heroImage": heroImage.asset->url,
   "specialCombos": specialCombos[]{ title, description, checklist },
   "packageTiers": packageTiers[]{ tier, title, productCount, included },
-  "categories": categories[]{ title, "items": items[]{ label, note } },
+  "categories": categories[]{ title, "items": items[]{ label, note, href } },
   disclaimer,
   "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
 }`);
@@ -93,6 +93,8 @@ export const TOUR_BY_SLUG_QUERY = defineQuery(`*[_type == "tour" && slug.current
   description,
   "image": image.asset->url,
   highlights,
+  "imageAlt": image.alt,
+  "summary": summary[]{ label, value },
   "itinerarySteps": itinerarySteps[]{ rangeLabel, title, description, link },
   faqs,
   "relatedJournalPosts": relatedJournalPosts[]->{ "slug": slug.current, title, excerpt, "image": image.asset->url },
