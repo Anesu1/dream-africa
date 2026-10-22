@@ -135,6 +135,18 @@ export const JOURNAL_POSTS_QUERY = defineQuery(`*[_type == "journalPost" && publ
   "image": image.asset->url,
 }`);
 
+// One round trip for the sitemap: each detail page's last edit, plus the latest edit behind each hub.
+export const SITEMAP_QUERY = defineQuery(`{
+  "tours": *[_type == "tour"]{ "slug": slug.current, _updatedAt },
+  "vehicles": *[_type == "vehicle"]{ "slug": slug.current, _updatedAt },
+  "itineraries": *[_type == "itineraryPage"]{ "slug": slug.current, _updatedAt },
+  "journal": *[_type == "journalPost" && publishedAt <= now()]{ "slug": slug.current, _updatedAt },
+  "home": *[_type in ["homePage", "siteSettings"]] | order(_updatedAt desc)[0]._updatedAt,
+  "safaris": *[_type in ["safariPageSettings", "tour"]] | order(_updatedAt desc)[0]._updatedAt,
+  "rentals": *[_type in ["rentalsPageSettings", "vehicle"]] | order(_updatedAt desc)[0]._updatedAt,
+  "activities": *[_type == "activitiesPageSettings"][0]._updatedAt
+}`);
+
 export const JOURNAL_POST_SLUGS_QUERY = defineQuery(`*[_type == "journalPost" && publishedAt <= now()]{ "slug": slug.current }`);
 
 export const JOURNAL_POST_BY_SLUG_QUERY = defineQuery(`*[_type == "journalPost" && slug.current == $slug && publishedAt <= now()][0] {

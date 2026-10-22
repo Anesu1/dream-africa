@@ -3,6 +3,7 @@ import Link from "next/link";
 import MountReveal from "@/components/ui/mount-reveal";
 import Reveal from "@/components/ui/reveal";
 import BookingSection from "@/components/sections/booking-section";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { whatsappLink } from "@/lib/whatsapp";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { SITE_SETTINGS_QUERY } from "@/sanity/lib/queries";
@@ -98,6 +99,13 @@ export default async function PackagesPage() {
   return (
     <>
       <article className="mx-auto max-w-[1240px] px-6 py-28 sm:px-10 sm:py-36">
+        <BreadcrumbJsonLd
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Activities", href: "/activities" },
+            { label: "Activity Packages", href: "/activities/packages" },
+          ]}
+        />
         <MountReveal className="mb-6 flex items-center gap-3">
           <Link href="/activities" className="text-[11px] uppercase tracking-[0.28em] text-gold hover:underline">
             Activities

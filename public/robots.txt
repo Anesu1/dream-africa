@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /studio
+Disallow: /api/draft-mode/
+
+Sitemap: https://africadreamadventures.co.zw/sitemap.xml

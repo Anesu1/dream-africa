@@ -7,7 +7,7 @@ import Faq from "@/components/sections/home/faq";
 import FinalCta from "@/components/sections/home/final-cta";
 import BookingSection from "@/components/sections/booking-section";
 import GsapMarquee from "@/components/ui/gsap-marquee";
-import { FaqJsonLd } from "@/components/seo/json-ld";
+import { FaqJsonLd, WebSiteJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { HOME_PAGE_QUERY, SITE_SETTINGS_QUERY, VEHICLES_COUNT_QUERY } from "@/sanity/lib/queries";
 import type { HomePage, SiteSettings } from "@/sanity/lib/types";
@@ -48,6 +48,7 @@ export default async function Home() {
 
   return (
     <>
+      <WebSiteJsonLd name={siteSettings.name} />
       <FaqJsonLd faqs={home.faqs} />
       <Hero
         hero={{

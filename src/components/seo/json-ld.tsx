@@ -23,6 +23,19 @@ export function BreadcrumbJsonLd({ items }: { items: { label: string; href: stri
 // previously withheld specifically because those weren't verified yet).
 // `sameAs` (Tripadvisor, SafariBookings, etc.) stays out until those profiles
 // actually exist — same reasoning, just not resolved yet.
+// Tells Google which name to show for the site in results. Deliberately no SearchAction:
+// the site has no search page, and nothing here can make Google show sitelinks.
+export function WebSiteJsonLd({ name }: { name: string }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name,
+    url: `${SITE_URL}/`,
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
 export function OrganizationJsonLd({
   name,
   description,
