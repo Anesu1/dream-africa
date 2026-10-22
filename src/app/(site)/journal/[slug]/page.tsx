@@ -91,7 +91,7 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
           <Image src={post.image} alt={post.title} width={1200} height={500} className="h-[360px] w-full object-cover sm:h-[460px]" />
         </Reveal>
         <Reveal>
-          <div className="max-w-2xl text-lg leading-relaxed text-muted text-pretty [&_p]:mb-6">
+          <div className="max-w-2xl text-lg leading-relaxed text-muted text-pretty [&_p]:mb-6 [&_h2]:mb-4 [&_h2]:mt-10 [&_h2]:font-subheading [&_h2]:text-2xl [&_h2]:font-medium [&_h2]:text-ink">
             <PortableText value={post.body} />
           </div>
         </Reveal>
