@@ -6,7 +6,8 @@
  * only what traces back to the operator's original content or the 2026 price list PDF:
  *   - one day; back at the Falls by evening; border paperwork handled (original tour content)
  *   - game drive + river cruise in Chobe (original tour content)
- *   - National Parks fees excluded, US$20 per person at check-in (2026 price list)
+ *   - National Parks fees excluded, paid at check-in (2026 price list) — amounts are never published,
+ *     because they change
  *
  * Dry run:
  *   NEXT_PUBLIC_SANITY_PROJECT_ID=7zk2mk45 NEXT_PUBLIC_SANITY_DATASET=production node --experimental-strip-types scripts/content-fixes-2026-10-22.mts
@@ -67,7 +68,7 @@ const PATCHES: PatchSpec[] = [
         fact(
           "price",
           "Price",
-          "Quoted for your date and group. Chobe National Park entry fees are not included — our 2026 price list puts them at US$20 per person, paid at check-in.",
+          "Quoted for your date and group. Chobe National Park entry fees are not included and are paid at check-in; we confirm the current fee when we quote.",
         ),
       ],
       itinerarySteps: [
@@ -106,7 +107,7 @@ const PATCHES: PatchSpec[] = [
         faq(
           "faq2",
           "What does the quote include, and which charges are excluded?",
-          "The trip covers the crossing into Botswana with our help at the border, a game drive in Chobe National Park and a river cruise on the Chobe River. Chobe National Park entry fees are not included: our 2026 price list puts them at US$20 per person, paid at check-in, and we confirm the current fee when we quote. Ask us to confirm which other fees and charges are included in your quote.",
+          "The trip covers the crossing into Botswana with our help at the border, a game drive in Chobe National Park and a river cruise on the Chobe River. Chobe National Park entry fees are not included and are paid at check-in; we confirm the current fee when we quote. Ask us to confirm which other fees and charges are included in your quote.",
         ),
         faq(
           "faq-price",
