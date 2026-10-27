@@ -289,11 +289,12 @@ export default function BookingForm({
     return (
       <div className="rounded-sm border border-paper/20 bg-paper/5 p-8" role="status">
         <p ref={successRef} tabIndex={-1} className="m-0 font-display text-2xl outline-none">
-          Enquiry sent.
+          Your enquiry has been received.
         </p>
         <p className="m-0 mt-2 text-sm text-paper/70">
-          {item ? `Thanks — we've received your enquiry about the ${item}. ` : "Thanks — we've received your enquiry. "}
-          We&apos;ll reply to the email address you gave us.
+          {item ? `Enquiry: ${item}. ` : ""}
+          Availability and pricing will be confirmed separately; this does not confirm a booking. We&apos;ll reply to
+          the email address you gave us.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-paper/15 pt-6">
           <p className="m-0 text-sm text-paper/70">{crossSell.text}</p>

@@ -85,7 +85,7 @@ export default async function RentalsPage() {
         vehicleOptions={vehicles.map((v) => v.name)}
         eyebrow="Start Planning"
         headline={["let's get you", "on the road."]}
-        body="Tell us your dates and which vehicle you're after — combine it with a guided day for 10% off the tour portion."
+        body="Tell us your dates and which vehicle you're after. If you'd like a guided day as well, add it to the same enquiry."
       />
     </>
   );

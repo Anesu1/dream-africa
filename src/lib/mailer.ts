@@ -113,7 +113,7 @@ function confirmationHtml(data: EnquiryEmailData, whatsapp: string) {
     <div style="color:${BRAND.gold};font-family:${BRAND.fontBody};font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">Message received</div>
     <h1 style="margin:0 0 16px;color:${BRAND.ink};font-family:${BRAND.fontDisplay};font-size:26px;font-weight:600;line-height:1.25;">Thanks for reaching out, ${escapeHtml(data.name)}.</h1>
     <p style="margin:0 0 24px;color:${BRAND.muted};font-family:${BRAND.fontBody};font-size:15px;line-height:1.6;">
-      We've received your ${escapeHtml(data.item ? `${data.item}` : data.division)} enquiry and will reply to this email address. If it's urgent, message us directly on WhatsApp below.
+      Your ${escapeHtml(data.item ? `${data.item}` : data.division)} enquiry has been received. Availability and pricing will be confirmed separately; this does not confirm a booking. We'll reply to this email address — if it's urgent, message us directly on WhatsApp below.
     </p>
     ${
       data.message

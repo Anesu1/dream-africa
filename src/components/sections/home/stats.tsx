@@ -2,10 +2,13 @@ import Reveal from "@/components/ui/reveal";
 import Counter from "@/components/ui/counter";
 import type { StatItem } from "@/sanity/lib/types";
 
+// Static class names so Tailwind can see them; the strip fills the row however many stats there are.
+const LG_COLS: Record<number, string> = { 1: "lg:grid-cols-1", 2: "lg:grid-cols-2", 3: "lg:grid-cols-3", 4: "lg:grid-cols-4" };
+
 export default function Stats({ stats }: { stats: StatItem[] }) {
   return (
     <section className="bg-ink text-paper">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-2 px-6 sm:px-10 lg:grid-cols-4">
+      <div className={`mx-auto grid max-w-[1440px] grid-cols-2 px-6 sm:px-10 ${LG_COLS[stats.length] ?? "lg:grid-cols-4"}`}>
         {stats.map((stat, i) => (
           <Reveal
             key={stat.label}

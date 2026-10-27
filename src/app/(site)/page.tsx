@@ -7,6 +7,7 @@ import Faq from "@/components/sections/home/faq";
 import FinalCta from "@/components/sections/home/final-cta";
 import BookingSection from "@/components/sections/booking-section";
 import GsapMarquee from "@/components/ui/gsap-marquee";
+import { stegaClean } from "next-sanity";
 import { FaqJsonLd, WebSiteJsonLd } from "@/components/seo/json-ld";
 import { sanityFetch } from "@/sanity/lib/fetch";
 import { HOME_PAGE_QUERY, SITE_SETTINGS_QUERY, VEHICLES_COUNT_QUERY } from "@/sanity/lib/queries";
@@ -31,9 +32,11 @@ export default async function Home() {
   // instead of manually entered numbers that go stale — the years figure
   // was already wrong (hardcoded 14, actually 15 as of this year).
   const yearsSinceFounded = new Date().getFullYear() - siteSettings.founded;
+  // stegaClean: in Studio preview, labels carry invisible click-to-edit markers that would
+  // otherwise make these comparisons fail and show the stale CMS numbers.
   const stats = home.stats.map((stat) => {
-    if (stat.label === "Vehicles in fleet") return { ...stat, value: vehicleCount };
-    if (stat.label === "Years on the Zambezi") return { ...stat, value: yearsSinceFounded };
+    if (stegaClean(stat.label) === "Vehicles in fleet") return { ...stat, value: vehicleCount };
+    if (stegaClean(stat.label) === "Years on the Zambezi") return { ...stat, value: yearsSinceFounded };
     return stat;
   });
 
@@ -64,7 +67,7 @@ export default async function Home() {
       <Experiences experiences={home.experiences} />
       <GsapMarquee items={siteSettings.trustIndicators} />
       <Stats stats={stats} />
-      <Testimonials testimonials={home.testimonials} />
+      {home.testimonials?.length > 0 && <Testimonials testimonials={home.testimonials} />}
       <Faq faqs={home.faqs} />
       <FinalCta siteName={siteSettings.name} whatsapp={siteSettings.whatsapp} />
       <BookingSection
