@@ -41,6 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/activities/packages" },
     { path: "/itineraries", lastModified: latest(data.itineraries.map((i) => i._updatedAt)) },
     { path: "/services" },
+    { path: "/driving-in-zimbabwe" },
     { path: "/journal", lastModified: latest(data.journal.map((j) => j._updatedAt)) },
   ];
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Reveal from "@/components/ui/reveal";
 import FaqItem from "@/components/ui/faq-item";
 import type { FaqItem as FaqItemType } from "@/sanity/lib/types";
@@ -21,6 +22,15 @@ export default function RentalsFaq({ faqs }: { faqs: FaqItemType[] }) {
           <Reveal>
             <p className="m-0 text-[15px] leading-relaxed text-muted">
               Licence requirements, cross-border paperwork, cancellations — the details that matter before you commit.
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className="mt-5 text-[15px] leading-relaxed text-muted">
+              New to the roads here? Read our{" "}
+              <Link href="/driving-in-zimbabwe" className="text-gold underline">
+                guide to driving in Zimbabwe
+              </Link>
+              : roadblocks, night driving, fuel and what to carry.
             </p>
           </Reveal>
         </div>

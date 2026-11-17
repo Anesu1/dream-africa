@@ -203,15 +203,29 @@ export function ItineraryJsonLd({
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
-export function AutoRentalJsonLd({ parentName }: { parentName: string }) {
+// Address and phone are the same site-settings values the footer and LocalBusiness data use.
+// Description and areaServed only say what the rentals page itself says (Harare service isn't
+// mentioned anywhere on the site, so it is no longer listed).
+export function AutoRentalJsonLd({
+  parentName,
+  address,
+  telephone,
+}: {
+  parentName: string;
+  address?: string;
+  telephone?: string;
+}) {
   const data = {
     "@context": "https://schema.org",
     "@type": "AutoRental",
     name: "Eden Car Rental",
+    url: `${SITE_URL}/car-rental-victoria-falls`,
     description:
-      "Self-drive, chauffeured and airport-transfer vehicle rental across Victoria Falls and Zimbabwe — 4x4 SUVs, executive sedans and rugged expedition vehicles.",
-    areaServed: ["Victoria Falls", "Harare", "Zimbabwe"],
-    parentOrganization: { "@type": "Organization", name: parentName },
+      "Self-drive and chauffeured car hire in Victoria Falls, Zimbabwe: 4x4s, SUVs, a sedan and a 10-seat minibus, delivered to Victoria Falls Airport or your lodge.",
+    areaServed: ["Victoria Falls", "Hwange", "Zimbabwe"],
+    ...(address ? { address } : {}),
+    ...(telephone ? { telephone: `+${telephone}` } : {}),
+    parentOrganization: { "@type": "Organization", name: parentName, url: SITE_URL },
   };
 
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;

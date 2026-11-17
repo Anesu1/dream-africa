@@ -15,7 +15,7 @@ import type { RentalsPageSettings, SiteSettings, Vehicle } from "@/sanity/lib/ty
 export const metadata: Metadata = {
   title: "Car Hire & Car Rental in Victoria Falls, Zimbabwe",
   description:
-    "Hire a car in Victoria Falls with Eden Car Rental, Africa Dream Adventures' vehicle hire division. Premium 4x4, SUV and self-drive rentals for safaris, airport pickup, hotel delivery and journeys across Zimbabwe and beyond.",
+    "Car hire in Victoria Falls with Eden Car Rental: 4x4s, SUVs, a sedan and a 10-seat minibus, delivered to the airport or your lodge. Self-drive or chauffeur.",
   keywords: [
     "Victoria Falls car rental",
     "car hire Victoria Falls",
@@ -40,7 +40,11 @@ export default async function RentalsPage() {
 
   return (
     <>
-      <AutoRentalJsonLd parentName={siteSettings.name} />
+      <AutoRentalJsonLd
+        parentName={siteSettings.name}
+        address={siteSettings.address}
+        telephone={siteSettings.whatsapp}
+      />
       {rentalsPage.rentalFaqs && rentalsPage.rentalFaqs.length > 0 && <FaqJsonLd faqs={rentalsPage.rentalFaqs} />}
       <RentalsHero
         eyebrow={rentalsPage.heroEyebrow}
